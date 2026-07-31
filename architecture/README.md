@@ -4,25 +4,25 @@ Architecture decisions and history for the Rosetta platform.
 
 ## What is an ADR?
 
-An **ADR** — *Architecture Decision Record* — is a short document that captures a
+An **ADR** — _Architecture Decision Record_ — is a short document that captures a
 single significant architectural decision: the context that forced the choice, the
 decision itself, and its consequences. ADRs are immutable once accepted; when a
 decision changes, a new ADR supersedes the old one rather than editing it. Together
-they form a dated, append-only history of *why* the system is the way it is.
+they form a dated, append-only history of _why_ the system is the way it is.
 
 ## Status lifecycle
 
-| Status | Meaning |
-|------------|-----------------------------------------------------------------|
-| Proposed | Drafted and under discussion; not yet ratified. |
-| Accepted | Ratified; the decision is in force. |
-| Superseded | Replaced by a later ADR (which it links to). |
+| Status     | Meaning                                                     |
+| ---------- | ----------------------------------------------------------- |
+| Proposed   | Drafted and under discussion; not yet ratified.             |
+| Accepted   | Ratified; the decision is in force.                         |
+| Superseded | Replaced by a later ADR (which it links to).                |
 | Deprecated | No longer relevant, but retained for the historical record. |
 
 ### When to accept
 
 An ADR flips from **Proposed** to **Accepted** when the decision has actually been
-*made and committed to* — not when the document reads well, and not when the thing
+_made and committed to_ — not when the document reads well, and not when the thing
 is built. Accept when all three hold:
 
 1. **The people who own the decision have affirmatively agreed** — not "no one
@@ -51,12 +51,13 @@ a reviewable, dated event.
 
 ## Records
 
-| ADR | Title | Status | Date |
-|-----|-------|--------|------|
-| [0001](ADR-0001-rosetta-philosophy.md) | Rosetta Philosophy | Accepted | 2026-07-21 |
-| [0002](ADR-0002-personal-vs-organizational-chronicle.md) | Personal Chronicle vs. Organizational Chronicle | Proposed | 2026-07-21 |
-| [0003](ADR-0003-tauri-thin-rust-core.md) | Tauri Apps — Thin Rust Core, Business Logic in TypeScript | Accepted | 2026-07-24 |
-| [0004](ADR-0004-shared-rosetta-core.md) | Shared Rosetta Core — What's Shared vs. Per-App | Accepted | 2026-07-24 |
+| ADR                                                      | Title                                                        | Status   | Date       |
+| -------------------------------------------------------- | ------------------------------------------------------------ | -------- | ---------- |
+| [0001](ADR-0001-rosetta-philosophy.md)                   | Rosetta Philosophy                                           | Accepted | 2026-07-21 |
+| [0002](ADR-0002-personal-vs-organizational-chronicle.md) | Personal Chronicle vs. Organizational Chronicle              | Proposed | 2026-07-21 |
+| [0003](ADR-0003-tauri-thin-rust-core.md)                 | Tauri Apps — Thin Rust Core, Business Logic in TypeScript    | Accepted | 2026-07-24 |
+| [0004](ADR-0004-shared-rosetta-core.md)                  | Shared Rosetta Core — What's Shared vs. Per-App              | Accepted | 2026-07-24 |
+| [0005](ADR-0005-decentralized-by-construction.md)        | Decentralized by Construction — Git Semantics at Every Scale | Proposed | 2026-07-31 |
 
 ## Conventions
 
