@@ -44,3 +44,8 @@ rosetta/
 ├── rosetta_wayfinder/
 └── rosetta_dev-scripts/
 ```
+
+## License
+
+All content in this repo is licensed [CC BY 4.0](LICENSE) — share and adapt with attribution.
+Copyright 2026 Rosetta Foundation.
