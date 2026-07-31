@@ -1,6 +1,6 @@
 # ADR-0008: Implementation Spec Format — The PRD-to-Build Contract
 
-**Status:** Proposed
+**Status:** Accepted
 
 **Date:** 2026-07-31
 

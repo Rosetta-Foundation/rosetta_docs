@@ -60,7 +60,7 @@ a reviewable, dated event.
 | [0005](ADR-0005-decentralized-by-construction.md)        | Decentralized by Construction — Git Semantics at Every Scale   | Proposed | 2026-07-31 |
 | [0006](ADR-0006-ts7-bun-toolchain.md)                    | TypeScript 7 + Bun Toolchain                                   | Accepted | 2026-07-31 |
 | [0007](ADR-0007-chronicle-commit-type.md)                | The `chronicle:` Commit Type — Machine-Authored Ledger Commits | Accepted | 2026-07-31 |
-| [0008](ADR-0008-implementation-spec-format.md)           | Implementation Spec Format — The PRD-to-Build Contract         | Proposed | 2026-07-31 |
+| [0008](ADR-0008-implementation-spec-format.md)           | Implementation Spec Format — The PRD-to-Build Contract         | Accepted | 2026-07-31 |
 
 ## Conventions
 
