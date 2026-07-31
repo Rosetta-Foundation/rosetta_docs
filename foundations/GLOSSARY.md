@@ -104,7 +104,7 @@ in `architecture/`).
 **implementation spec** — the phased spec derived from an accepted PRD that
 scopes one shippable phase: engineering tasks, dependencies, and acceptance
 criteria. The contract between the PRD ("what and why") and the build
-(PRD → phased implementation specs → build).
+(PRD → phased implementation specs → build). Format and location: ADR-0008.
 
 **stewardship** — the founding philosophy: ownership, influence, and
 technology are temporary; the obligation to leave shared knowledge stronger
