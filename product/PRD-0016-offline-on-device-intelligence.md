@@ -224,3 +224,4 @@ export interface DeferredSynthesisTask {
 - **Test-time compute for small models:** small-model quality on hard tasks improves markedly with search/self-consistency strategies — a lever for closing the quality gap offline.
 - **Peer synthesis:** a phone offloading synthesis to the owner's desktop over the local network (still zero-cloud) — compute follows trust, not the internet.
 - **Org-side local inference:** running the coherence protocol (PRD-0009) checks on a self-hosted model for orgs that cannot send org knowledge to external APIs.
+- **Physical-world capture tier:** a robot or fixed rig digitizing physical media (book scanning for an accessible personal copy, whiteboard capture) is a capture-tier device like any other — camera + OCR on-device or deferred to where compute lives, emitting PRD-0015 envelopes into the deferred-synthesis queue. Voice/audio consumption of what it captures is PRD-0017.

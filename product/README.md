@@ -45,6 +45,7 @@ them — not only people.
 | [0014](PRD-0014-light-dark-theme.md)                             | Light & Dark Theme                                  | Proposed | ⬜ 1 ⬜ 2           | 2026-07-27 |
 | [0015](PRD-0015-chronicle-activity-schema-and-open-ingestion.md) | Chronicle Activity Schema & Open Ingestion          | Draft    | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-07-31 |
 | [0016](PRD-0016-offline-on-device-intelligence.md)               | Offline On-Device Intelligence                      | Draft    | ⬜ 1 ⬜ 2 ⬜ 3 ⬜ 4 | 2026-07-31 |
+| [0017](PRD-0017-wayfinder-voice-audio-surface.md)                | Wayfinder Voice & Audio Surface                     | Draft    | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-07-31 |
 
 ## Conventions
 
