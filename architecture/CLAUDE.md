@@ -1,0 +1,10 @@
+# architecture
+
+Architecture decisions and history for the Rosetta platform.
+
+This folder holds Architecture Decision Records (ADRs), system diagrams, and the evolving design of
+how Chronicle, Wayfinder, and future products fit together. Over time, Chronicle itself will help
+capture and surface this architecture history — but human-authored ADRs live here.
+
+All TypeScript in Rosetta follows the Handler / Service / Repository + InversifyJS pattern
+(see `../.claude/rules/architecture-hsr.md`); record deviations or extensions to that pattern as ADRs here.

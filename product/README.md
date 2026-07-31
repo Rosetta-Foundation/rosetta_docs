@@ -1,0 +1,52 @@
+# Product
+
+Product Requirements Documents (PRDs) for the Rosetta platform.
+
+## What is a PRD?
+
+A **PRD** — *Product Requirements Document* — frames a capability **before** it is
+built: its purpose, goals, non-goals, and acceptance criteria. Where an
+[ADR](../architecture) records a decision already made, a PRD defines what to
+build and what "done" means. A PRD is the input to phased implementation specs
+(PRD → phased SDD specs → build).
+
+PRDs are authored to be legible to **both humans and machines**: structured
+frontmatter, list-based goals/non-goals, checkbox acceptance criteria, and
+explicit links. The objective is that agents can author, consume, and act on
+them — not only people.
+
+## Status lifecycle
+
+| Status | Meaning |
+|------------|-----------------------------------------------------------------|
+| Draft | Being written; not yet circulated. |
+| Proposed | Circulated and under review; not yet committed to. |
+| Accepted | Committed to; work may proceed against it. |
+| Superseded | Replaced by a later PRD (which it links to). |
+| Deprecated | No longer relevant, retained for the historical record. |
+
+## Records
+
+| PRD | Title | Status | Phases | Date |
+|-----|-------|--------|--------|------|
+| [0001](PRD-0001-claude-code-source.md) | Claude Code Source | Accepted | ✅ 1 ✅ 2 ✅ 3 | 2026-07-22 |
+| [0002](PRD-0002-multi-repo-git-and-synthesis.md) | Multi-Repo Git Discovery & Two-Tier Daily Synthesis | Accepted | ✅ 1 ✅ 2 | 2026-07-23 |
+| [0003](PRD-0003-notes-as-authoritative-input.md) | Meeting Notes as Authoritative Input | Accepted | ✅ 1 ✅ 2 | 2026-07-23 |
+| [0004](PRD-0004-integrated-note-taker.md) | Integrated Note-Taker | Proposed | ✅ 1 ⬜ 2 ⬜ 3 | 2026-07-23 |
+| [0005](PRD-0005-clobber-guard.md) | Regeneration Clobber Guard | Accepted | ✅ 1 | 2026-07-23 |
+| [0006](PRD-0006-artifact-capture-and-promotion.md) | Artifact Capture & Promotion to Org Knowledge | Proposed | ⬜ 1 ⬜ 2 ⬜ 3 | 2026-07-24 |
+| [0007](PRD-0007-personal-work-queue.md) | Personal Work Queue | Accepted | ✅ 1 ⬜ 2 ⬜ 3 | 2026-07-24 |
+| [0008](PRD-0008-local-workspace-folders.md) | Local Workspace Folders | Accepted | ✅ 1 | 2026-07-24 |
+| [0009](PRD-0009-coherence-protocol.md) | Org Knowledge Coherence Protocol | Proposed | ⬜ 1 ⬜ 2 ⬜ 3 | 2026-07-24 |
+| [0010](PRD-0010-wayfinder-local-app.md) | Wayfinder Local App | Proposed | ⬜ 1 ⬜ 2 ⬜ 3 | 2026-07-24 |
+| [0011](PRD-0011-full-loop-sdlc-automation.md) | Full-Loop SDLC Automation | Proposed | ⬜ 1 ⬜ 2 ⬜ 3 | 2026-07-25 |
+| [0012](PRD-0012-wayfinder-ai-workspace.md) | Wayfinder AI Workspace | Proposed | ⬜ 1 ⬜ 2 ⬜ 3 | 2026-07-26 |
+| [0013](PRD-0013-markdown-rendering-in-chat.md) | Markdown Rendering in Ask Wayfinder Responses | Proposed | ⬜ 1 | 2026-07-27 |
+| [0014](PRD-0014-light-dark-theme.md) | Light & Dark Theme | Proposed | ⬜ 1 ⬜ 2 | 2026-07-27 |
+
+## Conventions
+
+- Filename: `PRD-NNNN-short-kebab-title.md` (zero-padded, sequential).
+- Start from [`TEMPLATE.md`](TEMPLATE.md); keep the frontmatter fields.
+- Add every new PRD to the **Records** table above in the same change.
+- Link related ADRs and, once implementation is sliced, the phase specs.
