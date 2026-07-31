@@ -4,7 +4,7 @@ Product Requirements Documents (PRDs) for the Rosetta platform.
 
 This folder holds PRDs — the "what and why" of a capability, written **before** it is built: goals,
 non-goals, and acceptance criteria. A PRD is the input to the phased implementation specs and the
-build that follows (PRD → phased SDD specs → build).
+build that follows (PRD → phased implementation specs → build).
 
 PRDs are a first-class Rosetta artifact, alongside the ADRs in `../architecture`. Where an ADR
 records a decision already made, a PRD frames a capability to be built. Over time Chronicle and

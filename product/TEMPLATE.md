@@ -1,11 +1,11 @@
 ---
 id: PRD-NNNN
 title: <capability name>
-status: Draft            # Draft | Proposed | Accepted | Superseded | Deprecated
+status: Draft # Draft | Proposed | Accepted | Superseded | Deprecated
 date: YYYY-MM-DD
 owner: <name>
-related_adrs: []         # e.g. [ADR-0002]
-related_specs: []        # e.g. [.sdd-phase1-spec.md] once implementation is sliced
+related_adrs: [] # e.g. [ADR-0002]
+related_specs: [] # e.g. [phase-1-spec.md] once implementation is sliced
 supersedes: null
 ---
 
@@ -63,7 +63,8 @@ full implementation. Prefer structure (lists, tables, typed contracts) over pros
 
 ## 7. Rollout & Phases
 
-<How this is sliced into shippable phases. Each phase becomes an SDD phase spec.>
+<How this is sliced into shippable phases. Each phase becomes an implementation
+phase spec.>
 
 1. **Phase 1** — <deliverable>
 2. **Phase 2** — <deliverable>

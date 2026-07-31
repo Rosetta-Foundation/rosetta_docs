@@ -8,7 +8,7 @@ A **PRD** — _Product Requirements Document_ — frames a capability **before**
 built: its purpose, goals, non-goals, and acceptance criteria. Where an
 [ADR](../architecture) records a decision already made, a PRD defines what to
 build and what "done" means. A PRD is the input to phased implementation specs
-(PRD → phased SDD specs → build).
+(PRD → phased implementation specs → build).
 
 PRDs are authored to be legible to **both humans and machines**: structured
 frontmatter, list-based goals/non-goals, checkbox acceptance criteria, and
