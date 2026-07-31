@@ -2,7 +2,7 @@
   "name": "rosetta_docs",
   "private": true,
   "description": "Cross-cutting Rosetta artifacts — PRDs, ADRs, and the record of intent.",
-  "license": "UNLICENSED",
+  "license": "CC-BY-4.0",
   "scripts": {
     "prepare": "husky"
   },

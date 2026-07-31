@@ -7,12 +7,12 @@ why" of the platform that doesn't belong to any single code repo.
 
 ## Contents
 
-| Folder | Holds |
-|---|---|
-| [`product/`](product) | Product Requirements Documents (PRDs) — capabilities framed **before** they are built. |
-| [`architecture/`](architecture) | Architecture Decision Records (ADRs) — decisions already made. |
-| [`docs/`](docs) | Cross-cutting product & workspace docs (vision, foundations, assets). |
-| [`shared/`](shared) | Shared assets referenced across Rosetta repos. |
+| Folder                          | Holds                                                                                  |
+| ------------------------------- | -------------------------------------------------------------------------------------- |
+| [`product/`](product)           | Product Requirements Documents (PRDs) — capabilities framed **before** they are built. |
+| [`architecture/`](architecture) | Architecture Decision Records (ADRs) — decisions already made.                         |
+| [`docs/`](docs)                 | Cross-cutting product & workspace docs (vision, foundations, assets).                  |
+| [`shared/`](shared)             | Shared assets referenced across Rosetta repos.                                         |
 
 ## Why a dedicated repo
 
@@ -43,3 +43,8 @@ rosetta/
 ├── rosetta_wayfinder/
 └── rosetta_dev-scripts/
 ```
+
+## License
+
+All content in this repo is licensed [CC BY 4.0](LICENSE) — share and adapt with attribution.
+Copyright 2026 Rosetta Foundation.
