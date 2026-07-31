@@ -7,12 +7,13 @@ why" of the platform that doesn't belong to any single code repo.
 
 ## Contents
 
-| Folder                          | Holds                                                                                  |
-| ------------------------------- | -------------------------------------------------------------------------------------- |
-| [`product/`](product)           | Product Requirements Documents (PRDs) — capabilities framed **before** they are built. |
-| [`architecture/`](architecture) | Architecture Decision Records (ADRs) — decisions already made.                         |
-| [`docs/`](docs)                 | Cross-cutting product & workspace docs (vision, foundations, assets).                  |
-| [`shared/`](shared)             | Shared assets referenced across Rosetta repos.                                         |
+| Folder                          | Holds                                                                                                    |
+| ------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| [`foundations/`](foundations)   | The constitution — founding context, manifesto, principles, glossary, settled decisions. **Read first.** |
+| [`product/`](product)           | Product Requirements Documents (PRDs) — capabilities framed **before** they are built.                   |
+| [`architecture/`](architecture) | Architecture Decision Records (ADRs) — decisions already made.                                           |
+| [`docs/`](docs)                 | Cross-cutting product & workspace docs (vision, the engineering-era origin story, assets).               |
+| [`shared/`](shared)             | Shared assets referenced across Rosetta repos.                                                           |
 
 ## Why a dedicated repo
 
