@@ -5,7 +5,7 @@ status: Draft # Draft | Proposed | Accepted | Superseded | Deprecated
 date: YYYY-MM-DD
 owner: <name>
 related_adrs: [] # e.g. [ADR-0002]
-related_specs: [] # e.g. [phase-1-spec.md] once implementation is sliced
+related_specs: [] # e.g. [specs/PRD-NNNN/phase-1-spec.md] once implementation is sliced
 supersedes: null
 ---
 

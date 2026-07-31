@@ -53,3 +53,7 @@ them — not only people.
 - Start from [`TEMPLATE.md`](TEMPLATE.md); keep the frontmatter fields.
 - Add every new PRD to the **Records** table above in the same change.
 - Link related ADRs and, once implementation is sliced, the phase specs.
+- Implementation specs are sliced from accepted PRDs — one per rollout phase,
+  starting from [`SPEC-TEMPLATE.md`](SPEC-TEMPLATE.md) and committed to the
+  **target repo** as `specs/<PRD-ID>/phase-<n>-spec.md` (see
+  [ADR-0008](../architecture/ADR-0008-implementation-spec-format.md)).
