@@ -58,6 +58,7 @@ a reviewable, dated event.
 | [0003](ADR-0003-tauri-thin-rust-core.md)                 | Tauri Apps — Thin Rust Core, Business Logic in TypeScript      | Accepted | 2026-07-24 |
 | [0004](ADR-0004-shared-rosetta-core.md)                  | Shared Rosetta Core — What's Shared vs. Per-App                | Accepted | 2026-07-24 |
 | [0005](ADR-0005-decentralized-by-construction.md)        | Decentralized by Construction — Git Semantics at Every Scale   | Proposed | 2026-07-31 |
+| [0006](ADR-0006-ts7-bun-toolchain.md)                    | TypeScript 7 + Bun Toolchain                                   | Accepted | 2026-07-31 |
 | [0007](ADR-0007-chronicle-commit-type.md)                | The `chronicle:` Commit Type — Machine-Authored Ledger Commits | Accepted | 2026-07-31 |
 
 ## Conventions
