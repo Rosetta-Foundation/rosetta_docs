@@ -1,8 +1,9 @@
 # Vision
 
-> This document describes *where Rosetta is going* — the journey knowledge takes
-> through the platform. For *why Rosetta exists* and the principles it will not
-> compromise, see [FOUNDATIONS.md](FOUNDATIONS.md).
+> This document describes _where Rosetta is going_ — the journey knowledge takes
+> through the platform. For _why Rosetta exists_ and the principles it will not
+> compromise, see the constitution in [`foundations/`](../foundations/README.md);
+> the engineering-era origin story is [FOUNDATIONS.md](FOUNDATIONS.md).
 
 ---
 
@@ -85,7 +86,7 @@ Not everything should be published.
 
 Not everything should remain private.
 
-Rosetta helps engineers decide what belongs where — *private by default, shared by intention.*
+Rosetta helps engineers decide what belongs where — _private by default, shared by intention._
 
 The mechanism behind this flow is defined in
 [ADR-0002: Personal Chronicle vs. Organizational Chronicle](../architecture/ADR-0002-personal-vs-organizational-chronicle.md).

@@ -2,7 +2,13 @@
 
 ![Rosetta](assets/rosetta-logo.jpg)
 
-> *"Every commit tells part of the story. Rosetta remembers the rest."*
+> _"Every commit tells part of the story. Rosetta remembers the rest."_
+
+> **Note:** this is the **engineering-era origin story** — how Rosetta began
+> and the philosophy of its first domain. The project's constitution — the
+> wider founding context, manifesto, principles, glossary, and settled
+> decisions — lives in [`foundations/`](../foundations/README.md). Engineering
+> is the first domain, not the boundary.
 
 ---
 
