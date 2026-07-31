@@ -12,9 +12,9 @@ supersedes: null
 # PRD-0011: Full-Loop SDLC Automation
 
 > A dynamic multi-agent workflow that takes an epic from intake to merged milestone
-> — decomposing it into product stories, engineering tasks, and a full SDD, then
-> implementing, reviewing, and merging each phase in parallel — with Watson as the
-> only required human at milestone boundaries.
+> — decomposing it into product stories, engineering tasks, and a full implementation
+> spec, then implementing, reviewing, and merging each phase in parallel — with Watson
+> as the only required human at milestone boundaries.
 
 ## 1. Overview & Goals
 
@@ -29,17 +29,18 @@ by bookkeeping, not judgment.
 The missing piece is a **deterministic orchestration layer** that compresses all
 the mechanical work between human judgment calls into a single, auditable,
 resumable workflow run. Watson's judgment is preserved at the two gates that
-actually require it — SDD review before implementation starts, and milestone
-review before the next phase is authorized. Everything else is automated.
+actually require it — implementation-spec review before implementation starts,
+and milestone review before the next phase is authorized. Everything else is
+automated.
 
 ### 1.2 Goals
 
 - Take a single epic or PRD as input and produce a merged, tested milestone with
   no per-step human prompting.
 - Decompose epics into product stories and engineering tasks automatically, using
-  the existing PRD/SDD format as the contract.
-- Generate the SDD and surface it for Watson's review before a line of code is
-  written.
+  the existing PRD / implementation-spec format as the contract.
+- Generate the implementation spec and surface it for Watson's review before a
+  line of code is written.
 - Run implementation, testing, PR creation, Copilot review cycle, CI monitoring,
   and auto-merge in parallel across tasks/stories where there are no dependencies.
 - Capture the workflow run and its outputs as Chronicle artifacts so the org
@@ -61,9 +62,10 @@ review before the next phase is authorized. Everything else is automated.
 
 ### 1.4 Acceptance Criteria
 
-- [ ] Given a PRD ID, the workflow produces a structured SDD (phases, tasks,
-      acceptance criteria) and pauses for Watson's approval before proceeding.
-- [ ] After SDD approval, implementation agents run in parallel per phase/task,
+- [ ] Given a PRD ID, the workflow produces a structured implementation spec
+      (phases, tasks, acceptance criteria) and pauses for Watson's approval
+      before proceeding.
+- [ ] After spec approval, implementation agents run in parallel per phase/task,
       each in worktree isolation, with no shared state conflicts.
 - [ ] Each agent runs the full SDLC finish sequence: tests → push → PR →
       Copilot review cycle → CI monitoring → auto-merge on clean.
@@ -71,8 +73,8 @@ review before the next phase is authorized. Everything else is automated.
       after the third fix attempt (matching the existing PR checks cycle).
 - [ ] The workflow is resumable: a killed or paused run re-uses cached agent results
       and only re-runs changed/new steps.
-- [ ] Workflow outputs (SDD, per-task results, merged SHAs) are committed to the
-      Chronicle as structured artifacts.
+- [ ] Workflow outputs (implementation spec, per-task results, merged SHAs) are
+      committed to the Chronicle as structured artifacts.
 - [ ] Token budget can be specified at invocation (e.g. `+500k`) to scale the
       depth of decomposition and verification.
 
@@ -103,16 +105,17 @@ Phase 1 — Decompose
 
 [HUMAN GATE 1 — Watson reviews story list]
 
-Phase 2 — SDD Generation
+Phase 2 — Spec Generation
   ├── pipeline(stories):
   │     stage 1: generate engineering tasks + acceptance criteria
   │     stage 2: score complexity + surface dependencies
-  └── synthesize → full SDD draft (phased, Chronicle SDD format)
+  └── synthesize → full implementation-spec draft (phased, committed to the
+      Chronicle as a structured artifact)
 
-[HUMAN GATE 2 — Watson approves SDD before implementation]
+[HUMAN GATE 2 — Watson approves the implementation spec before implementation]
 
 Phase 3 — Implement
-  └── pipeline(sdd.phases):
+  └── pipeline(spec.phases):
         stage 1: branch + implement (worktree isolation per task)
         stage 2: run tests
         stage 3: open PR
@@ -134,18 +137,18 @@ const stories = await agent("Parse PRD and extract product stories", {
 });
 // [HUMAN GATE — surface stories, await approval before continuing]
 
-phase("SDD Generation");
-const sdd = await pipeline(
+phase("Spec Generation");
+const spec = await pipeline(
   stories,
   generateTasks,
   scoreDependencies,
-  synthesizeSDD,
+  synthesizeSpec,
 );
-// [HUMAN GATE — surface SDD, await approval]
+// [HUMAN GATE — surface spec, await approval]
 
 phase("Implement");
 await pipeline(
-  sdd.phases,
+  spec.phases,
   implement,
   test,
   openPR,
@@ -178,8 +181,8 @@ interface ProductStory {
   acceptanceCriteria: string[];
 }
 
-// SDD task (output of SDD Generation phase)
-interface SddTask {
+// Spec task (output of Spec Generation phase)
+interface SpecTask {
   storyId: string;
   phase: number;
   title: string;
@@ -218,28 +221,29 @@ interface TaskResult {
 - **Human gate mechanics:** How exactly are the two gates implemented? Options:
   (a) workflow pauses and sends a summary message, Watson replies "approved";
   (b) workflow writes an artifact and Watson triggers the next phase explicitly.
-  To be decided at SDD time.
+  To be decided at spec time.
 - **Dependency ordering in parallel implementation:** Stories with cross-task
   dependencies must be sequenced. The complexity-scoring stage needs to produce
   an ordering that the pipeline respects.
 - **Partial failures:** If 3 of 6 tasks merge cleanly and 3 need review, the
   workflow should surface only the failing ones without blocking the passing ones.
 - **Scope creep in decomposition:** Agents may over-decompose a small PRD.
-  The SDD review gate is the safety valve, but guidance on "right-sizing" stories
+  The spec review gate is the safety valve, but guidance on "right-sizing" stories
   should be in the workflow prompt.
 
 ## 7. Rollout & Phases
 
-1. **Phase 1 — Decompose + SDD generation:** Workflow takes a PRD, produces a
-   structured story list and SDD, pauses at both human gates. No implementation.
-   Validates the decomposition quality before any code is written.
+1. **Phase 1 — Decompose + spec generation:** Workflow takes a PRD, produces a
+   structured story list and implementation spec, pauses at both human gates.
+   No implementation. Validates the decomposition quality before any code is
+   written.
 
 2. **Phase 2 — Single-task implementation loop:** Extend the workflow to implement
    one task end-to-end (branch → implement → tests → PR → Copilot → CI →
    auto-merge). Human gate before and after. Validates the full loop on a
    single task before going parallel.
 
-3. **Phase 3 — Full parallel implementation:** Fan out across all SDD tasks in
+3. **Phase 3 — Full parallel implementation:** Fan out across all spec tasks in
    worktree isolation. Surface failures. Chronicle artifact commit. PRD-0007
    integration for next-phase surfacing.
 
@@ -251,6 +255,6 @@ interface TaskResult {
   epics could be seeded from Chronicle observations rather than written by hand.
 - **ADR generation:** At implementation time, when a significant technical decision
   is made, the workflow could draft the ADR automatically and surface it for
-  Watson's approval alongside the SDD.
+  Watson's approval alongside the implementation spec.
 - **Budget-aware decomposition:** Scale story count and verification depth
   dynamically to the token budget rather than requiring a static directive.

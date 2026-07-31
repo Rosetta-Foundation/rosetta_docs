@@ -50,3 +50,10 @@ sign-off. There is no CLA to sign.
 - Conventional Commits are enforced by the `commit-msg` hook — see
   `CLAUDE.md` for types and examples.
 - Push and open a PR; CI must pass before merge.
+
+## Vocabulary
+
+Docs contributed here must use terminology defined in the
+[foundations glossary](foundations/GLOSSARY.md). Do not reference
+adopter-internal tool, format, or process names — if a concept needs a name,
+define a foundation-neutral term in the glossary in the same change.
