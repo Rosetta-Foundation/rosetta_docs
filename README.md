@@ -28,6 +28,9 @@ instead — one versioned home, PR-reviewable, decoupled from any component.
 - **ADRs** — see [`architecture/README.md`](architecture/README.md).
 - Every artifact is authored to be legible to **both humans and machines**: structured
   frontmatter, list-based content, checkbox acceptance criteria, explicit links.
+- **Git:** Conventional Commits via husky. Default is `f/` / `b/` topic branches + PR — do not
+  commit on `main` unless a human authorizes a documented exception (foundation bootstrap or
+  emergency hotfix; see the workspace root `CLAUDE.md`).
 
 ## Workspace placement
 
