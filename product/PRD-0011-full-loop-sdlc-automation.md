@@ -1,11 +1,11 @@
 ---
 id: PRD-0011
 title: Full-Loop SDLC Automation
-status: Proposed
+status: Accepted
 date: 2026-07-25
 owner: Russ Watson
-related_adrs: []
-related_specs: []
+related_adrs: [ADR-0007, ADR-0008]
+related_specs: [SPEC-PRD-0011-P1, SPEC-PRD-0011-P2, SPEC-PRD-0011-P3]
 supersedes: null
 ---
 
