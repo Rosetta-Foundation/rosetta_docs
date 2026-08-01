@@ -54,7 +54,8 @@ a meeting) with evidence attached.
 note ref). The unit of provenance (ADR-0001).
 
 **envelope** — the wire format for pushed activity: schema version + producer
-provenance + the activity itself (PRD-0015).
+provenance + the activity itself (PRD-0015). Distinct from the blast-radius
+envelope carried by implementation specs (see Conventions).
 
 **artifact** — a captured content object (document, decision, book copy)
 stored in a chronicle and eligible for promotion (PRD-0006).
@@ -85,6 +86,19 @@ self-consistent as promotions land: contradiction checks, review, merge
 producers use `ext:<namespace>/<name>` sources and speak the schema; the
 hardware is never ours (PRD-0015).
 
+**human gate** — a workflow pause only a person can resolve. PRD-0011's
+full-loop SDLC has exactly one: implementation-spec + envelope approval, the
+`Draft → Approved` flip (ADR-0008).
+
+**machine gate** — an automated check at a phase boundary that advances work
+on evidence (executable acceptance criteria, CI, reviewer-agent concurrence,
+envelope compliance) and escalates to a human only on exception (PRD-0011).
+
+**shadow mode** — running a machine gate so it computes and records the
+verdict it would enforce — including would-escalate exceptions — without
+enforcing it. Validates gate behavior against human judgment before
+enforcement is switched on (SPEC-PRD-0011-P2).
+
 ---
 
 ## Conventions
@@ -105,6 +119,17 @@ in `architecture/`).
 scopes one shippable phase: engineering tasks, dependencies, and acceptance
 criteria. The contract between the PRD ("what and why") and the build
 (PRD → phased implementation specs → build). Format and location: ADR-0008.
+
+**blast-radius envelope** — the machine-checkable change budget an
+implementation spec carries: `allowedPaths`, `forbiddenSurfaces`,
+`maxDiffLines`, and token budget. What the human gate approves and machine
+gates enforce. Distinct from the ingestion envelope (PRD-0015; see Knowledge
+Objects) (ADR-0008, PRD-0011).
+
+**verification tier** — the mandatory tag on every implementation-spec
+acceptance criterion: `test:` (scripted, machine-verified), `agent:`
+(agent-driven acceptance), or `manual:` (human judgment; disables
+auto-advance) (ADR-0008).
 
 **stewardship** — the founding philosophy: ownership, influence, and
 technology are temporary; the obligation to leave shared knowledge stronger
