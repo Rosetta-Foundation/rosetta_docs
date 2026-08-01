@@ -39,7 +39,7 @@ them — not only people.
 | [0008](PRD-0008-local-workspace-folders.md)                      | Local Workspace Folders                             | Accepted | ✅ 1                | 2026-07-24 |
 | [0009](PRD-0009-coherence-protocol.md)                           | Org Knowledge Coherence Protocol                    | Proposed | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-07-24 |
 | [0010](PRD-0010-wayfinder-local-app.md)                          | Wayfinder Local App                                 | Proposed | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-07-24 |
-| [0011](PRD-0011-full-loop-sdlc-automation.md)                    | Full-Loop SDLC Automation                           | Proposed | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-07-25 |
+| [0011](PRD-0011-full-loop-sdlc-automation.md)                    | Full-Loop SDLC Automation                           | Accepted | ✅ 1 ✅ 2 ✅ 3      | 2026-07-25 |
 | [0012](PRD-0012-wayfinder-ai-workspace.md)                       | Wayfinder AI Workspace                              | Proposed | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-07-26 |
 | [0013](PRD-0013-markdown-rendering-in-chat.md)                   | Markdown Rendering in Ask Wayfinder Responses       | Proposed | ⬜ 1                | 2026-07-27 |
 | [0014](PRD-0014-light-dark-theme.md)                             | Light & Dark Theme                                  | Proposed | ⬜ 1 ⬜ 2           | 2026-07-27 |
