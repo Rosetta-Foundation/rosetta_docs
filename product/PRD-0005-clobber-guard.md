@@ -1,7 +1,7 @@
 ---
 id: PRD-0005
 title: Regeneration Clobber Guard
-status: Accepted
+status: Shipped
 date: 2026-07-23
 owner: Russ Watson
 related_adrs: [ADR-0002]
@@ -21,7 +21,7 @@ supersedes: null
 
 [PRD-0003](PRD-0003-notes-as-authoritative-input.md) protected **notes** from
 being clobbered by making them authoritative input. But git commits and Claude
-sessions are still *derived per run*: each regeneration rebuilds them from
+sessions are still _derived per run_: each regeneration rebuilds them from
 whatever sources the run can currently see. If a run sees **fewer** sources than
 a prior run — a narrower `--project` scope, a repo whose local `main` is behind
 its remote, an unreachable transcript directory — it rebuilds the day with less
@@ -48,8 +48,8 @@ refuse to persist unless the user explicitly forces it.
 ### 1.3 Non-Goals
 
 - Not merging old and new activity — the guard blocks the destructive write; it does not union prior and fresh activity (that would resurrect genuinely-deleted work). The fix for a scope mistake is to re-run with the correct scope.
-- Not fetching from remotes or scanning all branches — the guard reports the subset condition; correcting *why* the scope was narrow (stale local main, wrong `--project`) stays the operator's responsibility (see PRD-0002's discovery model).
-- Not protecting against content *changes* to the same activity id — only against activity disappearing.
+- Not fetching from remotes or scanning all branches — the guard reports the subset condition; correcting _why_ the scope was narrow (stale local main, wrong `--project`) stays the operator's responsibility (see PRD-0002's discovery model).
+- Not protecting against content _changes_ to the same activity id — only against activity disappearing.
 
 ### 1.4 Acceptance Criteria
 
@@ -133,5 +133,5 @@ Reuses the existing `Activity` type and the structured sidecar from PRD-0002.
 
 ## 8. Future Considerations
 
-- A `--dry-run --diff` mode that reports what a regeneration *would* change (added/dropped) without writing — useful before any backfill.
+- A `--dry-run --diff` mode that reports what a regeneration _would_ change (added/dropped) without writing — useful before any backfill.
 - Warn (not block) when a discovered repo's local `main` is behind its remote — addresses the upstream cause of one clobber vector (stale checkout) rather than just the symptom.

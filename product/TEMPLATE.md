@@ -1,7 +1,7 @@
 ---
 id: PRD-NNNN
 title: <capability name>
-status: Draft # Draft | Proposed | Accepted | Superseded | Deprecated
+status: Draft # Draft | Proposed | Accepted | Shipped | Superseded | Deprecated
 date: YYYY-MM-DD
 owner: <name>
 related_adrs: [] # e.g. [ADR-0002]

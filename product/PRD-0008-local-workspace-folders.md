@@ -1,7 +1,7 @@
 ---
 id: PRD-0008
 title: Local Workspace Folders
-status: Accepted
+status: Shipped
 date: 2026-07-24
 owner: Russ Watson
 related_adrs: []
@@ -88,6 +88,7 @@ team-setup/src/config/
 Paths are relative to `baseDir` (same as all other workspace paths) or absolute.
 
 The merge logic in `update-config`:
+
 1. Load `shared.json` (required).
 2. Load `local.json` (optional — if absent or unreadable, `localFolders = []`).
 3. Pass `localFolders` through to `generateWorkspaceFile`.

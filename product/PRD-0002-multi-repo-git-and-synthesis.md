@@ -1,7 +1,7 @@
 ---
 id: PRD-0002
 title: Multi-Repo Git Discovery & Two-Tier Daily Synthesis
-status: Accepted
+status: Shipped
 date: 2026-07-23
 owner: Russ Watson
 related_adrs: [ADR-0002]
@@ -113,9 +113,9 @@ export interface IGitDiscoveryRepository {
 }
 
 export interface DiscoveryOptions {
-  maxDepth?: number;        // bound the walk
-  ignore?: string[];        // directory names to skip
-  includeMerges?: boolean;  // never hardcoded; passed through to git log
+  maxDepth?: number; // bound the walk
+  ignore?: string[]; // directory names to skip
+  includeMerges?: boolean; // never hardcoded; passed through to git log
 }
 
 // Attribute activity to its origin repository.
