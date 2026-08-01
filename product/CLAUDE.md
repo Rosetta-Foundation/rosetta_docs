@@ -14,4 +14,6 @@ Wayfinder should capture and surface these PRDs as durable "why does this exist"
 structured frontmatter, list-based goals/non-goals, checkbox acceptance criteria, explicit links.
 The end objective is that agents can author, consume, and act on PRDs, not just people.
 
-Start from `TEMPLATE.md`; register each new PRD in `README.md`.
+Start from `TEMPLATE.md`; register each new PRD in the **In flight** table in
+`README.md`. When planned phases and acceptance criteria are complete, flip
+`status: Shipped` and move the row to **Shipped** (do not relocate the file).

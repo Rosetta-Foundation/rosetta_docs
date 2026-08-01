@@ -1,7 +1,7 @@
 ---
 id: PRD-0003
 title: Meeting Notes as Authoritative Input
-status: Accepted
+status: Shipped
 date: 2026-07-23
 owner: Russ Watson
 related_adrs: [ADR-0002]
@@ -19,7 +19,7 @@ supersedes: null
 
 ### 1.1 Purpose
 
-Git commits and Claude sessions are *derived* activity: Chronicle can always
+Git commits and Claude sessions are _derived_ activity: Chronicle can always
 rebuild them from `git log` or the transcripts. Meeting notes are the opposite —
 they are **primary data authored by a human and exist nowhere else**. Today they
 only survive a regeneration because `parseExistingNotes` scrapes them back out of
@@ -73,12 +73,12 @@ Notes are an **input tier**, distinct from the regenerable git/Claude sidecars i
 from source if deleted); notes are authoritative (deletion is permanent), so the
 artifact is the medium humans edit — Markdown, not machine JSON.
 
-| | Git / Claude sidecars (PRD-0002) | Notes artifact (this PRD) |
-| --- | --- | --- |
-| Origin | derived from a source | authored by a human |
-| If deleted | regenerate from source | data lost forever |
-| Treatment | cache — safe to rebuild | authoritative — never regenerated |
-| Format | structured JSON | human-editable Markdown |
+|            | Git / Claude sidecars (PRD-0002) | Notes artifact (this PRD)         |
+| ---------- | -------------------------------- | --------------------------------- |
+| Origin     | derived from a source            | authored by a human               |
+| If deleted | regenerate from source           | data lost forever                 |
+| Treatment  | cache — safe to rebuild          | authoritative — never regenerated |
+| Format     | structured JSON                  | human-editable Markdown           |
 
 Two capture paths, merged by the existing dedup:
 
@@ -123,7 +123,7 @@ and the content-hash `noteId` dedup already in `NotesRepository`.
 - One file per day vs. one per meeting — per-day is simplest; per-meeting adds structure but more files.
 - Structured note fields (attendees, decisions, action items) vs. free-form lines — start free-form, structure later.
 - Ingest source for Phase 2 — calendar chosen (shipped). Granola/Otter/Slack remain open.
-- Conflict handling if a note is edited in the file *and* re-ingested from a tool — dedup by content-hash, but near-duplicates (reworded) may slip through.
+- Conflict handling if a note is edited in the file _and_ re-ingested from a tool — dedup by content-hash, but near-duplicates (reworded) may slip through.
 - Migration correctness for existing days whose only copy of a note is the rendered Markdown.
 
 ## 7. Rollout & Phases
@@ -132,7 +132,7 @@ and the content-hash `noteId` dedup already in `NotesRepository`.
    `NotesStore`; point `NotesRepository` at it; make the rendered section pure
    output; retire `parseExistingNotes` from the preservation path; one-time
    migration from existing rendered notes. Closes the clobbering/data-loss hole.
-2. **Phase 2 — First ingest adapter (calendar):** ✅ *Shipped 2026-07-23 (PR #23).*
+2. **Phase 2 — First ingest adapter (calendar):** ✅ _Shipped 2026-07-23 (PR #23)._
    `CalendarRepository` reads a `.ics` export (RFC 5545, no OAuth, works with any
    provider — Google, Outlook, Apple), emits one `Activity` per in-window meeting
    (title, time, attendees). Merged via content-hash dedup alongside hand-typed

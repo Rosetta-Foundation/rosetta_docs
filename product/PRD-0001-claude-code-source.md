@@ -1,7 +1,7 @@
 ---
 id: PRD-0001
 title: Claude Code Source
-status: Accepted
+status: Shipped
 date: 2026-07-22
 owner: Russ Watson
 related_adrs: [ADR-0002]
@@ -18,8 +18,8 @@ supersedes: null
 
 ### 1.1 Purpose
 
-Git records *what changed* and notes record *what an engineer chose to write
-down*. Neither captures *how the work was reasoned through* — the investigation,
+Git records _what changed_ and notes record _what an engineer chose to write
+down_. Neither captures _how the work was reasoned through_ — the investigation,
 alternatives, and decisions that happen inside Claude Code sessions and are
 otherwise lost. This capability recovers that reasoning into the Daily Chronicle.
 
@@ -50,7 +50,7 @@ otherwise lost. This capability recovers that reasoning into the Daily Chronicle
 
 Serves the engineer first (their private second brain), and later managers and
 agents consuming organizational knowledge. Removes the "I misremember and lose
-the reasoning" pain: the *why* behind the day's work is captured automatically.
+the reasoning" pain: the _why_ behind the day's work is captured automatically.
 
 ## 3. Approach
 
@@ -64,17 +64,20 @@ transcripts stored under a per-project directory. One `Activity` per session:
 
 Two run modes share this extraction:
 
-| | Batch backfill | Live append |
-| --- | --- | --- |
-| Trigger | CLI / on demand | Claude Code Stop hook |
-| Window | any past range | today |
-| Scope | all in-window sessions | the just-ended session |
+|         | Batch backfill         | Live append            |
+| ------- | ---------------------- | ---------------------- |
+| Trigger | CLI / on demand        | Claude Code Stop hook  |
+| Window  | any past range         | today                  |
+| Scope   | all in-window sessions | the just-ended session |
 
 ## 4. Data Contracts
 
 ```ts
 export interface IClaudeCodeRepository {
-  getActivity(window: ChronicleWindow, projectPath?: string): Promise<Activity[]>;
+  getActivity(
+    window: ChronicleWindow,
+    projectPath?: string,
+  ): Promise<Activity[]>;
 }
 ```
 
