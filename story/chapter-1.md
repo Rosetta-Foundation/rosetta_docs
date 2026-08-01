@@ -1,4 +1,5 @@
 # Chapter One
+
 ## Before Civilization
 
 It is tempting to tell the story of civilization through the technologies it produced. We divide history into ages marked by stone, bronze, iron, steam, electricity, and information, as though each new invention propelled humanity into its next chapter. There is truth in that perspective. Our tools have undeniably shaped the world around us, extending the reach of our hands, our senses, and our imagination. Yet I have often wondered whether those inventions were the cause of civilization's progress or merely the visible evidence of something deeper.
