@@ -74,27 +74,27 @@ exception.
 
 ### 1.4 Acceptance Criteria
 
-- [ ] Given a PRD ID, the workflow produces a structured implementation spec
+- [x] Given a PRD ID, the workflow produces a structured implementation spec
       (phases, tasks, executable acceptance criteria, blast-radius envelope)
       and pauses exactly once for Watson's approval before implementation.
-- [ ] After spec approval, implementation agents run in parallel per phase/task,
+- [x] After spec approval, implementation agents run in parallel per phase/task,
       each in worktree isolation, with no shared state conflicts.
-- [ ] Each phase boundary auto-advances when all machine gates pass:
+- [x] Each phase boundary auto-advances when all machine gates pass:
       acceptance-criteria verification suite green, CI green, independent
       reviewer-agent concurrence, and envelope compliance.
-- [ ] Acceptance criteria are verified against the running sandbox, including
+- [x] Acceptance criteria are verified against the running sandbox, including
       agent-driven interface verification, with evidence (test output, agent
       transcript, screenshots) attached to each verdict.
-- [ ] Each merged phase auto-deploys to the sandbox and posts a digest to the
+- [x] Each merged phase auto-deploys to the sandbox and posts a digest to the
       personal queue (PRD-0007); a veto triggers revert.
-- [ ] Watson is interrupted only by exception: reviewer-agent disagreement, a
+- [x] Watson is interrupted only by exception: reviewer-agent disagreement, a
       third failing CI fix attempt, envelope breach, or budget exhaustion.
-- [ ] The workflow is resumable: a killed or paused run re-uses cached agent results
+- [x] The workflow is resumable: a killed or paused run re-uses cached agent results
       and only re-runs changed/new steps.
-- [ ] Workflow outputs (implementation spec, per-phase verdicts, per-task
+- [x] Workflow outputs (implementation spec, per-phase verdicts, per-task
       results, merged SHAs) are committed to the Chronicle as structured
       artifacts.
-- [ ] Token budget can be specified at invocation (e.g. `+500k`) to scale the
+- [x] Token budget can be specified at invocation (e.g. `+500k`) to scale the
       depth of decomposition and verification.
 
 ## 2. Users & Motivation
@@ -306,21 +306,19 @@ interface TaskResult {
 
 ## 7. Rollout & Phases
 
-1. **Phase 1 — Decompose + spec generation:** Workflow takes a PRD, produces a
-   structured story list, implementation spec, and envelope; pauses at the
-   single human gate. No implementation. Validates decomposition and envelope
-   quality before any code is written.
+1. ✅ **Phase 1 — Decompose + spec generation:** Workflow takes a PRD, produces
+   a structured story list, implementation spec, and envelope; pauses at the
+   single human gate. No implementation. Spec: `SPEC-PRD-0011-P1` (`Done`).
 
-2. **Phase 2 — Single-task loop with shadow gates:** Extend the workflow to
-   implement one task end-to-end (branch → implement → verify → PR → reviewer →
-   CI → auto-merge → sandbox deploy). Machine gates compute their verdicts, but
-   Watson still confirms each boundary. Calibrates gate trustworthiness before
-   removing checkpoints.
+2. ✅ **Phase 2 — Single-task loop with shadow gates:** Implement one task
+   end-to-end; machine gates compute verdicts while Watson still confirms each
+   boundary. Spec: `SPEC-PRD-0011-P2` (`Done`); live evidence via
+   `SPEC-LIVE-VALIDATION-P1`.
 
-3. **Phase 3 — Full parallel implementation with live machine gates:** Fan out
-   across all spec tasks in worktree isolation. Auto-advance on green, digest +
-   veto via PRD-0007, sandbox deploy per merged phase, Chronicle artifact
-   commit, PRD-0007 integration for next-phase surfacing.
+3. ✅ **Phase 3 — Full parallel implementation with live machine gates:** Fan
+   out across ready tasks; auto-advance on green; digest + veto via PRD-0007;
+   sandbox deploy; Chronicle artifacts. Spec: `SPEC-PRD-0011-P3` (`Done`);
+   live evidence via `SPEC-LIVE-VALIDATION-P3` / run `p3-live-val`.
 
 ## 8. Future Considerations
 
