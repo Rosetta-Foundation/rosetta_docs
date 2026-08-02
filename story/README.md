@@ -10,6 +10,20 @@ like it ought to exist.
 Vannevar Bush, [_As We May Think_](https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/)
 (1945) — emulate the reasoning process, not the prose.
 
+## Contents
+
+Early-access draft — chapters 1–8. Read in order, or jump ahead. Each chapter
+has Previous / Contents / Next links at the bottom.
+
+1. [Before Civilization](chapter-1.md)
+2. [When Memory Was No Longer Enough](chapter-2.md)
+3. [Growing Up Between Eras](chapter-3.md)
+4. [When Information Became Ordinary](chapter-4.md)
+5. [The Fragility of Context](chapter-5.md)
+6. [Navigating Knowledge](chapter-6.md)
+7. [The Paths Between Ideas](chapter-7.md)
+8. [What Every Generation Leaves Behind](chapter-8.md)
+
 ## Chapter map
 
 | Chapter | Constraint                                                 | Response / core idea                                                    |

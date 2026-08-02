@@ -2,6 +2,8 @@
 
 ## Before Civilization
 
+[Contents](README.md) · [Next: When Memory Was No Longer Enough →](chapter-2.md)
+
 It is tempting to tell the story of civilization through the technologies it produced. We divide history into ages marked by stone, bronze, iron, steam, electricity, and information, as though each new invention propelled humanity into its next chapter. There is truth in that perspective. Our tools have undeniably shaped the world around us, extending the reach of our hands, our senses, and our imagination. Yet I have often wondered whether those inventions were the cause of civilization's progress or merely the visible evidence of something deeper.
 
 Long before there were cities, roads, governments, or written laws, there were people attempting to survive in a world that offered them few obvious advantages. Compared with many of the animals that shared their environment, early humans were neither especially fast nor especially strong. They possessed no natural armor, no formidable claws, and no remarkable speed. If an outside observer had been asked to predict which species would someday cross oceans, split the atom, or leave footprints on the Moon, it is difficult to imagine that these vulnerable primates would have been the obvious choice.
@@ -17,3 +19,7 @@ There is, however, another side to this story. For most of human history, knowle
 Seen from this perspective, the earliest chapters of civilization were not defined primarily by a shortage of intelligence. Humanity has never lacked intelligent people. Rather, we lacked reliable ways to preserve what intelligence discovered. The challenge facing our ancestors was not simply to solve problems, but to ensure those solutions could survive them. Civilization could advance only insofar as knowledge accumulated faster than it disappeared.
 
 This realization suggests a different way of viewing human history. Perhaps the defining inventions of civilization are not those that made individuals more powerful, but those that enabled communities to remember more faithfully, teach more effectively, and build more confidently upon the work of previous generations. If that is true, then civilization has never been built in a single generation. It has always been assembled, piece by piece, by countless people who would never meet one another, each leaving behind something that someone else could continue.
+
+---
+
+[Contents](README.md) · [Next: When Memory Was No Longer Enough →](chapter-2.md)

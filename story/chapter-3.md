@@ -2,6 +2,8 @@
 
 ## Growing Up Between Eras
 
+[← When Memory Was No Longer Enough](chapter-2.md) · [Contents](README.md) · [Next: When Information Became Ordinary →](chapter-4.md)
+
 It is one thing to read about a historical transition. It is another to discover, years later, that you happened to grow up inside one. People living through periods of profound change rarely recognize them as such. History has the advantage of hindsight. Those experiencing it usually have only the ordinary routines of everyday life, unaware that future generations may eventually describe those same years as the beginning of something entirely new.
 
 By the closing decades of the twentieth century, humanity's relationship with knowledge was quietly changing once again. Books remained indispensable, libraries continued to serve their communities, and universities still stood as remarkable centers of learning. Yet something new was beginning to emerge alongside these institutions. Personal computers were appearing in homes, schools, and offices. Telephone lines, once intended solely for conversation, were beginning to carry information as well as voices. Networks that had previously connected governments and universities were gradually becoming accessible to ordinary families. Looking back, it is tempting to see this period as the dawn of the Information Age. Living through it, however, it felt far less dramatic. The transformation arrived one household, one classroom, and one curious child at a time.
@@ -21,3 +23,7 @@ Even so, looking back across those thirty years, one observation seems difficult
 This transformation did not happen all at once, nor did it arrive because of any single invention. It emerged gradually through countless improvements made by engineers, educators, researchers, entrepreneurs, and communities around the world. Looking back, it is difficult not to feel a sense of gratitude for what they collectively accomplished. They helped create a world in which curiosity is no longer constrained as tightly by geography, wealth, or access to institutions as it once was. An extraordinary amount of human knowledge has become available to an extraordinary number of people.
 
 That achievement, however, invites an interesting question. If preserving knowledge became easier, and accessing knowledge became easier, what challenge remained? As my career continued, I found myself returning to that question more often than I realized. At first, I could not quite explain why. I only knew that, despite having more information available than ever before, something still felt incomplete.
+
+---
+
+[← When Memory Was No Longer Enough](chapter-2.md) · [Contents](README.md) · [Next: When Information Became Ordinary →](chapter-4.md)

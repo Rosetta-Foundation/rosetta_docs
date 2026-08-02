@@ -2,6 +2,8 @@
 
 ## The Paths Between Ideas
 
+[← Navigating Knowledge](chapter-6.md) · [Contents](README.md) · [Next: What Every Generation Leaves Behind →](chapter-8.md)
+
 If navigation is the art of moving through knowledge, then paths are what make that movement possible. Some paths are formal and easy to recognize. A table of contents leads a reader through the structure of a book. A citation points from one scholarly work to another. A hyperlink carries a person from one page to the next. An index gathers scattered mentions of a subject into a single place where they can be found again. These are the trails civilization has learned to mark deliberately, and they have proven extraordinarily valuable.
 
 Many of the most important paths, however, never receive such permanent markings. They exist for a time in conversation, in the remembered sequence of decisions that shaped a project, or in the quiet recognition that two problems which appear unrelated are, in fact, variations of the same difficulty. A mentor may spend years helping others see those connections. A researcher may carry in mind the forgotten experiments that explain why a field moved in one direction rather than another. A community may preserve, through stories rather than documents, the reasons its institutions took their present form. When those carriers of the path remain present, the journey feels natural. When they leave, later travelers often find themselves standing among maps that no longer show the terrain that mattered most.
@@ -15,3 +17,7 @@ Perhaps this should not surprise us. Human understanding has always depended upo
 Seen this way, the inheritance every generation leaves behind is incomplete if it consists only of conclusions. Conclusions matter, of course. They are often hard-won. But conclusions without the paths that produced them ask future generations to accept answers without inheriting the means of evaluating, extending, or wisely abandoning them. Continuity depends upon more than the survival of records. It depends upon the survival of enough relationship among those records that a later mind can travel through them with understanding rather than guesswork.
 
 I do not claim that every path can or should be preserved. Much of human thought is provisional, personal, or properly left behind. Still, it seems increasingly clear that civilization has become remarkably skilled at accumulating destinations and comparatively less skilled at preserving the routes by which people arrived there. If earlier generations taught us to share experience, to write it down, to distribute it widely, and to search it quickly, then perhaps our generation is being asked to consider something quieter and more difficult: how to leave behind not only what we concluded, but enough of the journey that those who follow can continue the conversation instead of reconstructing it from fragments.
+
+---
+
+[← Navigating Knowledge](chapter-6.md) · [Contents](README.md) · [Next: What Every Generation Leaves Behind →](chapter-8.md)

@@ -2,6 +2,8 @@
 
 ## What Every Generation Leaves Behind
 
+[← The Paths Between Ideas](chapter-7.md) · [Contents](README.md)
+
 Every generation inherits an unfinished world. That fact is so ordinary that it rarely receives the attention it deserves. Children are born into languages they did not invent, cities they did not build, laws they did not write, and problems they did not create. They also inherit unfinished questions, partial answers, and tools whose original purposes have sometimes been forgotten. Civilization advances not because any single generation completes the work, but because enough of that work remains intelligible for those who follow to continue it.
 
 This places a quieter obligation on those who live in any particular moment. It is not only an obligation to discover something new. It is also an obligation to leave the path behind them in a condition that others can travel. A generation that solves many problems while making its own reasoning impossible to recover may still leave its successors poorer than they appear. The destinations remain. The means of understanding them do not. Progress measured only by the volume of what has been produced can conceal how much continuity has been lost along the way.
@@ -15,3 +17,7 @@ Perhaps this is why the most durable contributions often look modest at the time
 I do not mean that every person must become a historian of their own life or that every organization must preserve every conversation. Much should be allowed to fade. Forgetting can be merciful, and not every trail deserves to be marked. The question is more selective than that. Which relationships among ideas would future people need if they are to build wisely upon what we leave them? Which assumptions, once obvious to us, will become invisible once we are gone? Which paths, if lost, would force those who follow to spend their best energies rediscovering what we already knew?
 
 These are not questions that technology answers by itself. Tools can help or hinder, but the responsibility remains human. Every generation decides, consciously or not, how much of its understanding will remain reachable by the next. That decision is made in classrooms and laboratories, in families and institutions, in the ordinary ways people choose to explain their work to those who were not present when it was done. If civilization is an accumulation of understanding across time, then each of us participates in that accumulation whenever we make the path behind us a little easier for someone else to find.
+
+---
+
+[← The Paths Between Ideas](chapter-7.md) · [Contents](README.md)

@@ -2,6 +2,8 @@
 
 ## Navigating Knowledge
 
+[← The Fragility of Context](chapter-5.md) · [Contents](README.md) · [Next: The Paths Between Ideas →](chapter-7.md)
+
 As these patterns became clearer, another observation gradually emerged. Every major advance in humanity's relationship with knowledge has improved not only our ability to preserve information, but also our ability to navigate it. Writing made ideas persistent, but it also made them easier to revisit. Libraries gathered scattered works into collections that could be organized. The printing press made books abundant enough to justify indexes, references, and standardized editions. Digital networks transformed shelves into searchable databases. Each generation inherited a larger body of knowledge than the one before it, and with that inheritance came a new responsibility: finding better ways to move through it.
 
 This pattern is easy to overlook because successful navigation often becomes invisible. Few of us pause to appreciate the significance of a table of contents, a library catalog, a citation, or a hyperlink. Yet each represents a quiet improvement in civilization's ability to connect one idea with another. A warehouse full of books is valuable, but only if someone can find the one that matters. A collection of research papers becomes dramatically more useful when their references reveal how discoveries evolved over time. Navigation has always been one of civilization's least celebrated achievements, even though progress frequently depends upon it.
@@ -19,3 +21,7 @@ It is against that background that I have begun to notice something quietly diff
 I do not mean to suggest that these systems have solved the problem of understanding. Far from it. Much of what they produce still requires careful evaluation, and much of what matters most about human knowledge remains difficult to capture in any machine. But it does seem possible that we are watching another familiar pattern begin again. Civilization improves its methods of navigation whenever the body of inherited knowledge grows beyond the means previously used to move through it. If that is what is happening now, then the interesting question may not be whether machines can answer every inquiry. It may be whether they can help people travel more faithfully through the relationships that turn information into understanding.
 
 That possibility raised a further question for me. If navigation depends upon relationships, and if those relationships have historically lived primarily in the minds of people who carried them, then what happens to the paths themselves? Documents preserve destinations. Citations and hyperlinks preserve some of the routes between them. Yet many of the most valuable trails — the ones that explain why one idea led to another, which alternatives were abandoned, and how a community gradually arrived at a shared understanding — still fade whenever the people who walked them move on. I began to wonder whether civilization's next challenge was not only to navigate knowledge more effectively, but to preserve more of the journey.
+
+---
+
+[← The Fragility of Context](chapter-5.md) · [Contents](README.md) · [Next: The Paths Between Ideas →](chapter-7.md)
