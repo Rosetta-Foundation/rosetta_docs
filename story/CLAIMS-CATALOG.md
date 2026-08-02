@@ -130,8 +130,8 @@ Legend: **LB** = load-bearing · **Soft?** = candidate wording change if evidenc
 | ID    | Quote / paraphrase                                                                     | Type | LB  | Notes / action                                                                               |
 | ----- | -------------------------------------------------------------------------------------- | ---- | --- | -------------------------------------------------------------------------------------------- |
 | C5-O1 | Many successful orgs rely on a few people who hold relational context                  | O    | ✓✓  | **T2 done** — bus factor / key-developer concentration. Softened “Nearly every” → “Many of.” |
-| C5-O2 | Docs/code remain after departure but capability drops                                  | O/H  | ✓✓  | Empirical support in turnover / knowledge-loss literature                                    |
-| C5-O3 | Pattern not unique to SE (labs, families, communities)                                 | O/P  | ✓   | Historical Parallel / anthropology; don’t overclaim universality                             |
+| C5-O2 | Docs/code remain after departure but capability often drops                            | O/H  | ✓✓  | **T2 done** — turnover knowledge-loss literature (tacit > explicit).                         |
+| C5-O3 | Pattern not unique to SE (labs, families, communities)                                 | O/P  | ✓   | Analogical; softened “Every healthy institution” → “Many…”.                                  |
 | C5-D1 | Context = assumptions, alternatives, conversations, influences — not mere files        | D    | ✓   | Definitional for Rosetta                                                                     |
 | C5-I1 | Continuity across generations depends on relationships harder to preserve than records | I    | ✓   | Spine                                                                                        |
 | C5-I2 | Civilization inherits questions/mistakes/stories held by context                       | I    | ✓   |                                                                                              |
