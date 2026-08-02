@@ -91,8 +91,10 @@ Assertive sentences are inventoried in [`CLAIMS-CATALOG.md`](CLAIMS-CATALOG.md),
 typed per [`../process/`](../process/README.md) (Research Protocol lite,
 epistemic status, adversarial review, historical parallel). Load-bearing
 historical claims get T2/T3 source grounding before the prose hardens;
-normative claims are not “verified” into facts. When adding a chapter, extend
-the catalog in the same change.
+normative claims are not “verified” into facts. Same-lineage adversarial is an
+upper bound only — for a true second opinion, run
+[`CROSS-LINEAGE-ADVERSARIAL-PROMPT.md`](CROSS-LINEAGE-ADVERSARIAL-PROMPT.md).
+When adding a chapter, extend the catalog in the same change.
 
 Reserved for later:
 

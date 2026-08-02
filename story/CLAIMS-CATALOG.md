@@ -60,9 +60,9 @@ Ordered by (load × falsifiability × how much the prose currently asserts).
 | 1   | C2-H1         | Writing appeared independently in several parts of the world                    | T2 done → adversarial second pass   | **Established by evidence\*** (plural pristine inventions; Egypt stimulus edge contested). See [`RESEARCH-GROUNDING.md`](RESEARCH-GROUNDING.md). Prose softened.                               |
 | 2   | C2-H2         | Earliest writing was primarily practical (harvests, trade, law, agreements)     | T2 done                             | **Working hypothesis** (Mesopotamia established; universal practical list softened in ch. 2). See research grounding.                                                                          |
 | 3   | C2-H3         | Writing first allowed knowledge to exist independently of living carriers       | T2 done                             | Softened to **threshold** vs earlier counters/marks (absolute “first” overstated). See research grounding.                                                                                     |
-| 4   | C1-H1 / C2-H0 | Small communities could rely on memory; scale broke that balance                | T2 anthropology / cognitive history | **Working hypothesis** — directionally standard; avoid implying a sharp population cutoff                                                                                                      |
+| 4   | C1-H1 / C2-H0 | Small communities could rely on memory; scale broke that balance                | T2 done                             | **Working hypothesis (directional)** — no Dunbar cutoff; oral/mnemonic scale-ups. See [`RESEARCH-GROUNDING.md`](RESEARCH-GROUNDING.md). Prose already “often.”                                 |
 | 5   | C5-O1→P1      | Orgs depend on few context-carriers; departure destroys continuity despite docs | T2 done                             | **Working hypothesis (strong)** — bus/truck factor + turnover knowledge-loss literature. See [`RESEARCH-GROUNDING.md`](RESEARCH-GROUNDING.md). Prose: “Many of” / “Many healthy institutions.” |
-| 6   | C4-H1 / C6-H1 | Search retrieves documents but not relational understanding                     | T2 HCI / IR / cognitive science     | **Working hypothesis** — strong as _limitation of keyword retrieval_; weaken absolute “cannot”                                                                                                 |
+| 6   | C4-H2 / C6-H2 | Search retrieves documents but not relational understanding                     | T2 done                             | **Working hypothesis (strong for known-item gap)** — exploratory-search literature. Keep “cannot easily.” See research grounding.                                                              |
 | 7   | C6-P1 / C2-P1 | Each coordination limit → new preservation/navigation tool                      | Parallel done                       | **Working hypothesis (bounded)** — khipu/oral systems; tool ≠ only writing. See [`HISTORICAL-PARALLEL.md`](HISTORICAL-PARALLEL.md).                                                            |
 | 8   | C7-I3         | Civilization is better at destinations than paths                               | Parallel + adversarial + Ch. 7 soft | **Working hypothesis (comparative)** — commentary/ADR exceptions in prose. See parallel + adversarial docs.                                                                                    |
 | 9   | C8-N\*        | Intergenerational obligation to leave traversable paths                         | No empirical verifier               | **Normative** — keep; do not fact-check into science                                                                                                                                           |
@@ -90,7 +90,7 @@ Legend: **LB** = load-bearing · **Soft?** = candidate wording change if evidenc
 
 | ID     | Quote / paraphrase                                                                           | Type | LB  | Notes / action                                                                                                                                   |
 | ------ | -------------------------------------------------------------------------------------------- | ---- | --- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| C2-H0  | Small campfire communities: memory “sufficient”; little needed for survival                  | H    | ✓   | Softened to “**often** remained sufficient.” Still needs T2 on scale/oral polities.                                                              |
+| C2-H0  | Small campfire communities: memory “sufficient”; little needed for survival                  | H    | ✓   | Softened to “**often** remained sufficient.” T2 done — directional only; no hard cutoff.                                                         |
 | C2-H0b | Settlement, surplus, cities, trade, law created memory load beyond individuals               | H    | ✓   | Standard agricultural/urbanization narrative — T3 cite                                                                                           |
 | C2-P1  | Success of cooperation created demands cooperation alone couldn’t satisfy                    | P    | ✓   | Historical Parallel                                                                                                                              |
 | C2-H1  | Writing systems arose independently in several regions (at least some inventions)            | H    | ✓✓  | **T2 done** — [`RESEARCH-GROUNDING.md`](RESEARCH-GROUNDING.md). Plural pristine inventions established; Egypt stimulus contested. Prose updated. |
@@ -142,7 +142,7 @@ Legend: **LB** = load-bearing · **Soft?** = candidate wording change if evidenc
 | ----- | --------------------------------------------------------------------------------------- | ---- | --- | ------------------------------------------------------------------- |
 | C6-P1 | Major knowledge advances improve navigation as well as preservation                     | P    | ✓   | Parallel test: writing, libraries, print indexes, hypertext, search |
 | C6-H1 | TOC, catalogs, citations, hyperlinks are underrated navigation tech                     | H/I  |     | Soft; historically defensible                                       |
-| C6-H2 | Search works when you know the query; weak for unknown-unknowns / cross-vocab analogies | H    | ✓   | Strong IR/HCI claim — T2                                            |
+| C6-H2 | Search works when you know the query; weak for unknown-unknowns / cross-vocab analogies | H    | ✓   | T2 done — exploratory search; keep “cannot easily”                  |
 | C6-O1 | Most valuable people navigate relationships, not just store facts                       | O    | ✓   | Ties to C5                                                          |
 | C6-H3 | Tools point to documents; humans perceive meaning relations                             | H/I  | ✓   | Soft absolute; “largely”                                            |
 | C6-O2 | Newer AI systems suggest connections / explore unframed questions; imperfect            | O/H  | ✓   | Fast-moving; date the claim; avoid product pitch                    |
@@ -210,16 +210,17 @@ Memoir and normative passages (most of Ch. 3 personal arc; Ch. 8 oughts) should 
 
 Fill “Basis” during the T2 pass; this is the Adversarial Review closing artifact.
 
-| Claim                                                  | Confidence (draft)                | Basis (to complete)                                          | What would change this                                           |
-| ------------------------------------------------------ | --------------------------------- | ------------------------------------------------------------ | ---------------------------------------------------------------- |
-| C2-H1 Independent (plural) invention of writing        | Established by evidence*          | T2 cite pack in RESEARCH-GROUNDING; Egypt edge contested     | Monogenesis revival with strong archaeological consensus         |
-| C2-H2 Early writing primarily administrative/practical | Working hypothesis (softened)     | Mesopotamia established; universal list removed in prose     | Earliest Mesopotamian corpus shown non-admin                     |
-| C2-H3 Absolute “first” external knowledge              | Softened to threshold             | Tokens already separate data from knower (Schmandt-Besserat) | Proto-systems match writing’s open linguistic scale              |
-| C5-O1/O2 Context-carriers / post-departure loss        | Working hypothesis (strong)*      | T2 pack in RESEARCH-GROUNDING (bus factor, turnover K-loss)  | Evidence that docs alone preserve “why” at scale                 |
-| C4-D1 / C6-H2 Info ≠ understanding; search ≠ relations | Working hypothesis                | IR/HCI + cognitive science                                   | Systems that reliably expose disagreement & assumption structure |
-| C2-P2 / C6-P2 Coordination-limit → tool pattern        | Working hypothesis (bounded)*     | HISTORICAL-PARALLEL (khipu/oral challenge cases)             | Tools appear without load, or load never yields tools            |
-| C7-I3 Destinations ≫ paths                             | Working hypothesis (comparative)* | HISTORICAL-PARALLEL + Ch. 7 soft + ADVERSARIAL-REVIEW        | Path preservation becomes default in ordinary orgs               |
-| C8-N1 Obligation to leave traversable paths            | Normative (not evidential)        | Value commitment                                             | N/A — revise values, not “disprove”                              |
+| Claim                                                  | Confidence (draft)                | Basis (to complete)                                          | What would change this                                                       |
+| ------------------------------------------------------ | --------------------------------- | ------------------------------------------------------------ | ---------------------------------------------------------------------------- |
+| C2-H1 Independent (plural) invention of writing        | Established by evidence*          | T2 cite pack in RESEARCH-GROUNDING; Egypt edge contested     | Monogenesis revival with strong archaeological consensus                     |
+| C2-H2 Early writing primarily administrative/practical | Working hypothesis (softened)     | Mesopotamia established; universal list removed in prose     | Earliest Mesopotamian corpus shown non-admin                                 |
+| C2-H3 Absolute “first” external knowledge              | Softened to threshold             | Tokens already separate data from knower (Schmandt-Besserat) | Proto-systems match writing’s open linguistic scale                          |
+| C5-O1/O2 Context-carriers / post-departure loss        | Working hypothesis (strong)*      | T2 pack in RESEARCH-GROUNDING (bus factor, turnover K-loss)  | Evidence that docs alone preserve “why” at scale                             |
+| C2-H0 Scale vs memory (directional)                    | Working hypothesis                | T2 pack (Dunbar critique + oral mnemonics + khipu)           | Evidence of a hard population cutoff, or that scale never raises memory load |
+| C4-D1 / C6-H2 Info ≠ understanding; search ≠ relations | Working hypothesis (strong)*      | T2 exploratory-search pack in RESEARCH-GROUNDING             | Systems that reliably expose disagreement & assumption structure             |
+| C2-P2 / C6-P2 Coordination-limit → tool pattern        | Working hypothesis (bounded)*     | HISTORICAL-PARALLEL (khipu/oral challenge cases)             | Tools appear without load, or load never yields tools                        |
+| C7-I3 Destinations ≫ paths                             | Working hypothesis (comparative)* | HISTORICAL-PARALLEL + Ch. 7 soft + ADVERSARIAL-REVIEW        | Path preservation becomes default in ordinary orgs                           |
+| C8-N1 Obligation to leave traversable paths            | Normative (not evidential)        | Value commitment                                             | N/A — revise values, not “disprove”                                          |
 
 ---
 
@@ -229,8 +230,10 @@ Fill “Basis” during the T2 pass; this is the Adversarial Review closing arti
 2. ~~T2 for C5-O1/O2 + Ch. 5 softens + README research pointer~~ — same file.
 3. ~~Historical Parallel on C2-P2 / C6-P1 and C7-I3~~ — [`HISTORICAL-PARALLEL.md`](HISTORICAL-PARALLEL.md).
 4. ~~Adversarial pre-mortem (same-lineage upper bound)~~ — [`ADVERSARIAL-REVIEW.md`](ADVERSARIAL-REVIEW.md).
-5. **True cross-lineage or human** adversarial pass on the status table.
-6. T2 for **C2-H0** and **C4/C6** search limits when ready.
+5. **True cross-lineage or human** adversarial pass — paste
+   [`CROSS-LINEAGE-ADVERSARIAL-PROMPT.md`](CROSS-LINEAGE-ADVERSARIAL-PROMPT.md).
+6. ~~T2 for C2-H0 and C4/C6~~ — done in [`RESEARCH-GROUNDING.md`](RESEARCH-GROUNDING.md).
+7. Optional Ch. 2 khipu/oral-mnemonic clause; early-access ship note when ready.
 
 ---
 

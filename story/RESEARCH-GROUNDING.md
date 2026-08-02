@@ -16,6 +16,8 @@ upper bound ([`../process/adversarial-review.md`](../process/adversarial-review.
 
 1. Chapter 2 writing history — **C2-H1**, **C2-H2**, **C2-H3** (2026-08-02)
 2. Chapter 5 organizational context — **C5-O1**, **C5-O2** (and related) (2026-08-02)
+3. Scale vs memory — **C2-H0** (2026-08-02)
+4. Search vs understanding — **C4-H2 / C6-H2** (2026-08-02)
 
 ---
 
@@ -187,10 +189,66 @@ In [`chapter-5.md`](chapter-5.md):
 
 ### Still open (after Ch. 5 cluster)
 
-- T2 for **C2-H0** (scale vs memory / oral polities) — partial challenge cases in
-  [`HISTORICAL-PARALLEL.md`](HISTORICAL-PARALLEL.md)
-- ~~Historical Parallel on C2-P2 / C6-P1 and C7-I3~~ — done (same file)
-- ~~Adversarial pre-mortem on Ch. 2 + Ch. 5~~ — done as
-  [`ADVERSARIAL-REVIEW.md`](ADVERSARIAL-REVIEW.md) (**same-lineage upper bound**;
-  still needs a true cross-lineage or human pass)
-- T2 for **C4/C6** search ≠ understanding when ready
+- ~~T2 for C2-H0~~ — see below
+- ~~T2 for C4/C6 search limits~~ — see below
+- ~~Historical Parallel / same-lineage adversarial~~ — sibling files
+- **True cross-lineage or human** adversarial — run
+  [`CROSS-LINEAGE-ADVERSARIAL-PROMPT.md`](CROSS-LINEAGE-ADVERSARIAL-PROMPT.md)
+
+---
+
+## Research grounding — C2-H0 (scale vs memory)
+
+**Claim (catalog):** Small communities could rely on memory; scale broke that
+balance (campfire → cities).
+
+**Sources consulted (5):**
+
+1. [Lindenfors, Wartel & Lind, “‘Dunbar’s number’ deconstructed,” _Biology Letters_ 17:20210158 (2021)](https://doi.org/10.1098/rsbl.2021.0158) ([author PDF](https://www.lindenfors.se/publications/Lindenfors_et_al_2021.pdf)) — **W1**. Relevance: No reliable hard cognitive group-size limit from primate regressions; confidence intervals make specifying ~150 futile. **Do not** ground the essay on Dunbar’s number.
+2. [EurekAlert summary of the same study](https://www.eurekalert.org/news-releases/674586) — **W5**. Relevance: Accessible statement that a cognitive limit cannot be derived this way.
+3. [Lynne Kelly, _Knowledge and Power in Prehistoric Societies_ (Cambridge)](https://www.cambridge.org/core/books/knowledge-and-power-in-prehistoric-societies/A288E8E359CB6F7F09465F56DFD11549) — **W1/W2**. Relevance: Oral cultures maintain large pragmatic knowledge corpora via mnemonic technologies — memory scales with _technique_, not only with writing.
+4. [World History Encyclopedia — Quipu](https://www.worldhistory.org/Quipu/) — **W4/W5**. Relevance: Large imperial administration without alphabetic writing (see also [`HISTORICAL-PARALLEL.md`](HISTORICAL-PARALLEL.md)).
+5. Ch. 2 essay soft — “**often** remained sufficient” — already applied.
+
+**Aggregate finding:** Directional claim (complexity raises memory/admin load)
+is **Working hypothesis**. Hard cutoffs (population N, “Dunbar”) are
+**unsupported / contested** — avoid. Large non-writing societies use specialist
+keepers + external mnemonic devices; they challenge “only writing solves scale,”
+not “scale creates pressure.”
+
+**Essay implication:** No further prose required beyond existing “often.” Do not
+add Dunbar. Optional later: one clause that oral/mnemonic systems also answer
+scale (if Ch. 2 is revised again).
+
+**Confidence:** Working hypothesis (directional); Speculative if read as a sharp
+cognitive threshold.
+
+---
+
+## Research grounding — C4-H2 / C6-H2 (search ≠ relational understanding)
+
+**Claim (catalog):** Search retrieves documents well for known-item needs but
+does not easily expose relationships, disagreements, assumptions, or
+unknown-unknowns.
+
+**Sources consulted (4):**
+
+1. [White, Muresan & Marchionini, “Report on ACM SIGIR 2006 Workshop on Evaluating Exploratory Search Systems,” _SIGIR Forum_](https://sigir.org/files/forum/2006D/2006d_sigirforum_white.pdf) — **W2**. Relevance: Known-item retrieval is well handled; exploratory needs (learning, investigation, poorly formed queries) are under-served by mainstream engines.
+2. [Ryen W. White & Resa A. Roth, _Exploratory Search: Beyond the Query-Response Paradigm_ (Synthesis Lectures, 2009)](https://doi.org/10.2200/s00174ed1v01y200901icr003) — **W1/W2**. Relevance: Exploratory search is open-ended and iterative (learning/sensemaking), not only lookup; systems and evaluation differ from known-item IR.
+3. [SIGIR 2006 ESS workshop framing (White)](http://ryenwhite.com/eess/) — **W4**. Relevance: Situations where users lack knowledge to formulate queries, must browse complex spaces, or need serendipity — aligns with “question we do not yet know to ask.”
+4. Essay prose already uses “cannot **easily**” (Ch. 4 & 6) — correct hedge.
+
+**Aggregate finding:** **Working hypothesis → well supported** as a limitation of
+_keyword / known-item retrieval_ for exploratory and relational needs. Do not
+claim search “cannot” ever surface relations (faceted search, citations, modern
+assistants partially help). The essay’s “cannot easily” is the right strength.
+
+**Essay implication:** No forced soften. Keep “cannot easily.” Optional later
+T3: one sentence distinguishing lookup vs exploratory search if a reader
+objects.
+
+**Confidence:** Working hypothesis (strong for known-item vs exploratory gap).
+
+**What would change this:** Mainstream systems that routinely expose
+disagreement structure, assumption chains, and cross-vocabulary analogies
+without a well-formed query — at default consumer UX, not research demos.
