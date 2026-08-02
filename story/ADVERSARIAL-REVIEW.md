@@ -74,38 +74,48 @@ later chapters / adversarial human review; do not paper over in Ch. 1–8 soften
 
 ## Claims accepted without enough evidence (still)
 
-| Claim                               | Gap                                                           |
-| ----------------------------------- | ------------------------------------------------------------- |
-| C2-H0 as a sharp cognitive cutoff   | T2 rejects hard cutoffs; directional claim only               |
-| C5-O3 families/labs/communities     | Analogy; not same evidence base as SE                         |
-| C4/C6 as “search can never relate”  | T2 supports known-item gap; absolute “cannot” would overclaim |
-| C2-P2 / C6-P1 as civilizational law | Parallel bounded it; still not Established                    |
+| Claim                                  | Gap                                                                                                                                                                                                         |
+| -------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| C2-H0 as a sharp cognitive cutoff      | T2 rejects hard cutoffs; directional claim only                                                                                                                                                             |
+| C5-O3 families/labs/communities        | Analogy; not same evidence base as SE                                                                                                                                                                       |
+| C4/C6 as “search can never relate”     | T2 supports known-item gap; absolute “cannot” would overclaim                                                                                                                                               |
+| C2-P2 / C6-P1 as civilizational law    | Parallel bounded it; still not Established                                                                                                                                                                  |
+| C1-I3 preservation as _the_ bottleneck | Load-bearing for the whole arc; never adversarially tested against rival explanations (cooperation, tools, agriculture, disease) — see [`CROSS-LINEAGE-REVIEW-RESULTS.md`](CROSS-LINEAGE-REVIEW-RESULTS.md) |
 
 ---
 
 ## Epistemic status table (upper bound)
 
-| Claim                               | Confidence                        | Basis                            | What would change this                                          |
-| ----------------------------------- | --------------------------------- | -------------------------------- | --------------------------------------------------------------- |
-| C2-H1 Plural independent writing    | Established by evidence*          | T2 pack; Egypt edge contested    | Monogenesis consensus                                           |
-| C2-H2 Earliest purposes             | Working hypothesis (softened)     | T2 pack                          | Earliest Mesopotamian corpus non-admin                          |
-| C2-H3 External memory threshold     | Working hypothesis (softened)     | T2 pack                          | Proto-systems match writing’s linguistic scale                  |
-| C5-O1 Context-carriers              | Working hypothesis (strong)*      | T2 bus-factor pack               | Evidence of even knowledge distribution in successful orgs      |
-| C5-O2 Loss despite artifacts        | Working hypothesis (strong)*      | T2 turnover K-loss               | Docs alone preserve “why” at scale                              |
-| C2-P2 / C6-P1 Limit → tool          | Working hypothesis (bounded)*     | Historical parallel              | Tools routinely appear without load, or load never yields tools |
-| C7-I3 Destinations ≫ paths          | Working hypothesis (comparative)* | Historical parallel + Ch. 7 soft | Path preservation becomes default in ordinary orgs              |
-| C2-H0 Scale vs memory               | Working hypothesis (directional)* | T2 pack                          | Hard cutoff revived with consensus, or scale never loads memory |
-| C4-H2 / C6-H2 Search ≠ relations    | Working hypothesis (strong)*      | T2 exploratory-search pack       | Default UX exposes disagreement / assumption chains             |
-| C8-N\* Intergenerational obligation | Normative                         | Value commitment                 | N/A                                                             |
+| Claim                                               | Confidence                        | Basis                                 | What would change this                                                                                                |
+| --------------------------------------------------- | --------------------------------- | ------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| C2-H1 Plural independent writing                    | Established by evidence*          | T2 pack; Egypt edge contested         | Monogenesis consensus                                                                                                 |
+| C2-H2 Earliest purposes                             | Working hypothesis (softened)     | T2 pack                               | Earliest Mesopotamian corpus non-admin                                                                                |
+| C2-H3 External memory threshold                     | Working hypothesis (softened)     | T2 pack                               | Proto-systems match writing’s linguistic scale                                                                        |
+| C5-O1 Context-carriers                              | Working hypothesis (moderate)†    | T2 bus-factor pack                    | Evidence of even knowledge distribution in successful orgs; representative (non-OSS-only) sample                      |
+| C5-O2 Loss despite artifacts                        | Working hypothesis (moderate)†    | T2 turnover K-loss                    | Docs alone preserve “why” at scale, independent of transfer practices                                                 |
+| C2-P2 / C6-P1 Limit → tool                          | Working hypothesis (bounded)*     | Historical parallel                   | Tools routinely appear without load, or load never yields tools; or societal contraction as a third outcome†          |
+| C7-I3 Destinations ≫ paths                          | Working hypothesis (comparative)* | Historical parallel + Ch. 7 soft      | Path preservation becomes default in ordinary orgs; legal/regulatory record-keeping is broader than Talmud/ADR alone† |
+| C2-H0 Scale vs memory                               | Working hypothesis (directional)* | T2 pack                               | Hard cutoff revived with consensus, or scale never loads memory                                                       |
+| C4-H2 / C6-H2 Search ≠ relations                    | Working hypothesis (strong)*      | T2 exploratory-search pack            | Default UX exposes disagreement / assumption chains; undated Ch.4 claim ages fast†                                    |
+| C1-I3 Bottleneck was preservation, not intelligence | Interpretive thesis (unresolved)† | Essay framing only — no research pack | Steelmanning cooperation/tool-making/agriculture/disease as rival bottlenecks                                         |
+| C6-O2 AI systems aid navigation (mid-2020s)         | Speculative / time-bound†         | Author observation, dated in prose    | Recheck against current default consumer search/assistant UX                                                          |
+| C8-N\* Intergenerational obligation                 | Normative                         | Value commitment                      | N/A                                                                                                                   |
 
-\*Upper bound — same-lineage review only.
+\*Upper bound — same-lineage review only. †Added or lowered by
+[`CROSS-LINEAGE-REVIEW-RESULTS.md`](CROSS-LINEAGE-REVIEW-RESULTS.md) (genuine
+different-model pass); confidence only ever moved down or added, never raised,
+from that pass.
 
 ---
 
 ## Recommended follow-ups
 
-1. **True cross-lineage pass** — run
-   [`CROSS-LINEAGE-ADVERSARIAL-PROMPT.md`](CROSS-LINEAGE-ADVERSARIAL-PROMPT.md)
-   in a different model family (or human).
+1. ~~True cross-lineage pass~~ — done, see
+   [`CROSS-LINEAGE-REVIEW-RESULTS.md`](CROSS-LINEAGE-REVIEW-RESULTS.md). Still
+   recommend an out-of-tool human or separately-hosted model pass before
+   treating this as fully closed (see that file's lineage caveat).
 2. Human historian or SE KM reviewer on C2-H1 and C5-O2.
-3. ~~Optional Ch. 2 oral/mnemonic clause~~ — applied; file cross-lineage results when available.
+3. ~~Optional Ch. 2 oral/mnemonic clause~~ — applied.
+4. ~~Time-anchor Chapter 4's search paragraph~~ — applied.
+5. Give **C1-I3** (the Chapter 1 thesis) a real adversarial pass of its own —
+   flagged twice now as unresolved and load-bearing for the whole arc.

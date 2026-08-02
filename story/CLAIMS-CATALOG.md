@@ -198,7 +198,8 @@ exceptions named.
 Still candidates:
 
 1. **C3-H2** — acknowledge remaining access inequalities when saying “ordinary.”
-2. **C4-H2 / C6-H2** — keep “cannot easily”; avoid “cannot.”
+2. ~~**C4-H2 / C6-H2** time-anchor~~ — Ch. 4 now reads “For most of the era I
+   am describing…”; keep “cannot easily,” avoid “cannot.”
 3. ~~**C6-O2** time-stamp~~ — “mid-2020s” in Ch. 6.
 4. ~~Optional Ch. 2 clause on non-written external records~~ — applied (Andean
    knotted-string / mnemonic architectures).
@@ -211,17 +212,21 @@ Memoir and normative passages (most of Ch. 3 personal arc; Ch. 8 oughts) should 
 
 Fill “Basis” during the T2 pass; this is the Adversarial Review closing artifact.
 
-| Claim                                                  | Confidence (draft)                | Basis (to complete)                                          | What would change this                                                       |
-| ------------------------------------------------------ | --------------------------------- | ------------------------------------------------------------ | ---------------------------------------------------------------------------- |
-| C2-H1 Independent (plural) invention of writing        | Established by evidence*          | T2 cite pack in RESEARCH-GROUNDING; Egypt edge contested     | Monogenesis revival with strong archaeological consensus                     |
-| C2-H2 Early writing primarily administrative/practical | Working hypothesis (softened)     | Mesopotamia established; universal list removed in prose     | Earliest Mesopotamian corpus shown non-admin                                 |
-| C2-H3 Absolute “first” external knowledge              | Softened to threshold             | Tokens already separate data from knower (Schmandt-Besserat) | Proto-systems match writing’s open linguistic scale                          |
-| C5-O1/O2 Context-carriers / post-departure loss        | Working hypothesis (strong)*      | T2 pack in RESEARCH-GROUNDING (bus factor, turnover K-loss)  | Evidence that docs alone preserve “why” at scale                             |
-| C2-H0 Scale vs memory (directional)                    | Working hypothesis                | T2 pack (Dunbar critique + oral mnemonics + khipu)           | Evidence of a hard population cutoff, or that scale never raises memory load |
-| C4-D1 / C6-H2 Info ≠ understanding; search ≠ relations | Working hypothesis (strong)*      | T2 exploratory-search pack in RESEARCH-GROUNDING             | Systems that reliably expose disagreement & assumption structure             |
-| C2-P2 / C6-P2 Coordination-limit → tool pattern        | Working hypothesis (bounded)*     | HISTORICAL-PARALLEL (khipu/oral challenge cases)             | Tools appear without load, or load never yields tools                        |
-| C7-I3 Destinations ≫ paths                             | Working hypothesis (comparative)* | HISTORICAL-PARALLEL + Ch. 7 soft + ADVERSARIAL-REVIEW        | Path preservation becomes default in ordinary orgs                           |
-| C8-N1 Obligation to leave traversable paths            | Normative (not evidential)        | Value commitment                                             | N/A — revise values, not “disprove”                                          |
+| Claim                                                  | Confidence (draft)                | Basis (to complete)                                          | What would change this                                                                                                    |
+| ------------------------------------------------------ | --------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
+| C2-H1 Independent (plural) invention of writing        | Established by evidence*          | T2 cite pack in RESEARCH-GROUNDING; Egypt edge contested     | Monogenesis revival with strong archaeological consensus                                                                  |
+| C2-H2 Early writing primarily administrative/practical | Working hypothesis (softened)     | Mesopotamia established; universal list removed in prose     | Earliest Mesopotamian corpus shown non-admin                                                                              |
+| C2-H3 Absolute “first” external knowledge              | Softened to threshold             | Tokens already separate data from knower (Schmandt-Besserat) | Proto-systems match writing’s open linguistic scale                                                                       |
+| C5-O1/O2 Context-carriers / post-departure loss        | Working hypothesis (moderate)†    | T2 pack in RESEARCH-GROUNDING (bus factor, turnover K-loss)  | Representative (non-OSS-only) sample; docs alone preserve “why” at scale                                                  |
+| C2-H0 Scale vs memory (directional)                    | Working hypothesis                | T2 pack (Dunbar critique + oral mnemonics + khipu)           | Evidence of a hard population cutoff, or that scale never raises memory load                                              |
+| C4-D1 / C6-H2 Info ≠ understanding; search ≠ relations | Working hypothesis (strong)*      | T2 exploratory-search pack in RESEARCH-GROUNDING             | Systems that reliably expose disagreement & assumption structure                                                          |
+| C2-P2 / C6-P2 Coordination-limit → tool pattern        | Working hypothesis (bounded)*     | HISTORICAL-PARALLEL (khipu/oral challenge cases)             | Tools appear without load, or load never yields tools; or contraction†                                                    |
+| C7-I3 Destinations ≫ paths                             | Working hypothesis (comparative)* | HISTORICAL-PARALLEL + Ch. 7 soft + ADVERSARIAL-REVIEW        | Path preservation becomes default in ordinary orgs; legal/regulatory record-keeping is broader than the cited exceptions† |
+| C1-I3 Bottleneck was preservation, not intelligence    | Interpretive thesis (unresolved)† | Essay framing only — never adversarially tested              | Steelman cooperation / tool-making / agriculture / disease as rival bottlenecks                                           |
+| C8-N1 Obligation to leave traversable paths            | Normative (not evidential)        | Value commitment                                             | N/A — revise values, not “disprove”                                                                                       |
+
+†Lowered or added by a genuine cross-lineage pass — see
+[`CROSS-LINEAGE-REVIEW-RESULTS.md`](CROSS-LINEAGE-REVIEW-RESULTS.md).
 
 ---
 
@@ -231,11 +236,14 @@ Fill “Basis” during the T2 pass; this is the Adversarial Review closing arti
 2. ~~T2 for C5-O1/O2 + Ch. 5 softens + README research pointer~~ — same file.
 3. ~~Historical Parallel on C2-P2 / C6-P1 and C7-I3~~ — [`HISTORICAL-PARALLEL.md`](HISTORICAL-PARALLEL.md).
 4. ~~Adversarial pre-mortem (same-lineage upper bound)~~ — [`ADVERSARIAL-REVIEW.md`](ADVERSARIAL-REVIEW.md).
-5. **True cross-lineage or human** adversarial pass — paste
-   [`CROSS-LINEAGE-ADVERSARIAL-PROMPT.md`](CROSS-LINEAGE-ADVERSARIAL-PROMPT.md).
+5. ~~True cross-lineage adversarial pass~~ — done, see
+   [`CROSS-LINEAGE-REVIEW-RESULTS.md`](CROSS-LINEAGE-REVIEW-RESULTS.md). An
+   out-of-tool human or separately-hosted model pass is still recommended
+   before treating this as fully closed.
 6. ~~T2 for C2-H0 and C4/C6~~ — done in [`RESEARCH-GROUNDING.md`](RESEARCH-GROUNDING.md).
 7. ~~Ch. 2 khipu/oral-mnemonic clause + early-access ship note~~ — done.
-8. Run cross-lineage prompt (human or other model family); file results.
+8. **C1-I3** (Ch. 1 thesis: preservation as _the_ bottleneck) — needs its own
+   adversarial pass; flagged as unresolved twice now.
 9. Draft later chapters when ready (paths practice → Rosetta as consequence).
 
 ---

@@ -27,9 +27,10 @@ research layer (not inline footnotes): see
 [`RESEARCH-GROUNDING.md`](RESEARCH-GROUNDING.md),
 [`HISTORICAL-PARALLEL.md`](HISTORICAL-PARALLEL.md),
 [`ADVERSARIAL-REVIEW.md`](ADVERSARIAL-REVIEW.md), and
-[`CLAIMS-CATALOG.md`](CLAIMS-CATALOG.md). For a true second-opinion pass on
-confidence ratings, use
-[`CROSS-LINEAGE-ADVERSARIAL-PROMPT.md`](CROSS-LINEAGE-ADVERSARIAL-PROMPT.md).
+[`CLAIMS-CATALOG.md`](CLAIMS-CATALOG.md). A genuine cross-lineage
+second-opinion pass has been run — see
+[`CROSS-LINEAGE-REVIEW-RESULTS.md`](CROSS-LINEAGE-REVIEW-RESULTS.md)
+(prompt: [`CROSS-LINEAGE-ADVERSARIAL-PROMPT.md`](CROSS-LINEAGE-ADVERSARIAL-PROMPT.md)).
 To challenge a sentence, open a
 [Challenge a claim](https://github.com/Rosetta-Foundation/rosetta_docs/issues/new?template=challenge-claim.yml)
 issue.
