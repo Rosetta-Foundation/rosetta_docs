@@ -53,3 +53,7 @@ Still reserved for later chapters:
 6. The manuscript should remain true even if Rosetta disappears.
 
 See [`WRITING-CONTEXT.md`](WRITING-CONTEXT.md) for the full handoff brief.
+
+For claim typing and Civic Blueprint–style verification priorities, see
+[`CLAIMS-CATALOG.md`](CLAIMS-CATALOG.md) (writer/reviewer instrument, not part of
+the essay).
