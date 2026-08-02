@@ -17,7 +17,9 @@ has Previous / Contents / Next links at the bottom.
 
 Historical and organizational claims in the essay are grounded in a separate
 research layer (not inline footnotes): see
-[`RESEARCH-GROUNDING.md`](RESEARCH-GROUNDING.md) and
+[`RESEARCH-GROUNDING.md`](RESEARCH-GROUNDING.md),
+[`HISTORICAL-PARALLEL.md`](HISTORICAL-PARALLEL.md),
+[`ADVERSARIAL-REVIEW.md`](ADVERSARIAL-REVIEW.md), and
 [`CLAIMS-CATALOG.md`](CLAIMS-CATALOG.md). To challenge a sentence, open a
 [Challenge a claim](https://github.com/Rosetta-Foundation/rosetta_docs/issues/new?template=challenge-claim.yml)
 issue.
