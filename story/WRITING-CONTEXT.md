@@ -77,6 +77,14 @@ Technology is not the hero. Human coordination is.
 7. Paths between ideas — destinations survive more readily than routes
 8. Intergenerational responsibility — abundance is not yet inheritance
 
+### Reader navigation (early access)
+
+`README.md` holds the clickable **Contents** list (chapter subtitles). Each
+`chapter-N.md` has a one-line nav under the subtitle and a matching footer
+after a `---` rule: Previous · Contents · Next (relative links). When adding a
+chapter, update Contents, the previous chapter’s Next links, and the new
+chapter’s nav in the same change.
+
 Reserved for later:
 
 - What a practice of preserving paths might require (still philosophical)

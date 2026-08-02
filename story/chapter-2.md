@@ -2,6 +2,8 @@
 
 ## When Memory Was No Longer Enough
 
+[← Before Civilization](chapter-1.md) · [Contents](README.md) · [Next: Growing Up Between Eras →](chapter-3.md)
+
 If the earliest generations of humanity learned that knowledge could be shared, they eventually encountered a different challenge altogether. The communities that first gathered around campfires were small enough that memory, however imperfect, remained sufficient. Families remembered their histories. Hunters remembered the changing seasons. Elders carried traditions, stories, and practical wisdom that could be passed from one generation to the next. Although much was undoubtedly forgotten, relatively little needed to be remembered for a community of a few dozen or even a few hundred people to survive. That balance did not last. As people settled into permanent communities, cultivated the land, and produced food in greater abundance than immediate survival required, villages gradually became towns, and towns eventually became cities. Trade expanded beyond neighboring communities. Laws governed larger populations. Harvests had to be measured. Property had to be recorded. Agreements had to endure beyond a handshake. The success of one season increasingly depended upon remembering what had happened in the last. Civilization had become something too large for any individual, or even any generation, to hold entirely in memory.
 
 This challenge was unlike those that had come before. Human memory had not suddenly become weaker, nor had people become less intelligent. Rather, civilization itself had become more complex than the systems that had carried it thus far. The very success of cooperation created new demands that cooperation alone could no longer satisfy. A society capable of producing more knowledge also became a society with more knowledge to lose.
@@ -13,3 +15,7 @@ Seen from a distance, writing appears less like an isolated invention and more l
 This question continues to echo throughout history because memory alone has never been the ultimate goal. Civilization does not preserve knowledge simply to admire the past. It preserves knowledge so that each generation may begin where the last one ended rather than where it began. Every preserved observation, every recorded experiment, every copied manuscript, and every carefully maintained archive represents an attempt to reduce the amount of human effort that must be repeated. Progress depends not only upon discovering something new, but upon ensuring that future generations are free to spend their energy exploring questions that have not already been answered.
 
 Perhaps this is one of the quieter patterns hidden beneath the history of civilization. Each time humanity encountered a limit to its ability to coordinate, it sought ways to extend that limit. We learned to share experience when individual learning was not enough. We learned to preserve knowledge when memory was no longer enough. In doing so, civilization became something remarkable: not simply a collection of people living at the same moment, but an accumulation of understanding stretching across generations, with each generation entrusted to carry the conversation a little farther than the last.
+
+---
+
+[← Before Civilization](chapter-1.md) · [Contents](README.md) · [Next: Growing Up Between Eras →](chapter-3.md)

@@ -2,6 +2,8 @@
 
 ## When Information Became Ordinary
 
+[← Growing Up Between Eras](chapter-3.md) · [Contents](README.md) · [Next: The Fragility of Context →](chapter-5.md)
+
 One of the more surprising changes I witnessed over the course of my career did not arrive with a dramatic announcement or a single technological breakthrough. It emerged gradually, almost quietly, until one day it became difficult to remember that things had ever been different. Early in my years as a software engineer, a significant portion of solving any technical problem involved finding information in the first place. Documentation was often incomplete, books became outdated almost as soon as they were printed, and search engines were still learning how to navigate an expanding web. Useful answers might be buried within mailing lists, scattered across obscure web pages, or preserved only in the memories of colleagues who had encountered the same problem years before. Progress depended as much upon locating knowledge as it did upon understanding it.
 
 Over time, however, that experience began to change. Search engines improved dramatically. Open source software flourished. Documentation became easier to publish and easier to update. Communities formed around nearly every programming language, framework, and technology imaginable. Questions that had once consumed an afternoon of searching could often be answered within minutes, and problems that had once required access to specialists became approachable by anyone willing to learn. Looking back, it is difficult not to see this as another extraordinary chapter in humanity's long effort to preserve and distribute knowledge. The barriers separating curiosity from information had fallen farther than I suspect many of us appreciated while we were living through it.
@@ -15,3 +17,7 @@ Perhaps this should not surprise us. Human beings have never learned primarily b
 Viewed through that lens, the progression begins to look familiar once more. Each time civilization extended its ability to preserve and distribute knowledge, it eventually encountered a subtler difficulty that the previous solution had not addressed. Over the past several centuries, we became extraordinarily successful at making information available at scales previous generations could scarcely have imagined. If history is any guide, it should not surprise us that solving one limitation would gradually reveal another.
 
 It seems entirely possible that this is the question our generation has inherited. We have become remarkably good at making information available. We are still learning how to transform that abundance into understanding. Somewhere within that distinction lies a problem I found myself returning to repeatedly throughout my career, long before I had the language to describe it clearly. I simply knew that despite having more information available than ever before, I still spent an extraordinary amount of time trying to connect ideas that already existed.
+
+---
+
+[← Growing Up Between Eras](chapter-3.md) · [Contents](README.md) · [Next: The Fragility of Context →](chapter-5.md)
