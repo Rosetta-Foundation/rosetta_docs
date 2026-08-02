@@ -15,6 +15,13 @@ Vannevar Bush, [_As We May Think_](https://www.theatlantic.com/magazine/archive/
 Early-access draft — chapters 1–8. Read in order, or jump ahead. Each chapter
 has Previous / Contents / Next links at the bottom.
 
+Historical and organizational claims in the essay are grounded in a separate
+research layer (not inline footnotes): see
+[`RESEARCH-GROUNDING.md`](RESEARCH-GROUNDING.md) and
+[`CLAIMS-CATALOG.md`](CLAIMS-CATALOG.md). To challenge a sentence, open a
+[Challenge a claim](https://github.com/Rosetta-Foundation/rosetta_docs/issues/new?template=challenge-claim.yml)
+issue.
+
 1. [Before Civilization](chapter-1.md)
 2. [When Memory Was No Longer Enough](chapter-2.md)
 3. [Growing Up Between Eras](chapter-3.md)

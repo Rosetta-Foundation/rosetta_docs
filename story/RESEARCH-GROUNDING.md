@@ -1,17 +1,21 @@
-# Research grounding — Chapter 2 historical cluster
+# Research grounding — story claim clusters
 
-T2 gap-close for load-bearing claims **C2-H1**, **C2-H2**, and **C2-H3** in
+T2 gap-close packs for load-bearing claims in
 [`CLAIMS-CATALOG.md`](CLAIMS-CATALOG.md), per
 [`../process/research-protocol.md`](../process/research-protocol.md).
 
 **Scope:** T2 targeted gap-close (not a T1 digest sweep).  
-**Essay impact:** wording softens applied in [`chapter-2.md`](chapter-2.md) where
-the aggregate finding required them.  
-**Verification:** citation-integrity self-check by authoring agent (2026-08-02) —
-URLs resolved at write time; tiers labeled honestly; quotes checked against
-fetched source text. Prefer a **different** session/model for a second pass
-before treating confidence as more than an upper bound
-([`../process/adversarial-review.md`](../process/adversarial-review.md)).
+**Essay impact:** wording softens applied in chapter files where aggregate
+findings required them.  
+**Verification:** citation-integrity self-check by authoring agent — URLs
+resolved at write time; tiers labeled honestly. Prefer a **different**
+session/model for a second pass before treating confidence as more than an
+upper bound ([`../process/adversarial-review.md`](../process/adversarial-review.md)).
+
+**Clusters in this file**
+
+1. Chapter 2 writing history — **C2-H1**, **C2-H2**, **C2-H3** (2026-08-02)
+2. Chapter 5 organizational context — **C5-O1**, **C5-O2** (and related) (2026-08-02)
 
 ---
 
@@ -131,8 +135,58 @@ In [`chapter-2.md`](chapter-2.md):
 
 ---
 
-## Still open (not this PR)
+## Still open (after Ch. 2 cluster)
 
-- T2 for **C2-H0** (scale vs memory) and **C5** org context-loss
+- T2 for **C2-H0** (scale vs memory / oral polities) — light “often” soft already applied
 - Historical Parallel on **C2-P2 / C6-P1** pattern spine
-- Cross-lineage adversarial pass on this status table
+- Cross-lineage adversarial pass on Ch. 2 + Ch. 5 status tables
+
+---
+
+## Research grounding — C5-O1 / C5-O2 (context-carriers & post-departure loss)
+
+**Claims (catalog):** Successful orgs rely on a few people who hold relational
+context (**C5-O1**); after they leave, docs/code often remain but capability to
+build on the past drops (**C5-O2**). Related: pattern not unique to SE (**C5-O3**);
+context ≠ mere files (**C5-D1**).
+
+**Sources consulted (6):**
+
+1. [Elgun Jabrayilzade et al., “Bus Factor In Practice,” ICSE-SEIP 2022 / arXiv:2202.01523](https://arxiv.org/abs/2202.01523) ([PDF](https://arxiv.org/pdf/2202.01523)) — **W2**. Relevance: Survey of 269 engineers treats bus factor as an important collective-development risk; multimodal estimation uses reviews/meetings _in addition to_ VCS — supporting the essay’s point that critical knowledge is not only in repositories.
+2. [Guilherme Avelino et al., “Algorithms for Estimating Truck Factors: A Comparative Study,” _Software Quality Journal_ (author PDF)](https://homepages.dcc.ufmg.br/~mtov/pub/2019-sqj.pdf) — **W1/W2**. Relevance: Truck/bus factor as concentration of knowledge among key developers; empirical validation against open-source team surveys; commit-based measures of who must leave before a project is incapacitated.
+3. [Peter C. Rigby et al., “Quantifying and mitigating turnover-induced knowledge loss,” ICSE 2016](https://doi.org/10.1145/2884781.2884851) — **W1**. Relevance: Survivors/newcomers maintaining abandoned code show reduced productivity and more mistakes; docs/code without skilled carriers lose utility; simplistic truck-factor estimates can exaggerate loss, but turnover risk is real and mitigable via successors.
+4. [Mathieu Nassif & Martin P. Robillard, “Turnover-induced knowledge loss in practice,” ESEC/FSE 2021](https://doi.org/10.1145/3468264.3473923) — **W1**. Relevance: Interviews with 27 professionals across three companies; framework for contexts and implications of knowledge loss — practitioner confirmation that departure impacts quality/productivity even when artifacts remain.
+5. [“Knowledge loss induced by organizational member turnover: a review of empirical literature…” _The Learning Organization_ (Part I)](https://doi.org/10.1108/tlo-09-2022-0107) — **W1**. Relevance: Systematic review: turnover is a primary antecedent of knowledge loss; **tacit** knowledge loss is typically more harmful than loss of explicit/documented knowledge — aligns with “repositories intact, continuity damaged.”
+6. [“Bus factor,” Wikipedia (survey of SE usage + study summaries)](https://en.wikipedia.org/wiki/Bus_factor) — **W4**. Relevance: Accessible definition plus summary that many popular GitHub projects show very small bus factors (often ≤2) in published analyses — concentration is common, not rare.
+
+**Aggregate finding:**
+
+- **C5-O1 / C5-O2 in software organizations:** **Working hypothesis → strongly corroborated.** Independent SE research documents knowledge concentration, practitioner concern, and post-turnover degradation even when artifacts remain. Multimodal bus-factor work specifically flags meetings/reviews as high-impact knowledge channels — i.e. relational context outside files.
+- **Caveats (do not overclaim):** Rigby et al. warn simplistic truck-factor numerics can _exaggerate_ disaster scenarios; not every departure is catastrophic; successors and knowledge transfer mitigate loss. The essay’s “often became less capable” already hedges; keep that soft language.
+- **C5-O3 beyond SE (labs, families, communities):** **Working hypothesis / illustrative extension.** Org-learning literature on turnover→knowledge loss generalizes past software, but families/communities are **analogy**, not the same empirical base. Soft absolute “every healthy institution.”
+
+**Essay implication:** Light softens only — “Nearly every” → “Many of”; “Every healthy institution appears” → “Many healthy institutions appear.” Keep the docs-remain-but-why-fades core; it is the best-supported load-bearing beat.
+
+**Confidence:**
+
+| Claim                                         | Confidence                                               |
+| --------------------------------------------- | -------------------------------------------------------- |
+| C5-O1 Few context-carriers (SE/orgs)          | Working hypothesis (strong empirical cousins)            |
+| C5-O2 Post-departure loss despite artifacts   | Working hypothesis (strong)                              |
+| C5-O3 Universal across institution types      | Speculative / analogical — softened                      |
+| C5-D1 Context = relationships, not mere files | Definitional + supported by tacit-vs-explicit literature |
+
+**What would change this:** Evidence that documented artifacts alone routinely preserve decision rationale at scale after key-person departure; or that knowledge is typically evenly distributed in successful orgs.
+
+### Prose changes applied (Chapter 5)
+
+In [`chapter-5.md`](chapter-5.md):
+
+1. “Nearly every successful organization” → “**Many of the** successful organizations”
+2. “Every healthy institution appears” → “**Many healthy institutions appear**”
+
+### Still open (after Ch. 5 cluster)
+
+- T2 for **C2-H0** (scale vs memory / oral polities)
+- Historical Parallel on **C2-P2 / C6-P1** and **C7-I3**
+- Cross-lineage adversarial pass on Ch. 2 + Ch. 5 tables
