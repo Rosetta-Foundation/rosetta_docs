@@ -33,10 +33,9 @@ powerful family, not the only one. Khipu and oral-spatial systems are
 challenging cases for “writing appeared because memory failed,” and supporting
 cases for “externalization appears under load.”
 
-**Prose implication:** Ch. 2 already frames writing as responding to complexity;
-no forced rewrite this pass. Optional later: one clause acknowledging
-non-written external records (khipu) if Ch. 2 is revised again. Catalog
-**C2-H0** remains open for a dedicated T2 on oral scale.
+**Prose implication:** Ch. 2 now includes a short clause on non-written
+external records (Andean knotted-string accounts + oral keepers) and mnemonic
+architectures. Catalog **C2-H0** T2 is in [`RESEARCH-GROUNDING.md`](RESEARCH-GROUNDING.md).
 
 ---
 

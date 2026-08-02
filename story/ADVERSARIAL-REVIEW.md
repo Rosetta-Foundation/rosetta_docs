@@ -108,4 +108,4 @@ later chapters / adversarial human review; do not paper over in Ch. 1–8 soften
    [`CROSS-LINEAGE-ADVERSARIAL-PROMPT.md`](CROSS-LINEAGE-ADVERSARIAL-PROMPT.md)
    in a different model family (or human).
 2. Human historian or SE KM reviewer on C2-H1 and C5-O2.
-3. Optional Ch. 2 clause on oral/mnemonic scale-ups (khipu already in parallel).
+3. ~~Optional Ch. 2 oral/mnemonic clause~~ — applied; file cross-lineage results when available.
