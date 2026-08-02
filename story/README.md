@@ -26,7 +26,8 @@ Historical and organizational claims in the essay are grounded in a separate
 research layer (not inline footnotes): see
 [`RESEARCH-GROUNDING.md`](RESEARCH-GROUNDING.md),
 [`HISTORICAL-PARALLEL.md`](HISTORICAL-PARALLEL.md),
-[`ADVERSARIAL-REVIEW.md`](ADVERSARIAL-REVIEW.md), and
+[`ADVERSARIAL-REVIEW.md`](ADVERSARIAL-REVIEW.md) (plus a dedicated pass on
+Chapter 1's own thesis, [`ADVERSARIAL-C1-I3.md`](ADVERSARIAL-C1-I3.md)), and
 [`CLAIMS-CATALOG.md`](CLAIMS-CATALOG.md). A genuine cross-lineage
 second-opinion pass has been run — see
 [`CROSS-LINEAGE-REVIEW-RESULTS.md`](CROSS-LINEAGE-REVIEW-RESULTS.md)
