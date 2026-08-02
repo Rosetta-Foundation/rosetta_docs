@@ -55,17 +55,17 @@ Speculative · Contested ([epistemic-status](../process/epistemic-status.md)).
 
 Ordered by (load × falsifiability × how much the prose currently asserts).
 
-| Pri | ID            | Claim (short)                                                                   | Suggested process pass                             | Provisional status                                                                                                                       |
-| --- | ------------- | ------------------------------------------------------------------------------- | -------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | C2-H1         | Writing appeared independently in several parts of the world                    | T2 Research + Historical Parallel                  | **Likely established** (mainstream: ≥3–4 pristine inventions; Egypt↔Mesopotamia stimulus still debated)                                  |
-| 2   | C2-H2         | Earliest writing was primarily practical (harvests, trade, law, agreements)     | T2 (W1/W2 history monographs)                      | **Partially corroborated** — true for early cuneiform administrative corpus; not universal (e.g. Chinese oracle bones)                   |
-| 3   | C2-H3         | Writing first allowed knowledge to exist independently of living carriers       | T3 + adversarial on “first”                        | **Working hypothesis** — proto-writing / tokens / monumental art complicate “first”; keep as _qualitative threshold_, not absolute first |
-| 4   | C1-H1 / C2-H0 | Small communities could rely on memory; scale broke that balance                | T2 anthropology / cognitive history                | **Working hypothesis** — directionally standard; avoid implying a sharp population cutoff                                                |
-| 5   | C5-O1→P1      | Orgs depend on few context-carriers; departure destroys continuity despite docs | T2 SE literature (bus factor, knowledge loss) + W6 | **Working hypothesis** with **empirical cousins** (bus/truck factor; concept-keeper loss)                                                |
-| 6   | C4-H1 / C6-H1 | Search retrieves documents but not relational understanding                     | T2 HCI / IR / cognitive science                    | **Working hypothesis** — strong as _limitation of keyword retrieval_; weaken absolute “cannot”                                           |
-| 7   | C6-P1 / C2-P1 | Each coordination limit → new preservation/navigation tool                      | Historical Parallel                                | **Working hypothesis** — thesis spine; needs challenging cases (dark ages, lost libraries, oral cultures that scaled)                    |
-| 8   | C7-I1         | Civilization is better at destinations than paths                               | Adversarial + Historical Parallel                  | **Working hypothesis / interpretive**                                                                                                    |
-| 9   | C8-N\*        | Intergenerational obligation to leave traversable paths                         | No empirical verifier                              | **Normative** — keep; do not fact-check into science                                                                                     |
+| Pri | ID            | Claim (short)                                                                   | Suggested process pass                             | Provisional status                                                                                                                                               |
+| --- | ------------- | ------------------------------------------------------------------------------- | -------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | C2-H1         | Writing appeared independently in several parts of the world                    | T2 done → adversarial second pass                  | **Established by evidence\*** (plural pristine inventions; Egypt stimulus edge contested). See [`RESEARCH-GROUNDING.md`](RESEARCH-GROUNDING.md). Prose softened. |
+| 2   | C2-H2         | Earliest writing was primarily practical (harvests, trade, law, agreements)     | T2 done                                            | **Working hypothesis** (Mesopotamia established; universal practical list softened in ch. 2). See research grounding.                                            |
+| 3   | C2-H3         | Writing first allowed knowledge to exist independently of living carriers       | T2 done                                            | Softened to **threshold** vs earlier counters/marks (absolute “first” overstated). See research grounding.                                                       |
+| 4   | C1-H1 / C2-H0 | Small communities could rely on memory; scale broke that balance                | T2 anthropology / cognitive history                | **Working hypothesis** — directionally standard; avoid implying a sharp population cutoff                                                                        |
+| 5   | C5-O1→P1      | Orgs depend on few context-carriers; departure destroys continuity despite docs | T2 SE literature (bus factor, knowledge loss) + W6 | **Working hypothesis** with **empirical cousins** (bus/truck factor; concept-keeper loss)                                                                        |
+| 6   | C4-H1 / C6-H1 | Search retrieves documents but not relational understanding                     | T2 HCI / IR / cognitive science                    | **Working hypothesis** — strong as _limitation of keyword retrieval_; weaken absolute “cannot”                                                                   |
+| 7   | C6-P1 / C2-P1 | Each coordination limit → new preservation/navigation tool                      | Historical Parallel                                | **Working hypothesis** — thesis spine; needs challenging cases (dark ages, lost libraries, oral cultures that scaled)                                            |
+| 8   | C7-I1         | Civilization is better at destinations than paths                               | Adversarial + Historical Parallel                  | **Working hypothesis / interpretive**                                                                                                                            |
+| 9   | C8-N\*        | Intergenerational obligation to leave traversable paths                         | No empirical verifier                              | **Normative** — keep; do not fact-check into science                                                                                                             |
 
 ---
 
@@ -88,17 +88,17 @@ Legend: **LB** = load-bearing · **Soft?** = candidate wording change if evidenc
 
 ### Chapter 2 — When Memory Was No Longer Enough
 
-| ID     | Quote / paraphrase                                                                           | Type | LB  | Notes / action                                                                                                                                                                                                                                      |
-| ------ | -------------------------------------------------------------------------------------------- | ---- | --- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| C2-H0  | Small campfire communities: memory “sufficient”; little needed for survival                  | H    | ✓   | Soft?: “often sufficient” / avoid Dunbar-as-fact. Challenging: large oral polities                                                                                                                                                                  |
-| C2-H0b | Settlement, surplus, cities, trade, law created memory load beyond individuals               | H    | ✓   | Standard agricultural/urbanization narrative — T3 cite                                                                                                                                                                                              |
-| C2-P1  | Success of cooperation created demands cooperation alone couldn’t satisfy                    | P    | ✓   | Historical Parallel                                                                                                                                                                                                                                 |
-| C2-H1  | **“Writing appeared independently in several parts of the world.”**                          | H    | ✓✓  | **User spark.** Mainstream: Mesopotamia, Egypt, China, Mesoamerica as (at least) independent; Egypt–Mesopotamia _stimulus diffusion_ still debated. Soft?: “in several parts of the world, and at least some of those inventions were independent.” |
-| C2-H2  | Earliest purpose of writing was practical (harvests, trade, laws, agreements)                | H    | ✓   | Soft for universality — administrative Near East yes; Shang oracle bones ritual/divinatory                                                                                                                                                          |
-| C2-H3  | Writing let knowledge exist independently of possessors                                      | H/I  | ✓   | Keep as threshold claim; note precursors (tokens, seals) if pedantic reviewers                                                                                                                                                                      |
-| C2-H4  | Paper, libraries, print, universities/archives/scientific societies extended external memory | H    |     | Broadly established; T3 color citations if desired                                                                                                                                                                                                  |
-| C2-I1  | Preservation aims to let each generation start where the last ended                          | I/N  | ✓   | Near-normative; fits thesis                                                                                                                                                                                                                         |
-| C2-P2  | Each coordination limit → tools that extend the limit (share → write → …)                    | P    | ✓   | Core progressive pattern; needs challenging cases                                                                                                                                                                                                   |
+| ID     | Quote / paraphrase                                                                           | Type | LB  | Notes / action                                                                                                                                   |
+| ------ | -------------------------------------------------------------------------------------------- | ---- | --- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| C2-H0  | Small campfire communities: memory “sufficient”; little needed for survival                  | H    | ✓   | Softened to “**often** remained sufficient.” Still needs T2 on scale/oral polities.                                                              |
+| C2-H0b | Settlement, surplus, cities, trade, law created memory load beyond individuals               | H    | ✓   | Standard agricultural/urbanization narrative — T3 cite                                                                                           |
+| C2-P1  | Success of cooperation created demands cooperation alone couldn’t satisfy                    | P    | ✓   | Historical Parallel                                                                                                                              |
+| C2-H1  | Writing systems arose independently in several regions (at least some inventions)            | H    | ✓✓  | **T2 done** — [`RESEARCH-GROUNDING.md`](RESEARCH-GROUNDING.md). Plural pristine inventions established; Egypt stimulus contested. Prose updated. |
+| C2-H2  | Earliest attested purposes often practical; Mesopotamia admin; other first genres differ     | H    | ✓   | **T2 done** — universal laws/trade list removed; China divination noted.                                                                         |
+| C2-H3  | Knowledge endures independently — more powerfully than earlier counters and marks            | H/I  | ✓   | **T2 done** — absolute “for the first time” dropped (tokens already separate data from knower).                                                  |
+| C2-H4  | Paper, libraries, print, universities/archives/scientific societies extended external memory | H    |     | Broadly established; T3 color citations if desired                                                                                               |
+| C2-I1  | Preservation aims to let each generation start where the last ended                          | I/N  | ✓   | Near-normative; fits thesis                                                                                                                      |
+| C2-P2  | Each coordination limit → tools that extend the limit (share → write → …)                    | P    | ✓   | Core progressive pattern; needs challenging cases                                                                                                |
 
 ### Chapter 3 — Growing Up Between Eras
 
@@ -178,36 +178,28 @@ Legend: **LB** = load-bearing · **Soft?** = candidate wording change if evidenc
 
 ## Worked example: C2-H1 (independent invention of writing)
 
-**Essay sentence:** “It is perhaps not surprising, then, that writing appeared independently in several parts of the world.”
+**Completed** — full T2 pack, aggregate finding, and prose soften in
+[`RESEARCH-GROUNDING.md`](RESEARCH-GROUNDING.md).
 
-| Check              | Result                                                                                                                                                                                                                 |
-| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Type               | **H** (historical), LB                                                                                                                                                                                                 |
-| CB tier            | **T2** gap-close (3–7 W1/W2 sources)                                                                                                                                                                                   |
-| Mainstream framing | Multiple _pristine_ inventions commonly listed: Mesopotamia, Egypt, China, Mesoamerica ([overview](https://en.wikipedia.org/wiki/History_of_writing); scholarly treatments e.g. Boltz; Schmandt-Besserat on Near East) |
-| Live contestation  | Whether Egyptian writing is fully independent vs. idea-stimulus from Mesopotamia; counts of “true writing” vs. proto-writing                                                                                           |
-| CB balance rule    | Name convergence on _plural_ invention; note Egypt stimulus debate honestly (Research Protocol §2.3 historically-contested-but-converged + live critique)                                                              |
-| Falsifier          | Strong evidence that all non-Mesopotamian systems derive by diffusion from one origin                                                                                                                                  |
-| Prose options      | (a) keep — “independently…several parts” is mainstream-ok; (b) precision pass — “writing systems arose in several regions, at least some independently”                                                                |
-
-**Do not** cite a W7 chat summary as evidence. Digests → quote W1/W2, then verify URLs/quotes (§4).
+**Essay sentence (current):** “…writing systems arose in several parts of the
+world, and that at least some of those inventions were independent.”
 
 ---
 
 ## Suggested story edits (only where reality is sharper)
 
-These are **candidates**, not mandated rewrites:
+**Applied (Ch. 2, with research grounding):** C2-H0 “often”; C2-H1 “at least
+some… independent”; C2-H2 Mesopotamia-lead + other first genres; C2-H3
+threshold vs counters/marks.
 
-1. **C2-H1** — optional precision on independence / Egypt debate.
-2. **C2-H2** — “often” or “in many of the earliest corpora” rather than universal “earliest purpose.”
-3. **C2-H3** — “for the first time at civilizational scale” or “more reliably than before.”
-4. **C2-H0** — “often sufficient” for small communities; avoid implying oral cultures cannot scale.
-5. **C3-H2** — acknowledge remaining access inequalities when saying “ordinary.”
-6. **C4-H2 / C6-H2** — keep “cannot easily”; avoid “cannot.”
-7. **C7-I3** — acknowledge counter-traditions that _do_ preserve paths (commentary chains, lab notebooks, ADRs) so the claim is comparative scarcity, not absolute absence.
-8. **C6-O2** — time-stamp AI navigation claims; they age fast.
+Still candidates:
 
-Memoir and normative passages (most of Ch. 3 personal arc; Ch. 8 oughts) should stay; CB would mark them N1/N, not force footnotes.
+1. **C3-H2** — acknowledge remaining access inequalities when saying “ordinary.”
+2. **C4-H2 / C6-H2** — keep “cannot easily”; avoid “cannot.”
+3. **C7-I3** — acknowledge counter-traditions that _do_ preserve paths (commentary chains, lab notebooks, ADRs) so the claim is comparative scarcity, not absolute absence.
+4. **C6-O2** — time-stamp AI navigation claims; they age fast.
+
+Memoir and normative passages (most of Ch. 3 personal arc; Ch. 8 oughts) should stay; mark them N1/N, not force footnotes.
 
 ---
 
@@ -215,25 +207,26 @@ Memoir and normative passages (most of Ch. 3 personal arc; Ch. 8 oughts) should 
 
 Fill “Basis” during the T2 pass; this is the Adversarial Review closing artifact.
 
-| Claim                                                  | Confidence (draft)         | Basis (to complete)                           | What would change this                                                            |
-| ------------------------------------------------------ | -------------------------- | --------------------------------------------- | --------------------------------------------------------------------------------- |
-| C2-H1 Independent (plural) invention of writing        | Established by evidence*   | *pending T2 cite pack; *caveat Egypt          | Monogenesis revival with strong archaeological consensus                          |
-| C2-H2 Early writing primarily administrative/practical | Partially corroborated     | Near East strong; China weaker fit            | Show earliest Chinese/Mesoamerican corpora are non-administrative                 |
-| C5-O1/O2 Context-carriers / post-departure loss        | Working hypothesis         | Bus-factor & knowledge-loss SE literature; W6 | Evidence that docs alone preserve “why” at scale                                  |
-| C4-D1 / C6-H2 Info ≠ understanding; search ≠ relations | Working hypothesis         | IR/HCI + cognitive science                    | Systems that reliably expose disagreement & assumption structure                  |
-| C2-P2 / C6-P2 Coordination-limit → tool pattern        | Working hypothesis         | Historical narrative fit                      | Clear counterexamples where limits didn’t produce tools, or tools preceded limits |
-| C7-I3 Destinations ≫ paths                             | Working hypothesis         | Interpretive + SE anecdotes                   | Measure path-preservation traditions that scale                                   |
-| C8-N1 Obligation to leave traversable paths            | Normative (not evidential) | Value commitment                              | N/A — revise values, not “disprove”                                               |
+| Claim                                                  | Confidence (draft)            | Basis (to complete)                                          | What would change this                                                            |
+| ------------------------------------------------------ | ----------------------------- | ------------------------------------------------------------ | --------------------------------------------------------------------------------- |
+| C2-H1 Independent (plural) invention of writing        | Established by evidence*      | T2 cite pack in RESEARCH-GROUNDING; Egypt edge contested     | Monogenesis revival with strong archaeological consensus                          |
+| C2-H2 Early writing primarily administrative/practical | Working hypothesis (softened) | Mesopotamia established; universal list removed in prose     | Earliest Mesopotamian corpus shown non-admin                                      |
+| C2-H3 Absolute “first” external knowledge              | Softened to threshold         | Tokens already separate data from knower (Schmandt-Besserat) | Proto-systems match writing’s open linguistic scale                               |
+| C5-O1/O2 Context-carriers / post-departure loss        | Working hypothesis            | Bus-factor & knowledge-loss SE literature; W6                | Evidence that docs alone preserve “why” at scale                                  |
+| C4-D1 / C6-H2 Info ≠ understanding; search ≠ relations | Working hypothesis            | IR/HCI + cognitive science                                   | Systems that reliably expose disagreement & assumption structure                  |
+| C2-P2 / C6-P2 Coordination-limit → tool pattern        | Working hypothesis            | Historical narrative fit                                     | Clear counterexamples where limits didn’t produce tools, or tools preceded limits |
+| C7-I3 Destinations ≫ paths                             | Working hypothesis            | Interpretive + SE anecdotes                                  | Measure path-preservation traditions that scale                                   |
+| C8-N1 Obligation to leave traversable paths            | Normative (not evidential)    | Value commitment                                             | N/A — revise values, not “disprove”                                               |
 
 ---
 
 ## Next actions
 
-1. Run **T2 Research grounding** for Priority 1–5 (start with C2-H1…H3 and C5-O1).
-2. Add `story/sources/` digests **or** a single `story/RESEARCH-GROUNDING.md` subsection (CB T2 inline form) — prefer the lighter form until load increases.
-3. One **adversarial** pass (different model family) on the spine table.
-4. Apply only the soft? wording changes that the evidence forces.
-5. Optional: publish a “challenge a claim” note for early-access readers using CB’s issue fields.
+1. ~~T2 Research grounding for C2-H1…H3 + forced Ch. 2 softens~~ — see [`RESEARCH-GROUNDING.md`](RESEARCH-GROUNDING.md).
+2. T2 for **C2-H0** (scale vs memory) and **C5-O1** (org context-carriers / bus factor).
+3. Cross-lineage **adversarial** pass on the Ch. 2 status table (citation integrity + thesis pressure).
+4. Historical Parallel on **C2-P2 / C6-P1** and **C7-I3**.
+5. Optional: point early-access readers at Challenge a claim issues.
 
 ---
 
