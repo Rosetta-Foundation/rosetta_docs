@@ -17,3 +17,8 @@ The engineering-era origin story is preserved in
 [`docs/FOUNDATIONS.md`](../docs/FOUNDATIONS.md) and
 [ADR-0001](../architecture/ADR-0001-rosetta-philosophy.md); engineering is
 Rosetta's first domain, not its boundary (see CONTEXT.md).
+
+A longer essay developing the same philosophy through civilizational history
+is being drafted in [`story/`](../story/README.md). That manuscript is intended
+to outlive any particular software; Rosetta appears only late, if at all, as a
+consequence of the argument rather than its premise.
