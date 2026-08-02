@@ -276,10 +276,15 @@ of true independent invention before a shared record, and (b) fields where
 citation/search make Mendel-class losses rarer for known-item needs.
 
 **Essay implication:** Ch. 8 paragraph uses Bush/Mendel as structural evidence
-only. Do **not** narrate a personal “I rediscovered Bush” memoir beat — that
-would violate the essay’s anti-ego / philosophy-first voice
-([`WRITING-CONTEXT.md`](WRITING-CONTEXT.md)). Readers who know later
-path-keeping architectures may feel the rhyme; the prose does not claim credit.
+only. Do **not** narrate a personal “I rediscovered Bush” memoir beat there —
+that would violate the essay’s anti-ego / philosophy-first voice
+([`WRITING-CONTEXT.md`](WRITING-CONTEXT.md)). **Ch. 10** may add one humble
+memoir beat (**C10-M1**) after Rosetta is named: personal vs organizational
+memory kept separate, shared only by intention — noticed _afterward_ as
+echoing Bush’s common-record gate. Plain language in essay voice; map to
+[`ADR-0002`](../architecture/ADR-0002-personal-vs-organizational-chronicle.md)
+only in this research layer (and related product docs), not as a ticket number
+in the chapter.
 
 **Confidence:** Established for the Bush quotations and Mendel episode as Bush
 presents it; Working hypothesis for the pattern generalization.

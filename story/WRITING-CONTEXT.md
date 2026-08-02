@@ -145,6 +145,10 @@ Use **stewardship** sparingly until late chapters.
   _structural evidence_ that unfindable trails force re-derivation. Never frame
   this as a personal “I reinvented Bush” memoir beat. Readers may feel the
   rhyme with later path-keeping architectures; the prose must not claim credit.
+- **Bush echo after naming (Ch. 10):** Once Rosetta is named, a single humble
+  personal beat is allowed: private-by-default / shared-by-intention noticed
+  _afterward_ as echoing Bush’s common-record gate. Plain language only — no
+  ADR/PRD ticket numbers in essay voice. Research layer may map to ADR-0002.
 
 ---
 

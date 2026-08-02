@@ -98,7 +98,9 @@ to 1945).
 
 **Prose implication:** Ch. 8 adds one ego-free paragraph: Mendel + Bush as
 structural evidence; rediscovery framed as unfindable path, never as personal
-credit. See [`RESEARCH-GROUNDING.md`](RESEARCH-GROUNDING.md) C8 pack.
+credit. Ch. 10 may add one late memoir beat (**C10-M1**) after Rosetta is named
+(personal/org split noticed afterward as echoing Bush) — still no ticket IDs
+in essay voice. See [`RESEARCH-GROUNDING.md`](RESEARCH-GROUNDING.md) C8 pack.
 
 ---
 

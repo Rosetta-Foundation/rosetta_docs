@@ -193,14 +193,15 @@ Legend: **LB** = load-bearing · **Soft?** = candidate wording change if evidenc
 
 ### Chapter 10 — A Name for the Work
 
-| ID     | Quote / paraphrase                                                              | Type | LB  | Notes / action                                       |
-| ------ | ------------------------------------------------------------------------------- | ---- | --- | ---------------------------------------------------- |
-| C10-I1 | Philosophy must precede the instrument; reverse order is common failure         | I    | ✓   | Method claim; self-aware                             |
-| C10-N1 | Manuscript should remain true if every named project disappears                 | N    | ✓   | WRITING-CONTEXT north star                           |
-| C10-D1 | “Rosetta” as metaphor: recover stranded meaning by restoring paths between      | D/I  |     | Naming device; not historical thesis about the stone |
-| C10-N2 | Success measure: people continue one another’s work; hero remains humanity      | N    | ✓   | Anti-product-metric                                  |
-| C10-N3 | Naming a project risks sounding like a pitch; refuse that ending                | N    |     | Explicit anti-sales hedge                            |
-| C10-I2 | Shared path-keeping instruments are an almost inevitable consequence of Ch. 1–9 | I    | ✓   | Soft “almost inevitable”; not Established            |
+| ID     | Quote / paraphrase                                                                                              | Type | LB  | Notes / action                                                                                                                |
+| ------ | --------------------------------------------------------------------------------------------------------------- | ---- | --- | ----------------------------------------------------------------------------------------------------------------------------- |
+| C10-I1 | Philosophy must precede the instrument; reverse order is common failure                                         | I    | ✓   | Method claim; self-aware                                                                                                      |
+| C10-N1 | Manuscript should remain true if every named project disappears                                                 | N    | ✓   | WRITING-CONTEXT north star                                                                                                    |
+| C10-D1 | “Rosetta” as metaphor: recover stranded meaning by restoring paths between                                      | D/I  |     | Naming device; not historical thesis about the stone                                                                          |
+| C10-M1 | Personal/org split (private by default; shared by intention) noticed later as echoing Bush’s common-record gate | M/I  | ✓   | Memoir + interpretive; maps to ADR-0002 in research layer only — no ticket IDs in essay. Strengthens C8-P2 without Ch. 8 ego. |
+| C10-N2 | Success measure: people continue one another’s work; hero remains humanity                                      | N    | ✓   | Anti-product-metric                                                                                                           |
+| C10-N3 | Naming a project risks sounding like a pitch; refuse that ending                                                | N    |     | Explicit anti-sales hedge                                                                                                     |
+| C10-I2 | Shared path-keeping instruments are an almost inevitable consequence of Ch. 1–9                                 | I    | ✓   | Soft “almost inevitable”; not Established                                                                                     |
 
 ---
 
