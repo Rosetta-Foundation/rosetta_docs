@@ -74,12 +74,12 @@ later chapters / adversarial human review; do not paper over in Ch. 1–8 soften
 
 ## Claims accepted without enough evidence (still)
 
-| Claim                               | Gap                                        |
-| ----------------------------------- | ------------------------------------------ |
-| C2-H0 scale-vs-memory cutoff        | “Often” soft only; no T2 on oral empires   |
-| C5-O3 families/labs/communities     | Analogy; not same evidence base as SE      |
-| C4/C6 search ≠ understanding        | Still W6 + common IR intuition; no T2 yet  |
-| C2-P2 / C6-P1 as civilizational law | Parallel bounded it; still not Established |
+| Claim                               | Gap                                                           |
+| ----------------------------------- | ------------------------------------------------------------- |
+| C2-H0 as a sharp cognitive cutoff   | T2 rejects hard cutoffs; directional claim only               |
+| C5-O3 families/labs/communities     | Analogy; not same evidence base as SE                         |
+| C4/C6 as “search can never relate”  | T2 supports known-item gap; absolute “cannot” would overclaim |
+| C2-P2 / C6-P1 as civilizational law | Parallel bounded it; still not Established                    |
 
 ---
 
@@ -94,6 +94,8 @@ later chapters / adversarial human review; do not paper over in Ch. 1–8 soften
 | C5-O2 Loss despite artifacts        | Working hypothesis (strong)*      | T2 turnover K-loss               | Docs alone preserve “why” at scale                              |
 | C2-P2 / C6-P1 Limit → tool          | Working hypothesis (bounded)*     | Historical parallel              | Tools routinely appear without load, or load never yields tools |
 | C7-I3 Destinations ≫ paths          | Working hypothesis (comparative)* | Historical parallel + Ch. 7 soft | Path preservation becomes default in ordinary orgs              |
+| C2-H0 Scale vs memory               | Working hypothesis (directional)* | T2 pack                          | Hard cutoff revived with consensus, or scale never loads memory |
+| C4-H2 / C6-H2 Search ≠ relations    | Working hypothesis (strong)*      | T2 exploratory-search pack       | Default UX exposes disagreement / assumption chains             |
 | C8-N\* Intergenerational obligation | Normative                         | Value commitment                 | N/A                                                             |
 
 \*Upper bound — same-lineage review only.
@@ -102,6 +104,8 @@ later chapters / adversarial human review; do not paper over in Ch. 1–8 soften
 
 ## Recommended follow-ups
 
-1. **True cross-lineage pass** (different model family) on this table alone.
+1. **True cross-lineage pass** — run
+   [`CROSS-LINEAGE-ADVERSARIAL-PROMPT.md`](CROSS-LINEAGE-ADVERSARIAL-PROMPT.md)
+   in a different model family (or human).
 2. Human historian or SE KM reviewer on C2-H1 and C5-O2.
-3. T2 for **C2-H0** and **C4/C6** search limits when capacity allows.
+3. Optional Ch. 2 clause on oral/mnemonic scale-ups (khipu already in parallel).
