@@ -1,5 +1,20 @@
 # Cross-lineage adversarial review — results
 
+**Addendum (2026-08-01):** The `C5-O1` / `C5-O2` downgrade below was
+**partially reversed** — see [`ADVERSARIAL-REVIEW.md`](ADVERSARIAL-REVIEW.md)
+and the corroboration note in
+[`RESEARCH-GROUNDING.md`](RESEARCH-GROUNDING.md) — after a reader supplied
+identifiable W6 practitioner testimony from a large enterprise that
+specifically defeats this pass's unproven assumption that formal succession
+planning meaningfully protects large orgs from the pattern. The original
+finding is preserved below unedited for the audit trail; it correctly
+identified that the OSS-only sampling frame of the cited literature could not,
+by itself, support "strong" confidence for organizations broadly. That
+citation-base observation still stands. What did not hold up was the implicit
+assumption, layered on top of it, that large/mature orgs are therefore likely
+better off — no evidence was offered for that either direction, and new
+evidence has since pointed the other way.
+
 **Lineage label:** Run per
 [`CROSS-LINEAGE-ADVERSARIAL-PROMPT.md`](CROSS-LINEAGE-ADVERSARIAL-PROMPT.md),
 in a session the user switched to a different underlying model from the one
