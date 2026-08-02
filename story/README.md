@@ -56,4 +56,6 @@ See [`WRITING-CONTEXT.md`](WRITING-CONTEXT.md) for the full handoff brief.
 
 For claim typing and verification priorities, see
 [`CLAIMS-CATALOG.md`](CLAIMS-CATALOG.md) (writer/reviewer instrument, not part of
-the essay). Protocols live in [`../process/`](../process/README.md).
+the essay). T2 research for Chapter 2’s historical cluster:
+[`RESEARCH-GROUNDING.md`](RESEARCH-GROUNDING.md). Protocols live in
+[`../process/`](../process/README.md).
