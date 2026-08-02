@@ -10,10 +10,17 @@ like it ought to exist.
 Vannevar Bush, [_As We May Think_](https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/)
 (1945) — emulate the reasoning process, not the prose.
 
-## Contents
+## Early access
 
-Early-access draft — chapters 1–8. Read in order, or jump ahead. Each chapter
-has Previous / Contents / Next links at the bottom.
+Chapters 1–8 are open for careful early readers. They are still drafts: the
+essay voice has no inline footnotes; historical and organizational claims are
+grounded in the research layer linked below. Read in order, or jump ahead —
+each chapter has Previous / Contents / Next at the bottom. If a sentence
+overreaches, open a Challenge a claim issue. Later chapters continue the
+philosophical arc; Rosetta should still arrive late, as consequence rather than
+pitch.
+
+## Contents
 
 Historical and organizational claims in the essay are grounded in a separate
 research layer (not inline footnotes): see
@@ -38,16 +45,16 @@ issue.
 
 ## Chapter map
 
-| Chapter | Constraint                                                 | Response / core idea                                                    |
-| ------- | ---------------------------------------------------------- | ----------------------------------------------------------------------- |
-| 1       | Individuals cannot learn everything alone                  | Shared learning; civilization begins when experience becomes collective |
-| 2       | Shared learning no longer scales through memory            | Writing; knowledge becomes persistent                                   |
-| 3       | Knowledge is difficult to access                           | The Information Age (personal bridge)                                   |
-| 4       | Information abundance ≠ understanding                      | Search retrieves documents; understanding connects ideas                |
-| 5       | Organizations lose continuity before they lose information | Fragility of institutional memory / context                             |
-| 6       | Humans navigate relationships between ideas                | Civilization improves navigation; emerging tools may help               |
-| 7       | Destinations survive more readily than paths               | Paths between ideas are part of the inheritance                         |
-| 8       | Abundance does not automatically become inheritance        | Intergenerational responsibility for continuity                         |
+| Chapter | Constraint                                                 | Response / core idea                                                        |
+| ------- | ---------------------------------------------------------- | --------------------------------------------------------------------------- |
+| 1       | Individuals cannot learn everything alone                  | Shared learning; civilization begins when experience becomes collective     |
+| 2       | Shared learning no longer scales through memory            | External memory (writing and kindred records); knowledge becomes persistent |
+| 3       | Knowledge is difficult to access                           | The Information Age (personal bridge)                                       |
+| 4       | Information abundance ≠ understanding                      | Search retrieves documents; understanding connects ideas                    |
+| 5       | Organizations lose continuity before they lose information | Fragility of institutional memory / context                                 |
+| 6       | Humans navigate relationships between ideas                | Civilization improves navigation; emerging tools may help                   |
+| 7       | Destinations survive more readily than paths               | Paths between ideas are part of the inheritance                             |
+| 8       | Abundance does not automatically become inheritance        | Intergenerational responsibility for continuity                             |
 
 Still reserved for later chapters:
 

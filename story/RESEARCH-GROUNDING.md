@@ -216,9 +216,8 @@ is **Working hypothesis**. Hard cutoffs (population N, “Dunbar”) are
 keepers + external mnemonic devices; they challenge “only writing solves scale,”
 not “scale creates pressure.”
 
-**Essay implication:** No further prose required beyond existing “often.” Do not
-add Dunbar. Optional later: one clause that oral/mnemonic systems also answer
-scale (if Ch. 2 is revised again).
+**Essay implication:** Keep “often”; do not add Dunbar. Ch. 2 now includes a
+short clause on knotted-string / mnemonic externalization (see essay).
 
 **Confidence:** Working hypothesis (directional); Speculative if read as a sharp
 cognitive threshold.

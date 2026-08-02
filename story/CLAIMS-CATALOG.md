@@ -145,7 +145,7 @@ Legend: **LB** = load-bearing · **Soft?** = candidate wording change if evidenc
 | C6-H2 | Search works when you know the query; weak for unknown-unknowns / cross-vocab analogies | H    | ✓   | T2 done — exploratory search; keep “cannot easily”                  |
 | C6-O1 | Most valuable people navigate relationships, not just store facts                       | O    | ✓   | Ties to C5                                                          |
 | C6-H3 | Tools point to documents; humans perceive meaning relations                             | H/I  | ✓   | Soft absolute; “largely”                                            |
-| C6-O2 | Newer AI systems suggest connections / explore unframed questions; imperfect            | O/H  | ✓   | Fast-moving; date the claim; avoid product pitch                    |
+| C6-O2 | Newer AI systems suggest connections / explore unframed questions; imperfect            | O/H  | ✓   | Dated to mid-2020s in Ch. 6; avoid product pitch                    |
 | C6-P2 | Navigation methods upgrade when inherited knowledge outgrows prior means                | P    | ✓   |                                                                     |
 | C6-I1 | Next challenge: preserve journeys/paths, not only navigate better                       | I    | ✓   | Bridge to Ch. 7                                                     |
 
@@ -199,8 +199,9 @@ Still candidates:
 
 1. **C3-H2** — acknowledge remaining access inequalities when saying “ordinary.”
 2. **C4-H2 / C6-H2** — keep “cannot easily”; avoid “cannot.”
-3. **C6-O2** — time-stamp AI navigation claims; they age fast.
-4. Optional Ch. 2 clause on non-written external records (khipu) — see parallel.
+3. ~~**C6-O2** time-stamp~~ — “mid-2020s” in Ch. 6.
+4. ~~Optional Ch. 2 clause on non-written external records~~ — applied (Andean
+   knotted-string / mnemonic architectures).
 
 Memoir and normative passages (most of Ch. 3 personal arc; Ch. 8 oughts) should stay; mark them N1/N, not force footnotes.
 
@@ -233,7 +234,9 @@ Fill “Basis” during the T2 pass; this is the Adversarial Review closing arti
 5. **True cross-lineage or human** adversarial pass — paste
    [`CROSS-LINEAGE-ADVERSARIAL-PROMPT.md`](CROSS-LINEAGE-ADVERSARIAL-PROMPT.md).
 6. ~~T2 for C2-H0 and C4/C6~~ — done in [`RESEARCH-GROUNDING.md`](RESEARCH-GROUNDING.md).
-7. Optional Ch. 2 khipu/oral-mnemonic clause; early-access ship note when ready.
+7. ~~Ch. 2 khipu/oral-mnemonic clause + early-access ship note~~ — done.
+8. Run cross-lineage prompt (human or other model family); file results.
+9. Draft later chapters when ready (paths practice → Rosetta as consequence).
 
 ---
 
