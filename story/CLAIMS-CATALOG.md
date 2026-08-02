@@ -1,73 +1,53 @@
 # Story claims catalog (Chapters 1–8)
 
 Working inventory of **assertive content** in the early-access Rosetta essay,
-typed with Civic Blueprint’s epistemic machinery so we can verify load-bearing
-history, strengthen contested points, or soften prose where reality is thinner
-than the sentence sounds.
+typed with Rosetta [`process/`](../process/README.md) so we can verify
+load-bearing history, strengthen contested points, or soften prose where
+reality is thinner than the sentence sounds.
 
 This file is a **research instrument**, not part of the essay voice. Readers of
 the story do not need it; writers and reviewers do.
 
 **Source chapters:** [`chapter-1.md`](chapter-1.md) … [`chapter-8.md`](chapter-8.md)  
-**CB protocols borrowed:** see [§ Machinery](#machinery-from-civic-blueprint).
+**Protocols:** [`../process/`](../process/README.md) (canonical). Inspiration:
+Civic Blueprint’s research / adversarial / parallel stack (adapted, not forked).
 
 ---
 
-## Claim types (portable from CB)
+## Claim types
 
-| Code  | Type                        | What it is                                            | How CB treats it                                                                    |
-| ----- | --------------------------- | ----------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| **H** | Historical / empirical fact | Asserts something about the world that could be wrong | Research Protocol W1–W4; T2/T3 grounding                                            |
-| **P** | Pattern / mechanism         | “Each time X, civilization did Y”                     | Historical Parallel Test (supporting **and** challenging cases)                     |
-| **I** | Interpretive thesis         | Author’s synthesis; not a raw fact                    | Adversarial Review epistemic table; confidence labels                               |
-| **O** | Practitioner observation    | Career / org experience                               | Research Protocol **W6**; do not upgrade to universal law without evidence          |
-| **M** | Memoir / phenomenological   | Personal memory, lived texture                        | Non-evidence ladder **N1** (illustrative) unless offered as public fact             |
-| **N** | Normative / value           | Ought, responsibility, what matters                   | Verifiers riff flavor-(c): **no empirical verifier** — cite as commitment, not fact |
-| **D** | Definitional / analytic     | Clarifies terms (info ≠ understanding)                | Low research load; watch for smuggling empirical content                            |
+See [`../process/epistemic-status.md`](../process/epistemic-status.md) for the
+full definitions. Short form:
 
-**Confidence vocabulary** (Adversarial Review Protocol):
+| Code  | Type                        | Instrument                                               |
+| ----- | --------------------------- | -------------------------------------------------------- |
+| **H** | Historical / empirical fact | [Research Protocol](../process/research-protocol.md)     |
+| **P** | Pattern / mechanism         | [Historical Parallel](../process/historical-parallel.md) |
+| **I** | Interpretive thesis         | [Adversarial Review](../process/adversarial-review.md)   |
+| **O** | Practitioner observation    | Research **W6**                                          |
+| **M** | Memoir / phenomenological   | Non-evidence **N1**                                      |
+| **N** | Normative / value           | No empirical verifier                                    |
+| **D** | Definitional / analytic     | Low research load                                        |
 
-- Established by evidence
-- Working hypothesis
-- Speculative
-- Contested
+**Confidence vocabulary:** Established by evidence · Working hypothesis ·
+Speculative · Contested ([epistemic-status](../process/epistemic-status.md)).
 
 **Load-bearing (LB):** if false or overstated, the chapter’s argument wobbles.
 
 ---
 
-## Machinery from Civic Blueprint
+## Workflow (this essay)
 
-Paths under `/Users/russwatson/projects/civic-blueprint/project-2028/` unless noted.
-
-| Instrument                   | Path                                                                                                   | Use on this essay                                                                                |
-| ---------------------------- | ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ |
-| **Research Protocol**        | `agent/process/research-protocol.md`                                                                   | Scope tiers T1–T3; source weights W1–W8; non-evidence ladder N1–N3; citation verification (§4)   |
-| **Adversarial Review**       | `agent/process/adversarial-review-protocol.md`                                                         | Falsify load-bearing claims; end with epistemic status table; prefer **cross-lineage** adversary |
-| **Historical Parallel Test** | `agent/process/historical-parallel-test-protocol.md`                                                   | Pattern claims (independent invention; navigation follows abundance; destinations > paths)       |
-| **Coherence Audit**          | `agent/process/coherence-audit-protocol.md`                                                            | Phantom citations / internal contradiction once we add endnotes                                  |
-| **Cross-Lineage Harness**    | `agent/process/cross-lineage-review-harness-protocol.md`                                               | Optional for the thesis spine (I-claims), not for every H-claim                                  |
-| **Verifier cluster**         | `memos/agent-automation-and-the-verifier-memo.md` + `agent/explorations/verifiers-for-reality-riff.md` | Separates citation integrity from “truth about the world”; three flavors of _no verifier_        |
-| **Challenge-a-claim form**   | `.github/ISSUE_TEMPLATE/challenge-claim.yml`                                                           | Template for early-access reader challenges                                                      |
-| **Content provenance**       | `docs/CONTENT_PROVENANCE.md`                                                                           | Label draft as `collaborative` / human-curated when published                                    |
-| **The Construct** (Catalyst) | `../project-catalyst/`                                                                                 | Optional multi-model council for adversarial rounds                                              |
-
-### What _not_ to import wholesale
-
-- Project-2028 PRINCIPLES / PROBLEM_MAP mapping
-- `SOURCE_INDEX` political-economy viewpoint buckets (use **history / cognitive science / SE research** buckets instead)
-- Treating AI agreement or same-lineage “review” as verification (CB explicitly rejects this)
-
-### Recommended Rosetta workflow
-
-1. Tag every assertive sentence (this catalog).
-2. For each **LB** claim: assign T2 or T3 + source floor (Research Protocol §3).
-3. Write a short **Research grounding** note (or digest) with W1–W4 sources + URLs.
-4. Run §4 verification in a **different** session/model (links, quotes, tiers).
-5. For **P**-claims: Historical Parallel (2–3 supporting **and** challenging cases).
-6. Produce an **epistemic status table** for LB claims; soften essay language to match.
-7. Keep **N**-claims as humble oughts; do not “verify” them into facts.
-8. Optional: early-access “challenge a claim” using the CB issue fields.
+1. Tag assertive sentences here.
+2. For each **LB** claim: T2 or T3 + source floor
+   ([research-protocol](../process/research-protocol.md)).
+3. Write a Research grounding subsection (W1–W4 + URLs).
+4. Citation-integrity check in a **different** session/model.
+5. **P**-claims: Historical Parallel (supporting **and** challenging cases).
+6. Epistemic status table; soften prose to match.
+7. Keep **N**-claims as oughts — do not “verify” into facts.
+8. Early-access challenges:
+   [challenge-claim.yml](../.github/ISSUE_TEMPLATE/challenge-claim.yml).
 
 ---
 
@@ -75,7 +55,7 @@ Paths under `/Users/russwatson/projects/civic-blueprint/project-2028/` unless no
 
 Ordered by (load × falsifiability × how much the prose currently asserts).
 
-| Pri | ID            | Claim (short)                                                                   | Suggested CB pass                                  | Provisional status                                                                                                                       |
+| Pri | ID            | Claim (short)                                                                   | Suggested process pass                             | Provisional status                                                                                                                       |
 | --- | ------------- | ------------------------------------------------------------------------------- | -------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
 | 1   | C2-H1         | Writing appeared independently in several parts of the world                    | T2 Research + Historical Parallel                  | **Likely established** (mainstream: ≥3–4 pristine inventions; Egypt↔Mesopotamia stimulus still debated)                                  |
 | 2   | C2-H2         | Earliest writing was primarily practical (harvests, trade, law, agreements)     | T2 (W1/W2 history monographs)                      | **Partially corroborated** — true for early cuneiform administrative corpus; not universal (e.g. Chinese oracle bones)                   |
@@ -95,7 +75,7 @@ Legend: **LB** = load-bearing · **Soft?** = candidate wording change if evidenc
 
 ### Chapter 1 — Before Civilization
 
-| ID    | Quote / paraphrase                                                                             | Type | LB  | Notes / CB action                                                                                     |
+| ID    | Quote / paraphrase                                                                             | Type | LB  | Notes / action                                                                                        |
 | ----- | ---------------------------------------------------------------------------------------------- | ---- | --- | ----------------------------------------------------------------------------------------------------- |
 | C1-I1 | Tech ages (stone→information) are real but may be _evidence_ of deeper progress, not the cause | I    | ✓   | Thesis setup; adversarial: steelman tech-determinist counter                                          |
 | C1-H1 | Early humans lacked speed, armor, claws relative to many animals                               | H    |     | Soft comparative biology; one W1/W2 source enough; or soften to “few obvious physical advantages”     |
@@ -108,7 +88,7 @@ Legend: **LB** = load-bearing · **Soft?** = candidate wording change if evidenc
 
 ### Chapter 2 — When Memory Was No Longer Enough
 
-| ID     | Quote / paraphrase                                                                           | Type | LB  | Notes / CB action                                                                                                                                                                                                                                   |
+| ID     | Quote / paraphrase                                                                           | Type | LB  | Notes / action                                                                                                                                                                                                                                      |
 | ------ | -------------------------------------------------------------------------------------------- | ---- | --- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | C2-H0  | Small campfire communities: memory “sufficient”; little needed for survival                  | H    | ✓   | Soft?: “often sufficient” / avoid Dunbar-as-fact. Challenging: large oral polities                                                                                                                                                                  |
 | C2-H0b | Settlement, surplus, cities, trade, law created memory load beyond individuals               | H    | ✓   | Standard agricultural/urbanization narrative — T3 cite                                                                                                                                                                                              |
@@ -122,7 +102,7 @@ Legend: **LB** = load-bearing · **Soft?** = candidate wording change if evidenc
 
 ### Chapter 3 — Growing Up Between Eras
 
-| ID    | Quote / paraphrase                                                                          | Type | LB  | Notes / CB action                                                         |
+| ID    | Quote / paraphrase                                                                          | Type | LB  | Notes / action                                                            |
 | ----- | ------------------------------------------------------------------------------------------- | ---- | --- | ------------------------------------------------------------------------- |
 | C3-I1 | People in transitions rarely recognize them as historic                                     | I    |     | Soft social claim; optional T3                                            |
 | C3-H1 | Late 20th c.: PCs, phone lines carrying data, networks opening to families                  | H    |     | Established popular history; memoir frame OK                              |
@@ -134,7 +114,7 @@ Legend: **LB** = load-bearing · **Soft?** = candidate wording change if evidenc
 
 ### Chapter 4 — When Information Became Ordinary
 
-| ID    | Quote / paraphrase                                                                             | Type | LB  | Notes / CB action                                       |
+| ID    | Quote / paraphrase                                                                             | Type | LB  | Notes / action                                          |
 | ----- | ---------------------------------------------------------------------------------------------- | ---- | --- | ------------------------------------------------------- |
 | C4-O1 | Early career: solving problems was largely _finding_ information                               | O    | ✓   | W6; widely attested in SE folklore + empirical SE       |
 | C4-H1 | Search/docs/communities collapsed time-to-find                                                 | H/O  | ✓   | Established directionally                               |
@@ -147,7 +127,7 @@ Legend: **LB** = load-bearing · **Soft?** = candidate wording change if evidenc
 
 ### Chapter 5 — The Fragility of Context
 
-| ID    | Quote / paraphrase                                                                     | Type | LB  | Notes / CB action                                                |
+| ID    | Quote / paraphrase                                                                     | Type | LB  | Notes / action                                                   |
 | ----- | -------------------------------------------------------------------------------------- | ---- | --- | ---------------------------------------------------------------- |
 | C5-O1 | Successful orgs rely on a few people who hold relational context                       | O    | ✓✓  | Maps to bus factor / “concept keepers”; T2 cite SE studies       |
 | C5-O2 | Docs/code remain after departure but capability drops                                  | O/H  | ✓✓  | Empirical support in turnover / knowledge-loss literature        |
@@ -158,7 +138,7 @@ Legend: **LB** = load-bearing · **Soft?** = candidate wording change if evidenc
 
 ### Chapter 6 — Navigating Knowledge
 
-| ID    | Quote / paraphrase                                                                      | Type | LB  | Notes / CB action                                                   |
+| ID    | Quote / paraphrase                                                                      | Type | LB  | Notes / action                                                      |
 | ----- | --------------------------------------------------------------------------------------- | ---- | --- | ------------------------------------------------------------------- |
 | C6-P1 | Major knowledge advances improve navigation as well as preservation                     | P    | ✓   | Parallel test: writing, libraries, print indexes, hypertext, search |
 | C6-H1 | TOC, catalogs, citations, hyperlinks are underrated navigation tech                     | H/I  |     | Soft; historically defensible                                       |
@@ -171,7 +151,7 @@ Legend: **LB** = load-bearing · **Soft?** = candidate wording change if evidenc
 
 ### Chapter 7 — The Paths Between Ideas
 
-| ID    | Quote / paraphrase                                                              | Type | LB  | Notes / CB action                                                                                                                  |
+| ID    | Quote / paraphrase                                                              | Type | LB  | Notes / action                                                                                                                     |
 | ----- | ------------------------------------------------------------------------------- | ---- | --- | ---------------------------------------------------------------------------------------------------------------------------------- |
 | C7-D1 | Formal paths: TOC, citation, hyperlink, index                                   | D    |     |                                                                                                                                    |
 | C7-O1 | Important paths live in conversation / remembered decision sequences            | O    | ✓   |                                                                                                                                    |
@@ -183,7 +163,7 @@ Legend: **LB** = load-bearing · **Soft?** = candidate wording change if evidenc
 
 ### Chapter 8 — What Every Generation Leaves Behind
 
-| ID    | Quote / paraphrase                                                            | Type | LB  | Notes / CB action                                                 |
+| ID    | Quote / paraphrase                                                            | Type | LB  | Notes / action                                                    |
 | ----- | ----------------------------------------------------------------------------- | ---- | --- | ----------------------------------------------------------------- |
 | C8-H1 | Each generation inherits unfinished world (language, cities, laws, tools)     | H    |     | Near-truism                                                       |
 | C8-N1 | Obligation to leave paths traversable, not only to discover                   | N    | ✓   | Flavor-(c); keep as ought                                         |
@@ -259,9 +239,7 @@ Fill “Basis” during the T2 pass; this is the Adversarial Review closing arti
 
 ## References for this catalog (meta)
 
-- Civic Blueprint Research Protocol — `project-2028/agent/process/research-protocol.md`
-- Adversarial Review Protocol — `project-2028/agent/process/adversarial-review-protocol.md`
-- Historical Parallel Test Protocol — `project-2028/agent/process/historical-parallel-test-protocol.md`
-- Verifiers for Reality riff — `project-2028/agent/explorations/verifiers-for-reality-riff.md`
+- Rosetta process — [`../process/README.md`](../process/README.md)
 - Writing / independent invention overviews — [History of writing](https://en.wikipedia.org/wiki/History_of_writing); Denise Schmandt-Besserat, [The Evolution of Writing](https://sites.utexas.edu/dsb/tokens/the-evolution-of-writing/); William G. Boltz on Chinese writing’s independent status
 - Organizational knowledge concentration — bus/truck factor literature (e.g. studies summarized at [Bus factor](https://en.wikipedia.org/wiki/Bus_factor); multimodal bus-factor / concept-keeper research in SE)
+- Upstream inspiration (not a dependency) — Civic Blueprint `project-2028/agent/process/` research, adversarial-review, and historical-parallel protocols

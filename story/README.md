@@ -54,6 +54,6 @@ Still reserved for later chapters:
 
 See [`WRITING-CONTEXT.md`](WRITING-CONTEXT.md) for the full handoff brief.
 
-For claim typing and Civic Blueprint–style verification priorities, see
+For claim typing and verification priorities, see
 [`CLAIMS-CATALOG.md`](CLAIMS-CATALOG.md) (writer/reviewer instrument, not part of
-the essay).
+the essay). Protocols live in [`../process/`](../process/README.md).

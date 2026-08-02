@@ -88,11 +88,11 @@ chapter’s nav in the same change.
 ### Claims and verification
 
 Assertive sentences are inventoried in [`CLAIMS-CATALOG.md`](CLAIMS-CATALOG.md),
-typed with Civic Blueprint’s Research Protocol / Adversarial Review /
-Historical Parallel vocabulary (historical, pattern, interpretive, practitioner,
-memoir, normative). Load-bearing historical claims get T2/T3 source grounding
-before the prose hardens; normative claims are not “verified” into facts. When
-adding a chapter, extend the catalog in the same change.
+typed per [`../process/`](../process/README.md) (Research Protocol lite,
+epistemic status, adversarial review, historical parallel). Load-bearing
+historical claims get T2/T3 source grounding before the prose hardens;
+normative claims are not “verified” into facts. When adding a chapter, extend
+the catalog in the same change.
 
 Reserved for later:
 

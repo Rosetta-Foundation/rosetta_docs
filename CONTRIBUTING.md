@@ -57,3 +57,10 @@ Docs contributed here must use terminology defined in the
 [foundations glossary](foundations/GLOSSARY.md). Do not reference
 adopter-internal tool, format, or process names — if a concept needs a name,
 define a foundation-neutral term in the glossary in the same change.
+
+## Challenging claims
+
+To pressure-test a specific sentence in this repo (story, foundations, PRDs,
+ADRs), open a **Challenge a claim** issue (see
+[`.github/ISSUE_TEMPLATE/challenge-claim.yml`](.github/ISSUE_TEMPLATE/challenge-claim.yml)).
+Reviewers apply [`process/`](process/README.md).
