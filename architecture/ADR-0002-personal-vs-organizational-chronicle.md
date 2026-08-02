@@ -6,7 +6,7 @@
 
 ---
 
-> *Private by default. Shared by intention.*
+> _Private by default. Shared by intention._
 
 ---
 
@@ -40,7 +40,7 @@ Chronicle is one **neutral engine** deployed against many **data repositories**.
 
 The engine captures, enriches, and structures engineering activity. It holds no data of its own and has no opinion about who may read what.
 
-A **data repository** is a store of events. Each repository is either personal or organizational. The engine treats them identically — the repository *is* the deployment context.
+A **data repository** is a store of events. Each repository is either personal or organizational. The engine treats them identically — the repository _is_ the deployment context.
 
 This means:
 
@@ -50,7 +50,7 @@ This means:
 
 There is exactly one engine. Personal and organizational Chronicles are not forks and not feature flags — they are the same machinery pointed at different repositories.
 
-Every store, personal or organizational, is *engine + a repository of events*. Nothing is special-cased.
+Every store, personal or organizational, is _engine + a repository of events_. Nothing is special-cased.
 
 ---
 
@@ -117,7 +117,7 @@ Two obligations follow from this model:
 
 1. **The engine must earn the comparison.** Email-grade privacy is enforced by mature access controls. Chronicle's access model must be equally disciplined: per-person isolation, no organization-wide query that can sweep personal stores, and audit logging on any privileged access. The comparison to email is a promise the engine must be engineered up to — it is not inherited for free.
 
-2. **The owner is responsible for the truly secret category.** Anything that must remain inaccessible under *all* circumstances should not live only in a synced cloud or org-visible system. Chronicle provides email-grade privacy; it is not an anonymity tool.
+2. **The owner is responsible for the truly secret category.** Anything that must remain inaccessible under _all_ circumstances should not live only in a synced cloud or org-visible system. Chronicle provides email-grade privacy; it is not an anonymity tool.
 
 > Chronicle provides email-grade privacy for personal knowledge. Owners are responsible for keeping truly secret material out of systems they do not fully control.
 
@@ -145,18 +145,31 @@ Those are concerns of the consuming deployment. The engine does not know whether
 
 # Publication
 
-Publication is the seam where an event moves from a personal repository into the organizational repository.
+Publication is the seam where an event moves from a personal repository into a
+shared repository (team, organizational, community, or global — ADR-0005). The
+historical name “organizational” in this ADR still applies; multi-destination
+selection and shared-chronicle provisioning are productized in
+[PRD-0019](../product/PRD-0019-shared-chronicle-provisioning-and-multi-destination-promotion.md).
 
 It has three properties:
 
 **Drafting is automatic. Publishing is intentional.**
-Chronicle may automatically propose a sanitized organizational candidate from personal activity — so the engineer never re-types their work. But the candidate never becomes organizational knowledge until a human reviews and approves it. Continuous capture; intentional release.
+Chronicle may automatically propose a sanitized shared-knowledge candidate from
+personal activity — so the engineer never re-types their work. But the
+candidate never becomes shared knowledge until a human reviews and approves it
+(and chooses destination(s)). Continuous capture; intentional release.
 
-**Provenance re-anchors to organizational evidence.**
-A published organizational event must trace to organizational artifacts — the pull request, the commit, the incident record, the meeting — never to the private note that triggered it. The personal note is the *trigger*. The evidence must stand on its own and be independently shareable.
+**Provenance re-anchors to shareable evidence.**
+A published shared event must trace to artifacts appropriate to that
+destination — the pull request, the commit, the incident record, the meeting —
+never to the private note that triggered it. The personal note is the _trigger_.
+The evidence must stand on its own and be independently shareable.
 
-**Personal knowledge never becomes organizational knowledge automatically.**
-There is no background sync. The gate is always a deliberate human action.
+**Personal knowledge never becomes shared knowledge automatically.**
+There is no background sync and no silent fan-out to destinations the human did
+not select. The gate is always a deliberate human action. One intentional
+promote may land in multiple destinations; each destination applies its own
+coherence gate ([PRD-0009](../product/PRD-0009-coherence-protocol.md)).
 
 ---
 
@@ -239,7 +252,7 @@ Notice that:
 
 The hazard to avoid is **shared distribution of a fixed list** — no engineer should ever clone another engineer's log. The workspace bootstrap clones the same repositories for everyone, which is correct for the engine and for shared organizational stores, but would be wrong for per-user private repositories.
 
-Personal Chronicle provisioning therefore must be **user-derived, never list-derived**: the repository is resolved from the *currently authenticated user*, so each engineer only ever creates or clones **their own**. Because the target is the caller's identity — not an entry in a shared config — provisioning it as a **default step of setup is safe**, and is the current behavior. The repository is created **private** (not the organization's `internal` default) and is idempotent: an existing repository is skipped, never overwritten.
+Personal Chronicle provisioning therefore must be **user-derived, never list-derived**: the repository is resolved from the _currently authenticated user_, so each engineer only ever creates or clones **their own**. Because the target is the caller's identity — not an entry in a shared config — provisioning it as a **default step of setup is safe**, and is the current behavior. The repository is created **private** (not the organization's `internal` default) and is idempotent: an existing repository is skipped, never overwritten.
 
 This is a deliberate refinement of an earlier framing that called for a separate opt-in command. The original concern was never "provisioning by default" — it was "distributing a shared list of private repos." A user-derived default satisfies that concern directly: there is no shared list, and no engineer's setup can reach another engineer's store.
 

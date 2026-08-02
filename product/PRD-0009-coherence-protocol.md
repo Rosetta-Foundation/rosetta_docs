@@ -50,16 +50,21 @@ resolution, while allowing clean contributions to land automatically.
 - Not a real-time sync system — coherence runs on promotion events, not continuously.
 - Not enforcing a single writing style or format — contradictions are semantic (facts), not cosmetic.
 - Not resolving conflicts autonomously (Phase 1) — the agent proposes, humans decide. Autonomous resolution is Phase 3.
-- Not handling cross-org knowledge (multiple companies, external sources) — scoped to a single org repo.
-- Not a permissions/access system — who *can* promote is separate from whether the content is coherent.
+- Not handling cross-org / cross-destination federation (contradictions across
+  multiple shared chronicles) — each coherence check is scoped to **one
+  destination repository**. Multi-destination promote orchestration is
+  [PRD-0019](PRD-0019-shared-chronicle-provisioning-and-multi-destination-promotion.md);
+  cross-destination federation remains future work (§8).
+- Not a permissions/access system — who _can_ promote is separate from whether the content is coherent
+  (destination membership / registry: PRD-0019).
 
 ### 1.4 Acceptance Criteria
 
 **Phase 1 — Conflict detection & gated promotion:**
 
-- [ ] A coherence check runs on every promotion to the org repo (invoked by the `/promote` skill or `queue promote`).
-- [ ] The check detects: factual contradictions (conflicting claims about the same entity), staleness (references to renamed/removed code artifacts), and duplication (semantically equivalent content already in the org repo).
-- [ ] Clean promotions (no conflicts detected) auto-land: content is committed directly to the org repo with attribution metadata.
+- [ ] A coherence check runs on every promotion landing into a destination repo (invoked by the `/promote` skill or `queue promote`; once per destination when PRD-0019 multi-dest is used).
+- [ ] The check detects: factual contradictions (conflicting claims about the same entity), staleness (references to renamed/removed code artifacts), and duplication (semantically equivalent content already in that destination repo).
+- [ ] Clean promotions (no conflicts detected) auto-land: content is committed directly to the destination repo with attribution metadata.
 - [ ] Conflicted promotions open a PR with inline annotations explaining each conflict and its context (source, date, contributor).
 - [ ] The protocol never overwrites existing org content without going through the conflict resolution path.
 
@@ -86,6 +91,7 @@ resolution, while allowing clean contributions to land automatically.
 **Future:** agents querying org knowledge (Wayfinder). They need a single coherent answer per topic, not multiple conflicting documents to arbitrate between at query time.
 
 Pain removed:
+
 - **No more "which doc is current?"** — the protocol ensures only one coherent version exists per topic.
 - **No more silent overwrite** — every conflict is visible and attributed.
 - **No fear of promoting** — the gate catches problems, so engineers promote freely rather than self-censoring.
@@ -94,19 +100,24 @@ Pain removed:
 
 ### 3.1 The Promotion Gate
 
-Every promotion goes through a coherence check before landing:
+Every promotion landing into a **single destination repository** goes through a
+coherence check before landing. When
+[PRD-0019](PRD-0019-shared-chronicle-provisioning-and-multi-destination-promotion.md)
+targets multiple destinations, this gate runs independently per destination
+(outcomes may differ).
 
 ```
-Engineer promotes artifact
+Engineer promotes artifact → destination D
          │
          ▼
 ┌─────────────────────┐
 │   Coherence Agent   │
+│   (scoped to D)     │
 │                     │
 │  1. Semantic diff   │──── Compare incoming content against existing
 │  2. Entity resolve  │──── Match claims to known entities (services, APIs, ADRs)
 │  3. Freshness check │──── Cross-ref code artifacts (do they still exist?)
-│  4. Dedup scan      │──── Semantic similarity against existing org docs
+│  4. Dedup scan      │──── Semantic similarity against existing docs in D
 │                     │
 └─────────┬───────────┘
           │
@@ -116,17 +127,17 @@ Engineer promotes artifact
     │           │
     ▼           ▼
 Auto-commit   Open PR with
-to org repo   annotations
+into D        annotations
 ```
 
 ### 3.2 Conflict Types & Detection
 
-| Type | Detection method | Resolution path |
-|------|-----------------|-----------------|
-| **Factual contradiction** | Claim extraction + entity matching: "Service X uses auth method Y" vs existing "Service X uses auth method Z" | PR with both claims, timestamps, sources. Human picks current truth. |
-| **Staleness** | Symbol/path/service name resolution against tracked codebases. If a referenced identifier doesn't exist → stale. | Annotate with `[stale:symbol-not-found]`. Refresh PR assigned to original author. |
-| **Duplication** | Semantic embedding similarity above threshold (e.g. >0.85 cosine) against existing org docs. | Merge: keep the richer version, attribute both contributors, archive the duplicate. |
-| **Subset overwrite** | Incoming content covers fewer topics than the existing doc on the same subject (similar to PRD-0005 clobber guard). | Block auto-land. PR shows what would be lost. |
+| Type                      | Detection method                                                                                                    | Resolution path                                                                     |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| **Factual contradiction** | Claim extraction + entity matching: "Service X uses auth method Y" vs existing "Service X uses auth method Z"       | PR with both claims, timestamps, sources. Human picks current truth.                |
+| **Staleness**             | Symbol/path/service name resolution against tracked codebases. If a referenced identifier doesn't exist → stale.    | Annotate with `[stale:symbol-not-found]`. Refresh PR assigned to original author.   |
+| **Duplication**           | Semantic embedding similarity above threshold (e.g. >0.85 cosine) against existing org docs.                        | Merge: keep the richer version, attribute both contributors, archive the duplicate. |
+| **Subset overwrite**      | Incoming content covers fewer topics than the existing doc on the same subject (similar to PRD-0005 clobber guard). | Block auto-land. PR shows what would be lost.                                       |
 
 ### 3.3 Attribution Metadata
 
@@ -141,7 +152,7 @@ interface OrgKnowledgeAttribution {
   /** Source session/chronicle date. */
   sourceDate: string;
   /** Source type: personal chronicle, meeting notes, artifact, etc. */
-  sourceType: 'chronicle' | 'artifact' | 'notes' | 'manual';
+  sourceType: "chronicle" | "artifact" | "notes" | "manual";
   /** SHA of the coherence check that approved landing. */
   coherenceCheckId?: string;
   /** If this superseded a prior version, link to it. */
@@ -169,20 +180,17 @@ When a conflict is detected:
 
 ### 3.5 Trust Levels (Phase 3)
 
-| Level | Auto-land scope | Example |
-|-------|----------------|---------|
-| **High** | Factual updates with clear timestamp supersession | "Service X moved from Okta to Entra" with a date after the existing claim |
-| **Medium** | Deduplication where one version is strictly richer | Two meeting notes; one has more detail but no contradictions |
-| **Low** | Anything involving removal or semantic disagreement | Always requires human |
+| Level      | Auto-land scope                                     | Example                                                                   |
+| ---------- | --------------------------------------------------- | ------------------------------------------------------------------------- |
+| **High**   | Factual updates with clear timestamp supersession   | "Service X moved from Okta to Entra" with a date after the existing claim |
+| **Medium** | Deduplication where one version is strictly richer  | Two meeting notes; one has more detail but no contradictions              |
+| **Low**    | Anything involving removal or semantic disagreement | Always requires human                                                     |
 
 ## 4. Data Contracts
 
 ```ts
 export type ConflictType =
-  | 'contradiction'
-  | 'staleness'
-  | 'duplication'
-  | 'subset-overwrite';
+  "contradiction" | "staleness" | "duplication" | "subset-overwrite";
 
 export interface CoherenceConflict {
   type: ConflictType;
@@ -204,7 +212,7 @@ export interface CoherenceCheckResult {
   /** Timestamp of the check. */
   checkedAt: string;
   /** Clean = auto-land; conflicted = open PR. */
-  outcome: 'clean' | 'conflicted';
+  outcome: "clean" | "conflicted";
   /** Empty if clean. */
   conflicts: CoherenceConflict[];
   /** Attribution for the incoming content. */
@@ -215,7 +223,7 @@ export interface OrgKnowledgeAttribution {
   promotedBy: string;
   promotedAt: string;
   sourceDate: string;
-  sourceType: 'chronicle' | 'artifact' | 'notes' | 'manual';
+  sourceType: "chronicle" | "artifact" | "notes" | "manual";
   coherenceCheckId?: string;
   supersedes?: string;
 }

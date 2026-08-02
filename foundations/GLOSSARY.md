@@ -71,8 +71,9 @@ titles, tags) via an inference backend (PRD-0016).
 schema-validated push from external producers (PRD-0015).
 
 **promotion** — the deliberate, gated act of moving knowledge from a personal
-chronicle to a shared one — the "shared by intention" mechanism and the
-compliance boundary (PRD-0006).
+chronicle to one or more shared chronicles — the "shared by intention"
+mechanism and the compliance boundary (PRD-0006 payload/redaction;
+PRD-0019 destinations, suggestions, and shared-chronicle provisioning).
 
 **coherence protocol** — the gate that keeps a shared chronicle
 self-consistent as promotions land: contradiction checks, review, merge
