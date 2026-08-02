@@ -55,17 +55,18 @@ Speculative · Contested ([epistemic-status](../process/epistemic-status.md)).
 
 Ordered by (load × falsifiability × how much the prose currently asserts).
 
-| Pri | ID            | Claim (short)                                                                   | Suggested process pass              | Provisional status                                                                                                                                                                             |
-| --- | ------------- | ------------------------------------------------------------------------------- | ----------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | C2-H1         | Writing appeared independently in several parts of the world                    | T2 done → adversarial second pass   | **Established by evidence\*** (plural pristine inventions; Egypt stimulus edge contested). See [`RESEARCH-GROUNDING.md`](RESEARCH-GROUNDING.md). Prose softened.                               |
-| 2   | C2-H2         | Earliest writing was primarily practical (harvests, trade, law, agreements)     | T2 done                             | **Working hypothesis** (Mesopotamia established; universal practical list softened in ch. 2). See research grounding.                                                                          |
-| 3   | C2-H3         | Writing first allowed knowledge to exist independently of living carriers       | T2 done                             | Softened to **threshold** vs earlier counters/marks (absolute “first” overstated). See research grounding.                                                                                     |
-| 4   | C1-H1 / C2-H0 | Small communities could rely on memory; scale broke that balance                | T2 done                             | **Working hypothesis (directional)** — no Dunbar cutoff; oral/mnemonic scale-ups. See [`RESEARCH-GROUNDING.md`](RESEARCH-GROUNDING.md). Prose already “often.”                                 |
-| 5   | C5-O1→P1      | Orgs depend on few context-carriers; departure destroys continuity despite docs | T2 done                             | **Working hypothesis (strong)** — bus/truck factor + turnover knowledge-loss literature. See [`RESEARCH-GROUNDING.md`](RESEARCH-GROUNDING.md). Prose: “Many of” / “Many healthy institutions.” |
-| 6   | C4-H2 / C6-H2 | Search retrieves documents but not relational understanding                     | T2 done                             | **Working hypothesis (strong for known-item gap)** — exploratory-search literature. Keep “cannot easily.” See research grounding.                                                              |
-| 7   | C6-P1 / C2-P1 | Each coordination limit → new preservation/navigation tool                      | Parallel done                       | **Working hypothesis (bounded)** — khipu/oral systems; tool ≠ only writing. See [`HISTORICAL-PARALLEL.md`](HISTORICAL-PARALLEL.md).                                                            |
-| 8   | C7-I3         | Civilization is better at destinations than paths                               | Parallel + adversarial + Ch. 7 soft | **Working hypothesis (comparative)** — commentary/ADR exceptions in prose. See parallel + adversarial docs.                                                                                    |
-| 9   | C8-N\*        | Intergenerational obligation to leave traversable paths                         | No empirical verifier               | **Normative** — keep; do not fact-check into science                                                                                                                                           |
+| Pri | ID            | Claim (short)                                                                   | Suggested process pass              | Provisional status                                                                                                                                                                                                                                                |
+| --- | ------------- | ------------------------------------------------------------------------------- | ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | C2-H1         | Writing appeared independently in several parts of the world                    | T2 done → adversarial second pass   | **Established by evidence\*** (plural pristine inventions; Egypt stimulus edge contested). See [`RESEARCH-GROUNDING.md`](RESEARCH-GROUNDING.md). Prose softened.                                                                                                  |
+| 2   | C2-H2         | Earliest writing was primarily practical (harvests, trade, law, agreements)     | T2 done                             | **Working hypothesis** (Mesopotamia established; universal practical list softened in ch. 2). See research grounding.                                                                                                                                             |
+| 3   | C2-H3         | Writing first allowed knowledge to exist independently of living carriers       | T2 done                             | Softened to **threshold** vs earlier counters/marks (absolute “first” overstated). See research grounding.                                                                                                                                                        |
+| 4   | C1-H1 / C2-H0 | Small communities could rely on memory; scale broke that balance                | T2 done                             | **Working hypothesis (directional)** — no Dunbar cutoff; oral/mnemonic scale-ups. See [`RESEARCH-GROUNDING.md`](RESEARCH-GROUNDING.md). Prose already “often.”                                                                                                    |
+| 5   | C5-O1→P1      | Orgs depend on few context-carriers; departure destroys continuity despite docs | T2 done                             | **Working hypothesis (strong)** — bus/truck factor + turnover knowledge-loss literature. See [`RESEARCH-GROUNDING.md`](RESEARCH-GROUNDING.md). Prose: “Many of” / “Many healthy institutions.”                                                                    |
+| 6   | C4-H2 / C6-H2 | Search retrieves documents but not relational understanding                     | T2 done                             | **Working hypothesis (strong for known-item gap)** — exploratory-search literature. Keep “cannot easily.” See research grounding.                                                                                                                                 |
+| 7   | C6-P1 / C2-P1 | Each coordination limit → new preservation/navigation tool                      | Parallel done                       | **Working hypothesis (bounded)** — khipu/oral systems; tool ≠ only writing. See [`HISTORICAL-PARALLEL.md`](HISTORICAL-PARALLEL.md).                                                                                                                               |
+| 8   | C7-I3         | Civilization is better at destinations than paths                               | Parallel + adversarial + Ch. 7 soft | **Working hypothesis (comparative)** — commentary/ADR exceptions in prose. See parallel + adversarial docs.                                                                                                                                                       |
+| 9   | C8-N\*        | Intergenerational obligation to leave traversable paths                         | No empirical verifier               | **Normative** — keep; do not fact-check into science                                                                                                                                                                                                              |
+| 10  | C1-I3         | Bottleneck was preservation, not intelligence (whole-series thesis)             | Adversarial done (same-lineage)     | **Speculative** — downgraded; competes with cooperation/institutions and energy/material tech as rival explanations. See [`ADVERSARIAL-C1-I3.md`](ADVERSARIAL-C1-I3.md). Ch. 1 softened. **Top remaining priority: cross-lineage/human economic-historian pass.** |
 
 ---
 
@@ -75,16 +76,16 @@ Legend: **LB** = load-bearing · **Soft?** = candidate wording change if evidenc
 
 ### Chapter 1 — Before Civilization
 
-| ID    | Quote / paraphrase                                                                             | Type | LB  | Notes / action                                                                                        |
-| ----- | ---------------------------------------------------------------------------------------------- | ---- | --- | ----------------------------------------------------------------------------------------------------- |
-| C1-I1 | Tech ages (stone→information) are real but may be _evidence_ of deeper progress, not the cause | I    | ✓   | Thesis setup; adversarial: steelman tech-determinist counter                                          |
-| C1-H1 | Early humans lacked speed, armor, claws relative to many animals                               | H    |     | Soft comparative biology; one W1/W2 source enough; or soften to “few obvious physical advantages”     |
-| C1-H2 | Humans accumulated knowledge and transmitted it across generations                             | H    | ✓   | Established at high level (cultural transmission literature)                                          |
-| C1-I2 | Civilization may begin in ordinary teaching moments                                            | I/N  | ✓   | Interpretive origin story — label as “may”; not a dating claim                                        |
-| C1-H3 | Shared imperfect knowledge outperforms isolated perfect knowledge                              | H/P  | ✓   | Aligns with cumulative culture research; T2 cite (e.g. cultural evolution)                            |
-| C1-H4 | For most of history knowledge died with carriers (healers, elders)                             | H    | ✓   | Directionally true; avoid implying _no_ external memory before writing (songlines, monuments, tokens) |
-| C1-I3 | Bottleneck was preservation, not intelligence                                                  | I    | ✓   | Thesis; adversarial + challenging cases (censorship, inequality of access)                            |
-| C1-I4 | Defining inventions enable collective memory more than individual power                        | I    | ✓   | Spine claim through Ch. 8                                                                             |
+| ID    | Quote / paraphrase                                                                             | Type | LB  | Notes / action                                                                                                                                                   |
+| ----- | ---------------------------------------------------------------------------------------------- | ---- | --- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| C1-I1 | Tech ages (stone→information) are real but may be _evidence_ of deeper progress, not the cause | I    | ✓   | Thesis setup; adversarial: steelman tech-determinist counter                                                                                                     |
+| C1-H1 | Early humans lacked speed, armor, claws relative to many animals                               | H    |     | Soft comparative biology; one W1/W2 source enough; or soften to “few obvious physical advantages”                                                                |
+| C1-H2 | Humans accumulated knowledge and transmitted it across generations                             | H    | ✓   | Established at high level (cultural transmission literature)                                                                                                     |
+| C1-I2 | Civilization may begin in ordinary teaching moments                                            | I/N  | ✓   | Interpretive origin story — label as “may”; not a dating claim                                                                                                   |
+| C1-H3 | Shared imperfect knowledge outperforms isolated perfect knowledge                              | H/P  | ✓   | Aligns with cumulative culture research; T2 cite (e.g. cultural evolution)                                                                                       |
+| C1-H4 | For most of history knowledge died with carriers (healers, elders)                             | H    | ✓   | Directionally true; avoid implying _no_ external memory before writing (songlines, monuments, tokens)                                                            |
+| C1-I3 | Bottleneck was preservation, not intelligence                                                  | I    | ✓   | Same-lineage adversarial done → **Speculative**. See [`ADVERSARIAL-C1-I3.md`](ADVERSARIAL-C1-I3.md). Ch. 1 softened. Cross-lineage/human pass still recommended. |
+| C1-I4 | Defining inventions enable collective memory more than individual power                        | I    | ✓   | Spine claim through Ch. 8                                                                                                                                        |
 
 ### Chapter 2 — When Memory Was No Longer Enough
 
@@ -226,7 +227,9 @@ Fill “Basis” during the T2 pass; this is the Adversarial Review closing arti
 | C8-N1 Obligation to leave traversable paths            | Normative (not evidential)        | Value commitment                                             | N/A — revise values, not “disprove”                                                                                       |
 
 †Lowered or added by a genuine cross-lineage pass — see
-[`CROSS-LINEAGE-REVIEW-RESULTS.md`](CROSS-LINEAGE-REVIEW-RESULTS.md).
+[`CROSS-LINEAGE-REVIEW-RESULTS.md`](CROSS-LINEAGE-REVIEW-RESULTS.md). ‡Lowered
+by a same-lineage adversarial pass — see
+[`ADVERSARIAL-C1-I3.md`](ADVERSARIAL-C1-I3.md); still needs cross-lineage/human.
 
 ---
 
@@ -242,8 +245,10 @@ Fill “Basis” during the T2 pass; this is the Adversarial Review closing arti
    before treating this as fully closed.
 6. ~~T2 for C2-H0 and C4/C6~~ — done in [`RESEARCH-GROUNDING.md`](RESEARCH-GROUNDING.md).
 7. ~~Ch. 2 khipu/oral-mnemonic clause + early-access ship note~~ — done.
-8. **C1-I3** (Ch. 1 thesis: preservation as _the_ bottleneck) — needs its own
-   adversarial pass; flagged as unresolved twice now.
+8. ~~C1-I3 adversarial pass~~ — done (same-lineage), see
+   [`ADVERSARIAL-C1-I3.md`](ADVERSARIAL-C1-I3.md); Ch. 1 softened; true
+   cross-lineage/human (economic-historian) pass still the top recommendation
+   in the catalog.
 9. Draft later chapters when ready (paths practice → Rosetta as consequence).
 
 ---

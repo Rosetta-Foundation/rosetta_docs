@@ -104,7 +104,9 @@ later chapters / adversarial human review; do not paper over in Ch. 1–8 soften
 \*Upper bound — same-lineage review only. †Added or lowered by
 [`CROSS-LINEAGE-REVIEW-RESULTS.md`](CROSS-LINEAGE-REVIEW-RESULTS.md) (genuine
 different-model pass); confidence only ever moved down or added, never raised,
-from that pass.
+from that pass. ‡Downgraded by
+[`ADVERSARIAL-C1-I3.md`](ADVERSARIAL-C1-I3.md) — **same-lineage** pre-mortem;
+still needs a true cross-lineage or human (ideally economic-historian) pass.
 
 ---
 
@@ -117,5 +119,7 @@ from that pass.
 2. Human historian or SE KM reviewer on C2-H1 and C5-O2.
 3. ~~Optional Ch. 2 oral/mnemonic clause~~ — applied.
 4. ~~Time-anchor Chapter 4's search paragraph~~ — applied.
-5. Give **C1-I3** (the Chapter 1 thesis) a real adversarial pass of its own —
-   flagged twice now as unresolved and load-bearing for the whole arc.
+5. ~~Give C1-I3 a real adversarial pass~~ — done (same-lineage), see
+   [`ADVERSARIAL-C1-I3.md`](ADVERSARIAL-C1-I3.md). Still needs a true
+   cross-lineage or human (ideally economic-historian) pass — more so than any
+   other claim in the catalog, since it is the claim the whole series stands on.
