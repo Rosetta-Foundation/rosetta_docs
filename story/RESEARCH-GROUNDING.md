@@ -187,6 +187,10 @@ In [`chapter-5.md`](chapter-5.md):
 
 ### Still open (after Ch. 5 cluster)
 
-- T2 for **C2-H0** (scale vs memory / oral polities)
-- Historical Parallel on **C2-P2 / C6-P1** and **C7-I3**
-- Cross-lineage adversarial pass on Ch. 2 + Ch. 5 tables
+- T2 for **C2-H0** (scale vs memory / oral polities) — partial challenge cases in
+  [`HISTORICAL-PARALLEL.md`](HISTORICAL-PARALLEL.md)
+- ~~Historical Parallel on C2-P2 / C6-P1 and C7-I3~~ — done (same file)
+- ~~Adversarial pre-mortem on Ch. 2 + Ch. 5~~ — done as
+  [`ADVERSARIAL-REVIEW.md`](ADVERSARIAL-REVIEW.md) (**same-lineage upper bound**;
+  still needs a true cross-lineage or human pass)
+- T2 for **C4/C6** search ≠ understanding when ready

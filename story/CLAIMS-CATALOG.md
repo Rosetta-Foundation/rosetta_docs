@@ -63,8 +63,8 @@ Ordered by (load × falsifiability × how much the prose currently asserts).
 | 4   | C1-H1 / C2-H0 | Small communities could rely on memory; scale broke that balance                | T2 anthropology / cognitive history | **Working hypothesis** — directionally standard; avoid implying a sharp population cutoff                                                                                                      |
 | 5   | C5-O1→P1      | Orgs depend on few context-carriers; departure destroys continuity despite docs | T2 done                             | **Working hypothesis (strong)** — bus/truck factor + turnover knowledge-loss literature. See [`RESEARCH-GROUNDING.md`](RESEARCH-GROUNDING.md). Prose: “Many of” / “Many healthy institutions.” |
 | 6   | C4-H1 / C6-H1 | Search retrieves documents but not relational understanding                     | T2 HCI / IR / cognitive science     | **Working hypothesis** — strong as _limitation of keyword retrieval_; weaken absolute “cannot”                                                                                                 |
-| 7   | C6-P1 / C2-P1 | Each coordination limit → new preservation/navigation tool                      | Historical Parallel                 | **Working hypothesis** — thesis spine; needs challenging cases (dark ages, lost libraries, oral cultures that scaled)                                                                          |
-| 8   | C7-I1         | Civilization is better at destinations than paths                               | Adversarial + Historical Parallel   | **Working hypothesis / interpretive**                                                                                                                                                          |
+| 7   | C6-P1 / C2-P1 | Each coordination limit → new preservation/navigation tool                      | Parallel done                       | **Working hypothesis (bounded)** — khipu/oral systems; tool ≠ only writing. See [`HISTORICAL-PARALLEL.md`](HISTORICAL-PARALLEL.md).                                                            |
+| 8   | C7-I3         | Civilization is better at destinations than paths                               | Parallel + adversarial + Ch. 7 soft | **Working hypothesis (comparative)** — commentary/ADR exceptions in prose. See parallel + adversarial docs.                                                                                    |
 | 9   | C8-N\*        | Intergenerational obligation to leave traversable paths                         | No empirical verifier               | **Normative** — keep; do not fact-check into science                                                                                                                                           |
 
 ---
@@ -151,15 +151,15 @@ Legend: **LB** = load-bearing · **Soft?** = candidate wording change if evidenc
 
 ### Chapter 7 — The Paths Between Ideas
 
-| ID    | Quote / paraphrase                                                              | Type | LB  | Notes / action                                                                                                                     |
-| ----- | ------------------------------------------------------------------------------- | ---- | --- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| C7-D1 | Formal paths: TOC, citation, hyperlink, index                                   | D    |     |                                                                                                                                    |
-| C7-O1 | Important paths live in conversation / remembered decision sequences            | O    | ✓   |                                                                                                                                    |
-| C7-O2 | Inherited systems: destination documented, evolution/reasoning faint            | O    | ✓   | Classic SE “why” gap                                                                                                               |
-| C7-I1 | More docs ≠ preserved paths; volume can obscure trails                          | I    | ✓   | Challenging case: excellent design-history cultures                                                                                |
-| C7-H1 | Understanding depends on sequence as well as substance (science, law, software) | H/I  | ✓   |                                                                                                                                    |
-| C7-I2 | Inheritance of conclusions alone is incomplete                                  | I/N  | ✓   |                                                                                                                                    |
-| C7-I3 | Better at accumulating destinations than preserving routes                      | I    | ✓✓  | Adversarial + parallel (oral tradition, Talmudic commentary, git history, ADR culture as counterexamples that _do_ preserve paths) |
+| ID    | Quote / paraphrase                                                              | Type | LB  | Notes / action                                                                      |
+| ----- | ------------------------------------------------------------------------------- | ---- | --- | ----------------------------------------------------------------------------------- |
+| C7-D1 | Formal paths: TOC, citation, hyperlink, index                                   | D    |     |                                                                                     |
+| C7-O1 | Important paths live in conversation / remembered decision sequences            | O    | ✓   |                                                                                     |
+| C7-O2 | Inherited systems: destination documented, evolution/reasoning faint            | O    | ✓   | Classic SE “why” gap                                                                |
+| C7-I1 | More docs ≠ preserved paths; volume can obscure trails                          | I    | ✓   | Challenging case: excellent design-history cultures                                 |
+| C7-H1 | Understanding depends on sequence as well as substance (science, law, software) | H/I  | ✓   |                                                                                     |
+| C7-I2 | Inheritance of conclusions alone is incomplete                                  | I/N  | ✓   |                                                                                     |
+| C7-I3 | Better at accumulating destinations than preserving routes (comparative)        | I    | ✓✓  | **Parallel + adversarial done**; Ch. 7 soft acknowledges commentary/ADR exceptions. |
 
 ### Chapter 8 — What Every Generation Leaves Behind
 
@@ -192,12 +192,15 @@ world, and that at least some of those inventions were independent.”
 some… independent”; C2-H2 Mesopotamia-lead + other first genres; C2-H3
 threshold vs counters/marks.
 
+**Applied (Ch. 7):** C7-I3 comparative soften — commentary / decision-record
+exceptions named.
+
 Still candidates:
 
 1. **C3-H2** — acknowledge remaining access inequalities when saying “ordinary.”
 2. **C4-H2 / C6-H2** — keep “cannot easily”; avoid “cannot.”
-3. **C7-I3** — acknowledge counter-traditions that _do_ preserve paths (commentary chains, lab notebooks, ADRs) so the claim is comparative scarcity, not absolute absence.
-4. **C6-O2** — time-stamp AI navigation claims; they age fast.
+3. **C6-O2** — time-stamp AI navigation claims; they age fast.
+4. Optional Ch. 2 clause on non-written external records (khipu) — see parallel.
 
 Memoir and normative passages (most of Ch. 3 personal arc; Ch. 8 oughts) should stay; mark them N1/N, not force footnotes.
 
@@ -207,16 +210,16 @@ Memoir and normative passages (most of Ch. 3 personal arc; Ch. 8 oughts) should 
 
 Fill “Basis” during the T2 pass; this is the Adversarial Review closing artifact.
 
-| Claim                                                  | Confidence (draft)            | Basis (to complete)                                          | What would change this                                                            |
-| ------------------------------------------------------ | ----------------------------- | ------------------------------------------------------------ | --------------------------------------------------------------------------------- |
-| C2-H1 Independent (plural) invention of writing        | Established by evidence*      | T2 cite pack in RESEARCH-GROUNDING; Egypt edge contested     | Monogenesis revival with strong archaeological consensus                          |
-| C2-H2 Early writing primarily administrative/practical | Working hypothesis (softened) | Mesopotamia established; universal list removed in prose     | Earliest Mesopotamian corpus shown non-admin                                      |
-| C2-H3 Absolute “first” external knowledge              | Softened to threshold         | Tokens already separate data from knower (Schmandt-Besserat) | Proto-systems match writing’s open linguistic scale                               |
-| C5-O1/O2 Context-carriers / post-departure loss        | Working hypothesis (strong)*  | T2 pack in RESEARCH-GROUNDING (bus factor, turnover K-loss)  | Evidence that docs alone preserve “why” at scale                                  |
-| C4-D1 / C6-H2 Info ≠ understanding; search ≠ relations | Working hypothesis            | IR/HCI + cognitive science                                   | Systems that reliably expose disagreement & assumption structure                  |
-| C2-P2 / C6-P2 Coordination-limit → tool pattern        | Working hypothesis            | Historical narrative fit                                     | Clear counterexamples where limits didn’t produce tools, or tools preceded limits |
-| C7-I3 Destinations ≫ paths                             | Working hypothesis            | Interpretive + SE anecdotes                                  | Measure path-preservation traditions that scale                                   |
-| C8-N1 Obligation to leave traversable paths            | Normative (not evidential)    | Value commitment                                             | N/A — revise values, not “disprove”                                               |
+| Claim                                                  | Confidence (draft)                | Basis (to complete)                                          | What would change this                                           |
+| ------------------------------------------------------ | --------------------------------- | ------------------------------------------------------------ | ---------------------------------------------------------------- |
+| C2-H1 Independent (plural) invention of writing        | Established by evidence*          | T2 cite pack in RESEARCH-GROUNDING; Egypt edge contested     | Monogenesis revival with strong archaeological consensus         |
+| C2-H2 Early writing primarily administrative/practical | Working hypothesis (softened)     | Mesopotamia established; universal list removed in prose     | Earliest Mesopotamian corpus shown non-admin                     |
+| C2-H3 Absolute “first” external knowledge              | Softened to threshold             | Tokens already separate data from knower (Schmandt-Besserat) | Proto-systems match writing’s open linguistic scale              |
+| C5-O1/O2 Context-carriers / post-departure loss        | Working hypothesis (strong)*      | T2 pack in RESEARCH-GROUNDING (bus factor, turnover K-loss)  | Evidence that docs alone preserve “why” at scale                 |
+| C4-D1 / C6-H2 Info ≠ understanding; search ≠ relations | Working hypothesis                | IR/HCI + cognitive science                                   | Systems that reliably expose disagreement & assumption structure |
+| C2-P2 / C6-P2 Coordination-limit → tool pattern        | Working hypothesis (bounded)*     | HISTORICAL-PARALLEL (khipu/oral challenge cases)             | Tools appear without load, or load never yields tools            |
+| C7-I3 Destinations ≫ paths                             | Working hypothesis (comparative)* | HISTORICAL-PARALLEL + Ch. 7 soft + ADVERSARIAL-REVIEW        | Path preservation becomes default in ordinary orgs               |
+| C8-N1 Obligation to leave traversable paths            | Normative (not evidential)        | Value commitment                                             | N/A — revise values, not “disprove”                              |
 
 ---
 
@@ -224,9 +227,10 @@ Fill “Basis” during the T2 pass; this is the Adversarial Review closing arti
 
 1. ~~T2 for C2-H1…H3 + Ch. 2 softens~~ — [`RESEARCH-GROUNDING.md`](RESEARCH-GROUNDING.md).
 2. ~~T2 for C5-O1/O2 + Ch. 5 softens + README research pointer~~ — same file.
-3. T2 for **C2-H0** (scale vs memory / oral polities).
-4. Cross-lineage **adversarial** pass on the Ch. 2 + Ch. 5 status tables.
-5. Historical Parallel on **C2-P2 / C6-P1** and **C7-I3**.
+3. ~~Historical Parallel on C2-P2 / C6-P1 and C7-I3~~ — [`HISTORICAL-PARALLEL.md`](HISTORICAL-PARALLEL.md).
+4. ~~Adversarial pre-mortem (same-lineage upper bound)~~ — [`ADVERSARIAL-REVIEW.md`](ADVERSARIAL-REVIEW.md).
+5. **True cross-lineage or human** adversarial pass on the status table.
+6. T2 for **C2-H0** and **C4/C6** search limits when ready.
 
 ---
 
