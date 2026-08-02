@@ -175,6 +175,21 @@ earlier ("Yet I have often wondered whether those inventions were the cause
 of civilization's progress or merely the visible evidence of something
 deeper"). Applied below.
 
+**Follow-up (2026-08-01):** Given a choice between (a) leaving the essay's
+one-sentence hedge as the whole fix, (b) adding a real in-text steelman
+paragraph for the rival explanations, (c) moving the discussion to a
+separate "notes on method" artifact, or (d) adding a short, in-voice aside
+that names the selection-bias risk directly — the author chose **(d)**.
+Chapter 1 now reads: "I am aware, too, that it is a convenient thread for
+someone about to spend several chapters on preservation to have chosen, and
+I would rather name that bias here than let the reader discover it
+unassisted." This directly answers finding **4** (the "curated to reach
+Rosetta" risk) in the voice of the essay rather than importing an academic
+rival-theory list, which risked breaking Chapter 1's register. It does
+**not** resolve the underlying epistemic status of `C1-I3` — the claim is
+still **Speculative**, and the top remaining priority in the catalog is
+unchanged: a true cross-lineage or human (ideally economic-historian) pass.
+
 ## Still open after this pass
 
 1. A true cross-lineage or human (ideally economic-historian) pass on this
