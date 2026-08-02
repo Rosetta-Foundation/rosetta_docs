@@ -2,7 +2,7 @@
 
 ## What Every Generation Leaves Behind
 
-[← The Paths Between Ideas](chapter-7.md) · [Contents](README.md)
+[← The Paths Between Ideas](chapter-7.md) · [Contents](README.md) · [Next: What a Practice of Paths Would Require →](chapter-9.md)
 
 Every generation inherits an unfinished world. That fact is so ordinary that it rarely receives the attention it deserves. Children are born into languages they did not invent, cities they did not build, laws they did not write, and problems they did not create. They also inherit unfinished questions, partial answers, and tools whose original purposes have sometimes been forgotten. Civilization advances not because any single generation completes the work, but because enough of that work remains intelligible for those who follow to continue it.
 
@@ -20,4 +20,4 @@ These are not questions that technology answers by itself. Tools can help or hin
 
 ---
 
-[← The Paths Between Ideas](chapter-7.md) · [Contents](README.md)
+[← The Paths Between Ideas](chapter-7.md) · [Contents](README.md) · [Next: What a Practice of Paths Would Require →](chapter-9.md)
