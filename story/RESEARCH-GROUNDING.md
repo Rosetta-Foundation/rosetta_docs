@@ -18,6 +18,7 @@ upper bound ([`../process/adversarial-review.md`](../process/adversarial-review.
 2. Chapter 5 organizational context — **C5-O1**, **C5-O2** (and related) (2026-08-02)
 3. Scale vs memory — **C2-H0** (2026-08-02)
 4. Search vs understanding — **C4-H2 / C6-H2** (2026-08-02)
+5. Rediscovery under failed trails — **C8-P2** / Bush–Mendel (2026-08-02)
 
 ---
 
@@ -253,3 +254,37 @@ objects.
 **What would change this:** Mainstream systems that routinely expose
 disagreement structure, assumption chains, and cross-vocabulary analogies
 without a well-formed query — at default consumer UX, not research demos.
+
+---
+
+## Research grounding — C8-P2 (Bush / Mendel; rediscovery under failed trails)
+
+**Claim (catalog):** When trails to an already-published insight are weak, later
+minds can re-derive the same structure; rediscovery evidences a navigation
+failure, not an empty archive.
+
+**Sources consulted (3):**
+
+1. [Vannevar Bush, “As We May Think,” _The Atlantic_ (July 1945)](https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/) — **W1/W5** (canonical primary essay). Relevance: Mendel lost for a generation despite publication; record expands faster than consulting means; stretch from observation → parallel extraction → insertion into the common record; “For mature thought there is no mechanical substitute.”
+2. [MIT STS course PDF of the same essay (Duchier etext)](https://web.mit.edu/sts.035/www/PDFs/think.pdf) — **W4/W5** (stable full text). Relevance: Confirms wording of the common-record / mature-thought passage used in Ch. 8.
+3. Parallel bounds in [`HISTORICAL-PARALLEL.md`](HISTORICAL-PARALLEL.md) (C8-P2) — pristine independent invention of writing is a **different** phenomenon (no prior shared record), not collapsed into “lost trail.”
+
+**Aggregate finding:** Bush’s Mendel example and his common-record gate are
+**Established as primary-text facts**. The broader pattern claim (rediscovery as
+structural cost of weak trails) is **Working hypothesis**, bounded by (a) cases
+of true independent invention before a shared record, and (b) fields where
+citation/search make Mendel-class losses rarer for known-item needs.
+
+**Essay implication:** Ch. 8 paragraph uses Bush/Mendel as structural evidence
+only. Do **not** narrate a personal “I rediscovered Bush” memoir beat — that
+would violate the essay’s anti-ego / philosophy-first voice
+([`WRITING-CONTEXT.md`](WRITING-CONTEXT.md)). Readers who know later
+path-keeping architectures may feel the rhyme; the prose does not claim credit.
+
+**Confidence:** Established for the Bush quotations and Mendel episode as Bush
+presents it; Working hypothesis for the pattern generalization.
+
+**What would change this:** Historiography showing Mendel was widely known to
+the relevant geneticists throughout the “lost” generation, or evidence that
+publication-plus-default-search reliably prevents structural rediscovery across
+fields.

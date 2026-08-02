@@ -141,6 +141,10 @@ Use **stewardship** sparingly until late chapters.
   assumptions, decisions, conversations, influences, tradeoffs, history.
 - The software is not the story. The story is civilization.
 - The emotional ending is responsibility, not excitement.
+- **Bush / rediscovery (Ch. 8):** Use Mendel + Bush’s common-record gate as
+  _structural evidence_ that unfindable trails force re-derivation. Never frame
+  this as a personal “I reinvented Bush” memoir beat. Readers may feel the
+  rhyme with later path-keeping architectures; the prose must not claim credit.
 
 ---
 

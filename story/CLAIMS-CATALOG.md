@@ -67,7 +67,8 @@ Ordered by (load × falsifiability × how much the prose currently asserts).
 | 7   | C6-P1 / C2-P1 | Each coordination limit → new preservation/navigation tool                      | Parallel done                       | **Working hypothesis (bounded)** — khipu/oral systems; tool ≠ only writing. See [`HISTORICAL-PARALLEL.md`](HISTORICAL-PARALLEL.md).                                                                                                                               |
 | 8   | C7-I3         | Civilization is better at destinations than paths                               | Parallel + adversarial + Ch. 7 soft | **Working hypothesis (comparative)** — commentary/ADR exceptions in prose. See parallel + adversarial docs.                                                                                                                                                       |
 | 9   | C8-N\*        | Intergenerational obligation to leave traversable paths                         | No empirical verifier               | **Normative** — keep; do not fact-check into science                                                                                                                                                                                                              |
-| 10  | C1-I3         | Bottleneck was preservation, not intelligence (whole-series thesis)             | Adversarial done (same-lineage)     | **Speculative** — downgraded; competes with cooperation/institutions and energy/material tech as rival explanations. See [`ADVERSARIAL-C1-I3.md`](ADVERSARIAL-C1-I3.md). Ch. 1 softened. **Top remaining priority: cross-lineage/human economic-historian pass.** |
+| 10  | C8-P2         | Rediscovery under failed trails (Mendel / Bush pattern)                         | Parallel + T2 done                  | **Working hypothesis** — ego-free Ch. 8 paragraph; bound vs pristine independent invention. See parallel + research grounding.                                                                                                                                    |
+| 11  | C1-I3         | Bottleneck was preservation, not intelligence (whole-series thesis)             | Adversarial done (same-lineage)     | **Speculative** — downgraded; competes with cooperation/institutions and energy/material tech as rival explanations. See [`ADVERSARIAL-C1-I3.md`](ADVERSARIAL-C1-I3.md). Ch. 1 softened. **Top remaining priority: cross-lineage/human economic-historian pass.** |
 
 ---
 
@@ -165,16 +166,18 @@ Legend: **LB** = load-bearing · **Soft?** = candidate wording change if evidenc
 
 ### Chapter 8 — What Every Generation Leaves Behind
 
-| ID    | Quote / paraphrase                                                            | Type | LB  | Notes / action                                                    |
-| ----- | ----------------------------------------------------------------------------- | ---- | --- | ----------------------------------------------------------------- |
-| C8-H1 | Each generation inherits unfinished world (language, cities, laws, tools)     | H    |     | Near-truism                                                       |
-| C8-N1 | Obligation to leave paths traversable, not only to discover                   | N    | ✓   | Flavor-(c); keep as ought                                         |
-| C8-I1 | Solving problems while erasing reasoning can impoverish successors            | I    | ✓   |                                                                   |
-| C8-N2 | Local acts (parent, teacher, engineer) are where continuity is kept or broken | N/O  | ✓   |                                                                   |
-| C8-P1 | Faster knowledge production → more need for deliberate intelligibility        | P    | ✓   | Parallel: print explosion → indexes; web → search; ? → path tools |
-| C8-I2 | Durable contributions often look modest (writing, libraries, indexes)         | I    |     | Historical color — T3 optional                                    |
-| C8-N3 | Selective preservation; forgetting can be merciful                            | N    |     | Important hedge — keep                                            |
-| C8-N4 | Responsibility remains human; tools help or hinder                            | N    | ✓   | Anti-tech-savior; fits WRITING-CONTEXT                            |
+| ID    | Quote / paraphrase                                                            | Type | LB  | Notes / action                                                                                                                                                              |
+| ----- | ----------------------------------------------------------------------------- | ---- | --- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| C8-H1 | Each generation inherits unfinished world (language, cities, laws, tools)     | H    |     | Near-truism                                                                                                                                                                 |
+| C8-N1 | Obligation to leave paths traversable, not only to discover                   | N    | ✓   | Flavor-(c); keep as ought                                                                                                                                                   |
+| C8-I1 | Solving problems while erasing reasoning can impoverish successors            | I    | ✓   |                                                                                                                                                                             |
+| C8-N2 | Local acts (parent, teacher, engineer) are where continuity is kept or broken | N/O  | ✓   |                                                                                                                                                                             |
+| C8-P1 | Faster knowledge production → more need for deliberate intelligibility        | P    | ✓   | Parallel: print explosion → indexes; web → search; ? → path tools                                                                                                           |
+| C8-I2 | Durable contributions often look modest (writing, libraries, indexes)         | I    |     | Historical color — T3 optional                                                                                                                                              |
+| C8-N3 | Selective preservation; forgetting can be merciful                            | N    |     | Important hedge — keep                                                                                                                                                      |
+| C8-N4 | Responsibility remains human; tools help or hinder                            | N    | ✓   | Anti-tech-savior; fits WRITING-CONTEXT                                                                                                                                      |
+| C8-P2 | Rediscovery after publication evidences weak trails, not empty archives       | P    | ✓   | Parallel + research done — Mendel/Bush; ego-free prose in Ch. 8. See [`HISTORICAL-PARALLEL.md`](HISTORICAL-PARALLEL.md) + [`RESEARCH-GROUNDING.md`](RESEARCH-GROUNDING.md). |
+| C8-H2 | Bush (1945) names Mendel loss + human gate into the common record             | H    |     | Primary-text facts; supports C8-P2 illustration                                                                                                                             |
 
 ### Chapter 9 — What a Practice of Paths Would Require
 
@@ -237,18 +240,19 @@ Memoir and normative passages (most of Ch. 3 personal arc; Ch. 8 oughts) should 
 
 Fill “Basis” during the T2 pass; this is the Adversarial Review closing artifact.
 
-| Claim                                                  | Confidence (draft)                | Basis (to complete)                                                            | What would change this                                                                                                    |
-| ------------------------------------------------------ | --------------------------------- | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
-| C2-H1 Independent (plural) invention of writing        | Established by evidence*          | T2 cite pack in RESEARCH-GROUNDING; Egypt edge contested                       | Monogenesis revival with strong archaeological consensus                                                                  |
-| C2-H2 Early writing primarily administrative/practical | Working hypothesis (softened)     | Mesopotamia established; universal list removed in prose                       | Earliest Mesopotamian corpus shown non-admin                                                                              |
-| C2-H3 Absolute “first” external knowledge              | Softened to threshold             | Tokens already separate data from knower (Schmandt-Besserat)                   | Proto-systems match writing’s open linguistic scale                                                                       |
-| C5-O1/O2 Context-carriers / post-departure loss        | Working hypothesis (strong)§      | T2 pack + W6 practitioner corroboration (large enterprise)                     | Systematic (non-N=1) evidence that formal succession planning reliably prevents this pattern at scale                     |
-| C2-H0 Scale vs memory (directional)                    | Working hypothesis                | T2 pack (Dunbar critique + oral mnemonics + khipu)                             | Evidence of a hard population cutoff, or that scale never raises memory load                                              |
-| C4-D1 / C6-H2 Info ≠ understanding; search ≠ relations | Working hypothesis (strong)*      | T2 exploratory-search pack in RESEARCH-GROUNDING                               | Systems that reliably expose disagreement & assumption structure                                                          |
-| C2-P2 / C6-P2 Coordination-limit → tool pattern        | Working hypothesis (bounded)*     | HISTORICAL-PARALLEL (khipu/oral challenge cases)                               | Tools appear without load, or load never yields tools; or contraction†                                                    |
-| C7-I3 Destinations ≫ paths                             | Working hypothesis (comparative)* | HISTORICAL-PARALLEL + Ch. 7 soft + ADVERSARIAL-REVIEW                          | Path preservation becomes default in ordinary orgs; legal/regulatory record-keeping is broader than the cited exceptions† |
-| C1-I3 Bottleneck was preservation, not intelligence    | Speculative‡                      | Same-lineage adversarial pass — [`ADVERSARIAL-C1-I3.md`](ADVERSARIAL-C1-I3.md) | Structural econ-history account of the real binding constraint; ~5,000-yr writing→growth lag unresolved                   |
-| C8-N1 Obligation to leave traversable paths            | Normative (not evidential)        | Value commitment                                                               | N/A — revise values, not “disprove”                                                                                       |
+| Claim                                                  | Confidence (draft)                | Basis (to complete)                                                            | What would change this                                                                                                                |
+| ------------------------------------------------------ | --------------------------------- | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------- |
+| C2-H1 Independent (plural) invention of writing        | Established by evidence*          | T2 cite pack in RESEARCH-GROUNDING; Egypt edge contested                       | Monogenesis revival with strong archaeological consensus                                                                              |
+| C2-H2 Early writing primarily administrative/practical | Working hypothesis (softened)     | Mesopotamia established; universal list removed in prose                       | Earliest Mesopotamian corpus shown non-admin                                                                                          |
+| C2-H3 Absolute “first” external knowledge              | Softened to threshold             | Tokens already separate data from knower (Schmandt-Besserat)                   | Proto-systems match writing’s open linguistic scale                                                                                   |
+| C5-O1/O2 Context-carriers / post-departure loss        | Working hypothesis (strong)§      | T2 pack + W6 practitioner corroboration (large enterprise)                     | Systematic (non-N=1) evidence that formal succession planning reliably prevents this pattern at scale                                 |
+| C2-H0 Scale vs memory (directional)                    | Working hypothesis                | T2 pack (Dunbar critique + oral mnemonics + khipu)                             | Evidence of a hard population cutoff, or that scale never raises memory load                                                          |
+| C4-D1 / C6-H2 Info ≠ understanding; search ≠ relations | Working hypothesis (strong)*      | T2 exploratory-search pack in RESEARCH-GROUNDING                               | Systems that reliably expose disagreement & assumption structure                                                                      |
+| C2-P2 / C6-P2 Coordination-limit → tool pattern        | Working hypothesis (bounded)*     | HISTORICAL-PARALLEL (khipu/oral challenge cases)                               | Tools appear without load, or load never yields tools; or contraction†                                                                |
+| C7-I3 Destinations ≫ paths                             | Working hypothesis (comparative)* | HISTORICAL-PARALLEL + Ch. 7 soft + ADVERSARIAL-REVIEW                          | Path preservation becomes default in ordinary orgs; legal/regulatory record-keeping is broader than the cited exceptions†             |
+| C1-I3 Bottleneck was preservation, not intelligence    | Speculative‡                      | Same-lineage adversarial pass — [`ADVERSARIAL-C1-I3.md`](ADVERSARIAL-C1-I3.md) | Structural econ-history account of the real binding constraint; ~5,000-yr writing→growth lag unresolved                               |
+| C8-N1 Obligation to leave traversable paths            | Normative (not evidential)        | Value commitment                                                               | N/A — revise values, not “disprove”                                                                                                   |
+| C8-P2 Rediscovery under failed trails                  | Working hypothesis                | HISTORICAL-PARALLEL + RESEARCH-GROUNDING (Bush/Mendel); ego-free Ch. 8 prose   | Publication+default-search shown to reliably prevent structural rediscovery across fields; or Mendel “loss” historiography overturned |
 
 †Lowered or added by a genuine cross-lineage pass — see
 [`CROSS-LINEAGE-REVIEW-RESULTS.md`](CROSS-LINEAGE-REVIEW-RESULTS.md). ‡Lowered
@@ -280,7 +284,9 @@ and the corroboration note in [`RESEARCH-GROUNDING.md`](RESEARCH-GROUNDING.md).
    in the catalog.
 9. ~~Draft later chapters (paths practice → Rosetta as consequence)~~ — Ch. 9–10
    drafted.
-10. Optional: human / economic-historian pass on C1-I3; early-access share of
+10. ~~C8-P2 Bush/Mendel rediscovery example (ego-free Ch. 8)~~ — parallel +
+    research grounding done.
+11. Optional: human / economic-historian pass on C1-I3; early-access share of
     Ch. 1–10; light stewardship language only if a later revision earns it.
 
 ---
