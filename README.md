@@ -12,6 +12,7 @@ why" of the platform that doesn't belong to any single code repo.
 | [`foundations/`](foundations)   | The constitution — founding context, manifesto, principles, glossary, settled decisions. **Read first.** |
 | [`product/`](product)           | Product Requirements Documents (PRDs) — capabilities framed **before** they are built.                   |
 | [`architecture/`](architecture) | Architecture Decision Records (ADRs) — decisions already made.                                           |
+| [`process/`](process)           | Claim hygiene — research tiers, epistemic status, adversarial review, historical parallel (Proposed).    |
 | [`docs/`](docs)                 | Cross-cutting product & workspace docs (vision, the engineering-era origin story, assets).               |
 | [`story/`](story)               | Long-form essay drafts developing the civilizational philosophy behind Rosetta.                          |
 | [`shared/`](shared)             | Shared assets referenced across Rosetta repos.                                                           |
@@ -28,6 +29,8 @@ instead — one versioned home, PR-reviewable, decoupled from any component.
 
 - **PRDs** — see [`product/README.md`](product/README.md). Filename `PRD-NNNN-short-kebab-title.md`; register each in the product Records table.
 - **ADRs** — see [`architecture/README.md`](architecture/README.md).
+- **Load-bearing claims** in prose — see [`process/README.md`](process/README.md) (research
+  grounding, epistemic status, adversarial review). SDLC gates cover ships; process covers writing.
 - Every artifact is authored to be legible to **both humans and machines**: structured
   frontmatter, list-based content, checkbox acceptance criteria, explicit links.
 - **Git:** Conventional Commits via husky. Default is `f/` / `b/` topic branches + PR — do not

@@ -1,0 +1,52 @@
+name: Challenge a claim
+description: Challenge or pressure-test a directional claim in Rosetta docs or the story.
+title: 'Challenge: '
+labels:
+  - challenge
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to challenge a specific claim in `rosetta_docs` (story,
+        foundations, PRDs, ADRs). Be precise about the sentence and why it fails.
+        Reviewers will apply [`process/`](../../process/README.md) (research,
+        adversarial review, historical parallel) as needed.
+  - type: input
+    id: claim-location
+    attributes:
+      label: Which claim are you challenging?
+      description: Path + section, or permalink to the line if possible.
+      placeholder: e.g. story/chapter-2.md — “writing appeared independently…”
+    validations:
+      required: true
+  - type: textarea
+    id: challenge
+    attributes:
+      label: What is wrong, overstated, or incomplete?
+      description: Explain the disagreement directly.
+      placeholder: This claim overstates…
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence or reasoning
+      description: Data, cases, citations (with URLs), or concrete reasoning.
+      placeholder: Supporting evidence…
+    validations:
+      required: true
+  - type: textarea
+    id: alternative
+    attributes:
+      label: Better framing or alternative claim
+      description: Optional — propose stronger wording.
+      placeholder: A better claim would be…
+    validations:
+      required: false
+  - type: checkboxes
+    id: quality-check
+    attributes:
+      label: Submission check
+      options:
+        - label: I named a specific claim and provided concrete support for the challenge.
+          required: true

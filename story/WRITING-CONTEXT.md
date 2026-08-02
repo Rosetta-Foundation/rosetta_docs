@@ -85,6 +85,15 @@ after a `---` rule: Previous · Contents · Next (relative links). When adding a
 chapter, update Contents, the previous chapter’s Next links, and the new
 chapter’s nav in the same change.
 
+### Claims and verification
+
+Assertive sentences are inventoried in [`CLAIMS-CATALOG.md`](CLAIMS-CATALOG.md),
+typed per [`../process/`](../process/README.md) (Research Protocol lite,
+epistemic status, adversarial review, historical parallel). Load-bearing
+historical claims get T2/T3 source grounding before the prose hardens;
+normative claims are not “verified” into facts. When adding a chapter, extend
+the catalog in the same change.
+
 Reserved for later:
 
 - What a practice of preserving paths might require (still philosophical)
