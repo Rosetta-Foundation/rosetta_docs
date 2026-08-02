@@ -12,8 +12,10 @@ supersedes: null
 # PRD-0006: Artifact Capture & Promotion to Org Knowledge
 
 > Link the durable outputs of engineering work (diagrams, docs, designs) to the
-> sessions that produced them, and provide a pipeline to promote private Chronicle
-> knowledge into shared organizational memory.
+> sessions that produced them, and provide a promote primitive (payload +
+> redaction) into shared chronicles. Destination registry, multi-destination
+> landings, suggestions, and shared-chronicle create/join:
+> [PRD-0019](PRD-0019-shared-chronicle-provisioning-and-multi-destination-promotion.md).
 
 ## 1. Overview & Goals
 
@@ -34,7 +36,7 @@ query this."
 
 This capability closes both gaps: (1) link artifacts to the sessions/activity
 that produced them, so the private Chronicle is a complete record of not just
-*what you did* but *what you produced*, and (2) provide a promotion pipeline that
+_what you did_ but _what you produced_, and (2) provide a promotion pipeline that
 can surface selected private knowledge into a shared org layer — redacting
 personal context and preserving the durable architectural insight.
 
@@ -50,9 +52,12 @@ personal context and preserving the durable architectural insight.
 
 - Not auto-publishing anything — promotion is always an explicit human decision.
 - Not a document management system — Chronicle links to artifacts where they live (in repos, in docs/), it doesn't ingest or store copies.
-- Not replacing ADRs or PRDs — those are authoring surfaces; this is the knowledge *produced during* engineering work that doesn't rise to an ADR/PRD but is still valuable.
+- Not replacing ADRs or PRDs — those are authoring surfaces; this is the knowledge _produced during_ engineering work that doesn't rise to an ADR/PRD but is still valuable.
 - Not building Wayfinder's query layer — this PRD defines the structured data Wayfinder would consume.
-- Not cross-team aggregation (multi-user org chronicles) — that's a separate capability; this covers the single-user private→org promotion path.
+- Not cross-team aggregation, multi-destination promotion, suggestion inbox, or
+  shared-chronicle create/join — those are [PRD-0019](PRD-0019-shared-chronicle-provisioning-and-multi-destination-promotion.md).
+  This PRD covers artifact linking and the single promote primitive (payload +
+  redaction) into destinations the caller supplies.
 
 ### 1.4 Acceptance Criteria
 
@@ -91,6 +96,7 @@ hardcoded defaults) — exactly the kind of architectural knowledge that:
 3. Is currently invisible to the organization unless someone manually shares it
 
 **Serves:**
+
 - The engineer (complete private record — "I produced this diagram during that investigation")
 - The team (org-visible architectural knowledge, discoverable and queryable)
 - Future agents (structured artifact→evidence links feed Wayfinder "how does X work?" queries)
@@ -161,12 +167,7 @@ export interface Artifact {
 }
 
 export type ArtifactType =
-  | 'diagram'
-  | 'doc'
-  | 'design'
-  | 'config'
-  | 'test'
-  | 'other';
+  "diagram" | "doc" | "design" | "config" | "test" | "other";
 
 /** Extended sidecar: activities + artifacts for a day. */
 export interface DailyChronicleData {
@@ -223,6 +224,10 @@ export interface OrgKnowledgeEntry {
 - Cross-repo artifacts: the diagram lives in `example_usage_console` but the
   Chronicle lives in `rosetta_chronicle_example-user`. Paths must be
   workspace-relative or absolute.
+- Destination selection, multi-destination landings, suggestion inbox, and
+  shared-chronicle provisioning: owned by
+  [PRD-0019](PRD-0019-shared-chronicle-provisioning-and-multi-destination-promotion.md)
+  — do not expand this PRD to cover them.
 
 ## 7. Rollout & Phases
 
@@ -248,6 +253,8 @@ export interface OrgKnowledgeEntry {
 - Versioned knowledge: when an architecture diagram is updated, the org entry
   should reflect the latest version while preserving history.
 - Team-level Chronicle: aggregating promoted knowledge across multiple engineers'
-  private Chronicles into a team/org-level view.
-- AI-assisted promotion: an agent that suggests "this looks like reusable
-  architectural knowledge — promote it?" based on tags and artifact type.
+  private Chronicles into a team/org-level view — provisioning and destination
+  registry in [PRD-0019](PRD-0019-shared-chronicle-provisioning-and-multi-destination-promotion.md).
+- AI-assisted promotion suggestions and missed-review browse: moved to
+  [PRD-0019](PRD-0019-shared-chronicle-provisioning-and-multi-destination-promotion.md)
+  Phase 2 (this PRD keeps the promote primitive those surfaces invoke).
