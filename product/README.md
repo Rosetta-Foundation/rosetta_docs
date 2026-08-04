@@ -48,10 +48,10 @@ Open PRDs — available for review, commitment, or remaining phase work.
 | [0015](PRD-0015-chronicle-activity-schema-and-open-ingestion.md) | Chronicle Activity Schema & Open Ingestion    | Draft    | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-07-31 |
 | [0016](PRD-0016-offline-on-device-intelligence.md)               | Offline On-Device Intelligence                | Draft    | ⬜ 1 ⬜ 2 ⬜ 3 ⬜ 4 | 2026-07-31 |
 | [0017](PRD-0017-wayfinder-voice-audio-surface.md)                | Wayfinder Voice & Audio Surface               | Draft    | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-07-31 |
-| [0018](PRD-0018-sdlc-event-daemon.md)                            | SDLC Event Daemon                             | Draft    | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-08-04 |
-| [0019](PRD-0019-self-healing-run-engine.md)                      | Self-Healing Run Engine                       | Draft    | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-08-04 |
-| [0020](PRD-0020-delivery-truth-and-run-observability.md)         | Delivery Truth & Run Observability            | Draft    | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-08-04 |
-| [0021](PRD-0021-docs-closeout-as-run-step.md)                    | Docs Closeout as a Run Step                   | Draft    | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-08-04 |
+| [0020](PRD-0020-sdlc-event-daemon.md)                            | SDLC Event Daemon                             | Draft    | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-08-04 |
+| [0021](PRD-0021-self-healing-run-engine.md)                      | Self-Healing Run Engine                       | Draft    | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-08-04 |
+| [0022](PRD-0022-delivery-truth-and-run-observability.md)         | Delivery Truth & Run Observability            | Draft    | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-08-04 |
+| [0023](PRD-0023-docs-closeout-as-run-step.md)                    | Docs Closeout as a Run Step                   | Draft    | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-08-04 |
 
 ## Shipped
 

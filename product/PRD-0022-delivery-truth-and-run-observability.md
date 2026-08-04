@@ -1,5 +1,5 @@
 ---
-id: PRD-0020
+id: PRD-0022
 title: Delivery Truth & Run Observability
 status: Draft # Draft | Proposed | Accepted | Shipped | Superseded | Deprecated
 date: 2026-08-04
@@ -9,7 +9,7 @@ related_specs: [SPEC-PRD-0011-P4]
 supersedes: null
 ---
 
-# PRD-0020: Delivery Truth & Run Observability
+# PRD-0022: Delivery Truth & Run Observability
 
 > Close the trust gap between "gates green" and "feature actually reachable
 > in the sandbox," and give a running SDLC workflow an honest, always-current
@@ -107,8 +107,8 @@ human touchpoints — it must be spent on judgment, not on discovering that
 debugging. Honest ETA and step context replace the "You still good bro?"
 check-ins that the heartbeat was supposed to eliminate.
 
-**Secondary user: the machinery itself.** PRD-0018's daemon and the
-PRD-0019 breakers need truthful step context and delivery classification to
+**Secondary user: the machinery itself.** PRD-0020's daemon and the
+PRD-0021 breakers need truthful step context and delivery classification to
 decide when to wake, retry, or escalate.
 
 ## 3. Approach
@@ -134,7 +134,7 @@ Three strands, split cleanly across the platform boundary:
   steps; per-run agent identity (dispatch records the child process
   group; `agentAlive` checks that tree); a convergence monitor over agent
   activity (commit cadence, diff delta, budget clock); `status` and digest
-  enriched with per-task step, remaining gates, recovery state (PRD-0019),
+  enriched with per-task step, remaining gates, recovery state (PRD-0021),
   and an ETA band computed from Chronicle `sdlc.merge.v1` history for
   comparable complexity tasks.
 
@@ -193,7 +193,7 @@ interface EtaBand {
   envelope (the SPEC-PRD-0011-P4 pattern).
 - Depends on SPEC-PRD-0011-P4 (path-aware sandbox deploy) — completed and
   live-validated inside this PRD's first phase.
-- PRD-0019's recovery records and PRD-0018's wake path are consumers of the
+- PRD-0021's recovery records and PRD-0020's wake path are consumers of the
   observability surface; interfaces coordinated but neither is a hard
   prerequisite.
 - ADR-0004 stays authoritative for production observability; this PRD's
@@ -209,7 +209,7 @@ interface EtaBand {
   is an honest answer.
 - Thrash detection thresholds risk killing legitimately slow exploratory
   work; the monitor warns and surfaces — it never terminates on its own
-  (termination stays with PRD-0018's stale-agent policy and its explicit
+  (termination stays with PRD-0020's stale-agent policy and its explicit
   staleness rules).
 - Deploy classification depends on workflow job introspection that varies
   by consumer CI shape; the contract must define what the repo exposes
