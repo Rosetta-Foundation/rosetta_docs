@@ -50,6 +50,7 @@ Open PRDs — available for review, commitment, or remaining phase work.
 | [0017](PRD-0017-wayfinder-voice-audio-surface.md)                | Wayfinder Voice & Audio Surface               | Draft    | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-07-31 |
 | [0018](PRD-0018-sdlc-event-daemon.md)                            | SDLC Event Daemon                             | Draft    | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-08-04 |
 | [0019](PRD-0019-self-healing-run-engine.md)                      | Self-Healing Run Engine                       | Draft    | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-08-04 |
+| [0020](PRD-0020-delivery-truth-and-run-observability.md)         | Delivery Truth & Run Observability            | Draft    | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-08-04 |
 
 ## Shipped
 
