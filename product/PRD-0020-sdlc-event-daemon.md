@@ -1,7 +1,7 @@
 ---
 id: PRD-0020
 title: SDLC Event Daemon
-status: Draft # Draft | Proposed | Accepted | Shipped | Superseded | Deprecated
+status: Accepted # Draft | Proposed | Accepted | Shipped | Superseded | Deprecated
 date: 2026-08-04
 owner: Russ Watson
 related_adrs: [ADR-0007, ADR-0008]

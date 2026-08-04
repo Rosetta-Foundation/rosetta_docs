@@ -1,7 +1,7 @@
 ---
 id: PRD-0024
 title: Planning-Side Role Skills
-status: Draft # Draft | Proposed | Accepted | Shipped | Superseded | Deprecated
+status: Accepted # Draft | Proposed | Accepted | Shipped | Superseded | Deprecated
 date: 2026-08-04
 owner: Russ Watson
 related_adrs: [ADR-0008]
