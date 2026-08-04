@@ -13,7 +13,7 @@ why" of the platform that doesn't belong to any single code repo.
 | [`product/`](product)           | Product Requirements Documents (PRDs) — capabilities framed **before** they are built.                   |
 | [`architecture/`](architecture) | Architecture Decision Records (ADRs) — decisions already made.                                           |
 | [`process/`](process)           | Claim hygiene — research tiers, epistemic status, adversarial review, historical parallel (Proposed).    |
-| [`docs/`](docs)                 | Cross-cutting product & workspace docs (vision, the engineering-era origin story, assets).               |
+| [`docs/`](docs)                 | Cross-cutting product & workspace docs (vision, origin story, [website branding options](docs/WEBSITE-BRANDING.md), assets). |
 | [`story/`](story)               | Long-form essay drafts developing the civilizational philosophy behind Rosetta.                          |
 | [`shared/`](shared)             | Shared assets referenced across Rosetta repos.                                                           |
 
