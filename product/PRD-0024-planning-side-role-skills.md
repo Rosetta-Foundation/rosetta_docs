@@ -1,5 +1,5 @@
 ---
-id: PRD-0022
+id: PRD-0024
 title: Planning-Side Role Skills
 status: Draft # Draft | Proposed | Accepted | Shipped | Superseded | Deprecated
 date: 2026-08-04
@@ -9,7 +9,7 @@ related_specs: []
 supersedes: null
 ---
 
-# PRD-0022: Planning-Side Role Skills
+# PRD-0024: Planning-Side Role Skills
 
 > Strategist, product-manager, and UX-designer roles as workspace skills for
 > the collaborative planning session — grounding docs declared by the

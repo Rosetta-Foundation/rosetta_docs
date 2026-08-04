@@ -1,5 +1,5 @@
 ---
-id: PRD-0021
+id: PRD-0023
 title: Docs Closeout as a Run Step
 status: Draft # Draft | Proposed | Accepted | Shipped | Superseded | Deprecated
 date: 2026-08-04
@@ -9,7 +9,7 @@ related_specs: []
 supersedes: null
 ---
 
-# PRD-0021: Docs Closeout as a Run Step
+# PRD-0023: Docs Closeout as a Run Step
 
 > The engine opens the spec-closeout docs PR itself — acceptance checkboxes
 > flipped from verification verdicts, `status: Done`, and records tables
@@ -160,7 +160,7 @@ interface DocsCloseoutConfig {
   are consumer config; the engine ships extraction, rendering, and PR
   mechanics only.
 - Depends on the verdict records that already exist (`sdlc.verdict.v1`);
-  coordinates with PRD-0018 (closeout PR rides merge-on-approve and its
+  coordinates with PRD-0020 (closeout PR rides merge-on-approve and its
   watch) and SPEC-BUG-one-click-spec-approval (same Addi PR conventions).
 - Addi authorship, DCO, conventional commits; no tool-attribution footers.
 - HSR + InversifyJS, TypeScript strict.

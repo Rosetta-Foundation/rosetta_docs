@@ -1,5 +1,5 @@
 ---
-id: PRD-0018
+id: PRD-0020
 title: SDLC Event Daemon
 status: Draft # Draft | Proposed | Accepted | Shipped | Superseded | Deprecated
 date: 2026-08-04
@@ -9,7 +9,7 @@ related_specs: []
 supersedes: null
 ---
 
-# PRD-0018: SDLC Event Daemon
+# PRD-0020: SDLC Event Daemon
 
 > A session-independent daemon that owns the entire "something happened →
 > the machinery acts" chain for SDLC automation: GitHub event watching, wake
