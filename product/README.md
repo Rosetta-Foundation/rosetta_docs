@@ -51,6 +51,7 @@ Open PRDs — available for review, commitment, or remaining phase work.
 | [0018](PRD-0018-sdlc-event-daemon.md)                            | SDLC Event Daemon                             | Draft    | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-08-04 |
 | [0019](PRD-0019-self-healing-run-engine.md)                      | Self-Healing Run Engine                       | Draft    | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-08-04 |
 | [0020](PRD-0020-delivery-truth-and-run-observability.md)         | Delivery Truth & Run Observability            | Draft    | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-08-04 |
+| [0021](PRD-0021-docs-closeout-as-run-step.md)                    | Docs Closeout as a Run Step                   | Draft    | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-08-04 |
 
 ## Shipped
 
