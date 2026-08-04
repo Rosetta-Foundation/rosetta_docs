@@ -1,5 +1,5 @@
 ---
-id: PRD-0019
+id: PRD-0021
 title: Self-Healing Run Engine
 status: Draft # Draft | Proposed | Accepted | Shipped | Superseded | Deprecated
 date: 2026-08-04
@@ -9,7 +9,7 @@ related_specs: []
 supersedes: null
 ---
 
-# PRD-0019: Self-Healing Run Engine
+# PRD-0021: Self-Healing Run Engine
 
 > Every transient failure class in an SDLC run — not just CI — gets a
 > bounded, evidence-recorded recovery path, so an overnight run survives
@@ -61,7 +61,7 @@ pause rather than thrash, and only genuinely terminal states escalate.
 - Does not add unbounded retry loops — every recovery path has an attempt
   cap and a terminal escalation.
 - Does not cover watcher/wake delivery or supervisor resurrection
-  (PRD-0018) or the silent-failure reporting seams
+  (PRD-0020) or the silent-failure reporting seams
   (SPEC-BUG-fail-loud-run-lifecycle) — this PRD assumes failures are
   already loud and makes them recoverable.
 - Does not introduce domain- or consumer-specific recovery rules; the
@@ -194,7 +194,7 @@ interface RecoveryRecord {
   fix-versus-rebuild call) — recovery extends the cache's state model, it
   does not replace it.
 - Sequenced after SPEC-BUG-fail-loud-run-lifecycle (failures must be
-  visible before they are recoverable) and alongside PRD-0018 (breaker
+  visible before they are recoverable) and alongside PRD-0020 (breaker
   escalations deliver through the daemon's wake path when present).
 - Chronicle artifact addition (`sdlc.recovery.v1`) follows ADR-0007
   provenance conventions.
