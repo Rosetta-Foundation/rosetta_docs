@@ -63,6 +63,16 @@ a reviewable, dated event.
 | [0008](ADR-0008-implementation-spec-format.md)            | Implementation Spec Format — The PRD-to-Build Contract           | Accepted | 2026-07-31 |
 | [0009](ADR-0009-platform-boundary-mechanism-vs-policy.md) | Platform Boundary — Rosetta Owns Mechanism, Consumers Own Policy | Accepted | 2026-08-05 |
 
+## Reference documentation
+
+ADRs record decisions; the documents below describe how a subsystem currently
+works. They are expected to change as the system does, so they are kept separate
+from the immutable records above.
+
+| Area                          | Documents                                                                                                                               |
+| ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| [SDLC engine](sdlc/README.md) | Architecture, run lifecycle, gate model, data flow, wake/escalation, Chronicle artifacts, `.sdlc/` contracts, `state.json`, agent roles |
+
 ## Conventions
 
 - Filename: `ADR-NNNN-short-kebab-title.md` (zero-padded, sequential).
