@@ -8,7 +8,7 @@ follows one artifact chain end to end and names the transformation at each step.
 
 ```mermaid
 graph TD
-    IDEA["Idea / bug report<br/>(human, chat)"] --> PRD["PRD<br/>rosetta_docs or comita_docs"]
+    IDEA["Idea / bug report<br/>(human, chat)"] --> PRD["PRD<br/>rosetta_docs or consumer docs"]
     PRD -->|prd-lint| PRDOK["PRD parses"]
     PRDOK -->|decompose| SPEC["Phase spec<br/>specs/&lt;PRD-ID&gt;/phase-N-spec.md"]
     SPEC -->|human edit + Approve| APPROVED["status: Approved"]

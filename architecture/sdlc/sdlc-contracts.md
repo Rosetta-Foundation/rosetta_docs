@@ -75,7 +75,7 @@ keep other environment metadata here without widening the engine's reach.
 A `sandbox` entry missing either command is a `CONTRACT_MALFORMED` error rather than
 a silent skip — a half-declared sandbox is a mistake, not a configuration.
 
-**Example** (`comita_admissions`):
+**Example** (consumer app repo):
 
 ```json
 {
@@ -100,7 +100,7 @@ The engine's side of the contract is three facts:
 
 Everything else is the repo's business. Whether "deploy" means a workflow dispatch,
 a container push, or a no-op is policy. A repo is free to decide that a docs-only
-diff needs no deploy at all and self-report the SHA — `comita_admissions` does
+diff needs no deploy at all and self-report the SHA — a consumer app does
 exactly that with its own `sandbox-deploy-ignore.yml`, a file the engine has never
 heard of.
 
@@ -150,7 +150,7 @@ never hardcodes one.
 }
 ```
 
-**Example** (abridged, `comita_admissions`):
+**Example** (abridged, consumer app repo):
 
 ```json
 {
@@ -208,7 +208,7 @@ stays domain-neutral on purpose — see
 ## Contracts the engine does not read
 
 A repo will accumulate its own SDLC-adjacent config, and it is worth keeping the
-distinction visible. In `comita_admissions`:
+distinction visible. Example from a consumer app:
 
 | File                              | Read by                                                     |
 | --------------------------------- | ----------------------------------------------------------- |

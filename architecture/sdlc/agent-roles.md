@@ -118,9 +118,8 @@ transient annoyance and being a crashed intake.
 
 ## What does not exist
 
-The [automated SDLC vision](https://github.com/Comita-Health/comita_docs/blob/main/prompts/automated-sdlc.md)
-describes a team of nine roles. Most are not implemented, and the engine makes no
-attempt to fake them.
+An aspirational automated-SDLC vision document describes a team of nine roles.
+Most are not implemented, and the engine makes no attempt to fake them.
 
 | Vision role                    | Engine status                                                                                                                                                         |
 | ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
