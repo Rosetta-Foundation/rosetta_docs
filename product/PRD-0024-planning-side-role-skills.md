@@ -84,7 +84,7 @@ spec/template hooks their outputs flow into.
       on the first try.
 - [ ] Skill bodies contain zero consumer-specific paths or names; a
       consumer workspace configures grounding docs in its own config file,
-      and the Comita workspace config points at its workbook, foundations,
+      and the first consumer workspace config points at its workbook, foundations,
       and design-method docs as the first consumer.
 - [ ] The skills are distributed through the existing team-setup template
       sync to both Claude and Cursor skill layouts.
@@ -122,9 +122,9 @@ generic), configured per workspace:
 - **Template hooks** — spec template gains a UX criteria subsection;
   PRD template §3 gains an optional design-artifact link line;
   `/write-prd` gains the right-sizing checkpoint text.
-- **Comita as first consumer** — a consumer-side config change (workspace
-  repo) pointing at `WORKBOOK-comita.md`, `rosetta_docs/foundations/`, and
-  the website-design-method docs; no Comita content upstream.
+- **First consumer configuration** — a consumer-side config change (consumer
+  workspace repo) pointing at its workbook, the Rosetta foundations, and
+  website-design-method docs; no consumer content upstream.
 
 ## 4. Data Contracts
 
@@ -162,7 +162,7 @@ interface UxCriteria {
 
 - Platform boundary: skill templates and template hooks are upstream
   team-setup artifacts; grounding configs and all judgment content are
-  consumer-owned. The Comita config lands as a separate consumer change.
+  consumer-owned. The consumer config lands as a separate consumer change.
 - Human-in-the-loop invariant: outputs are advisory artifacts for the
   planning conversation; nothing here bypasses or automates the spec +
   envelope Approve.
@@ -177,7 +177,7 @@ interface UxCriteria {
 
 ## 6. Risks & Open Questions
 
-- Skill outputs are only as good as the declared grounding docs — Comita's
+- Skill outputs are only as good as the declared grounding docs — a consumer's
   workbook has known `OPEN:` gaps; the flag-the-gap behavior is the
   mitigation, and the first strategist runs will mostly surface
   documentation debt (that is the point).
@@ -190,7 +190,7 @@ interface UxCriteria {
 
 1. **Phase 1 — Grounding config + `/strategize`:** config schema and
    loader convention, strategist skill template, distribution through
-   team-setup sync; Comita consumer config as first grounding.
+   team-setup sync; first consumer config as initial grounding.
 2. **Phase 2 — `/design-ux` + template hooks:** UX skill template, spec
    template UX-criteria section (validation coordinated), PRD template
    artifact link, artifact placement convention.
@@ -202,7 +202,7 @@ interface UxCriteria {
 
 - Strategy assessments recorded as Chronicle artifacts so recommendations
   build a track record like gate verdicts.
-- Intake integration: the ticket-intake pipeline (Comita PRD-0007) invoking
+- Intake integration: the consumer ticket-intake pipeline (PRD-0007) invoking
   `/strategize` output as the normalized assessment attached to the issue.
 - Design-tool integrations (Figma export, Storybook stubs) once artifact
   conventions stabilize.

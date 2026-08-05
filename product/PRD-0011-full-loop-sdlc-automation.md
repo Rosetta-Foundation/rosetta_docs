@@ -342,7 +342,7 @@ interface TaskResult {
    diff has no deployable paths, sandbox deploy/health fast-pass in seconds
    without dispatching a full environment ship; when only backend or only
    frontend paths change, thin-dispatch with the matching flags. First
-   consumer: `comita_admissions` `.sdlc` ignore list + scripts; engine passes
+   consumer: a consumer app repo's `.sdlc` ignore list + scripts; engine passes
    `SDLC_SANDBOX_BASE_SHA`. Spec: `SPEC-PRD-0011-P4` (`Draft`).
 
 ## 8. Future Considerations

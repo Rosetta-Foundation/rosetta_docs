@@ -128,7 +128,7 @@ watches/`) created by the engine (run start, PR open, escalation filed) or
   and from GitHub (a scheduled digest comment is a later phase).
 
 Placement: engine and daemon are upstream (Rosetta-Foundation) and
-domain-agnostic; each consumer workspace (e.g. Comita) provides only config —
+domain-agnostic; each consumer workspace provides only config —
 workspace root, activate script path, watched repos.
 
 ## 4. Data Contracts
@@ -184,7 +184,7 @@ interface DaemonConfig {
 - HSR + InversifyJS architecture, TypeScript strict — same bar as the rest of
   the engine; the continuity module must reuse `run-completion` /
   run-state readers rather than duplicating their logic.
-- Workspace-agnostic: no Comita (or any consumer) path, org, label, or
+- Workspace-agnostic: no consumer path, org, label, or
   hostname in daemon code; consumer opinions arrive only via `DaemonConfig`.
 - Identity: all GitHub calls under the workspace's Addi App token (activate
   script), with the fork-targeting diagnostic honored before any PR/issue
@@ -233,5 +233,5 @@ daemon` command with launchd install; watch registry; GitHub poller
   polling where latency matters.
 - A pipeline-of-plans scheduler on top of the watch registry: plan B queues
   behind approved run A and launches on A's completion wake.
-- Cross-workspace federation (one status view over rosetta + comita daemons).
+- Cross-workspace federation (one status view over multiple consumer daemons).
 - Linux/systemd support behind the `daemon install` boundary.
