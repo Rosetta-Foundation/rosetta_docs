@@ -13,17 +13,18 @@ consumes) and [ADR-0009](../ADR-0009-platform-boundary-mechanism-vs-policy.md)
 
 ## The documents
 
-| Document                                      | Answers                                                                                    |
-| --------------------------------------------- | ------------------------------------------------------------------------------------------ |
-| [Engine architecture](engine-architecture.md) | What the subsystems are, which layer each class sits in, how a command reaches a gate      |
-| [Run lifecycle](run-lifecycle.md)             | Run states, task states, the per-task pipeline, wave transitions, every supervisor exit    |
-| [Gate model](gate-model.md)                   | Per gate: inputs, verdict values, evidence, retrigger behaviour, escalation path           |
-| [Data flow](data-flow.md)                     | How a PRD becomes a spec, tasks, PRs, verdicts, a merge, a sandbox deploy, and a Chronicle |
-| [Wake and escalation](wake-escalation.md)     | The durable wake inbox, `AGENT_LOOP_WAKE_*` sentinels, stop-hook re-entry, the daemon      |
-| [Chronicle artifacts](chronicle-artifacts.md) | Payload schema of all nine `sdlc.*.v1` artifact types                                      |
-| [`.sdlc/` contracts](sdlc-contracts.md)       | The consumer-owned contract files, with JSON Schemas and worked examples                   |
-| [`state.json` schema](state-schema.md)        | Every field of run state, who writes it, and what reads it                                 |
-| [Agent roles](agent-roles.md)                 | The prompt-built agent roles that exist, distinguished from the ones that do not yet       |
+| Document                                        | Answers                                                                                    |
+| ----------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| [Engine architecture](engine-architecture.md)   | What the subsystems are, which layer each class sits in, how a command reaches a gate      |
+| [Run lifecycle](run-lifecycle.md)               | Run states, task states, the per-task pipeline, wave transitions, every supervisor exit    |
+| [Gate model](gate-model.md)                     | Per gate: inputs, verdict values, evidence, retrigger behaviour, escalation path           |
+| [Data flow](data-flow.md)                       | How a PRD becomes a spec, tasks, PRs, verdicts, a merge, a sandbox deploy, and a Chronicle |
+| [Wake and escalation](wake-escalation.md)       | The durable wake inbox, `AGENT_LOOP_WAKE_*` sentinels, stop-hook re-entry, the daemon      |
+| [Chronicle artifacts](chronicle-artifacts.md)   | Payload schema of all nine `sdlc.*.v1` artifact types                                      |
+| [`.sdlc/` contracts](sdlc-contracts.md)         | The consumer-owned contract files, with JSON Schemas and worked examples                   |
+| [`state.json` schema](state-schema.md)          | Every field of run state, who writes it, and what reads it                                 |
+| [Agent roles](agent-roles.md)                   | The prompt-built agent roles that exist, distinguished from the ones that do not yet       |
+| [Performance baseline](performance-baseline.md) | Where the engine's time went across its first production corpus, and how to re-derive it   |
 
 ## Reading order
 
@@ -33,7 +34,9 @@ everything else. If you are operating a run that has stopped, go straight to
 [run lifecycle](run-lifecycle.md#supervisor-exit-reasons) and then
 [wake and escalation](wake-escalation.md). If you are onboarding a new repo to
 the engine, [`.sdlc/` contracts](sdlc-contracts.md) is the only document you
-strictly need.
+strictly need. If you are about to optimize something, read
+[performance baseline](performance-baseline.md) first — it records which two
+plausible suspects were measured and found innocent.
 
 ## Scope and honesty
 
