@@ -20,8 +20,8 @@
 The automated SDLC engine lives in
 [`rosetta_dev-scripts`](https://github.com/Rosetta-Foundation/rosetta_dev-scripts)
 and must work for any Rosetta-workspace consumer. Its first and (so far) only
-production consumer is Comita Health, a healthcare company with PHI obligations
-that no other consumer shares.
+production consumer is a healthcare company with PHI obligations that no other
+consumer shares.
 
 That is the exact condition under which a generic platform quietly stops being
 generic. The pressure is never a decision to specialize; it is a series of small
