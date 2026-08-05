@@ -30,13 +30,12 @@ installer — each individually defensible and collectively fatal to the second
 consumer.
 
 The boundary rule already existed and was already being followed: engine PRDs
-land in `rosetta_docs`, Comita PRDs in `comita_docs`, and the work items in the
-gap analysis were tagged `[upstream]` / `[consumer]` / `[both]` one by one. But
-the rule itself was written down in exactly one place —
-`comita_docs/prompts/automated-sdlc-gap-analysis.md` §4 — a **consumer scratch
-file**. The generic platform's own boundary rule was a guest in the opinionated
-workspace it exists to keep at arm's length, invisible to anyone reading
-`rosetta_docs` and unenforceable in review of an upstream PR.
+land in `rosetta_docs`, product PRDs in the consumer's docs repo, and the work
+items in the gap analysis were tagged `[upstream]` / `[consumer]` / `[both]`
+one by one. But the rule itself was written down in exactly one place — a
+**consumer scratch file**. The generic platform's own boundary rule was a guest
+in the opinionated workspace it exists to keep at arm's length, invisible to
+anyone reading `rosetta_docs` and unenforceable in review of an upstream PR.
 
 This ADR is that rule, in the repository the rule governs.
 
@@ -60,7 +59,7 @@ identifier"_ is policy.
 
 ## 2. Ownership follows that split
 
-| Concern                    | Upstream (Rosetta-Foundation)                | Consumer (e.g. Comita-Health)                |
+| Concern                    | Upstream (Rosetta-Foundation)                | Consumer workspace                           |
 | -------------------------- | -------------------------------------------- | -------------------------------------------- |
 | SDLC engine, gates, wakes  | ✅ owns                                      | —                                            |
 | Spec format (ADR-0008)     | ✅ owns                                      | —                                            |
@@ -74,12 +73,12 @@ identifier"_ is policy.
 | Domain review rules        | —                                            | ✅ owns (`.sdlc/review-checklist.md`)        |
 | Skill / command templates  | ✅ owns (`team-setup`)                       | ✅ owns which are installed and their config |
 | Engine PRDs and ADRs       | ✅ `rosetta_docs`                            | —                                            |
-| Product PRDs               | —                                            | ✅ `comita_docs`                             |
+| Product PRDs               | —                                            | ✅ consumer docs repo                        |
 | Domain guardrails          | —                                            | ✅ owns (healthcare policy, PHI scope)       |
 
 Engine work lands in `Rosetta-Foundation/rosetta_dev-scripts` first — that is
-where the issue tracker lives — and syncs to the `Comita-Health` fork. The
-engine never contains a Comita path, label, hostname, or healthcare rule.
+where the issue tracker lives — and may sync to a consumer fork. The engine
+never contains a consumer path, label, hostname, or healthcare rule.
 
 ## 3. Policy enters through a contract seam or not at all
 
@@ -108,26 +107,26 @@ Apply in order. Any failure means the code is on the wrong side of the line.
 2. **The deletion test.** Delete every consumer repo from the machine. Does the
    engine still build, test, and describe itself coherently? Anything that
    breaks was a dependency, not a default.
-3. **The second-consumer test.** Would a non-Comita consumer have to _edit
-   engine source_ to adopt this? If yes, the thing they would edit belongs in a
+3. **The second-consumer test.** Would a second consumer have to _edit engine
+   source_ to adopt this? If yes, the thing they would edit belongs in a
    contract they own.
 
 ## 5. Provenance in comments is allowed; keyed behaviour is not
 
-Engine comments cite the run that taught the lesson — "Comita Phase 0b: gh
-merge SHA is remote-only" sits above the code it explains. That is provenance,
-and it is worth keeping: a reader who wants the evidence can find the run.
+Engine comments cite the run that taught the lesson — "Phase 0b: gh merge SHA
+is remote-only" sits above the code it explains. That is provenance, and it is
+worth keeping: a reader who wants the evidence can find the run.
 
 The test in §4.1 is deliberately about behaviour. A comment naming a consumer is
-history. A `if (repo === 'comita_admissions')` is a fork in the platform.
+history. A `if (repo === 'acme-app')` is a fork in the platform.
 
 ## 6. Genericity is proven, not asserted
 
-The canary acceptance test must pass against a **non-Comita Rosetta repo** as
-well as against `comita_admissions`. Until it has, "the engine is generic" is a
-claim about intent. The `.sdlc/` contracts make this cheap: a second consumer is
-five files, not a code change — and if it turns out not to be, that is the
-finding.
+The canary acceptance test must pass against a **second consumer's Rosetta
+repo**, not only against the first production consumer. Until it has, "the
+engine is generic" is a claim about intent. The `.sdlc/` contracts make this
+cheap: a second consumer is five files, not a code change — and if it turns out
+not to be, that is the finding.
 
 ## 7. Known boundary violations at the time of acceptance
 
@@ -176,12 +175,13 @@ both survived.
 # Adoption
 
 1. **`rosetta_docs`** — this ADR, added to the architecture Records table.
-2. **`comita_docs`** — `prompts/automated-sdlc-gap-analysis.md` §4 points here as
-   canonical instead of holding the rule itself.
+2. **Consumer docs** — any consumer scratch file that held this rule points here
+   as canonical instead of holding the rule itself.
 3. **`rosetta_dev-scripts`** — replace the PHI/PII example in the reviewer prompt
    with domain-neutral examples; domain rules arrive via
    `.sdlc/review-checklist.md`.
 4. **Continuity daemon** — qualify the launchd label per workspace before a
    second workspace runs one, and promote the daemon scripts to a `team-setup`
    template.
-5. **Canary** — run the acceptance test against one non-Comita Rosetta repo.
+5. **Canary** — run the acceptance test against a second consumer's Rosetta
+   repo.
