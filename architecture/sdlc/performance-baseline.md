@@ -5,8 +5,8 @@ the obvious suspects were wrong. Recorded so that later claims of improvement ha
 something to be measured against.
 
 **Measured:** 2026-08-05, over 17 runs in `~/.rosetta/sdlc-runs/` spanning
-2026-08-01 to 2026-08-05. Corpus is Comita Health runs, which is the only
-production consumer at the time of measurement.
+2026-08-01 to 2026-08-05. Corpus is runs against the then-only production
+consumer.
 
 ## Headline
 
