@@ -150,7 +150,7 @@ never hardcodes one.
 }
 ```
 
-**Example** (abridged, consumer app repo):
+**Example** (abridged, hypothetical consumer app):
 
 ```json
 {
@@ -159,18 +159,18 @@ never hardcodes one.
     "packages/app/backend/src/handler/auth/**",
     "packages/app/frontend/src/hooks/useAuth.ts"
   ],
-  "payments-phi-boundary": [
-    "packages/app/backend/src/utility/stripe-phi-boundary.ts",
+  "regulated-data-boundary": [
+    "packages/app/backend/src/utility/payments-boundary.ts",
     "packages/app/backend/src/handler/billing/**"
   ],
   "production-deploy": ["scripts/deploy-organization.sh"]
 }
 ```
 
-`payments-phi-boundary` is a good illustration of the boundary rule. The label is
+`regulated-data-boundary` is a good illustration of the boundary rule. The label is
 meaningless to the engine, which knows only "labels resolve to globs and forbidden
-globs must not be touched." The healthcare judgement that Stripe metadata is a PHI
-boundary lives entirely in this file, in the repo that has PHI obligations.
+globs must not be touched." Whatever judgement makes billing metadata sensitive
+lives entirely in this file, in the repo that owns that judgement.
 
 Two behaviours to know:
 
@@ -192,8 +192,8 @@ returns a per-item finding (`pass` / `fail` with a rationale) joined back by
 ```markdown
 # Review checklist
 
-- **(mandatory)** Never log a patient identifier, even at debug level.
-- **(mandatory)** Any new Stripe metadata field is reviewed against the PHI boundary.
+- **(mandatory)** Never log a regulated identifier, even at debug level.
+- **(mandatory)** Any new payment-metadata field is reviewed against the regulated-data boundary.
 - Prefer an existing repository over a new SDK client.
 ```
 
