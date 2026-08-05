@@ -19,15 +19,15 @@
 
 The automated SDLC engine lives in
 [`rosetta_dev-scripts`](https://github.com/Rosetta-Foundation/rosetta_dev-scripts)
-and must work for any Rosetta-workspace consumer. Its first and (so far) only
-production consumer is a healthcare company with PHI obligations that no other
-consumer shares.
+and must work for any Rosetta-workspace consumer.
 
-That is the exact condition under which a generic platform quietly stops being
-generic. The pressure is never a decision to specialize; it is a series of small
-conveniences — an example in a prompt, a label in a default, a path in an
-installer — each individually defensible and collectively fatal to the second
-consumer.
+Suppose the first adopter brings domain obligations that no other consumer
+shares — regulated data, industry-specific compliance, a private surface
+vocabulary. That is the exact condition under which a generic platform quietly
+stops being generic. The pressure is never a decision to specialize; it is a
+series of small conveniences — an example in a prompt, a label in a default, a
+path in an installer — each individually defensible and collectively fatal to
+the second consumer.
 
 The boundary rule already existed and was already being followed: engine PRDs
 land in `rosetta_docs`, product PRDs in the consumer's docs repo, and the work
@@ -54,31 +54,31 @@ each piece is:
 
 Fail-closed surface validation is a mechanism; _which_ surfaces are forbidden is
 policy. A content-level health probe is a mechanism; _what URL to probe_ is
-policy. A reviewer checklist hook is a mechanism; _"never log a patient
+policy. A reviewer checklist hook is a mechanism; _"never log a regulated
 identifier"_ is policy.
 
 ## 2. Ownership follows that split
 
-| Concern                    | Upstream (Rosetta-Foundation)                | Consumer workspace                           |
-| -------------------------- | -------------------------------------------- | -------------------------------------------- |
-| SDLC engine, gates, wakes  | ✅ owns                                      | —                                            |
-| Spec format (ADR-0008)     | ✅ owns                                      | —                                            |
-| `.sdlc/*.json` **schemas** | ✅ owns                                      | —                                            |
-| `.sdlc/*` **contents**     | —                                            | ✅ owns                                      |
-| Surface label _resolution_ | ✅ owns (fail closed on unresolvable)        | —                                            |
-| Surface label _vocabulary_ | —                                            | ✅ owns (`payments-phi-boundary`, `auth`, …) |
-| Deploy/health _protocol_   | ✅ owns (`SDLC_SANDBOX_SHA`, exit semantics) | —                                            |
-| Deploy/health _scripts_    | —                                            | ✅ owns                                      |
-| Reviewer prompt structure  | ✅ owns                                      | —                                            |
-| Domain review rules        | —                                            | ✅ owns (`.sdlc/review-checklist.md`)        |
-| Skill / command templates  | ✅ owns (`team-setup`)                       | ✅ owns which are installed and their config |
-| Engine PRDs and ADRs       | ✅ `rosetta_docs`                            | —                                            |
-| Product PRDs               | —                                            | ✅ consumer docs repo                        |
-| Domain guardrails          | —                                            | ✅ owns (healthcare policy, PHI scope)       |
+| Concern                    | Upstream (Rosetta-Foundation)                | Consumer workspace                             |
+| -------------------------- | -------------------------------------------- | ---------------------------------------------- |
+| SDLC engine, gates, wakes  | ✅ owns                                      | —                                              |
+| Spec format (ADR-0008)     | ✅ owns                                      | —                                              |
+| `.sdlc/*.json` **schemas** | ✅ owns                                      | —                                              |
+| `.sdlc/*` **contents**     | —                                            | ✅ owns                                        |
+| Surface label _resolution_ | ✅ owns (fail closed on unresolvable)        | —                                              |
+| Surface label _vocabulary_ | —                                            | ✅ owns (`regulated-data-boundary`, `auth`, …) |
+| Deploy/health _protocol_   | ✅ owns (`SDLC_SANDBOX_SHA`, exit semantics) | —                                              |
+| Deploy/health _scripts_    | —                                            | ✅ owns                                        |
+| Reviewer prompt structure  | ✅ owns                                      | —                                              |
+| Domain review rules        | —                                            | ✅ owns (`.sdlc/review-checklist.md`)          |
+| Skill / command templates  | ✅ owns (`team-setup`)                       | ✅ owns which are installed and their config   |
+| Engine PRDs and ADRs       | ✅ `rosetta_docs`                            | —                                              |
+| Product PRDs               | —                                            | ✅ consumer docs repo                          |
+| Domain guardrails          | —                                            | ✅ owns (whatever that domain forbids)         |
 
 Engine work lands in `Rosetta-Foundation/rosetta_dev-scripts` first — that is
 where the issue tracker lives — and may sync to a consumer fork. The engine
-never contains a consumer path, label, hostname, or healthcare rule.
+never contains a consumer path, label, hostname, or domain rule.
 
 ## 3. Policy enters through a contract seam or not at all
 
@@ -123,10 +123,10 @@ history. A `if (repo === 'acme-app')` is a fork in the platform.
 ## 6. Genericity is proven, not asserted
 
 The canary acceptance test must pass against a **second consumer's Rosetta
-repo**, not only against the first production consumer. Until it has, "the
-engine is generic" is a claim about intent. The `.sdlc/` contracts make this
-cheap: a second consumer is five files, not a code change — and if it turns out
-not to be, that is the finding.
+repo**, not only against whichever workspace adopted the engine first. Until it
+has, "the engine is generic" is a claim about intent. The `.sdlc/` contracts
+make this cheap: a second consumer is five files, not a code change — and if it
+turns out not to be, that is the finding.
 
 ## 7. Known boundary violations at the time of acceptance
 
@@ -134,11 +134,11 @@ Recorded here rather than quietly fixed, because an ADR that pretends the
 codebase already complies teaches nothing:
 
 - **The reviewer prompt carries a domain example.** `reviewer-prompt.ts` cites
-  "authz, PHI/PII, idempotency, failure modes" as examples of non-obvious
-  invariants worth documenting. PHI is a healthcare concept in an upstream
-  default. The seam already exists — `.sdlc/review-checklist.md` — so the fix is
-  to source domain examples from the consumer's checklist and leave the upstream
-  prompt with domain-neutral ones.
+  regulated-data vocabulary alongside generic invariants (authorization,
+  idempotency, failure modes) as examples worth documenting. Domain vocabulary
+  in an upstream default is policy in the wrong repo. The seam already exists —
+  `.sdlc/review-checklist.md` — so the fix is to source domain examples from the
+  consumer's checklist and leave the upstream prompt with domain-neutral ones.
 - **The continuity daemon installs under a single fixed launchd label.**
   `com.rosetta.sdlc-daemon` is a machine-global constant, so installing from a
   second workspace evicts the first. The paths are derived from the installer's
@@ -147,8 +147,8 @@ codebase already complies teaches nothing:
   daemon scripts also live in the consumer workspace rather than as an upstream
   template, which is why the label was never parameterized.
 
-Neither is load-bearing today (one consumer, one daemon), which is precisely how
-both survived.
+Neither is load-bearing while only one workspace runs the daemon, which is
+precisely how both survived.
 
 # Consequences
 
@@ -177,8 +177,8 @@ both survived.
 1. **`rosetta_docs`** — this ADR, added to the architecture Records table.
 2. **Consumer docs** — any consumer scratch file that held this rule points here
    as canonical instead of holding the rule itself.
-3. **`rosetta_dev-scripts`** — replace the PHI/PII example in the reviewer prompt
-   with domain-neutral examples; domain rules arrive via
+3. **`rosetta_dev-scripts`** — replace domain-specific examples in the reviewer
+   prompt with domain-neutral ones; domain rules arrive via
    `.sdlc/review-checklist.md`.
 4. **Continuity daemon** — qualify the launchd label per workspace before a
    second workspace runs one, and promote the daemon scripts to a `team-setup`
