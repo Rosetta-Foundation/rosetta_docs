@@ -195,5 +195,5 @@ interface DocsCloseoutConfig {
 - Substantive doc generation (user-facing docs drafted from spec + diff)
   once the mechanical layer has track record.
 - Closeout-derived release notes per phase.
-- Consumer workbooks (e.g. Comita) subscribing to closeout events for their
+- Consumer workbooks subscribing to closeout events for their
   own status surfaces.

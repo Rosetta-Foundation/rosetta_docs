@@ -122,7 +122,7 @@ Three strands, split cleanly across the platform boundary:
   output (per-assertion pass/fail + raw evidence) feeds the sandbox verdict.
   The engine also classifies deploy workflow runs (shipped / fast-passed /
   did-not-deploy) instead of trusting conclusion=success. First consumer:
-  `comita_admissions` assertions (version artifact fetch, must-exist paths,
+  consumer app repo assertions (version artifact fetch, must-exist paths,
   log negative-assertions) in its `.sdlc/` scripts — landed as a companion
   consumer PR, never in engine code.
 - **Deploy dedup (engine).** The sandbox step records deployed content SHAs;
@@ -189,7 +189,7 @@ interface EtaBand {
 - Platform boundary: assertion _content_ (URLs, paths, artifact names) lives
   only in consumer `.sdlc/` scripts; the engine ships the schema, the
   invocation, and the classification logic. The companion
-  `comita_admissions` PR is referenced by, but outside, the engine spec's
+  consumer app repo PR is referenced by, but outside, the engine spec's
   envelope (the SPEC-PRD-0011-P4 pattern).
 - Depends on SPEC-PRD-0011-P4 (path-aware sandbox deploy) — completed and
   live-validated inside this PRD's first phase.
@@ -221,7 +221,7 @@ interface EtaBand {
    live-validate SPEC-PRD-0011-P4; content-SHA deploy records; merge-path
    reuse; remove the racing phase-boundary dispatch.
 2. **Phase 2 — Content-level delivery verdicts:** contract schema + engine
-   invocation and deploy classification; companion `comita_admissions`
+   invocation and deploy classification; companion consumer app repo
    assertion scripts; sandbox verdict carries fetch evidence; negative
    assertions block delivery.
 3. **Phase 3 — Honest run surface:** heartbeat step-context coverage,
@@ -235,7 +235,7 @@ interface EtaBand {
   regression floor (PRD-0011 §8 progressive trust).
 - Cross-surface auth-flow verification as a consumer E2E suite seeded from
   the recurring accounts/admit `redirect_uri` regression class.
-- Per-track sandboxes (Comita PRD-0008) inherit the same delivery contract
+- Per-track sandboxes (the consumer's PRD-0008) inherit the same delivery contract
   unchanged — the assertions are already repo-owned.
 - Production delivery verdicts (promotion checklist automation) once the
   sandbox loop has track record.
