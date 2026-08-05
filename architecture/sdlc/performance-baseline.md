@@ -1,12 +1,11 @@
 # Performance baseline and postmortem
 
-Where the engine's time actually went across its first production corpus, and why
+Where the engine's time actually went across an early production corpus, and why
 the obvious suspects were wrong. Recorded so that later claims of improvement have
 something to be measured against.
 
 **Measured:** 2026-08-05, over 17 runs in `~/.rosetta/sdlc-runs/` spanning
-2026-08-01 to 2026-08-05. Corpus is runs against the then-only production
-consumer.
+2026-08-01 to 2026-08-05. Corpus is the recorded runs from that window.
 
 ## Headline
 
