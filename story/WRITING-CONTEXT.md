@@ -127,6 +127,13 @@ Use **stewardship** sparingly until late chapters.
 7. Use historical progression: history → personal observation → larger
    implication → future possibility.
 8. Maintain temporal continuity; camera movement should be smooth.
+9. **Inherit, do not re-discover.** Later chapters start from claims already
+   earned ("If X, then the next pressure is Y") rather than restaging the
+   narrator noticing again ("As these patterns became clearer, another
+   observation gradually emerged"). Soft-reset hinges and civilizational
+   reprises belong only where a truly new turn needs them — not as the
+   default chapter opening. The philosophy may cycle; the epistemic posture
+   should not.
 
 ---
 
