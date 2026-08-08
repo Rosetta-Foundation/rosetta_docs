@@ -22,7 +22,7 @@ Even so, looking back across those thirty years, one observation seems difficult
 
 This transformation did not happen all at once, nor did it arrive because of any single invention. It emerged gradually through countless improvements made by engineers, educators, researchers, entrepreneurs, and communities around the world. Looking back, it is difficult not to feel a sense of gratitude for what they collectively accomplished. They helped create a world in which curiosity is no longer constrained as tightly by geography, wealth, or access to institutions as it once was. An extraordinary amount of human knowledge has become available to an extraordinary number of people.
 
-That achievement, however, invites an interesting question. If preserving knowledge became easier, and accessing knowledge became easier, what challenge remained? As my career continued, I found myself returning to that question more often than I realized. At first, I could not quite explain why. I only knew that, despite having more information available than ever before, something still felt incomplete.
+That achievement left a quieter question behind it. If preserving knowledge became easier, and accessing knowledge became easier, what challenge remained? For a long time I could not name it. I only knew that, despite having more information available than ever before, something still felt incomplete.
 
 ---
 

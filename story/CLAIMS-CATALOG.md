@@ -124,8 +124,8 @@ Legend: **LB** = load-bearing · **Soft?** = candidate wording change if evidenc
 | C4-D1 | Information ≠ understanding; understanding is relational                                       | D/I  | ✓   | Analytic spine; optional cognitive-science T3           |
 | C4-H2 | Search retrieves docs but not disagreement structure, assumptions, historical meaning          | H    | ✓   | Soft “cannot easily” (already soft); cite IR/HCI limits |
 | C4-H3 | Humans learn by connecting (child language, science, history, engineering, associative memory) | H    |     | High-level; one cognitive-science survey suffices       |
-| C4-P1 | Solving preservation/distribution reveals subtler limits                                       | P    | ✓   | Same pattern family as C2-P2                            |
-| C4-I1 | Generation’s question: abundance → understanding                                               | I    | ✓   | Thesis                                                  |
+| C4-P1 | Solving preservation/distribution reveals subtler limits                                       | P    | ✓   | Same pattern family as C2-P2; **not restaged in Ch. 4 prose** (inherit pass) |
+| C4-I1 | Generation’s question: abundance → understanding                                               | I    | ✓   | Thesis; Ch. 4 now ends on this pressure without rediscovery hinge           |
 
 ### Chapter 5 — The Fragility of Context
 
@@ -219,6 +219,12 @@ threshold vs counters/marks.
 
 **Applied (Ch. 7):** C7-I3 comparative soften — commentary / decision-record
 exceptions named.
+
+**Applied (Ch. 3–7 inherit pass):** Removed soft-reset discovery hinges
+(“As…, another observation…”, “I began noticing…”) and civilizational
+reprises that re-earned claims already in hand. Later chapters open from
+inherited pressure (“If X, then the next…”) rather than restaging noticing.
+See `WRITING-CONTEXT.md` principle 9.
 
 Still candidates:
 
