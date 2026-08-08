@@ -134,6 +134,14 @@ Use **stewardship** sparingly until late chapters.
    reprises belong only where a truly new turn needs them — not as the
    default chapter opening. The philosophy may cycle; the epistemic posture
    should not.
+10. **Spare the varnish.** Do not lean on one intensifier family
+    (`quietly` / `quieter`, `remarkable` / `extraordinary`, `dramatically`)
+    as the default volume knob. Prefer the noun or verb that already carries
+    the understatement. Keep `quietly` only where it earns a distinct job
+    (e.g. unmarked transfer of experience; ironic stealthy discard; named
+    context-carriers). Prefer plain speed/scale words (`quickly`, `expanded`)
+    over repeated `remarkable speed` / `dramatically`. Allergy: repetition
+    and theatrical intensity.
 
 ---
 
