@@ -1,6 +1,7 @@
-# Story claims catalog (Chapters 1–8)
+# Story claims catalog (Chapters 1–10)
 
-Working inventory of **assertive content** in the early-access Rosetta essay,
+Working inventory of **assertive content** in the early-access Rosetta essay
+(chapters 1–10),
 typed with Rosetta [`process/`](../process/README.md) so we can verify
 load-bearing history, strengthen contested points, or soften prose where
 reality is thinner than the sentence sounds.
@@ -8,7 +9,7 @@ reality is thinner than the sentence sounds.
 This file is a **research instrument**, not part of the essay voice. Readers of
 the story do not need it; writers and reviewers do.
 
-**Source chapters:** [`chapter-1.md`](chapter-1.md) … [`chapter-8.md`](chapter-8.md)  
+**Source chapters:** [`chapter-1.md`](chapter-1.md) … [`chapter-10.md`](chapter-10.md)  
 **Protocols:** [`../process/`](../process/README.md) (canonical). Inspiration:
 Civic Blueprint’s research / adversarial / parallel stack (adapted, not forked).
 
@@ -175,6 +176,29 @@ Legend: **LB** = load-bearing · **Soft?** = candidate wording change if evidenc
 | C8-N3 | Selective preservation; forgetting can be merciful                            | N    |     | Important hedge — keep                                            |
 | C8-N4 | Responsibility remains human; tools help or hinder                            | N    | ✓   | Anti-tech-savior; fits WRITING-CONTEXT                            |
 
+### Chapter 9 — What a Practice of Paths Would Require
+
+| ID    | Quote / paraphrase                                                                  | Type | LB  | Notes / action                                  |
+| ----- | ----------------------------------------------------------------------------------- | ---- | --- | ----------------------------------------------- |
+| C9-N1 | Obligation alone is insufficient; path-keeping must become a practice               | N/I  | ✓   | Spine transition from Ch. 8                     |
+| C9-N2 | Practice is selective — not preserve everything; mark what future travelers need    | N    | ✓   | Hedge against archive maximalism                |
+| C9-I1 | Preserving winning decisions while discarding lost reasoning produces fragile heirs | I    | ✓   | Ties to C7 commentary/ADR exceptions            |
+| C9-N3 | Paths are for travelers who were not present — hospitality across time              | N    | ✓   | Anti-insider-jargon / shared-context assumption |
+| C9-O1 | Common tools reward destinations more than sequences of consideration               | O/I  | ✓   | Practitioner observation; keep soft             |
+| C9-N4 | Continuity ≠ permanence; paths must remain revisable                                | N    |     | Important anti-museum hedge                     |
+| C9-N5 | Practice precedes tools; tools cannot define the craft                              | N    | ✓   | Sets up Ch. 10 without naming Rosetta           |
+
+### Chapter 10 — A Name for the Work
+
+| ID     | Quote / paraphrase                                                              | Type | LB  | Notes / action                                       |
+| ------ | ------------------------------------------------------------------------------- | ---- | --- | ---------------------------------------------------- |
+| C10-I1 | Philosophy must precede the instrument; reverse order is common failure         | I    | ✓   | Method claim; self-aware                             |
+| C10-N1 | Manuscript should remain true if every named project disappears                 | N    | ✓   | WRITING-CONTEXT north star                           |
+| C10-D1 | “Rosetta” as metaphor: recover stranded meaning by restoring paths between      | D/I  |     | Naming device; not historical thesis about the stone |
+| C10-N2 | Success measure: people continue one another’s work; hero remains humanity      | N    | ✓   | Anti-product-metric                                  |
+| C10-N3 | Naming a project risks sounding like a pitch; refuse that ending                | N    |     | Explicit anti-sales hedge                            |
+| C10-I2 | Shared path-keeping instruments are an almost inevitable consequence of Ch. 1–9 | I    | ✓   | Soft “almost inevitable”; not Established            |
+
 ---
 
 ## Worked example: C2-H1 (independent invention of writing)
@@ -254,7 +278,10 @@ and the corroboration note in [`RESEARCH-GROUNDING.md`](RESEARCH-GROUNDING.md).
    [`ADVERSARIAL-C1-I3.md`](ADVERSARIAL-C1-I3.md); Ch. 1 softened; true
    cross-lineage/human (economic-historian) pass still the top recommendation
    in the catalog.
-9. Draft later chapters when ready (paths practice → Rosetta as consequence).
+9. ~~Draft later chapters (paths practice → Rosetta as consequence)~~ — Ch. 9–10
+   drafted.
+10. Optional: human / economic-historian pass on C1-I3; early-access share of
+    Ch. 1–10; light stewardship language only if a later revision earns it.
 
 ---
 

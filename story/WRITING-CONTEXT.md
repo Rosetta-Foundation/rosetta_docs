@@ -76,6 +76,8 @@ Technology is not the hero. Human coordination is.
 6. Navigating knowledge — civilization improves navigation; emerging tools may help
 7. Paths between ideas — destinations survive more readily than routes
 8. Intergenerational responsibility — abundance is not yet inheritance
+9. Practice of paths — selective marking, disagreement, hospitality across time
+10. A name for the work — Rosetta as consequence; philosophy outlives the tool
 
 ### Reader navigation (early access)
 
@@ -96,11 +98,9 @@ upper bound only — for a true second opinion, run
 [`CROSS-LINEAGE-ADVERSARIAL-PROMPT.md`](CROSS-LINEAGE-ADVERSARIAL-PROMPT.md).
 When adding a chapter, extend the catalog in the same change.
 
-Reserved for later:
-
-- What a practice of preserving paths might require (still philosophical)
-- Stewardship language (sparingly)
-- Rosetta as an expression of the philosophy (very late; inevitable, not pitched)
+Chapters 9–10 drafted (paths practice → Rosetta named late). Use
+**stewardship** sparingly if revising further; do not reopen a product pitch
+in the essay voice.
 
 ---
 

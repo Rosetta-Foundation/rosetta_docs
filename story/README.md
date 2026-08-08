@@ -12,13 +12,13 @@ Vannevar Bush, [_As We May Think_](https://www.theatlantic.com/magazine/archive/
 
 ## Early access
 
-Chapters 1–8 are open for careful early readers. They are still drafts: the
+Chapters 1–10 are open for careful early readers. They are still drafts: the
 essay voice has no inline footnotes; historical and organizational claims are
 grounded in the research layer linked below. Read in order, or jump ahead —
 each chapter has Previous / Contents / Next at the bottom. If a sentence
-overreaches, open a Challenge a claim issue. Later chapters continue the
-philosophical arc; Rosetta should still arrive late, as consequence rather than
-pitch.
+overreaches, open a Challenge a claim issue. Rosetta appears only late, as
+consequence rather than pitch; the manuscript is meant to remain true even if
+any particular project by that name disappears.
 
 ## Contents
 
@@ -44,6 +44,8 @@ issue.
 6. [Navigating Knowledge](chapter-6.md)
 7. [The Paths Between Ideas](chapter-7.md)
 8. [What Every Generation Leaves Behind](chapter-8.md)
+9. [What a Practice of Paths Would Require](chapter-9.md)
+10. [A Name for the Work](chapter-10.md)
 
 ## Chapter map
 
@@ -57,12 +59,13 @@ issue.
 | 6       | Humans navigate relationships between ideas                | Civilization improves navigation; emerging tools may help                   |
 | 7       | Destinations survive more readily than paths               | Paths between ideas are part of the inheritance                             |
 | 8       | Abundance does not automatically become inheritance        | Intergenerational responsibility for continuity                             |
+| 9       | Obligation alone is not a practice                         | Selective path-keeping; disagreement; hospitality across time               |
+| 10      | A practice eventually seeks instruments                    | Rosetta named as one possible expression — philosophy first                 |
 
-Still reserved for later chapters:
+Still open for later revision (not new chapters by default):
 
-- What a practice of preserving paths might require (still philosophical)
-- Rosetta as an expression of the philosophy (inevitable, not pitched)
-- Stewardship language, used sparingly
+- Stewardship language, used sparingly where it earns its place
+- Further chapters only if a new civilizational idea remains after Ch. 10
 
 ## Writing principles
 
