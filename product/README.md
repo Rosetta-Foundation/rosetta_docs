@@ -35,24 +35,26 @@ grouping, not an archive directory.
 
 Open PRDs — available for review, commitment, or remaining phase work.
 
-| PRD                                                              | Title                                         | Status   | Phases              | Date       |
-| ---------------------------------------------------------------- | --------------------------------------------- | -------- | ------------------- | ---------- |
-| [0004](PRD-0004-integrated-note-taker.md)                        | Integrated Note-Taker                         | Proposed | ✅ 1 ⬜ 2 ⬜ 3      | 2026-07-23 |
-| [0006](PRD-0006-artifact-capture-and-promotion.md)               | Artifact Capture & Promotion to Org Knowledge | Proposed | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-07-24 |
-| [0007](PRD-0007-personal-work-queue.md)                          | Personal Work Queue                           | Accepted | ✅ 1 ⬜ 2 ⬜ 3      | 2026-07-24 |
-| [0009](PRD-0009-coherence-protocol.md)                           | Org Knowledge Coherence Protocol              | Proposed | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-07-24 |
-| [0010](PRD-0010-wayfinder-local-app.md)                          | Wayfinder Local App                           | Proposed | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-07-24 |
-| [0012](PRD-0012-wayfinder-ai-workspace.md)                       | Wayfinder AI Workspace                        | Proposed | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-07-26 |
-| [0013](PRD-0013-markdown-rendering-in-chat.md)                   | Markdown Rendering in Ask Wayfinder Responses | Proposed | ⬜ 1                | 2026-07-27 |
-| [0014](PRD-0014-light-dark-theme.md)                             | Light & Dark Theme                            | Proposed | ⬜ 1 ⬜ 2           | 2026-07-27 |
-| [0015](PRD-0015-chronicle-activity-schema-and-open-ingestion.md) | Chronicle Activity Schema & Open Ingestion    | Draft    | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-07-31 |
-| [0016](PRD-0016-offline-on-device-intelligence.md)               | Offline On-Device Intelligence                | Draft    | ⬜ 1 ⬜ 2 ⬜ 3 ⬜ 4 | 2026-07-31 |
-| [0017](PRD-0017-wayfinder-voice-audio-surface.md)                | Wayfinder Voice & Audio Surface               | Draft    | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-07-31 |
-| [0020](PRD-0020-sdlc-event-daemon.md)                            | SDLC Event Daemon                             | Accepted | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-08-04 |
-| [0021](PRD-0021-self-healing-run-engine.md)                      | Self-Healing Run Engine                       | Accepted | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-08-04 |
-| [0022](PRD-0022-delivery-truth-and-run-observability.md)         | Delivery Truth & Run Observability            | Accepted | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-08-04 |
-| [0023](PRD-0023-docs-closeout-as-run-step.md)                    | Docs Closeout as a Run Step                   | Accepted | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-08-04 |
-| [0024](PRD-0024-planning-side-role-skills.md)                    | Planning-Side Role Skills                     | Accepted | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-08-04 |
+| PRD                                                                               | Title                                                       | Status   | Phases              | Date       |
+| --------------------------------------------------------------------------------- | ----------------------------------------------------------- | -------- | ------------------- | ---------- |
+| [0004](PRD-0004-integrated-note-taker.md)                                         | Integrated Note-Taker                                       | Proposed | ✅ 1 ⬜ 2 ⬜ 3      | 2026-07-23 |
+| [0006](PRD-0006-artifact-capture-and-promotion.md)                                | Artifact Capture & Promotion to Org Knowledge               | Proposed | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-07-24 |
+| [0007](PRD-0007-personal-work-queue.md)                                           | Personal Work Queue                                         | Accepted | ✅ 1 ⬜ 2 ⬜ 3      | 2026-07-24 |
+| [0009](PRD-0009-coherence-protocol.md)                                            | Org Knowledge Coherence Protocol                            | Proposed | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-07-24 |
+| [0010](PRD-0010-wayfinder-local-app.md)                                           | Wayfinder Local App                                         | Proposed | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-07-24 |
+| [0012](PRD-0012-wayfinder-ai-workspace.md)                                        | Wayfinder AI Workspace                                      | Proposed | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-07-26 |
+| [0013](PRD-0013-markdown-rendering-in-chat.md)                                    | Markdown Rendering in Ask Wayfinder Responses               | Proposed | ⬜ 1                | 2026-07-27 |
+| [0014](PRD-0014-light-dark-theme.md)                                              | Light & Dark Theme                                          | Proposed | ⬜ 1 ⬜ 2           | 2026-07-27 |
+| [0015](PRD-0015-chronicle-activity-schema-and-open-ingestion.md)                  | Chronicle Activity Schema & Open Ingestion                  | Draft    | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-07-31 |
+| [0016](PRD-0016-offline-on-device-intelligence.md)                                | Offline On-Device Intelligence                              | Draft    | ⬜ 1 ⬜ 2 ⬜ 3 ⬜ 4 | 2026-07-31 |
+| [0017](PRD-0017-wayfinder-voice-audio-surface.md)                                 | Wayfinder Voice & Audio Surface                             | Draft    | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-07-31 |
+| [0018](PRD-0018-siri-chronicle-voice-log.md)                                      | Siri → Chronicle Voice Log Capture                          | Draft    | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-08-02 |
+| [0019](PRD-0019-shared-chronicle-provisioning-and-multi-destination-promotion.md) | Shared Chronicle Provisioning & Multi-Destination Promotion | Draft    | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-08-02 |
+| [0020](PRD-0020-sdlc-event-daemon.md)                                             | SDLC Event Daemon                                           | Accepted | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-08-04 |
+| [0021](PRD-0021-self-healing-run-engine.md)                                       | Self-Healing Run Engine                                     | Accepted | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-08-04 |
+| [0022](PRD-0022-delivery-truth-and-run-observability.md)                          | Delivery Truth & Run Observability                          | Accepted | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-08-04 |
+| [0023](PRD-0023-docs-closeout-as-run-step.md)                                     | Docs Closeout as a Run Step                                 | Accepted | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-08-04 |
+| [0024](PRD-0024-planning-side-role-skills.md)                                     | Planning-Side Role Skills                                   | Accepted | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-08-04 |
 
 ## Shipped
 

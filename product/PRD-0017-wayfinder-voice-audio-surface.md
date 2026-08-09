@@ -109,5 +109,6 @@ as an inference task class; this PRD gives it a home in the app.
 ## 7. Future Considerations
 
 - **Audio as capture:** meetings and voice memos transcribed into activity envelopes (PRD-0015) — the surface's STT machinery reused as a producer.
+- **OS Siri capture:** away-from-app “New Chronicle log entry” via Shortcuts / App Intents is [PRD-0018](PRD-0018-siri-chronicle-voice-log.md) — complementary to in-app voice here.
 - **Voices with provenance:** if generated narration is ever shared inside an org, it carries `Model-Provenance` metadata like any synthesized artifact (ADR-0007 trailers, PRD-0016 sidecar).
 - **Braille display support:** beyond audio — chronicle content structured for refreshable braille via the same semantic document model.
