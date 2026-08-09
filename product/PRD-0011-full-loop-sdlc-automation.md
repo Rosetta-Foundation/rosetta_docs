@@ -1,11 +1,12 @@
 ---
 id: PRD-0011
 title: Full-Loop SDLC Automation
-status: Shipped
+status: Accepted # P1–P3 shipped; Phase 4 in flight
 date: 2026-07-25
 owner: Russ Watson
 related_adrs: [ADR-0007, ADR-0008]
-related_specs: [SPEC-PRD-0011-P1, SPEC-PRD-0011-P2, SPEC-PRD-0011-P3]
+related_specs:
+  [SPEC-PRD-0011-P1, SPEC-PRD-0011-P2, SPEC-PRD-0011-P3, SPEC-PRD-0011-P4]
 supersedes: null
 ---
 
@@ -270,7 +271,17 @@ interface TaskResult {
 - Requires Claude Code dynamic workflows (`Workflow` tool) — Claude Code CLI, not
   just the API.
 - Requires a deployable sandbox environment per target repo; auto-deploy on
-  merge is a prerequisite for agent-driven verification and the veto model.
+  merge (and per-task sandbox gate) is a prerequisite for agent-driven
+  verification and the veto model **when the task diff has deployable paths**.
+- Target repos MAY declare non-deployable path globs (docs, unit tests,
+  contract-only edits, etc.). When every file in the task diff matches those
+  globs, the sandbox deploy/health contract MUST fast-pass without shipping a
+  new sandbox build — while still satisfying the engine’s
+  `SDLC_SANDBOX_SHA`-in-health-output rule. The engine stays path-agnostic
+  aside from passing `SDLC_SANDBOX_BASE_SHA` for the diff base; path policy
+  lives in the repo’s `.sdlc/` + deploy scripts (Phase 4).
+- `agent:`-tier criteria that require a live build of **this** task SHA still
+  imply deployable path changes (or escalate to a human).
 - Agent-driven interface verification requires browser/automation access to the
   sandbox from the workflow runtime.
 - Worktree isolation per implementation agent requires git worktree support (already
@@ -303,6 +314,13 @@ interface TaskResult {
 - **Envelope authoring:** too tight and every phase escalates; too loose and the
   gate protects nothing. Start conservative and let Chronicle track record
   loosen it over time (see §8).
+- **Sandbox cost on non-deployable diffs (resolved in Phase 4):** docs-only or
+  unit-test-only tasks must not wait on a full AWS sandbox ship. Reusing CI
+  “frontend/backend” path filters alone is insufficient — e.g.
+  `packages/app/shared/**` is deploy-relevant for source but
+  `**/__tests__/**` / `*.test.ts` must not force a deploy. Position: repo-owned
+  ignore globs + skip / thin-dispatch in the sandbox scripts; engine only
+  supplies the base SHA.
 
 ## 7. Rollout & Phases
 
@@ -319,6 +337,13 @@ interface TaskResult {
    out across ready tasks; auto-advance on green; digest + veto via PRD-0007;
    sandbox deploy; Chronicle artifacts. Spec: `SPEC-PRD-0011-P3` (`Done`);
    live evidence via `SPEC-LIVE-VALIDATION-P3` / run `p3-live-val`.
+
+4. **Phase 4 — Path-aware sandbox deploy:** When a task (or post-merge phase)
+   diff has no deployable paths, sandbox deploy/health fast-pass in seconds
+   without dispatching a full environment ship; when only backend or only
+   frontend paths change, thin-dispatch with the matching flags. First
+   consumer: a consumer app repo's `.sdlc` ignore list + scripts; engine passes
+   `SDLC_SANDBOX_BASE_SHA`. Spec: `SPEC-PRD-0011-P4` (`Draft`).
 
 ## 8. Future Considerations
 

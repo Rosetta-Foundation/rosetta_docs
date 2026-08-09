@@ -49,19 +49,24 @@ Open PRDs — available for review, commitment, or remaining phase work.
 | [0016](PRD-0016-offline-on-device-intelligence.md)               | Offline On-Device Intelligence                | Draft    | ⬜ 1 ⬜ 2 ⬜ 3 ⬜ 4 | 2026-07-31 |
 | [0017](PRD-0017-wayfinder-voice-audio-surface.md)                | Wayfinder Voice & Audio Surface               | Draft    | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-07-31 |
 | [0018](PRD-0018-siri-chronicle-voice-log.md)                     | Siri → Chronicle Voice Log Capture            | Draft    | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-08-02 |
+| [0020](PRD-0020-sdlc-event-daemon.md)                            | SDLC Event Daemon                             | Accepted | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-08-04 |
+| [0021](PRD-0021-self-healing-run-engine.md)                      | Self-Healing Run Engine                       | Accepted | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-08-04 |
+| [0022](PRD-0022-delivery-truth-and-run-observability.md)         | Delivery Truth & Run Observability            | Accepted | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-08-04 |
+| [0023](PRD-0023-docs-closeout-as-run-step.md)                    | Docs Closeout as a Run Step                   | Accepted | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-08-04 |
+| [0024](PRD-0024-planning-side-role-skills.md)                    | Planning-Side Role Skills                     | Accepted | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-08-04 |
 
 ## Shipped
 
 Planned phases complete; acceptance criteria met. Kept in place as product memory.
 
-| PRD                                              | Title                                               | Status  | Phases         | Date       |
-| ------------------------------------------------ | --------------------------------------------------- | ------- | -------------- | ---------- |
-| [0001](PRD-0001-claude-code-source.md)           | Claude Code Source                                  | Shipped | ✅ 1 ✅ 2 ✅ 3 | 2026-07-22 |
-| [0002](PRD-0002-multi-repo-git-and-synthesis.md) | Multi-Repo Git Discovery & Two-Tier Daily Synthesis | Shipped | ✅ 1 ✅ 2      | 2026-07-23 |
-| [0003](PRD-0003-notes-as-authoritative-input.md) | Meeting Notes as Authoritative Input                | Shipped | ✅ 1 ✅ 2      | 2026-07-23 |
-| [0005](PRD-0005-clobber-guard.md)                | Regeneration Clobber Guard                          | Shipped | ✅ 1           | 2026-07-23 |
-| [0008](PRD-0008-local-workspace-folders.md)      | Local Workspace Folders                             | Shipped | ✅ 1           | 2026-07-24 |
-| [0011](PRD-0011-full-loop-sdlc-automation.md)    | Full-Loop SDLC Automation                           | Shipped | ✅ 1 ✅ 2 ✅ 3 | 2026-07-25 |
+| PRD                                              | Title                                               | Status   | Phases                   | Date       |
+| ------------------------------------------------ | --------------------------------------------------- | -------- | ------------------------ | ---------- |
+| [0001](PRD-0001-claude-code-source.md)           | Claude Code Source                                  | Shipped  | ✅ 1 ✅ 2 ✅ 3           | 2026-07-22 |
+| [0002](PRD-0002-multi-repo-git-and-synthesis.md) | Multi-Repo Git Discovery & Two-Tier Daily Synthesis | Shipped  | ✅ 1 ✅ 2                | 2026-07-23 |
+| [0003](PRD-0003-notes-as-authoritative-input.md) | Meeting Notes as Authoritative Input                | Shipped  | ✅ 1 ✅ 2                | 2026-07-23 |
+| [0005](PRD-0005-clobber-guard.md)                | Regeneration Clobber Guard                          | Shipped  | ✅ 1                     | 2026-07-23 |
+| [0008](PRD-0008-local-workspace-folders.md)      | Local Workspace Folders                             | Shipped  | ✅ 1                     | 2026-07-24 |
+| [0011](PRD-0011-full-loop-sdlc-automation.md)    | Full-Loop SDLC Automation                           | Accepted | ✅ 1 ✅ 2 ✅ 3 · 4 Draft | 2026-07-25 |
 
 ## Retired
 
