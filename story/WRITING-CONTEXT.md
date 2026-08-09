@@ -22,8 +22,9 @@ the reason for the philosophy.
 
 ## Primary writing influence
 
-Vannevar Bush, [_As We May Think_](https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/)
-(1945).
+Vannevar Bush, [_As We May Think_](https://web.mit.edu/sts.035/www/PDFs/think.pdf)
+(_The Atlantic Monthly_, July 1945). Prefer the MIT course PDF reprint for
+full-text reading; cite the Atlantic as the original venue.
 
 Emulate the reasoning process:
 
@@ -76,6 +77,8 @@ Technology is not the hero. Human coordination is.
 6. Navigating knowledge — civilization improves navigation; emerging tools may help
 7. Paths between ideas — destinations survive more readily than routes
 8. Intergenerational responsibility — abundance is not yet inheritance
+9. Practice of paths — selective marking, disagreement, hospitality across time
+10. A name for the work — Rosetta as consequence; philosophy outlives the tool
 
 ### Reader navigation (early access)
 
@@ -96,11 +99,9 @@ upper bound only — for a true second opinion, run
 [`CROSS-LINEAGE-ADVERSARIAL-PROMPT.md`](CROSS-LINEAGE-ADVERSARIAL-PROMPT.md).
 When adding a chapter, extend the catalog in the same change.
 
-Reserved for later:
-
-- What a practice of preserving paths might require (still philosophical)
-- Stewardship language (sparingly)
-- Rosetta as an expression of the philosophy (very late; inevitable, not pitched)
+Chapters 9–10 drafted (paths practice → Rosetta named late). Use
+**stewardship** sparingly if revising further; do not reopen a product pitch
+in the essay voice.
 
 ---
 
@@ -127,6 +128,21 @@ Use **stewardship** sparingly until late chapters.
 7. Use historical progression: history → personal observation → larger
    implication → future possibility.
 8. Maintain temporal continuity; camera movement should be smooth.
+9. **Inherit, do not re-discover.** Later chapters start from claims already
+   earned ("If X, then the next pressure is Y") rather than restaging the
+   narrator noticing again ("As these patterns became clearer, another
+   observation gradually emerged"). Soft-reset hinges and civilizational
+   reprises belong only where a truly new turn needs them — not as the
+   default chapter opening. The philosophy may cycle; the epistemic posture
+   should not.
+10. **Spare the varnish.** Do not lean on one intensifier family
+    (`quietly` / `quieter`, `remarkable` / `extraordinary`, `dramatically`)
+    as the default volume knob. Prefer the noun or verb that already carries
+    the understatement. Keep `quietly` only where it earns a distinct job
+    (e.g. unmarked transfer of experience; ironic stealthy discard; named
+    context-carriers). Prefer plain speed/scale words (`quickly`, `expanded`)
+    over repeated `remarkable speed` / `dramatically`. Allergy: repetition
+    and theatrical intensity.
 
 ---
 
