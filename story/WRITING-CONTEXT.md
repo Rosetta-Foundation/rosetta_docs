@@ -22,8 +22,9 @@ the reason for the philosophy.
 
 ## Primary writing influence
 
-Vannevar Bush, [_As We May Think_](https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/)
-(1945).
+Vannevar Bush, [_As We May Think_](https://web.mit.edu/sts.035/www/PDFs/think.pdf)
+(_The Atlantic Monthly_, July 1945). Prefer the MIT course PDF reprint for
+full-text reading; cite the Atlantic as the original venue.
 
 Emulate the reasoning process:
 

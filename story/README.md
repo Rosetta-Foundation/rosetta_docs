@@ -7,8 +7,10 @@ like it ought to exist.
 
 ## Primary influence
 
-Vannevar Bush, [_As We May Think_](https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/)
-(1945) — emulate the reasoning process, not the prose.
+Vannevar Bush, [_As We May Think_](https://web.mit.edu/sts.035/www/PDFs/think.pdf)
+(_The Atlantic Monthly_, July 1945) — emulate the reasoning process, not the
+prose. Link is a stable full-text PDF reprint; the Atlantic remains the
+original venue.
 
 ## Early access
 
