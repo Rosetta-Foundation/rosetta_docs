@@ -8,7 +8,8 @@ related_adrs: [ADR-0007, ADR-0008]
 related_specs:
   [
     'https://github.com/Comita-Health/rosetta_dev-scripts/blob/main/specs/PRD-0020/phase-1-spec.md',
-    'https://github.com/Comita-Health/rosetta_dev-scripts/pull/85',
+    'https://github.com/Comita-Health/rosetta_dev-scripts/blob/main/specs/PRD-0020/phase-2-spec.md',
+    'https://github.com/Comita-Health/rosetta_dev-scripts/blob/main/specs/PRD-0020/phase-3-spec.md',
   ]
 supersedes: null
 ---
