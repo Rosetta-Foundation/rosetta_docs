@@ -1,7 +1,7 @@
 ---
 id: PRD-0025
 title: Operator-First Escalation Unstick
-status: Draft # Draft | Proposed | Accepted | Shipped | Superseded | Deprecated
+status: Accepted # Draft | Proposed | Accepted | Shipped | Superseded | Deprecated
 date: 2026-08-10
 owner: Russ Watson
 related_adrs: [] # e.g. [ADR-0002]
