@@ -55,6 +55,7 @@ Open PRDs — available for review, commitment, or remaining phase work.
 | [0022](PRD-0022-delivery-truth-and-run-observability.md)                          | Delivery Truth & Run Observability                          | Accepted | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-08-04 |
 | [0023](PRD-0023-docs-closeout-as-run-step.md)                                     | Docs Closeout as a Run Step                                 | Accepted | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-08-04 |
 | [0024](PRD-0024-planning-side-role-skills.md)                                     | Planning-Side Role Skills                                   | Accepted | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-08-04 |
+| [0025](PRD-0025-operator-first-escalation-unstick.md)                             | Operator-First Escalation Unstick                           | Draft    | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-08-10 |
 
 ## Shipped
 
