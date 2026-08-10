@@ -5,10 +5,7 @@ status: Draft # Draft | Proposed | Accepted | Shipped | Superseded | Deprecated
 date: 2026-08-10
 owner: Russ Watson
 related_adrs: [] # e.g. [ADR-0002]
-related_specs:
-  [
-    'https://github.com/Comita-Health/rosetta_dev-scripts/blob/main/specs/PRD-0025/phase-1-spec.md'
-  ]
+related_specs: [] # filled when SPEC-PRD-0025-P1 lands on the app repo default branch
 supersedes: null
 ---
 
