@@ -41,7 +41,8 @@ non-blocking advisory issue so the operator can course-correct later.
 - When the unstick agent proceeds under a risky assumption, the train keeps
   moving and an advisory GitHub issue records the decision for later review.
 - Human-blocking escalate remains for budget exhaustion, abstention without a
-  path, and authority-bound acts (Draft→Approved, live smoke/veto, PHI).
+  path, and authority-bound acts (Draft→Approved, live smoke/veto,
+  regulated-data handling).
 
 ### 1.3 Non-Goals
 
@@ -172,8 +173,8 @@ interface AdvisoryRiskyIssue {
 - HSR + InversifyJS; TypeScript strict; Conventional Commits + DCO.
 - Workspace-agnostic: no hardcoded org/repo/login in engine code; operator
   login and activate script remain config (`--operator` / DaemonConfig).
-- Healthcare guardrails: advisory and escalate bodies carry links and SHAs,
-  never PHI or production dumps.
+- Artifact hygiene: advisory and escalate bodies carry links and SHAs,
+  never application data or production dumps.
 - Depends on existing gate remediation (`GateRemediationService`),
   `EscalationService`, BlockerService, and AgentRunnerRepository.
 - Soft-depends on PRD-0020 Phase 3 headless wake dispatch for the preferred
