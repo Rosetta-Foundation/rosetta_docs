@@ -49,7 +49,8 @@ does not invent a new ledger format.
 - Not organizational promotion of voice logs — knowledge stays personal until
   the promotion gate ([ADR-0002](../architecture/ADR-0002-personal-vs-organizational-chronicle.md),
   [PRD-0006](PRD-0006-artifact-capture-and-promotion.md)).
-- Not a clinical / PHI documentation channel (Comita healthcare guardrails).
+- Not an application-data or regulated-data documentation channel
+  (consumer domain guardrails stay in the consumer workspace).
 - Not Apple Watch or CarPlay as Phase 1 deliverables (see Future).
 
 ### 1.4 Acceptance Criteria
@@ -158,8 +159,8 @@ Phase 2 activity source: `ext:rosetta/siri-log`.
 - **Privacy / decentralization:** personal chronicle only; bridge is
   user-hosted ([ADR-0002](../architecture/ADR-0002-personal-vs-organizational-chronicle.md),
   [ADR-0005](../architecture/ADR-0005-decentralized-by-construction.md)).
-- **Healthcare:** not a clinical documentation path; PHI must not be directed
-  into shared or org chronicles.
+- **Capture hygiene:** not an application-data path; production or
+  regulated payloads must not be directed into shared or org chronicles.
 - **Depends on** [PRD-0003](PRD-0003-notes-as-authoritative-input.md) (shipped)
   for notes append.
 - **Soft-depends on** [PRD-0015](PRD-0015-chronicle-activity-schema-and-open-ingestion.md)

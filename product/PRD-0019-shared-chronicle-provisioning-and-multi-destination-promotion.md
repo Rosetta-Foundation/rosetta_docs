@@ -186,7 +186,7 @@ Signals (Phase 2 starting set — tune for precision over recall):
 - Tags such as `ARCH`, `RELIABILITY`, `DECISION` (when present)
 - Presence of org-shareable evidence (PR, commit on a non-personal remote)
 - Exclusion: career/promotion-packet language, private reflection heuristics,
-  content classes denied by healthcare/copyright guardrails (see PRD-0015/0017)
+  content classes denied by consumer-domain or copyright guardrails (see PRD-0015/0017)
 
 Output is always a personal `PromotionSuggestion`. Publishing still requires
 human approve → PRD-0006 promote path → destinations[] → PRD-0009 per dest.

@@ -172,8 +172,7 @@ interface UxCriteria {
   with the spec-format lint work in the envelope-integrity spec).
 - Distribution through the existing team-setup sync (both `.claude/` and
   `.cursor/` layouts), same as current skills.
-- Healthcare guardrail: skills never pull application data; grounding is
-  docs-only.
+- Skills never pull application data; grounding is docs-only.
 
 ## 6. Risks & Open Questions
 

@@ -7,9 +7,9 @@ owner: Russ Watson
 related_adrs: [ADR-0007, ADR-0008]
 related_specs:
   [
-    'https://github.com/Comita-Health/rosetta_dev-scripts/blob/main/specs/PRD-0020/phase-1-spec.md',
-    'https://github.com/Comita-Health/rosetta_dev-scripts/blob/main/specs/PRD-0020/phase-2-spec.md',
-    'https://github.com/Comita-Health/rosetta_dev-scripts/blob/main/specs/PRD-0020/phase-3-spec.md',
+    'https://github.com/Rosetta-Foundation/rosetta_dev-scripts/blob/main/specs/PRD-0020/phase-1-spec.md',
+    'https://github.com/Rosetta-Foundation/rosetta_dev-scripts/blob/main/specs/PRD-0020/phase-2-spec.md',
+    'https://github.com/Rosetta-Foundation/rosetta_dev-scripts/blob/main/specs/PRD-0020/phase-3-spec.md',
   ]
 supersedes: null
 ---
@@ -200,8 +200,8 @@ interface DaemonConfig {
   signal this daemon consumes; sequencing: daemon Phase 1 must land first.
 - launchd (macOS) is the process supervisor; the daemon does not implement
   its own keepalive.
-- Healthcare guardrails: the daemon never captures PHI; wake payloads carry
-  links and SHAs, not application data.
+- Artifact hygiene: the daemon never captures application data; wake
+  payloads carry links and SHAs, not production dumps.
 
 ## 6. Risks & Open Questions
 
