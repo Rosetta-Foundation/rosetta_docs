@@ -137,8 +137,9 @@ paging the operator to re-read the diff for style.
 
 **Human remains.** Smoke the sandbox (and stakeholder verify where the
 consumer uses it). Promote to production. Peek and edit in the worktree at
-will. Authority-bound acts (live veto, PHI, flipping a contract to Accepted
-when the operator has not accepted the plan) stay human.
+will. Authority-bound acts (live veto, regulated-data handling, flipping a
+contract to Accepted when the operator has not accepted the plan) stay
+human.
 
 **PRD-0011 relationship.** Decompose may still write stories and tasks for
 a large PRD. Those tasks are the drop's checklist, not each a PR. Existing
@@ -149,7 +150,7 @@ a large PRD. Those tasks are the drop's checklist, not each a PR. Existing
 ```ts
 /** Named ship: one or more inbox issues, one worktree, one PR. */
 interface DropInput {
-  dropId: string; // e.g. '2026-08-14' or 'comita-admissions#504'
+  dropId: string; // e.g. '2026-08-14' or 'acme-app#504'
   issues: string[]; // owner/repo#N
   baseRef: string; // default branch tip at arm time
   mode: 'direct' | 'bug-spec' | 'plan-artifact';
@@ -193,13 +194,14 @@ interface DropEnvelope {
   repo today: `ci-config`, `personal-queue-schema`. Phase 3 may touch
   `.github/workflows/**` (`ci-config`) to let machine gates merge without
   a human Approve.
-- Healthcare: issue bodies, digests, and escalate text stay PHI-free.
+- Artifact hygiene: issue bodies, digests, and escalate text carry links
+  and SHAs, never application data or production dumps.
 - Addi authorship for engine PRs and issues (workspace GitHub App).
 - Depends on PRD-0011 (gates, chronicle artifacts, no auto-promote),
   ADR-0008 (spec + envelope shape; `maxDiffLines` becomes advisory),
   PRD-0007 (queue / digest), PRD-0025 (unstick after remediable red gates).
 - Soft-depends on consumer work-intake (issues as ledger). The engine
-  speaks issue refs, not a Comita-only Slack list.
+  speaks issue refs, not a consumer-only chat list.
 - Platform boundary: editor peek is the operator's checkout of the drop
   worktree; the engine does not embed VS Code.
 
