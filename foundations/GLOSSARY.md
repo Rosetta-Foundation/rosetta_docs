@@ -87,9 +87,12 @@ self-consistent as promotions land: contradiction checks, review, merge
 producers use `ext:<namespace>/<name>` sources and speak the schema; the
 hardware is never ours (PRD-0015).
 
-**human gate** — a workflow pause only a person can resolve. PRD-0011's
-full-loop SDLC has exactly one: implementation-spec + envelope approval, the
-`Draft → Approved` flip (ADR-0008).
+**human gate** — a workflow pause only a person can resolve. PRD-0011
+front-loaded that as implementation-spec + envelope approval (`Draft →
+Approved`, ADR-0008). **PRD-0026** amends the default: Plan Mode accept
+is the plan review; a drop is one PR; human gates that remain are
+sandbox smoke and promotion — not Approve of every implementation PR
+and not a second GitHub read of an already-accepted plan.
 
 **machine gate** — an automated check at a phase boundary that advances work
 on evidence (executable acceptance criteria, CI, reviewer-agent concurrence,
