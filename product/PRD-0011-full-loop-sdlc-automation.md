@@ -7,6 +7,7 @@ owner: Russ Watson
 related_adrs: [ADR-0007, ADR-0008]
 related_specs:
   [SPEC-PRD-0011-P1, SPEC-PRD-0011-P2, SPEC-PRD-0011-P3, SPEC-PRD-0011-P4]
+related_prds: [PRD-0026]
 supersedes: null
 ---
 
@@ -37,6 +38,11 @@ promotion beyond the sandbox. Every phase boundary in between is an **evidence
 gate**: executable acceptance criteria, CI, and independent reviewer-agent
 concurrence decide whether the run advances, and humans are pulled in only by
 exception.
+
+**Grain (PRD-0026):** a drop is one PR; spec tasks are commits and
+acceptance-criteria checkboxes. Per-task PRs are no longer the default
+machine path. Shipped Phase 1–3 acceptance checkboxes in §1.4 are
+unchanged.
 
 ### 1.2 Goals
 
