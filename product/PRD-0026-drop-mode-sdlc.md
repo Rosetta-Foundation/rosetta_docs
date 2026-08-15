@@ -1,7 +1,7 @@
 ---
 id: PRD-0026
 title: Drop-Mode SDLC
-status: Draft # Draft | Proposed | Accepted | Shipped | Superseded | Deprecated
+status: Accepted # Draft | Proposed | Accepted | Shipped | Superseded | Deprecated
 date: 2026-08-15
 owner: Russ Watson
 related_adrs: [ADR-0008]
@@ -80,13 +80,13 @@ and **budget**, not the evidence-gate idea.
 - [ ] Exceeding `maxDiffLines` does not fail the envelope gate when
       forbidden surfaces and allowed-path rules still hold; the digest
       notes the oversize.
-- [ ] After an accepted Plan Mode conversation, writing a PRD/ADR and
+- [x] After an accepted Plan Mode conversation, writing a PRD/ADR and
       starting the drop does not wait on a GitHub Approve of that docs PR
       as the start gun.
-- [ ] PRD-0011's records row and glossary **human gate** text point at
+- [x] PRD-0011's records row and glossary **human gate** text point at
       this grain (drop = PR; spec-task ≠ PR) without changing shipped
       Phase 1–3 checkboxes.
-- [ ] `prd-lint` parses this PRD; `decompose` is not run until status is
+- [x] `prd-lint` parses this PRD; `decompose` is not run until status is
       **Accepted**.
 
 ## 2. Users & Motivation
