@@ -1,7 +1,7 @@
 ---
 id: PRD-0027
 title: Personal Chronicle
-status: Draft
+status: Accepted
 date: 2026-08-16
 owner: Russ Watson
 related_adrs: [ADR-0002, ADR-0005]
