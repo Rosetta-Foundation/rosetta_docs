@@ -36,6 +36,7 @@ category, or authorize a capture prototype.
 | [reader-feedback.md](reader-feedback.md) | Verbatim research inputs from readers |
 | [path-research-brief.md](path-research-brief.md) | Frontier hypotheses and disconfirming evidence |
 | [experiments.md](experiments.md) | First small, falsifiable experiments |
+| [materials/](materials/README.md) | Experiment 1 artifacts (created separately) |
 | [language-test.md](language-test.md) | Distinguishing path / timeline / history / graph / story |
 | [landscape.md](landscape.md) | Adjacent-category comparison (not design guidance) |
 | [privacy-and-forgetting.md](privacy-and-forgetting.md) | Gate before any persistent-capture prototype |
@@ -49,9 +50,10 @@ category, or authorize a capture prototype.
       plus language test)
 - [x] Open landscape research with comparison questions
 - [x] Review privacy, correction, and forgetting before capture
-- [ ] Run experiments and return with evidence: what people understood, what
-      helped, what felt invasive, what did not matter, and which hypothesis
-      changed
+- [x] Refine Experiment 1 into an async, length-matched protocol
+- [ ] Create and review Artifact A and Artifact B (not in this PR)
+- [ ] Run Experiment 1 (5–8 people, async) and return raw results before
+      interpretation
 
 ## Claim hygiene
 

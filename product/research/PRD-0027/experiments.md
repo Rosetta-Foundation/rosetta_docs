@@ -18,47 +18,203 @@ reviewed.
 
 ## Shared rules
 
-- **N is small.** 6–12 participants is enough to change a hypothesis; it is
-  not enough to claim a category.
-- **Length-match conditions** where possible so “path won” cannot mean “they
-  got more text.”
+- **N is small.** 5–8 is enough for Experiment 1’s first round; 6–12 is
+  enough later to change a hypothesis. Neither claims a category.
+- **Length-match conditions** so a “path win” cannot mean “they got more
+  text.” The manipulated variable is representation, not information volume.
 - **No AI-generated autobiography** as a condition. If a model helps assemble
   a path, the person must see and edit it first.
-- **Record failure modes**, not only successes: nostalgia, overhead, false
-  provenance, pressure to over-record.
-- **Return format:** for each experiment, what people understood, what helped,
-  what felt invasive, what did not matter, which brief hypothesis moved.
+- **Agents do not invent experiment artifacts alone.** Artifact construction
+  is part of the design; see Experiment 1 and
+  [materials/README.md](materials/README.md).
+- **Record failure modes**, not only successes: confusion, cognitive cost,
+  preference without better reconstruction, nostalgia, overhead.
+- **Return format:** raw responses first; interpretation only after
+  collection. Then: what people understood, what helped, what felt expensive
+  or invasive, what did not matter, which brief hypothesis moved.
 
-## Experiment 1 — Path versus endpoint recall
+## Experiment 1 — Path vs. destination (first-round protocol)
 
-**Tests:** H2 (curation), H3 (transfer), part of H1 (missing primitive).
+**Status:** Protocol ready. Artifacts not yet created. Do not recruit until
+Artifact A and Artifact B are reviewed for comparable information.
 
-**Setup.** Choose one closed artifact with a real origin path (a short
-decision, a small design, a resolved disagreement). Prepare two packets of
-similar length:
+**Tests:** H2 (curation), H3 (transfer), part of H1 (missing primitive). Also
+tests whether the distinction is detectable without teaching the hypothesis.
 
-| Condition | Packet |
-| --------- | ------ |
-| A — Endpoint | Conclusion or artifact + a conventional summary |
-| B — Path | Same endpoint + a curated path: what was tried, what challenged it, what was rejected, what was chosen, what happened next |
+**Research question.** Does explicitly preserving the path by which a
+decision was reached help someone who was not present understand and continue
+the work better than a destination-oriented representation containing
+approximately the same information?
 
-Assign participants to A or B. After a delay (same day or next day), ask them
-to:
+The first round does not prove the Path hypothesis. It asks whether there is
+enough signal to justify deeper investigation.
 
-1. Restate the conclusion
-2. Rate confidence
-3. Explain *why* it was chosen, including at least one rejected alternative
-4. Revise the conclusion given one new contrary fact
+### Comparable information
 
-**Measures.** Recall accuracy; calibration (confidence vs accuracy); quality
-of explanation (mentions rejected alternatives and constraints); quality of
-revision (updates without discarding still-valid constraints).
+Artifacts A and B must contain approximately the same underlying information
+and be reasonably similar in length. If B is substantially richer, better
+performance does not show that paths matter.
 
-**Disconfirmation.** B does not beat A on explanation or revision once length
-is matched; or B only wins by smuggling extra facts rather than relationships.
+| Artifact | Representation | Same underlying content |
+| -------- | -------------- | ----------------------- |
+| **A — Destination-oriented** | Conventional summary | Problem, context, alternatives, rationale, decision, outcome |
+| **B — Path-oriented** | Explicit relationships and transitions | The same facts, arranged so movement is legible |
 
-**Minimum useful path (H5 edge).** If B wins, try a shorter B′ (3–5 waypoints)
-on a new pair. The target is the minimum meaningful representation.
+Artifact B makes trajectory visible without adding large amounts of new
+content. A useful shape (labels are for designers, not participants):
+
+```text
+problem
+    ↓
+question
+    ↓
+hypothesis
+    ↓
+alternatives
+    ↓
+experiment
+    ↓
+evidence
+    ↓
+contradiction / uncertainty
+    ↓
+revision
+    ↓
+decision
+    ↓
+outcome
+```
+
+Both artifacts describe one real-world decision. Review them together before
+recruitment and record the review in
+[materials/README.md](materials/README.md). Do not optimize either artifact
+for the expected result.
+
+### Division of responsibility
+
+- **This file** defines and preserves the protocol.
+- **Experimental materials** (Artifact A, Artifact B, assignment log) are
+  developed separately and linked from `materials/` when ready.
+- The researcher and conversational research partner construct and review
+  the artifacts collaboratively.
+- Rosetta agents must not independently generate alternative artifacts
+  without preserving the experimental rationale.
+
+### Participants
+
+- **N:** about 5–8.
+- Recruit **individually**, not by public solicitation.
+- Technical expertise is not required. Prefer mixed backgrounds: technical
+  and nontechnical; people who know the researcher well and less well;
+  people used to critical thinking or complex decisions.
+- One participant may be the reader who independently named the Path
+  concept. Do not tell them that is why they were asked.
+- **Do not reveal the Path hypothesis** or use the words path, trajectory,
+  topology, Rosetta, knowledge graph, or personal chronicle before they
+  finish — unless those words already appear in the assigned artifact.
+  Independent wording is data.
+
+### Delivery
+
+Run the first round **asynchronously** (Discord, Slack, Messenger, SMS, or
+equivalent). A live interview is not required. Async reduces coaching and
+lets people sit with the artifact.
+
+Assign each participant **A or B** (balance as evenly as N allows). Do not
+show the other artifact until their answers to questions 1–5 are recorded.
+
+### Instructions (send as written)
+
+> I'm testing whether different ways of documenting the reasoning behind a
+> decision affect how well someone who wasn't involved can understand it and
+> pick up the work afterward.
+>
+> There is no right answer. Please base your response only on the material
+> provided.
+
+Then send only the assigned artifact and the questions below.
+
+### Task (answer from the artifact only)
+
+1. **Reconstruction.** What happened, in your own words?
+2. **Reasoning.** Why do you think the team/person made the decision they
+   ultimately made?
+3. **Uncertainty.** What assumptions, uncertainties, or unresolved questions
+   do you think remain?
+4. **Continuation.** Imagine you joined this work tomorrow and had never
+   been involved in the original decision. What would you want to
+   investigate or do next?
+5. **Preference.** If you were actually inheriting this work, would you
+   rather receive this kind of documentation or the alternative version?
+   Why?
+
+For question 5, name the alternative only as “another write-up of the same
+decision, arranged differently.” Do not show it and do not call it a path.
+
+**Optional, after 1–5 are in:** If you had to take over this work tomorrow,
+what information would you want that wasn’t included here? Do not steer.
+
+**Optional later round:** without reopening the artifact — What do you
+remember about the decision and why it was made? Do not add this until the
+initial protocol has been used once.
+
+### Researcher behavior
+
+Do not explain the artifact, the hypothesis, or Rosetta during the task.
+If asked to clarify:
+
+> Give me your best interpretation based only on what you were given. I'm
+> specifically interested in what the artifact allows you to infer without
+> additional explanation.
+
+Do not correct misunderstandings during the task. Do not praise answers that
+seem to support the hypothesis or react against those that contradict it.
+Confusion, disagreement, and rejection of the path-oriented write-up are
+data.
+
+### What to record (no formal statistics)
+
+Preserve **raw replies** before interpreting. Then mark, lightly:
+
+- reconstructed the decision
+- identified why it was made
+- named important assumptions
+- named rejected alternatives
+- named unresolved uncertainty
+- proposed a plausible next action
+- confidence seemed calibrated
+- preferred the artifact they received
+- said they were missing something
+- what confused or surprised them
+- relationships they noticed on their own
+- described something like a “path” without being prompted
+
+### How to read the first round
+
+Discovery, not confirmation.
+
+| Observation | Reading |
+| ----------- | ------- |
+| A is more useful | Valuable evidence; do not rescue B |
+| B preferred but reconstruction is no better | Preference ≠ understanding |
+| Both useful for different jobs | Ask which job; do not collapse them |
+| B is confusing or expensive | Record cognitive cost |
+| No detectable difference | Protocol or hypothesis may not be worth scaling yet |
+
+Intended output of this round:
+
+1. whether the A/B distinction is detectable
+2. which aspects of trajectory people actually use
+3. whether the idea is understandable without explanation
+4. whether the protocol is worth scaling
+5. unexpected observations that refine or falsify the current hypothesis
+
+### After artifacts exist
+
+1. Recruit 5–8 people individually and assign A or B.
+2. Run asynchronously. Preserve raw responses. Do not interpret mid-stream.
+3. Bring the raw set back. Compare to the frontier hypotheses.
+4. Decide whether a second, broader experiment is warranted.
 
 ## Experiment 2 — Personal re-entry
 
@@ -120,5 +276,10 @@ Experiment 1–2 artifacts.
 
 ## First wave
 
-Run **1**, **2**, and the [language test](language-test.md). Stop and write
-results here before designing more product surface.
+1. Finish Artifact A and Artifact B collaboratively; review for comparable
+   information; link them from [materials/](materials/README.md).
+2. Run **Experiment 1** asynchronously with 5–8 individually recruited
+   people.
+3. Keep **Experiment 2** and the [language test](language-test.md) queued
+   until Experiment 1 shows the protocol is usable.
+4. Write raw results, then interpretation, before adding product surface.

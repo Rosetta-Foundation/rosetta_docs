@@ -106,7 +106,7 @@ and story. It is not a new PRD-0027 requirement.
 
 ## Next evidence
 
-Run [experiments.md](experiments.md) 1 and 2, plus the
-[language-test.md](language-test.md). Return with: what people understood, what
-helped, what felt invasive, what did not matter, and which row in the table
-above changed.
+Create Artifact A and B, then run [Experiment 1](experiments.md) with 5–8
+people asynchronously. Do not interpret mid-collection. Return raw replies,
+then: whether the A/B distinction was detectable, which trajectory people
+used, what felt expensive, and which row in the table above changed.
