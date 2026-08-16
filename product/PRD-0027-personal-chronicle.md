@@ -1,6 +1,6 @@
 ---
 id: PRD-0027
-title: Personal Chronicle & the Practice of Paths
+title: Personal Chronicle
 status: Draft
 date: 2026-08-16
 owner: Russ Watson
@@ -9,11 +9,9 @@ related_specs: []
 supersedes: null
 ---
 
-# PRD-0027: Personal Chronicle & the Practice of Paths
+# PRD-0027: Personal Chronicle
 
-> Give a person a private Chronicle that preserves enough of the path between
-> experience and current understanding to make that understanding traversable
-> across time.
+> A durable record of experience, reflection, revision, and becoming.
 
 ## 1. Overview & Goals
 
@@ -41,6 +39,11 @@ reflections remain proposals; and human recognition, rejection, and correction
 become first-class parts of the path. Rosetta is the instrument that helps the
 person practice; it is not the author or owner of the person's identity.
 
+The concept should remain simple enough to explain without the implementation:
+
+> **A Personal Chronicle helps you remember not just what you thought, but how
+> you became someone who thinks differently.**
+
 ### 1.2 Goals
 
 - Represent personal activity distinctly from engineering activity without
@@ -48,6 +51,8 @@ person practice; it is not the author or owner of the person's identity.
 - Make a person's understanding traversable across time by preserving
   meaningful relationships among experience, interpretation, challenge,
   revision, choice, and outcome.
+- Preserve a history of becoming rather than constructing a permanent,
+  authoritative definition of the person.
 - Support path-keeping as a selective human practice rather than equating
   memory with preserving everything.
 - Import a ChatGPT history as the first proving source while preserving its
@@ -60,6 +65,8 @@ person practice; it is not the author or owner of the person's identity.
   truth.
 - Make paths queryable across expression, challenge, revision, decision, and
   outcome.
+- Treat relationships among records as part of their meaning, not optional
+  metadata inferred from timestamps or storage proximity.
 - Keep personal material private by default and prevent any automatic path into
   a shared chronicle.
 - Produce human-readable views and machine-readable records from the same
@@ -146,6 +153,9 @@ person practice; it is not the author or owner of the person's identity.
 
 - [ ] Records can be linked with `supports`, `challenges`, `revises`, `rejects`,
       `led_to`, `resulted_in`, and `reflects_on` relationships.
+- [ ] Path links are persisted in the structured source of truth and survive
+      write/read and export/import round trips without being reconstructed from
+      timestamps or prose.
 - [ ] A path query can return what was expressed, what challenged it, which
       reflection was accepted or rejected, what changed, and what decision or
       outcome followed, with provenance for every step.
@@ -165,6 +175,12 @@ travel the path among their interpretations, values, choices, and outcomes. A
 final conclusion can show what they believe now; the path shows how they became
 capable of believing it and where they may still be wrong.
 
+The collective practice asks how to leave enough of the path that another
+person can continue the work. The Personal Chronicle turns the same philosophy
+inward: the next traveler is sometimes a future version of the same person.
+Engineering preserves paths so others can continue the work; Personal
+Chronicle preserves paths so a person can continue becoming intentionally.
+
 The first proving case is Russ's ChatGPT history export. It contains personal
 activity that is distinct from engineering activity and may include branched
 conversations, incomplete ideas, emotional reactions, third-party information,
@@ -175,6 +191,15 @@ Future agents and Wayfinder benefit from explicit provenance and epistemic
 boundaries. They can help the person navigate relationships they might
 otherwise overlook without silently converting an old statement or an AI
 suggestion into the person's present identity.
+
+The resulting navigation should support questions such as:
+
+- What did I think an experience meant at the time?
+- What later challenged that interpretation?
+- Which ideas did I reject, and which survived later reflection?
+- What decisions emerged, and what happened afterward?
+- What patterns recur across experiences that once appeared unrelated?
+- What can I see now that I could not see before?
 
 ## 3. Approach
 
@@ -227,7 +252,30 @@ repeated, branched, or understood only later. The system preserves enough
 relationships to make movement through the path possible; it does not require a
 person to classify every experience or preserve every trace.
 
-### 3.2 Orthogonal dimensions
+The structure is the same one Rosetta already preserves in engineering:
+
+```text
+engineering: problem → hypothesis → experiment → failure → insight → change
+personal:    experience → interpretation → uncertainty → reflection → choice
+```
+
+In both domains, the current state is only partially intelligible without the
+trajectory that produced it. A collection containing every record but none of
+their meaningful relationships preserves destinations while losing the path.
+
+### 3.2 The journey is the destination
+
+**The journey is the destination** is a candidate conceptual principle for the
+personal domain, complementary to the collective **practice of paths**. It does
+not claim outcomes are irrelevant. It means the earned path of experience,
+reflection, revision, and choice is part of what gives an outcome meaning.
+
+Personal Chronicle therefore does not optimize exclusively for current state.
+It preserves the trajectory of becoming while remaining selective about which
+paths deserve durable care. The phrase is a narrative candidate, not a
+requirement to preserve everything.
+
+### 3.3 Orthogonal dimensions
 
 `domain` answers where activity belongs. `kind` answers what a reflective
 statement represents. `disposition` answers how the person has evaluated a
@@ -243,7 +291,7 @@ suggestion. These dimensions must not be collapsed:
 An AI-produced `pattern` in the `personal` domain is still only `suggested`
 until the person evaluates it.
 
-### 3.3 Two-layer import
+### 3.4 Two-layer import
 
 The import path preserves both:
 
@@ -257,7 +305,7 @@ The importer first supports inventory-only operation. Durable import is a
 separate, explicit action after the user reviews the inventory and storage
 policy.
 
-### 3.4 Append-only reflection
+### 3.5 Append-only reflection
 
 Source evidence and prior reflections are not rewritten when understanding
 changes. A human evaluation cites the reflection it evaluates. A correction
@@ -265,7 +313,7 @@ adds the corrected account and relationship edges; it does not erase the
 misunderstanding. "Current understanding" is therefore a materialized view over
 history, never a mutable identity profile.
 
-### 3.5 Neutral engine, policy-bearing repository
+### 3.6 Neutral engine, policy-bearing repository
 
 Chronicle applies the same capture and evidence machinery to all domains. The
 personal repository supplies the privacy and sharing policy. Domain-specific
@@ -275,7 +323,9 @@ provenance, storage, and query primitives.
 ## 4. Data Contracts
 
 The exact source metadata fields remain provisional until Phase 1 inventories a
-real export. The semantic boundaries are stable:
+real export. The semantic boundaries are stable. `PathLink` is first-class
+content: without it, the system has records but cannot know the journey among
+them.
 
 ```ts
 export type ActivityDomain =
@@ -479,9 +529,14 @@ contract.
   contexts.
 - Reflection across relationship, team, organization, community, and civic
   scales, with consent and policy appropriate to each scale.
+- A personal-domain story, tentatively titled **The Journey Is the
+  Destination**, complementary to the collective **A Practice of Paths**.
 - Promotion of owner-selected, sanitized insights whose shared evidence stands
   independently of the private reflective trail.
 - Temporal queries such as "what did I believe before this decision?", "which
   rejected hypotheses later became relevant?", and "what changed after I acted?"
-- A general principle for Rosetta at every scale: preserve why a system became
-  what it is while allowing it to become something else.
+- A general principle for Rosetta at every scale: **the current state of a
+  system is only partially intelligible without the path that produced it.**
+  Personal, relationship, engineering, team, organization, and civilization
+  differ in policy and consent, but all become archaeology when destinations
+  survive and paths do not.
