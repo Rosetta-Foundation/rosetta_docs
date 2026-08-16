@@ -1,6 +1,6 @@
 ---
 id: PRD-0027
-title: Personal Activity & Longitudinal Reflective Memory
+title: Personal Chronicle & the Practice of Paths
 status: Draft
 date: 2026-08-16
 owner: Russ Watson
@@ -9,35 +9,47 @@ related_specs: []
 supersedes: null
 ---
 
-# PRD-0027: Personal Activity & Longitudinal Reflective Memory
+# PRD-0027: Personal Chronicle & the Practice of Paths
 
-> Extend Chronicle beyond engineering activity so a person can preserve private
-> experience, expression, reflection, correction, and choice as a traceable
-> trajectory without making AI an authority over their identity.
+> Give a person a private Chronicle that preserves enough of the path between
+> experience and current understanding to make that understanding traversable
+> across time.
 
 ## 1. Overview & Goals
 
 ### 1.1 Purpose
 
-Chronicle records what happened in engineering, but its current activity
-contract and daily rendering still treat engineering as the only domain. A
-personal history such as a ChatGPT export contains a different kind of durable
-context: not only conclusions, but the conversations, uncertainty,
-contradictions, rejected interpretations, and revisions through which a person
-changed their mind. Flattening that history into session titles would lose the
-reasoning path that makes it valuable.
+Chapters 6–10 of the Rosetta story describe understanding as movement through
+relationships among ideas. Documents preserve destinations; paths preserve
+enough of the questions, alternatives, contradictions, and revisions that made
+those destinations intelligible. The story calls for a deliberate practice of
+paths: selective path-keeping that leaves understanding traversable across time
+while remembering that the practice and its human responsibility come before
+any instrument.
 
-This capability introduces personal activity and a reflective layer over one
-neutral Chronicle engine. Source evidence remains immutable and attributable;
-AI reflections remain proposals; and human recognition, rejection, and
-correction become first-class parts of the record. The resulting system
-preserves the trajectory of becoming while keeping self-authorship with the
-person.
+The same principle applies to a person. Chronicle records what happened in
+engineering, but its current activity contract and daily rendering still treat
+engineering as the only domain. A personal history such as a ChatGPT export
+contains not only conclusions, but the experiences, conversations,
+uncertainties, rejected interpretations, choices, and consequences through
+which a person changed. Flattening that history into session titles would
+preserve destinations while losing the path.
+
+This capability creates the **Personal Chronicle** as the personal-domain
+expression of that practice. Source evidence remains attributable; AI
+reflections remain proposals; and human recognition, rejection, and correction
+become first-class parts of the path. Rosetta is the instrument that helps the
+person practice; it is not the author or owner of the person's identity.
 
 ### 1.2 Goals
 
 - Represent personal activity distinctly from engineering activity without
   forking Chronicle or creating a second engine.
+- Make a person's understanding traversable across time by preserving
+  meaningful relationships among experience, interpretation, challenge,
+  revision, choice, and outcome.
+- Support path-keeping as a selective human practice rather than equating
+  memory with preserving everything.
 - Import a ChatGPT history as the first proving source while preserving its
   conversation graph, message provenance, and vendor-neutral normalized form.
 - Preserve raw source evidence separately from derived summaries,
@@ -46,8 +58,8 @@ person.
   can recognize, reject, correct, or leave uncertain.
 - Preserve superseded and rejected thought without presenting it as current
   truth.
-- Make longitudinal trajectories queryable across expression, challenge,
-  revision, decision, and outcome.
+- Make paths queryable across expression, challenge, revision, decision, and
+  outcome.
 - Keep personal material private by default and prevent any automatic path into
   a shared chronicle.
 - Produce human-readable views and machine-readable records from the same
@@ -69,8 +81,10 @@ person.
   ChatGPT export before a real export has been inventoried.
 - Not making every source message a polished journal entry or discarding messy,
   contradictory, branched, or superseded source material.
+- Not preserving every personal thought or interaction indefinitely; forgetting
+  and deliberate exclusion remain necessary parts of the practice.
 - Not implementing cross-person, relationship, team, organization, or civic
-  reflective memory in the initial phases.
+  path-keeping in the initial phases.
 - Not defining promotion of reflective records; existing intentional promotion
   boundaries remain in force.
 
@@ -128,13 +142,13 @@ person.
 - [ ] Views clearly distinguish source evidence, generated reflection, human
       evaluation, and computed current understanding.
 
-**Phase 4 — Longitudinal trajectories:**
+**Phase 4 — Traversable paths over time:**
 
 - [ ] Records can be linked with `supports`, `challenges`, `revises`, `rejects`,
       `led_to`, `resulted_in`, and `reflects_on` relationships.
-- [ ] A trajectory query can return what was expressed, what challenged it,
-      which reflection was accepted or rejected, what changed, and what
-      decision or outcome followed, with provenance for every step.
+- [ ] A path query can return what was expressed, what challenged it, which
+      reflection was accepted or rejected, what changed, and what decision or
+      outcome followed, with provenance for every step.
 - [ ] Earlier and rejected records remain discoverable but are not presented as
       current beliefs without their later evaluations and revisions.
 - [ ] A personal timeline can render personal activity independently or
@@ -146,10 +160,10 @@ person.
 ## 2. Users & Motivation
 
 The primary user is a person who has accumulated meaningful thinking in
-journals, AI conversations, notes, and future capture surfaces, but cannot see
-how their interpretations, values, and choices evolved. A final conclusion can
-show what they believe now; the reasoning trail shows how they became capable
-of believing it and where they may still be wrong.
+journals, AI conversations, notes, and future capture surfaces, but cannot
+travel the path among their interpretations, values, choices, and outcomes. A
+final conclusion can show what they believe now; the path shows how they became
+capable of believing it and where they may still be wrong.
 
 The first proving case is Russ's ChatGPT history export. It contains personal
 activity that is distinct from engineering activity and may include branched
@@ -158,9 +172,9 @@ and model-generated interpretations. The user needs to catalog it without
 prematurely treating every message as truth or exposing private material.
 
 Future agents and Wayfinder benefit from explicit provenance and epistemic
-boundaries. They can retrieve prior reasoning and surface contradictions
-without silently converting an old statement or an AI suggestion into the
-person's present identity.
+boundaries. They can help the person navigate relationships they might
+otherwise overlook without silently converting an old statement or an AI
+suggestion into the person's present identity.
 
 ## 3. Approach
 
@@ -177,12 +191,43 @@ human expression / suggested reflection
     ↓
 recognition / rejection / correction / uncertainty
     ↓
-trajectory links
+path links
     ↓
 computed current understanding
 ```
 
-### 3.1 Orthogonal dimensions
+### 3.1 The personal practice of paths
+
+The Personal Chronicle applies the story's practice at the scale of one life:
+
+```text
+experience
+    ↓
+observation
+    ↓
+emotion
+    ↓
+initial interpretation
+    ↓
+challenge / contradiction
+    ↓
+reflection
+    ↓
+revision
+    ↓
+choice
+    ↓
+outcome
+    ↓
+new understanding
+```
+
+This is a recursive path, not a required linear workflow. Steps may be absent,
+repeated, branched, or understood only later. The system preserves enough
+relationships to make movement through the path possible; it does not require a
+person to classify every experience or preserve every trace.
+
+### 3.2 Orthogonal dimensions
 
 `domain` answers where activity belongs. `kind` answers what a reflective
 statement represents. `disposition` answers how the person has evaluated a
@@ -198,7 +243,7 @@ suggestion. These dimensions must not be collapsed:
 An AI-produced `pattern` in the `personal` domain is still only `suggested`
 until the person evaluates it.
 
-### 3.2 Two-layer import
+### 3.3 Two-layer import
 
 The import path preserves both:
 
@@ -212,7 +257,7 @@ The importer first supports inventory-only operation. Durable import is a
 separate, explicit action after the user reviews the inventory and storage
 policy.
 
-### 3.3 Append-only reflection
+### 3.4 Append-only reflection
 
 Source evidence and prior reflections are not rewritten when understanding
 changes. A human evaluation cites the reflection it evaluates. A correction
@@ -220,7 +265,7 @@ adds the corrected account and relationship edges; it does not erase the
 misunderstanding. "Current understanding" is therefore a materialized view over
 history, never a mutable identity profile.
 
-### 3.4 Neutral engine, policy-bearing repository
+### 3.5 Neutral engine, policy-bearing repository
 
 Chronicle applies the same capture and evidence machinery to all domains. The
 personal repository supplies the privacy and sharing policy. Domain-specific
@@ -323,7 +368,7 @@ export interface ReflectionEvaluation {
   supersedesEvaluationId?: string;
 }
 
-export type TrajectoryRelation =
+export type PathRelation =
   | 'supports'
   | 'challenges'
   | 'revises'
@@ -332,11 +377,11 @@ export type TrajectoryRelation =
   | 'resulted_in'
   | 'reflects_on';
 
-export interface TrajectoryLink {
+export interface PathLink {
   id: string;
   fromRef: string;
   toRef: string;
-  relation: TrajectoryRelation;
+  relation: PathRelation;
   createdAt: string;
   producer: 'human' | 'agent';
 }
@@ -358,8 +403,11 @@ contract.
   deletion or secret-management strategy.
 - **Decentralization:** storage and querying must retain core capability without
   a required hosted service under ADR-0005.
-- **Evidence first:** every imported activity, reflection, evaluation, and
-  trajectory link must retain attributable provenance.
+- **Practice before instrument:** Chapters 6–10 of the Rosetta story are the
+  conceptual foundation. Chronicle supports path-keeping; product mechanics do
+  not define or replace the human practice.
+- **Evidence first:** every imported activity, reflection, evaluation, and path
+  link must retain attributable provenance.
 - **Neutral engine:** domain separation is data and policy, not a fork or
   personal-mode branch in Chronicle.
 - **Architecture:** implementation uses Handler → Service → Repository with
@@ -386,7 +434,7 @@ contract.
 - **Third-party privacy:** conversations can contain information about people
   who did not consent to durable analysis. The product needs owner-controlled
   exclusion and redaction before any derived reflection is promoted or shared.
-- **Inference overreach:** longitudinal pattern detection can create persuasive
+- **Inference overreach:** pattern detection across time can create persuasive
   but false narratives. Provenance, uncertainty, and the evaluation loop reduce
   this risk but do not eliminate it.
 - **Classification ambiguity:** one statement may be both emotion and
@@ -414,9 +462,9 @@ contract.
 3. **Phase 3** — Add reflective records and the append-only human recognition,
    rejection, correction, and uncertainty loop; prove one complete reflective
    chain.
-4. **Phase 4** — Add trajectory relationships, current-understanding views,
-   personal timeline rendering, and provenance-backed longitudinal queries and
-   pattern suggestions.
+4. **Phase 4** — Add path relationships, current-understanding views, personal
+   timeline rendering, and provenance-backed path queries and pattern
+   suggestions.
 
 ## 8. Future Considerations
 
