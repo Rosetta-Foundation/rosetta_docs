@@ -57,7 +57,7 @@ Open PRDs — available for review, commitment, or remaining phase work.
 | [0024](PRD-0024-planning-side-role-skills.md)                                     | Planning-Side Role Skills                                   | Accepted | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-08-04 |
 | [0025](PRD-0025-operator-first-escalation-unstick.md)                             | Operator-First Escalation Unstick                           | Accepted | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-08-10 |
 | [0026](PRD-0026-drop-mode-sdlc.md)                                                | Drop-Mode SDLC                                              | Accepted | ⬜ 1 ⬜ 2 ⬜ 3      | 2026-08-15 |
-| [0027](PRD-0027-personal-chronicle.md)                                            | Personal Chronicle                                          | Draft    | ⬜ 1 ⬜ 2 ⬜ 3 ⬜ 4 | 2026-08-16 |
+| [0027](PRD-0027-personal-chronicle.md)                                            | Personal Chronicle                                          | Accepted | ⬜ 1 ⬜ 2 ⬜ 3 ⬜ 4 | 2026-08-16 |
 
 ## Shipped
 
@@ -89,3 +89,7 @@ Superseded or Deprecated PRDs (none yet).
   starting from [`SPEC-TEMPLATE.md`](SPEC-TEMPLATE.md) and committed to the
   **target repo** as `specs/<PRD-ID>/phase-<n>-spec.md` (see
   [ADR-0008](../architecture/ADR-0008-implementation-spec-format.md)).
+- Frontier research that must not widen a PRD lives under
+  [`research/<PRD-ID>/`](research/PRD-0027/README.md). The PRD stays the
+  product floor; the research record tests hypotheses and holds reader
+  feedback.
