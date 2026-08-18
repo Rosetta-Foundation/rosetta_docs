@@ -37,11 +37,12 @@ SourceNode ← cites ─ TransformationExecution
 | --- | --- | --- |
 | **Source node / source graph** | What existed and how it was structured | Meaning, review, “the takeaway” |
 | **Transformation definition** | The immutable recipe: what kind of interpretation this is | A particular run or result |
-| **Transformation execution** | One run: who, when, configuration, cited sources, output handles | The interpretation body or review state |
+| **Transformation execution** | The durable record of a transformation run under the current identity policy: who, when, configuration, cited sources, output handles | The interpretation body or review state; a complete ledger of every physical invocation |
 | **Derived record** | The interpretation event: content, producer, review seed, source refs | The recipe, or a living concept that can be edited in place |
 
-Definitions explain the recipe. Executions explain the run. Derived
-records explain the interpretation.
+Definitions explain the recipe. Executions record a run under the
+engine's current identity policy. Derived records explain the
+interpretation.
 
 A later mind reconstructing a belief walks this graph. That walk *is*
 the answer to the Field Guide questions:
@@ -88,12 +89,14 @@ It would be a later view over a sequence of events.
 | Record | Identity hashes | Same payload again | A different id when |
 | --- | --- | --- | --- |
 | **Definition** | Recipe fields: type, version, description, deterministic flag, allowed producer types | Same artifact (`already-present`; first `createdAt` kept) | Description or flags change, even if type@version matches |
-| **Execution** | Definition id, recipe type/version, source refs, producer, configuration, output *content* hashes | Same deterministic run (`already-present`; first `createdAt` kept) | Those inputs change. Derived-record ids are not in this hash |
+| **Execution** | Definition id, recipe type/version, source refs, producer, configuration, output *content* hashes | Same persisted artifact (`already-present`; first `createdAt` kept) — not a second occurrence record | Those inputs change. Derived-record ids are not in this hash |
 | **Derived record** | Source refs, type, record-schema version (`derived-record/1`), producer, content hash | Same interpretation event (`already-present`; first `createdAt` kept) | Content, producer, refs, type, or record-schema version change |
 
-A definition is a recipe artifact, not an event. An execution is one
-run, not the interpretation body. A derived record is an immutable
-interpretation event, not a living conceptual row.
+A definition is a recipe artifact, not an event. An execution is the
+durable record of a transformation run; current deterministic recipes
+deduplicate observationally identical runs. It is not the interpretation
+body. A derived record is an immutable interpretation event, not a
+living conceptual row.
 
 `executionId` on a derived record is a **link**, not part of the derived
 id. The same derived event can be written with `record-derived` alone.
@@ -101,10 +104,23 @@ Recipe version on an execution (`1`) is a different axis from
 `DerivedRecord.transformationVersion` (the record schema,
 `derived-record/1`).
 
-These collapse rules are for the **deterministic** recipes registered
-now (caller-supplied content). A later nondeterministic recipe is the
-same record shape with `deterministic: false`; it is not registered yet
-and does not inherit “same run → same id” automatically.
+Current deterministic execution identity is idempotent and
+content-addressed. Re-running an observationally identical deterministic
+transformation does not create a second persisted execution artifact
+because `createdAt` is not identity-bearing. Therefore the current
+`TransformationExecution` artifact should not yet be interpreted as a
+complete ledger of every physical invocation.
+
+Two clock times can still be one persisted execution if recipe, producer,
+refs, configuration, and output hashes match. Two physical model calls
+that emit different output hashes are two artifacts. Artifact identity
+and occurrence identity are not currently the same concept.
+
+Whether machine interpretation requires a distinct execution-occurrence
+identity is an open design question for E4, especially for
+nondeterministic producers. Do not silently inherit today's
+deterministic collapse semantics. A later nondeterministic recipe is the
+same record shape with `deterministic: false`; it is not registered yet.
 
 ### Immutability
 

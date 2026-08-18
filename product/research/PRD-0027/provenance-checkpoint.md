@@ -181,6 +181,16 @@ Every output gets:
 That is the first interesting test of **machine interpretation with
 provenance**.
 
+Do not silently inherit today's deterministic execution collapse. Current
+`TransformationExecution` identity is idempotent and content-addressed:
+two observationally identical deterministic runs persist as one artifact
+because `createdAt` is not identity-bearing. Artifact identity and
+occurrence identity are not the same concept. Whether machine
+interpretation needs a distinct execution-occurrence record — especially
+for nondeterministic producers — is an open E4 design question, not a
+truth already decided by the human-note machinery. See
+[`../../../architecture/CONCEPTUAL-MODEL.md`](../../../architecture/CONCEPTUAL-MODEL.md).
+
 Run it first against **Specimen A**, now that the specimen's structure is
 known. Keep the private corpus out of the public engine.
 
