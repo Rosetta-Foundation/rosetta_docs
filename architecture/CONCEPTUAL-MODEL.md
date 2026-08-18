@@ -67,7 +67,7 @@ If you can delete the relationships and still claim to have the memory,
 you have destinations again. The path did not survive.
 
 That is why the engine keeps refusing to become a database of memories.
-The durable object is not the conclusion. It is the reconstructable
+The durable object is not only the conclusion. It is the reconstructable
 relationship among experience, evidence, interpretation, decision, and
 consequence.
 
@@ -80,12 +80,31 @@ easier to demo and harder to trust.
 
 ### Identity
 
-A derived record id identifies an **immutable transformation event**, not
-a living conceptual artifact. “My current reading of this conversation”
-is a later view over a sequence of events. It is not a row you update.
+Three records, three identities. Do not collapse them into “the
+transformation.” `createdAt` is never part of any of these ids. A living
+concept — “my current reading of this conversation” — is none of them.
+It would be a later view over a sequence of events.
 
-Repeating the same transformation is the same event. Changing content,
-producer, refs, type, or version is a different event.
+| Record | Identity hashes | Same payload again | A different id when |
+| --- | --- | --- | --- |
+| **Definition** | Recipe fields: type, version, description, deterministic flag, allowed producer types | Same artifact (`already-present`; first `createdAt` kept) | Description or flags change, even if type@version matches |
+| **Execution** | Definition id, recipe type/version, source refs, producer, configuration, output *content* hashes | Same deterministic run (`already-present`; first `createdAt` kept) | Those inputs change. Derived-record ids are not in this hash |
+| **Derived record** | Source refs, type, record-schema version (`derived-record/1`), producer, content hash | Same interpretation event (`already-present`; first `createdAt` kept) | Content, producer, refs, type, or record-schema version change |
+
+A definition is a recipe artifact, not an event. An execution is one
+run, not the interpretation body. A derived record is an immutable
+interpretation event, not a living conceptual row.
+
+`executionId` on a derived record is a **link**, not part of the derived
+id. The same derived event can be written with `record-derived` alone.
+Recipe version on an execution (`1`) is a different axis from
+`DerivedRecord.transformationVersion` (the record schema,
+`derived-record/1`).
+
+These collapse rules are for the **deterministic** recipes registered
+now (caller-supplied content). A later nondeterministic recipe is the
+same record shape with `deterministic: false`; it is not registered yet
+and does not inherit “same run → same id” automatically.
 
 ### Immutability
 
@@ -120,11 +139,13 @@ Missing ≠ nonexistent. Unresolved ≠ false. A gap is a first-class
 answer. Filling it with plausible prose is a failure of the model, not a
 feature of the guide.
 
-A real-corpus smoke test produced **`partial` rather than fiction** when
-a cited definition was removed, and repaired the path when it was
-restored. Unrelated corruption stayed isolated. Missing attachments
-stayed missing. That is the invariant under load, not only on fixtures.
-See [`../product/research/PRD-0027/provenance-checkpoint.md`](../product/research/PRD-0027/provenance-checkpoint.md).
+A real private-corpus smoke test produced **`partial` rather than
+fiction** when a cited definition was removed, and repaired the path
+when it was restored. Unrelated corruption stayed isolated. Missing
+attachments stayed missing. That is what that smoke showed — not a
+general load-test claim, and not a claim that every future artifact
+type will behave the same. See
+[`../product/research/PRD-0027/provenance-checkpoint.md`](../product/research/PRD-0027/provenance-checkpoint.md).
 
 ### Boundary between source and interpretation
 
