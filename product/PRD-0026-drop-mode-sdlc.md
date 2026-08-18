@@ -200,8 +200,11 @@ interface DropEnvelope {
 - Depends on PRD-0011 (gates, chronicle artifacts, no auto-promote),
   ADR-0008 (spec + envelope shape; `maxDiffLines` becomes advisory),
   PRD-0007 (queue / digest), PRD-0025 (unstick after remediable red gates).
-- Soft-depends on consumer work-intake (issues as ledger). The engine
-  speaks issue refs, not a consumer-only chat list.
+- Depends on the operator
+  [work-intake / bundle / stakeholder-verify](../architecture/sdlc/work-intake-and-ship-verify.md)
+  loop (issues as ledger). The engine speaks issue refs, not a chat
+  list. Consumer policy (hosts, Slack list id, notify channel) stays
+  behind `VERIFY_*` env — not engine code.
 - Platform boundary: editor peek is the operator's checkout of the drop
   worktree; the engine does not embed VS Code.
 
@@ -249,5 +252,6 @@ interface DropEnvelope {
   record.
 - Distill a drop's Plan Mode transcript into the PRD file automatically
   (still not a kickoff gate).
-- Consumer Slack sandbox-verify publish as an optional drop closeout hook
-  (not a Rosetta-core gate).
+- Wire Slack sandbox-verify publish as an optional drop closeout hook
+  (not a Rosetta-core gate). The helper already lives in `team-setup`
+  (`stakeholder-verify-watch`); closeout integration is still open.

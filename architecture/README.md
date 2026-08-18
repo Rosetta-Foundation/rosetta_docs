@@ -71,7 +71,7 @@ from the immutable records above.
 
 | Area                          | Documents                                                                                                                               |
 | ----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| [SDLC engine](sdlc/README.md) | Architecture, run lifecycle, gate model, data flow, wake/escalation, Chronicle artifacts, `.sdlc/` contracts, `state.json`, agent roles |
+| [SDLC engine](sdlc/README.md) | Architecture, run lifecycle, gate model, data flow, wake/escalation, Chronicle artifacts, `.sdlc/` contracts, `state.json`, agent roles, work intake and ship verify |
 
 ## Conventions
 
