@@ -24,11 +24,19 @@ Companion templates: `team-setup` rules `work-intake` and
 | **Execution envelope** | Paths, gates, tests | Spec (`sdlc-workflow`) when the route is `run` |
 | **Delivered** | What we intended to ship | `docs/releases/YYYY-MM-DD.md` in the app repo |
 | **Stakeholder check-off** | Did a non-GitHub stakeholder smoke this? | External ledger (Slack list by default) |
-| **Engineering memory** | Why we did it | Chronicle (after the fact, not a backlog) |
+| **Engineering memory** | Why we did it and how we got here | Chronicle (observational memory, not a backlog or work ledger) |
 
 Intake is **not** the backlog. **Catalog** it: promote each ask to an
 issue (or a PR that will close the same sitting). If it is not an issue,
 it is not committed work.
+
+These layers are **different operational systems of record**. Chronicle
+does not replace any of them. In this SDLC context it preserves enough
+relationship among them that later someone can ask “why did we ship
+this?” and traverse intake → issue → decision → implementation →
+sandbox release → verification. Chronicle is not where work waits.
+Chronicle is where the path survives — whether captured while it
+happened or reconstructed later.
 
 A domain-expert **Feedback** tracker (or similar inbox) stays an inbox.
 It is a bad second backlog. Point stakeholders at issue URLs or the
@@ -100,8 +108,10 @@ Convention inside the dated file:
 
 ## 5. Stakeholder verification ledger (no GitHub required)
 
-Chronicle is engineering memory. Stakeholders who do not use GitHub
-need an analog they already live in. Default mechanism: a **Slack
+In this SDLC context, Chronicle is engineering memory: it preserves
+the path of work and decisions; it is not the stakeholder verification
+ledger. Stakeholders who do not use GitHub need an operational
+check-off surface they already live in. Default mechanism: a **Slack
 List**.
 
 | List | Job |
