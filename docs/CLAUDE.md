@@ -7,6 +7,10 @@ and platform-level guides. Repo-specific docs live inside each repo. Chronicle i
 truth for engineering *knowledge*; this folder is for human-authored *documentation* about the
 workspace and product.
 
+Question-driven and one-page communication sketches live in
+[`../guides/`](../guides/README.md), not here. They sit between the essay
+(`../story/`) and the conceptual model (`../architecture/CONCEPTUAL-MODEL.md`).
+
 | File | Holds |
 | ---- | ----- |
 | [`VISION.md`](VISION.md) | Where Rosetta is going — personal vs org knowledge flow |
