@@ -16,3 +16,5 @@ in [`../architecture/CONCEPTUAL-MODEL.md`](../architecture/CONCEPTUAL-MODEL.md).
 
 Why these exist, and why the manuscript is not being rewritten yet:
 [`../story/STORY-EVOLUTION.md`](../story/STORY-EVOLUTION.md).
+Real-corpus evidence that the path can be traversed honestly:
+[`../product/research/PRD-0027/provenance-checkpoint.md`](../product/research/PRD-0027/provenance-checkpoint.md).

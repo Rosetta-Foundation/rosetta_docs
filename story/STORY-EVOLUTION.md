@@ -291,6 +291,22 @@ deeper: not only lost context, and not only lost paths between ideas, but
 lost honesty about how a conclusion was reached — including the honesty of
 saying what is missing.
 
+A later real-corpus smoke test sharpened a 10th-grade form of that same
+honesty. The system encountered a missing attachment and did not invent
+it. That line belongs in the communication artifacts, not as a new
+chapter:
+
+> **Good memory isn't remembering everything.**
+> **Good memory also means knowing what you've forgotten.**
+
+See [`../guides/ROSETTA-IN-ONE-PAGE.md`](../guides/ROSETTA-IN-ONE-PAGE.md)
+and the checkpoint in
+[`../product/research/PRD-0027/provenance-checkpoint.md`](../product/research/PRD-0027/provenance-checkpoint.md).
+The engine has now proved it can preserve and traverse a path honestly
+enough to ask the *next* question — can it derive meaning without
+pretending the meaning was in the source? — without rewriting the essay
+to announce that result.
+
 ---
 
 ## What this memo does not do

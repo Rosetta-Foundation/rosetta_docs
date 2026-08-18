@@ -133,7 +133,18 @@ found:    the final document
 missing:  the alternatives that were refused
 missing:  the evidence the staff recommendation cited
 missing:  whether this reading is contemporaneous or reconstructed
+missing:  a report the meeting cited — the node remains; the artifact does not
 ```
+
+That last gap is easy to hide. A meeting can still be cited after the
+report it referenced is gone. Naming the meeting is not the same as
+having the report. A trustworthy answer eventually has to say:
+
+> Meeting node X referenced report Y, but the underlying artifact is
+> unavailable.
+
+**Good memory isn't remembering everything. Good memory also means
+knowing what you've forgotten.**
 
 An instrument that fills those blanks with plausible prose has failed the
 practice, even if it sounds confident.

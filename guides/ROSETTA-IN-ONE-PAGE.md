@@ -29,6 +29,12 @@ the next one to guess why those things took their present form.
 
 We do not merely need more memory.
 
+**Good memory isn't remembering everything.**
+**Good memory also means knowing what you've forgotten.**
+
+A trustworthy path can say that something was here and is no longer
+available. Inventing the missing thing is not memory. It is fiction.
+
 We need enough of the relationships among **experience, evidence,
 interpretation, decision, and consequence** that a later mind can
 reconstruct the journey honestly — including the honesty of saying when

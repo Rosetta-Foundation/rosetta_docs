@@ -120,6 +120,12 @@ Missing ≠ nonexistent. Unresolved ≠ false. A gap is a first-class
 answer. Filling it with plausible prose is a failure of the model, not a
 feature of the guide.
 
+A real-corpus smoke test produced **`partial` rather than fiction** when
+a cited definition was removed, and repaired the path when it was
+restored. Unrelated corruption stayed isolated. Missing attachments
+stayed missing. That is the invariant under load, not only on fixtures.
+See [`../product/research/PRD-0027/provenance-checkpoint.md`](../product/research/PRD-0027/provenance-checkpoint.md).
+
 ### Boundary between source and interpretation
 
 ```text
@@ -177,6 +183,34 @@ the obligation to say when it cannot be reconstructed.
 
 ---
 
+## Known frontier — artifact-level provenance
+
+Source nodes can themselves contain provenance-bearing references.
+
+```text
+Source Graph:
+"This node references an attachment,
+and the attachment is missing."
+
+Provenance Graph:
+"This interpretation cites this node."
+```
+
+These are different answers. The provenance walk today can say that an
+interpretation cites a node. It does not yet say that the path contains
+a missing attachment. That is not a bug. It is the next known honesty
+layer:
+
+> This decision cites meeting node X.
+> Meeting node X referenced report Y, but the underlying artifact is
+> unavailable.
+
+Do not collapse the source graph into the provenance graph to fake that
+sentence. Capture attachment lineage as a frontier, not as the next
+required build.
+
+---
+
 ## What this is not
 
 - **Not an ADR.** No implementation choice is being ratified here.
@@ -191,6 +225,7 @@ the obligation to say when it cannot be reconstructed.
 ## Related
 
 - Story evolution (why this page exists): [`../story/STORY-EVOLUTION.md`](../story/STORY-EVOLUTION.md)
+- Provenance checkpoint (real-corpus evidence + next experiment): [`../product/research/PRD-0027/provenance-checkpoint.md`](../product/research/PRD-0027/provenance-checkpoint.md)
 - Field Guide: [`../guides/WHAT-ROSETTA-MAKES-POSSIBLE.md`](../guides/WHAT-ROSETTA-MAKES-POSSIBLE.md)
 - Engine: `rosetta_chronicle/docs/design/derived-records.md`,
   `rosetta_chronicle/docs/design/transformation-registry.md`,
