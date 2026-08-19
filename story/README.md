@@ -69,6 +69,13 @@ Still open for later revision (not new chapters by default):
 - Stewardship language, used sparingly where it earns its place
 - Further chapters only if a new civilizational idea remains after Ch. 10
 
+A working memo tests newer engine understanding against this map without
+rewriting it: [`STORY-EVOLUTION.md`](STORY-EVOLUTION.md). The short
+restatement and question-driven guide live in [`../guides/`](../guides/README.md);
+the architect-altitude model is
+[`../architecture/CONCEPTUAL-MODEL.md`](../architecture/CONCEPTUAL-MODEL.md).
+Do not move software types into these chapters.
+
 ## Writing principles
 
 1. One chapter = one new idea.

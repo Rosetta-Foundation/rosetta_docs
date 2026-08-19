@@ -15,6 +15,7 @@ why" of the platform that doesn't belong to any single code repo.
 | [`process/`](process)           | Claim hygiene — research tiers, epistemic status, adversarial review, historical parallel (Proposed).    |
 | [`docs/`](docs)                 | Cross-cutting product & workspace docs (vision, origin story, [website branding options](docs/WEBSITE-BRANDING.md), assets). |
 | [`story/`](story)               | Long-form essay drafts developing the civilizational philosophy behind Rosetta.                          |
+| [`guides/`](guides)             | Communication sketches at story and field-guide altitude (one-page explanation, question-driven guide).  |
 | [`shared/`](shared)             | Shared assets referenced across Rosetta repos.                                                           |
 
 ## Why a dedicated repo
