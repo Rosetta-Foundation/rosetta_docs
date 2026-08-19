@@ -103,6 +103,18 @@ verdict it would enforce — including would-escalate exceptions — without
 enforcing it. Validates gate behavior against human judgment before
 enforcement is switched on (SPEC-PRD-0011-P2).
 
+**cataloging** — promoting raw intake (transcript, Slack, tracker, prompt)
+to GitHub Issues with a route (`direct` / `bug-spec` / `plan`). Intake is
+not the backlog.
+
+**bundle** — a same-sitting set of cataloged issues shipped as one drop:
+one PR, one sandbox deploy, one stakeholder verify list. Do not write a
+PRD for a same-day bundle.
+
+**stakeholder verify** — the non-GitHub check-off ledger for a sandbox
+bundle (Slack list by default). Status there is whether a stakeholder
+smoked the drop. It is not GitHub Approve and not promote-to-prod.
+
 ---
 
 ## Conventions

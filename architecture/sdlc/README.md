@@ -25,6 +25,7 @@ consumes) and [ADR-0009](../ADR-0009-platform-boundary-mechanism-vs-policy.md)
 | [`state.json` schema](state-schema.md)          | Every field of run state, who writes it, and what reads it                                 |
 | [Agent roles](agent-roles.md)                   | The prompt-built agent roles that exist, distinguished from the ones that do not yet       |
 | [Performance baseline](performance-baseline.md) | Where the engine's time went across its first production corpus, and how to re-derive it   |
+| [Work intake and ship verify](work-intake-and-ship-verify.md) | Catalog raw asks to issues; same-sitting **bundle**; stakeholder Slack verify (not a laptop poller) |
 
 ## Reading order
 
@@ -36,12 +37,17 @@ everything else. If you are operating a run that has stopped, go straight to
 the engine, [`.sdlc/` contracts](sdlc-contracts.md) is the only document you
 strictly need. If you are about to optimize something, read
 [performance baseline](performance-baseline.md) first — it records which two
-plausible suspects were measured and found innocent.
+plausible suspects were measured and found innocent. If you are cataloging
+intake or shipping a same-day bundle, read
+[work intake and ship verify](work-intake-and-ship-verify.md) — that document
+is operator process in front of the engine, not a class-by-class source map.
 
 ## Scope and honesty
 
 Every claim in these documents is traceable to engine source, and each document
-cites the files it describes. Where the engine's behaviour differs from the
+cites the files it describes — except
+[work intake and ship verify](work-intake-and-ship-verify.md), which is the
+operator catalog / bundle / stakeholder-verify loop the drop command assumes. Where the engine's behaviour differs from the
 aspiration recorded in a PRD, the reference document describes the engine and
 says so explicitly — [agent roles](agent-roles.md) is mostly that distinction.
 
