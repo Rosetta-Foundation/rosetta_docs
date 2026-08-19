@@ -40,7 +40,7 @@ category, or authorize a capture prototype.
 | [language-test.md](language-test.md) | Distinguishing path / timeline / history / graph / story |
 | [landscape.md](landscape.md) | Adjacent-category comparison (not design guidance) |
 | [privacy-and-forgetting.md](privacy-and-forgetting.md) | Gate before any persistent-capture prototype |
-| [provenance-checkpoint.md](provenance-checkpoint.md) | Real-corpus provenance smoke: what held, attachment frontier, interpretation-policy experiment |
+| [provenance-checkpoint.md](provenance-checkpoint.md) | E3-era real-corpus smoke (historical: E4 was still next); attachment frontier preserved as recorded |
 | [thought-evolution-2026-08-19.md](thought-evolution-2026-08-19.md) | Working research record of a morning path (and later review): provenance failure, revision hypothesis, not a roadmap |
 
 ## Immediate actions
