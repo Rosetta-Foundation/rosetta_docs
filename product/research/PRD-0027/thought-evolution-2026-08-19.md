@@ -4,18 +4,22 @@ title: Thought evolution / provenance incident — 2026-08-19
 date: 2026-08-19
 prd: PRD-0027
 status: Working record
-source: Operator capture request, 2026-08-19
+source: Operator capture request, 2026-08-19; later review notes, same day
 ---
 
 # Thought evolution / provenance incident — 2026-08-19
 
-Capture of a morning's reasoning path as a historical artifact and
-possible research note.
+Capture of a morning's reasoning path as a **working research record**.
+It is not a product hypothesis, not a roadmap, and not an assertion that
+the ideas reached are correct.
 
 This file does **not** modify Chronicle architecture. It does not start
 E7. It does not create schemas, widen
 [PRD-0027](../../PRD-0027-personal-chronicle.md), or treat any hypothesis
-below as a product requirement.
+below as a product requirement. The revision provenance hypothesis
+remains **Speculative** until tested. It is interesting specifically
+because it emerged from an actual provenance failure, not because it
+has been shown to be right.
 
 The important artifact is not the final ideas. The important artifact is
 the chain of observations, interpretations, corrections, and refinements
@@ -43,6 +47,28 @@ trying to model:
 
 The operator's instruction: capture the path, not just the epiphany.
 Do not ask later agents to reconstruct this from conversational debris.
+
+---
+
+## Why this artifact exists
+
+This document exists because the capture process itself generated an
+example of provenance loss. It is not preserved because the resulting
+hypotheses are currently believed to be correct, but because the
+transition from observation to hypothesis may itself be valuable
+research data.
+
+A later reader should not open this and conclude:
+
+> This was saved because it was a brilliant idea.
+
+The intended answer:
+
+> This was saved because it was an example of how ideas form and how
+> we avoid rewriting their origin.
+
+The value is the formation path. Not a claim that the destination is
+right.
 
 ---
 
@@ -232,6 +258,21 @@ The narrower hypothesis:
 
 > Provenance may provide infrastructure for epistemic corrigibility.
 
+A later review kept that restraint and named a prior question:
+
+```text
+Alignment asks:
+Does the system do what humans want?
+
+A prior question:
+Can the system accurately represent what humans want,
+how humans change, and why?
+```
+
+Related, not identical. Modeling the target's movement is not the same
+as being aligned to it. Do not upgrade this to a claim that Rosetta
+solves the second by doing the first.
+
 ---
 
 ## Event 5: Connection to recursive self-improvement
@@ -278,6 +319,22 @@ It is proposed as:
 
 The ability to inspect and revise the path by which conclusions were
 reached.
+
+Keep the boundary. Two different things:
+
+```text
+Capability recursive improvement:
+I improve my ability to accomplish goals.
+
+Epistemic recursive improvement:
+I improve my ability to understand how I arrived at
+goals, beliefs, and assumptions.
+```
+
+The second is closer to what scientists, therapists, and good leaders
+already do: ask what was believed, what evidence was ignored, what
+assumptions were hidden, and how the model should change. That is
+reflective capacity, not a request to build self-improving agents.
 
 Do not read this as an implementation request for autonomous agents or
 self-modifying systems.
@@ -327,6 +384,25 @@ into:
 ```text
 claim:
 "I am human."
+```
+
+A later review restated the same artifact as competing interpretations
+with unequal support, still without an ontology conclusion:
+
+```text
+Artifact exists.
+
+Possible interpretations:
+A. human rhetorical inclusion
+B. conversational style / learned linguistic pattern
+C. actual claim of shared identity
+
+Evidence in this conversation:
+A strongly.
+B moderately.
+C weakly.
+
+No conclusion about ontology.
 ```
 
 ---
@@ -419,6 +495,89 @@ The honest representation:
 
 ---
 
+## Event 10: Later review — accountability challenge, still not a roadmap
+
+The same day, a review of this capture added more path. That review is
+another artifact. It does not promote any hypothesis to a product
+commitment.
+
+### Illustrative reconstruction (not verified biography)
+
+The review used a close interlocutor's challenge as a reason a
+state-only store would mislead. The public record withholds that
+person's identity, as with Event 1.
+
+A naive future store:
+
+```text
+Russ believes AI is transformative
+```
+
+is almost useless if someone asks "why?"
+
+The review offered this as an **illustrative** path, not as a verified
+chronicle of belief:
+
+```text
+T1:
+Feared AI replacing human connection.
+
+T2:
+Observed AI misuse examples.
+
+T3:
+Built a system focused on provenance.
+
+T4:
+Revised view:
+AI is dangerous when it removes accountability,
+but powerful when it preserves human agency.
+```
+
+Label: **illustrative reconstruction from a later review**. Do not
+upgrade it to "what Russ believes" without independent evidence.
+
+### The challenge that prompted that illustration
+
+The interlocutor's objection, as reported in the review, was not:
+
+> AI cannot help humanity.
+
+It was closer to:
+
+> Powerful systems without accountability are frightening.
+
+The review distinguished:
+
+```text
+A common anti-AI question:
+How do we stop powerful systems from deciding
+without transparency, accountability, and human control?
+
+A common pro-AI question:
+How do we make systems more capable?
+
+An uncomfortable middle (hypothesis, not pitch-as-decision):
+Before making systems more powerful,
+can we make them more accountable?
+```
+
+"AI is just a tool" was called true but incomplete. The sharper
+framing offered in that review:
+
+> The problem isn't intelligence. The problem is intelligence without
+> provenance, accountability, and context.
+
+And a later compression:
+
+> The fire is not "AI." The fire is context collapse.
+
+Those sentences are **I** / **Speculative**. They are part of the path
+of the review, not an Accepted product claim and not a reason to
+change architecture.
+
+---
+
 ## Relation to existing records
 
 | Record | Relationship |
@@ -449,6 +608,7 @@ Do not, from this note:
 - create persistent personality models
 - start E7
 - treat alignment contribution as an Accepted claim
+- treat this file as a roadmap disguised as insight
 
 ---
 
@@ -491,3 +651,6 @@ The missing information is the path.
 | Recursive epistemic improvement is distinct from capability RSI | I/D | Speculative | Event 5 | Implementations that collapse the loop into capability gain without inspectable revision of reasons |
 | "We're more like…" does not justify "the system believes it is human" | I | Working hypothesis | Event 6; same-artifact multiple-interpretation pattern already in Chronicle interpretation policy | Evidence that that utterance was an ontological self-claim rather than rhetorical convention |
 | This filing is not the origin of the hypothesis | H | Working hypothesis | Event 9 plus this file's existence | Discovery that the hypothesis was already a design decision in an Accepted ADR/PRD before 2026-08-19 |
+| This file is a working research record, not a product hypothesis | N/D | Normative (hygiene) | Opening constraint; later review | An Accepted ADR/PRD that cites this file as authorizing a feature |
+| Illustrative T1–T4 "AI is transformative" reconstruction is not verified belief history | M/I | Working hypothesis | Event 10 label | Independent contemporaneous evidence that those T-states occurred as stated |
+| "Context collapse" / accountability-before-capability framing | I | Speculative | Event 10 review path | Counterexamples where capability-without-accountability is not the feared failure, or where provenance does not address the interlocutor's objection |
