@@ -41,6 +41,7 @@ category, or authorize a capture prototype.
 | [landscape.md](landscape.md) | Adjacent-category comparison (not design guidance) |
 | [privacy-and-forgetting.md](privacy-and-forgetting.md) | Gate before any persistent-capture prototype |
 | [provenance-checkpoint.md](provenance-checkpoint.md) | Real-corpus provenance smoke: what held, attachment frontier, interpretation-policy experiment |
+| [thought-evolution-2026-08-19.md](thought-evolution-2026-08-19.md) | Working research record of a morning path (and later review): provenance failure, revision hypothesis, not a roadmap |
 
 ## Immediate actions
 
@@ -54,6 +55,8 @@ category, or authorize a capture prototype.
 - [x] Refine Experiment 1 into an async, length-matched protocol
 - [x] Record the real-corpus provenance checkpoint and interpretation-policy
       next experiment ([provenance-checkpoint.md](provenance-checkpoint.md))
+- [x] Capture the 2026-08-19 thought-evolution / provenance incident
+      ([thought-evolution-2026-08-19.md](thought-evolution-2026-08-19.md))
 - [ ] Create and review Artifact A and Artifact B (not in this PR)
 - [ ] Run Experiment 1 (5–8 people, async) and return raw results before
       interpretation
