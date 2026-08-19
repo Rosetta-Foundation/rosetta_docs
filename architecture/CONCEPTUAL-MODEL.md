@@ -4,6 +4,7 @@
 **Altitude:** The Architecture — *How can we trust that it actually does it?*
 **Audience:** senior engineers, architects, researchers
 **Date:** 2026-08-18
+**Updated:** 2026-08-19 (E4–E6 measured; transformation subgraph unchanged)
 
 This document answers *what is the system?* ADRs answer *why did we choose
 this implementation?* Keep those jobs separate.
@@ -20,7 +21,7 @@ the conceptual invariants those docs are already protecting.
 
 ## The question, without the parable
 
-**Where did this belief come from?**
+**Where did this conclusion, interpretation, decision, or belief come from?**
 
 ```text
                      TransformationDefinition
@@ -33,6 +34,11 @@ SourceNode ← cites ─ TransformationExecution
                          DerivedRecord
 ```
 
+This is the **transformation subgraph**: recipe → run → interpretation
+event. It is not the whole Chronicle. Physical provider invocations,
+later human evaluations, and current understanding sit beside it, not
+on it.
+
 | Record | Owns | Does not own |
 | --- | --- | --- |
 | **Source node / source graph** | What existed and how it was structured | Meaning, review, “the takeaway” |
@@ -44,8 +50,10 @@ Definitions explain the recipe. Executions record a run under the
 engine's current identity policy. Derived records explain the
 interpretation.
 
-A later mind reconstructing a belief walks this graph. That walk *is*
-the answer to the Field Guide questions:
+A later mind reconstructing a conclusion, interpretation, decision, or
+belief walks this graph — and, when they exist, the evaluation history
+projected over it. That walk *is* the answer to the Field Guide
+questions:
 
 | Field Guide question | Conceptual object |
 | --- | --- |
@@ -53,6 +61,8 @@ the answer to the Field Guide questions:
 | What did we observe? | The cited source refs on the execution |
 | What did we make of it? | Derived record (interpretation event) |
 | What process produced that reading? | Transformation definition + execution |
+| What did someone later think about that reading? | Derived evaluation (append-only; not a rewrite of the derived record) |
+| What is current for this perspective as of T? | Current-understanding view (computed; not a durable historical artifact) |
 | What changed because of it? | Later derived records, decisions, or activities that cite this one |
 | Why can't you answer? | A missing node, a missing citation, or a reconstructed gap marked as such |
 
@@ -81,7 +91,8 @@ easier to demo and harder to trust.
 
 ### Identity
 
-Three records, three identities. Do not collapse them into “the
+The transformation chain has three records and three identities.
+Do not collapse definition, execution, and derived record into “the
 transformation.” `createdAt` is never part of any of these ids. A living
 concept — “my current reading of this conversation” — is none of them.
 It would be a later view over a sequence of events.
@@ -107,26 +118,54 @@ Recipe version on an execution (`1`) is a different axis from
 Current deterministic execution identity is idempotent and
 content-addressed. Re-running an observationally identical deterministic
 transformation does not create a second persisted execution artifact
-because `createdAt` is not identity-bearing. Therefore the current
-`TransformationExecution` artifact should not yet be interpreted as a
-complete ledger of every physical invocation.
+because `createdAt` is not identity-bearing. Therefore
+`TransformationExecution` is not a complete ledger of every physical
+invocation.
 
 Two clock times can still be one persisted execution if recipe, producer,
 refs, configuration, and output hashes match. Two physical model calls
-that emit different output hashes are two artifacts. Artifact identity
-and occurrence identity are not currently the same concept.
+that emit different output hashes are two artifacts.
 
-Whether machine interpretation requires a distinct execution-occurrence
-identity is an open design question for E4, especially for
-nondeterministic producers. Do not silently inherit today's
-deterministic collapse semantics. A later nondeterministic recipe is the
-same record shape with `deterministic: false`; it is not registered yet.
+**Occurrence is a fourth identity, not a fourth belief node.**
+`ExecutionOccurrence` is the receipt of one physical provider
+invocation: whether the provider answered, and whether Chronicle
+accepted that output as memory. It is distinct from
+`TransformationExecution`. It is not a provenance-graph node and is
+not included in the default provenance walk. Artifact identity and
+occurrence identity are not the same concept.
+
+**Narrow machine interpretation is registered.** The
+`candidate-observation` recipe is the nondeterministic
+(`deterministic: false`) path that produces machine-authored derived
+records from explicitly cited source nodes. Caller-supplied
+`record-derived` / `transform-record` remain deterministic and reject
+that type. Do not inherit deterministic collapse semantics for this
+recipe.
+
+**Evaluation is a later historical act, not a rewrite.**
+`DerivedEvaluation` is append-only. It cites one derived record.
+`evidenceSupport` and `personalRecognition` are independent dimensions:
+judging cited evidence sufficient is not personal recognition, and
+omitting recognition leaves it unassessed. Identity includes
+`evaluatedAt`, so a later judgment is a new artifact. The evaluated
+derived record is not mutated.
+
+**Current understanding has no identity in this table.** It is a
+read-only recomputable projection over interpretation and evaluation
+history for a named perspective and an event-time `asOf`. It is not
+another durable historical artifact and not a “latest value” field.
+`explanation.evaluationIds` are the in-scope historical evaluations
+considered for that record/perspective. Dimension
+`contributingEvaluationIds` are only the act(s) responsible for the
+current reduced state.
 
 ### Immutability
 
 Edits are new records, not in-place rewrites. Correction is append-only.
 Review state on an event is a seed, not a license to mutate the event's
-meaning.
+meaning. A later evaluation does not rewrite the interpretation it
+cites. Recomputing current understanding does not write a new memory
+object.
 
 ### Provenance
 
@@ -134,7 +173,9 @@ Every derived record must answer **why does this exist?** by citing
 sources structurally — not by inference from timestamps or directory
 proximity. An execution cites a definition and source nodes. A derived
 record may link to the execution that produced it; that link is not a
-substitute for source refs.
+substitute for source refs. An evaluation cites the derived record it
+judges. An occurrence may point at an execution after commit; that
+receipt is still not a belief node.
 
 ### Event time versus ingestion time
 
@@ -169,7 +210,12 @@ type will behave the same. See
 source ≠ interpretation
 definition ≠ execution
 execution ≠ result
+execution ≠ occurrence
 human interpretation ≠ machine interpretation
+evaluation ≠ interpretation
+evidence support ≠ personal recognition
+historical evaluation ≠ current contributor
+current understanding ≠ durable historical artifact
 ```
 
 Shortcut `source node → Activity` drops branches, uncertainty, context,
@@ -262,10 +308,13 @@ required build.
 ## Related
 
 - Story evolution (why this page exists): [`../story/STORY-EVOLUTION.md`](../story/STORY-EVOLUTION.md)
-- Provenance checkpoint (real-corpus evidence + next experiment): [`../product/research/PRD-0027/provenance-checkpoint.md`](../product/research/PRD-0027/provenance-checkpoint.md)
+- Provenance checkpoint (E3-era real-corpus evidence; E4 was still next): [`../product/research/PRD-0027/provenance-checkpoint.md`](../product/research/PRD-0027/provenance-checkpoint.md)
 - Field Guide: [`../guides/WHAT-ROSETTA-MAKES-POSSIBLE.md`](../guides/WHAT-ROSETTA-MAKES-POSSIBLE.md)
 - Engine: `rosetta_chronicle/docs/design/derived-records.md`,
   `rosetta_chronicle/docs/design/transformation-registry.md`,
+  `rosetta_chronicle/docs/design/interpretation-policy.md`,
+  `rosetta_chronicle/docs/design/evaluation.md`,
+  `rosetta_chronicle/docs/design/current-understanding.md`,
   `rosetta_chronicle/docs/architecture.md`
 - Decisions already made: [ADR-0001](ADR-0001-rosetta-philosophy.md),
   [ADR-0002](ADR-0002-personal-vs-organizational-chronicle.md)

@@ -15,6 +15,21 @@ This file records that checkpoint. It does **not** contain the corpus. It
 does not authorize summarizing ChatGPT conversations. It does not widen
 [PRD-0027](../../PRD-0027-personal-chronicle.md).
 
+## Historical status
+
+This file records the frontier **when E3 had been measured and E4 was
+still next** (2026-08-18). It is not a description of the engine after
+E4–E6. Do not retrofit those later measurements into the progression
+or “next experiment” sections below.
+
+Later measured work is documented elsewhere:
+
+- E4 / E4b — `rosetta_chronicle/docs/design/interpretation-policy.md`
+- E5 — `rosetta_chronicle/docs/design/evaluation.md`
+- E6 — `rosetta_chronicle/docs/design/current-understanding.md`
+- Architect-altitude sync after those measurements —
+  [`../../../architecture/CONCEPTUAL-MODEL.md`](../../../architecture/CONCEPTUAL-MODEL.md)
+
 The human path-vs-destination trials in [`experiments.md`](experiments.md)
 remain a separate track. Do not renumber them. The sequence below is the
 **engine progression** — what the provenance machinery has now proved, and
