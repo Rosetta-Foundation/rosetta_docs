@@ -164,13 +164,14 @@ This note does **not** add a schema, dimension, or handler. Off-engine
 scoresheets already held the split. If a later design ever represents
 the pattern, it would need to keep assessment time, judged object,
 state/context the judgment is about, evaluator, and question type
-from collapsing — as a honesty constraint, not as a feature request
+from collapsing — as an honesty constraint, not as a feature request
 in this PR.
 
 Confidence of the semantic candidate: **Working hypothesis** (this
-sample; operator-as-interpreter). Not Established. Same-lineage
-analysis is an **upper bound** until a human or cross-lineage pass
-lands.
+sample; operator-as-interpreter). Not Established. Because the
+operator authored both the interpretations and later judgments, this
+is an upper-bound finding until an independent-interpreter
+replication occurs.
 
 ---
 
