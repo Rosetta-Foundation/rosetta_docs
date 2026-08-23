@@ -3,8 +3,8 @@ id: PRD-0027-specimen-d-source-selection-2026-08
 title: Specimen D — frozen source-selection procedure
 date: 2026-08-23
 prd: PRD-0027
-status: Frozen procedure
-source: Approved Specimen D design refinements; selection not executed
+status: Frozen procedure (corrected before selection)
+source: Approved Specimen D design refinements; hasParts join correction 2026-08-23 before any seed
 ---
 
 # Specimen D — frozen source-selection procedure
@@ -69,7 +69,45 @@ insufficient-evidence. Insufficient-evidence is a valid D1.
 
 ## Not done in this record
 
+As written at the original freeze (before import, before the
+discrepancy below, before any seed):
+
 - No conversation or node was selected.
 - No source-graph file was written.
 - No model was invoked.
 - D1 / D2 / D3 / E8 did not start.
+
+## Correction — 2026-08-23, before any seed
+
+Discovered after `import-chatgpt` wrote the new D graph and **before**
+any CSPRNG seed or specimen selection. This is a protocol correction,
+not a post-selection adjustment. The original freeze above is left in
+place.
+
+**Discrepancy.** The frozen eligible-text-node predicate includes
+`hasParts`. The persisted source-graph type (`ChatGptSourceNode`) does
+not store `hasParts`; `buildSourceGraph` drops it. `hasParts` exists
+only on the in-memory stripped raw node (`ChatGptRawNode`). Selection
+was blocked rather than improvising.
+
+**Approved correction (option 3).** Do not change the source-graph
+schema. Do not drop `hasParts` from the frozen predicate.
+
+- The persisted source graph supplies conversation identity, node
+  identity, node-array order, `hasMessage`, `role`, and `contentType`.
+- The original ChatGPT archive / raw reconstruction may be joined **by
+  node id only** to recover the structural boolean `hasParts`.
+- No raw text, titles, parts contents, topic, salience, or semantic
+  information may be inspected during eligibility or selection.
+- `hasParts` is used only as a boolean eligibility fact.
+- Graph node-array order remains authoritative for `eligible[]`.
+- The source archive identity / hash must match the already recorded
+  Specimen D corpus identity.
+
+Eligible conversations and `eligible[]` still use the originally frozen
+predicate:
+
+`hasMessage && hasParts && contentType === 'text' && role ∈ {user, assistant}`
+
+Conversation list order is the persisted graph’s conversation-array
+order, filtered to conversations with at least one eligible node.

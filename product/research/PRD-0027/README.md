@@ -44,7 +44,7 @@ category, or authorize a capture prototype.
 | [thought-evolution-2026-08-19.md](thought-evolution-2026-08-19.md) | Working research record of a morning path (and later review): provenance failure, revision hypothesis, not a roadmap |
 | [historical-self-sample-2026-08.md](historical-self-sample-2026-08.md) | Sanitized 2026-08 historical-journal sample: dual 2026 targets (historical-self vs present-self); not E7 Track A |
 | [ephemeral-store-loss-2026-08.md](ephemeral-store-loss-2026-08.md) | Process note: `/tmp` private store lost after reboot; sanitized checkpoints survived; originals did not |
-| [specimen-d-source-selection-2026-08.md](specimen-d-source-selection-2026-08.md) | Frozen Specimen D selection: recorded random text node + radius-1 order window; no invoke |
+| [specimen-d-source-selection-2026-08.md](specimen-d-source-selection-2026-08.md) | Frozen Specimen D selection: recorded random text node + radius-1 order window; `hasParts` via raw-node join (corrected before any seed) |
 
 ## Immediate actions
 
@@ -67,6 +67,8 @@ category, or authorize a capture prototype.
 - [x] Freeze Specimen D source-selection (random node + bounded
       window); selection not executed
       ([specimen-d-source-selection-2026-08.md](specimen-d-source-selection-2026-08.md))
+- [x] Record the pre-seed `hasParts` join correction on that procedure
+      (schema unchanged; predicate unchanged)
 - [ ] Create and review Artifact A and Artifact B (not in this PR)
 - [ ] Run Experiment 1 (5–8 people, async) and return raw results before
       interpretation
