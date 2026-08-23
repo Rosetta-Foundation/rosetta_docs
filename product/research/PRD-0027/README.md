@@ -45,6 +45,7 @@ category, or authorize a capture prototype.
 | [historical-self-sample-2026-08.md](historical-self-sample-2026-08.md) | Sanitized 2026-08 historical-journal sample: dual 2026 targets (historical-self vs present-self); not E7 Track A |
 | [ephemeral-store-loss-2026-08.md](ephemeral-store-loss-2026-08.md) | Process note: `/tmp` private store lost after reboot; sanitized checkpoints survived; originals did not |
 | [specimen-d-source-selection-2026-08.md](specimen-d-source-selection-2026-08.md) | Frozen Specimen D selection: recorded random text node + radius-1 order window; `hasParts` via raw-node join (corrected before any seed) |
+| [specimen-d-checkpoint-2026-08.md](specimen-d-checkpoint-2026-08.md) | Sanitized Specimen D completion: new lineage; D2 supported × 2; D3 recognized × 2; qualification off-engine; no T3 |
 
 ## Immediate actions
 
@@ -69,6 +70,8 @@ category, or authorize a capture prototype.
       ([specimen-d-source-selection-2026-08.md](specimen-d-source-selection-2026-08.md))
 - [x] Record the pre-seed `hasParts` join correction on that procedure
       (schema unchanged; predicate unchanged)
+- [x] Record the sanitized Specimen D completion checkpoint
+      ([specimen-d-checkpoint-2026-08.md](specimen-d-checkpoint-2026-08.md))
 - [ ] Create and review Artifact A and Artifact B (not in this PR)
 - [ ] Run Experiment 1 (5–8 people, async) and return raw results before
       interpretation
