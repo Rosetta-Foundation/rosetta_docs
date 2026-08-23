@@ -42,6 +42,7 @@ category, or authorize a capture prototype.
 | [privacy-and-forgetting.md](privacy-and-forgetting.md) | Gate before any persistent-capture prototype |
 | [provenance-checkpoint.md](provenance-checkpoint.md) | E3-era real-corpus smoke (historical: E4 was still next); attachment frontier preserved as recorded |
 | [thought-evolution-2026-08-19.md](thought-evolution-2026-08-19.md) | Working research record of a morning path (and later review): provenance failure, revision hypothesis, not a roadmap |
+| [historical-self-sample-2026-08.md](historical-self-sample-2026-08.md) | Sanitized 2026-08 historical-journal sample: dual 2026 targets (historical-self vs present-self); not E7 Track A |
 
 ## Immediate actions
 
@@ -57,6 +58,8 @@ category, or authorize a capture prototype.
       next experiment ([provenance-checkpoint.md](provenance-checkpoint.md))
 - [x] Capture the 2026-08-19 thought-evolution / provenance incident
       ([thought-evolution-2026-08-19.md](thought-evolution-2026-08-19.md))
+- [x] Record the sanitized 2026-08 historical-self sample
+      ([historical-self-sample-2026-08.md](historical-self-sample-2026-08.md))
 - [ ] Create and review Artifact A and Artifact B (not in this PR)
 - [ ] Run Experiment 1 (5–8 people, async) and return raw results before
       interpretation
