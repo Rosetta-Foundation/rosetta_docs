@@ -73,3 +73,12 @@ A path system stays humane only if some things are allowed to fade.
 - When does append-only history conflict with a deletion request?
 
 Those belong in Experiment 4 after this gate is reviewed.
+
+## Raw-preservation program (2026-08-25)
+
+Design/review for operator STOP / withhold / forget is authorized
+under the Build Charter. Implementation of Gate 4 is **not**
+authorized until Ready Room resolves the YELLOW in
+[raw-source-preservation.md](raw-source-preservation.md). Recommended
+V0 is scope-only (no git-tracked content-hash tombstone). This file
+remains the ethical floor; that note does not weaken it.
