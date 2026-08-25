@@ -135,9 +135,9 @@ After each meaningful cycle, update the **private** current-state file:
 | Dual track: Daily Chronicle `Activity` vs personal source graph | Validated | Do not route personal raw source through `Activity` |
 | ChatGPT inventory then stripped source-graph import | Validated | Topology and clocks; no titles/parts in the graph |
 | Source bytes stay outside the public engine | Validated | ADR-0002; Phase 2 graph is not an archive backup |
-| Content hash is artifact identity | Validated | Same bytes → one object; vendor ids are locators |
+| Content hash is captured-artifact identity | Validated | Same exact bytes → one object; source-native IDs may identify source structure but do not replace content identity |
 | `importedAt` / capture time ≠ source event time | Validated | Do not backdate derivation or evaluation |
-| Source vault (copy of observed bytes under operator control) | **Validated** for locator-loss resolve on one Cursor JSONL (VAULT-V0); not a new engine type | Graph without vault cannot resolve after locator loss |
+| Source vault (copy of observed bytes under operator control) | Validated: locator-loss resolve, one Cursor specimen | Graph without vault cannot resolve after locator loss; not a new engine type |
 | Capture / Capture Engine / numbered “levels” as schema | **Rejected** | Existing vault + graph + resolve; do not mint a parallel ontology |
 | `getActivity` Claude/Cursor adapters as raw capture | **Rejected** | They summarize and can promote filesystem time to event time |
 | Daemon, SQLite, FTS, Gate 4, models, bulk capture | **Not authorized** | Yellow/red until a specimen and explicit envelope say otherwise |
@@ -151,8 +151,8 @@ JSONL: exact-byte SHA-256; copy-if-new; two observations / one object;
 resolve after locator hide; source restored. No engine schema, no
 interpretation, no public locators.
 
-Source vault status: **validated for this claim** (locator-loss resolve
-on one artifact). Not a Capture primitive. Not bulk capture.
+Source vault status: **Validated: locator-loss resolve, one Cursor specimen.**
+Not a Capture primitive. Not bulk capture.
 
 **Authorized next (GREEN, not started):** a synthetic-fixture test that
 `SourceContentRepository.resolve` succeeds when `exportPath` is a
