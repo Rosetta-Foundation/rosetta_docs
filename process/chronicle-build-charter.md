@@ -147,15 +147,17 @@ After each meaningful cycle, update the **private** current-state file:
 
 ## Current authorization envelope
 
-**Last GREEN result (sanitized):** VAULT-CHATGPT-V0 passed. Synthetic
-ChatGPT shards copied into the existing content-addressed vault
-(copy-if-new). Original names stay on receipts. A reconstructed
-same-named directory resolves; swapped names fail hash identity. No
-new repository type, no object-id resolve, no private live export.
+**Last GREEN result (sanitized):** HIDE-COPY-V0 passed (wave with
+VAULT-CHATGPT-V0). Disposable copy of the synthetic ChatGPT fixture:
+observe into the existing vault; hide the copy; reconstruct from vault
++ name receipts; resolve; restore; re-observe is copy-if-new. Hidden
+path is `export-missing`. Git fixture never moved. Object-id resolve
+is not required. No new repository type. No private live export.
 
-Prior: RESOLVE-COPY-V0 (path is a locator); VAULT-V0 (one Cursor JSONL).
-Source vault status: **Validated: locator-loss resolve (one Cursor
-file) + ChatGPT shard reconstruct (synthetic fixture).**
+Prior: VAULT-CHATGPT-V0 (names on receipts; swapped names fail);
+RESOLVE-COPY-V0 (path is a locator); VAULT-V0 (one Cursor JSONL).
+Source vault status: **Validated: locator-loss resolve (Cursor file +
+ChatGPT synthetic directory).**
 
 **v0.1 Daily Chronicle / `Activity`:** **Deprecated (frozen).** Do not add
 `ActivitySource` members, new `getActivity` adapters, or hook behavior.
@@ -164,11 +166,9 @@ record. Do not delete them in lieu of a specimen. A replacement day-view
 is **not authorized** until it cites vault hashes / source-graph
 coordinates / git SHAs without `Activity` as the intermediate.
 
-**Authorized next (GREEN, not started):** hide a disposable copy of the
-synthetic ChatGPT fixture directory (never the git fixture). After
-observe into the existing vault, hide that copy; reconstruct from
-vault + name receipts only; resolve; restore the copy. No new
-repository type. No private live export.
+**Authorized next:** none on this vault path. Do not add object-id
+resolve. Do not start a day-view. Ready Room picks the next product
+step.
 
 **Not authorized:** daemon; bulk capture; SQLite/FTS; Gate 4; models;
 new primitive; changing source-identity or clock semantics; extending or
@@ -186,8 +186,8 @@ repository type or a change to hash identity.
 - Encryption-at-rest / backup / key loss for the vault
 - When, if ever, a rebuildable SQLite index is justified
 - Whether `SourceContentRepository` should accept vault object IDs
-  instead of a directory locator for ChatGPT (VAULT-CHATGPT-V0:
-  reconstruct already resolves; swapped names fail; do not add
+  instead of a directory locator for ChatGPT (**no** — HIDE-COPY-V0:
+  reconstruct while the export is hidden already resolves; do not add
   object-id resolve)
 - What a honest day-view looks like once it is a view over evidence,
   not `Activity[]` synthesis
