@@ -132,14 +132,15 @@ After each meaningful cycle, update the **private** current-state file:
 
 | Decision | Status | Why |
 | -------- | ------ | --- |
-| Dual track: Daily Chronicle `Activity` vs personal source graph | Validated | Do not route personal raw source through `Activity` |
+| Dual track: do not route personal raw source through `Activity` | Validated | Conversations, graphs, and vault objects are not a day's `Activity[]` |
+| v0.1 Daily Chronicle `Activity` / `getActivity` as the source contract | **Deprecated (frozen)** | Capture and day-view were collapsed; conversational sources cannot honest-fit one timestamp + summary. Code remains as historical record. Do not extend. Do not use for new work. A later day-view over vault/graph/git requires its own specimen. |
 | ChatGPT inventory then stripped source-graph import | Validated | Topology and clocks; no titles/parts in the graph |
 | Source bytes stay outside the public engine | Validated | ADR-0002; Phase 2 graph is not an archive backup |
 | Content hash is captured-artifact identity | Validated | Same exact bytes → one object; source-native IDs may identify source structure but do not replace content identity |
 | `importedAt` / capture time ≠ source event time | Validated | Do not backdate derivation or evaluation |
 | Source vault (copy of observed bytes under operator control) | Validated: locator-loss resolve, one Cursor specimen | Graph without vault cannot resolve after locator loss; not a new engine type |
 | Capture / Capture Engine / numbered “levels” as schema | **Rejected** | Existing vault + graph + resolve; do not mint a parallel ontology |
-| `getActivity` Claude/Cursor adapters as raw capture | **Rejected** | They summarize and can promote filesystem time to event time |
+| `getActivity` Claude/Cursor adapters as raw capture | **Rejected** (and frozen with v0.1) | They summarize and can promote filesystem time to event time |
 | Daemon, SQLite, FTS, Gate 4, models, bulk capture | **Not authorized** | Yellow/red until a specimen and explicit envelope say otherwise |
 
 ---
@@ -154,13 +155,22 @@ interpretation, no public locators.
 Source vault status: **Validated: locator-loss resolve, one Cursor specimen.**
 Not a Capture primitive. Not bulk capture.
 
+**v0.1 Daily Chronicle / `Activity`:** **Deprecated (frozen).** Do not add
+`ActivitySource` members, new `getActivity` adapters, or hook behavior.
+Leave the existing code and personal `chronicles/*.md` as historical
+record. Do not delete them in lieu of a specimen. A replacement day-view
+is **not authorized** until it cites vault hashes / source-graph
+coordinates / git SHAs without `Activity` as the intermediate.
+
 **Authorized next (GREEN, not started):** a synthetic-fixture test that
 `SourceContentRepository.resolve` succeeds when `exportPath` is a
 same-bytes copy of the existing ChatGPT fixture at a different path.
 No API change. No private source.
 
 **Not authorized:** daemon; bulk capture; SQLite/FTS; Gate 4; models;
-new primitive; changing source-identity or clock semantics.
+new primitive; changing source-identity or clock semantics; extending or
+rewriting the v0.1 Daily Chronicle `Activity` path; deleting frozen v0.1
+code without a replacement specimen.
 
 **Escalate (YELLOW) if** the next engine step needs a new vault
 repository type or a change to hash identity.
@@ -175,6 +185,8 @@ repository type or a change to hash identity.
 - Whether `SourceContentRepository` should accept a vault path as
   `exportPath` for ChatGPT (existing hash-match resolve may already
   suffice if the vault object is the same bytes)
+- What a honest day-view looks like once it is a view over evidence,
+  not `Activity[]` synthesis
 
 ---
 
