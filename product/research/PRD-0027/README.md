@@ -47,6 +47,7 @@ category, or authorize a capture prototype.
 | [specimen-d-source-selection-2026-08.md](specimen-d-source-selection-2026-08.md) | Frozen Specimen D selection: recorded random text node + radius-1 order window; `hasParts` via raw-node join (corrected before any seed) |
 | [specimen-d-checkpoint-2026-08.md](specimen-d-checkpoint-2026-08.md) | Sanitized Specimen D completion: new lineage; D2 supported × 2; D3 recognized × 2; qualification off-engine; no T3 |
 | [recognition-sense-battery-2026-08.md](recognition-sense-battery-2026-08.md) | Sanitized off-engine battery on existing D interpretations: Green split of attribution vs truth-of-self vs trait; not a schema change |
+| [prior-exposure-path-language-2026-08.md](prior-exposure-path-language-2026-08.md) | Sanitized third-party Discord excerpt: similar path-practice language after prior exposure; not independent recognition; Path is not a primitive |
 
 ## Immediate actions
 
@@ -75,6 +76,8 @@ category, or authorize a capture prototype.
       ([specimen-d-checkpoint-2026-08.md](specimen-d-checkpoint-2026-08.md))
 - [x] Record the sanitized recognition-sense battery
       ([recognition-sense-battery-2026-08.md](recognition-sense-battery-2026-08.md))
+- [x] Record the sanitized prior-exposure path-language specimen
+      ([prior-exposure-path-language-2026-08.md](prior-exposure-path-language-2026-08.md))
 - [ ] Create and review Artifact A and Artifact B (not in this PR)
 - [ ] Run Experiment 1 (5–8 people, async) and return raw results before
       interpretation
