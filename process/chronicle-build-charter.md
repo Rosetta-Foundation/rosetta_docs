@@ -147,13 +147,15 @@ After each meaningful cycle, update the **private** current-state file:
 
 ## Current authorization envelope
 
-**Last GREEN result (sanitized):** VAULT-V0 passed. One allowlisted Cursor
-JSONL: exact-byte SHA-256; copy-if-new; two observations / one object;
-resolve after locator hide; source restored. No engine schema, no
-interpretation, no public locators.
+**Last GREEN result (sanitized):** RESOLVE-COPY-V0 passed. Synthetic
+ChatGPT fixture: `SourceContentRepository.resolve` succeeds when
+`exportPath` is a same-bytes directory copy at a different path.
+`exportPath` is a locator, not identity; identity is shard-name +
+shard-bytes SHA-256. No API change, no private live export.
 
-Source vault status: **Validated: locator-loss resolve, one Cursor specimen.**
-Not a Capture primitive. Not bulk capture.
+Prior: VAULT-V0 passed (one allowlisted Cursor JSONL; copy-if-new;
+resolve after locator hide). Source vault status unchanged:
+**Validated: locator-loss resolve, one Cursor specimen.**
 
 **v0.1 Daily Chronicle / `Activity`:** **Deprecated (frozen).** Do not add
 `ActivitySource` members, new `getActivity` adapters, or hook behavior.
@@ -162,10 +164,11 @@ record. Do not delete them in lieu of a specimen. A replacement day-view
 is **not authorized** until it cites vault hashes / source-graph
 coordinates / git SHAs without `Activity` as the intermediate.
 
-**Authorized next (GREEN, not started):** a synthetic-fixture test that
-`SourceContentRepository.resolve` succeeds when `exportPath` is a
-same-bytes copy of the existing ChatGPT fixture at a different path.
-No API change. No private source.
+**Authorized next (GREEN, not started):** off-engine, synthetic ChatGPT
+fixture only: copy shard bytes into the existing private vault
+(copy-if-new); keep original shard names on the receipt; reconstruct a
+temp directory with those names; `resolve` against it. No new repository
+type. No private live export.
 
 **Not authorized:** daemon; bulk capture; SQLite/FTS; Gate 4; models;
 new primitive; changing source-identity or clock semantics; extending or
@@ -182,9 +185,10 @@ repository type or a change to hash identity.
 - How does Gate 4 deletion interact with vault re-observation?
 - Encryption-at-rest / backup / key loss for the vault
 - When, if ever, a rebuildable SQLite index is justified
-- Whether `SourceContentRepository` should accept a vault path as
-  `exportPath` for ChatGPT (existing hash-match resolve may already
-  suffice if the vault object is the same bytes)
+- Whether `SourceContentRepository` should accept vault object IDs
+  instead of a directory locator for ChatGPT (a reconstructed
+  same-named shard tree already resolves; do not drop shard names
+  from identity)
 - What a honest day-view looks like once it is a view over evidence,
   not `Activity[]` synthesis
 
