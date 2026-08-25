@@ -11,6 +11,10 @@ supersedes: null
 
 # PRD-0001: Claude Code Source
 
+> **Frozen / deprecated as capture (2026-08-25).** v0.1 `getActivity` →
+> Daily Chronicle is historical record. Do not extend. See
+> [chronicle-build-charter.md](../process/chronicle-build-charter.md).
+
 > Turn Claude Code sessions into Chronicle activity — both by scraping past
 > sessions and by appending live as a session wraps up.
 

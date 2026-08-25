@@ -11,6 +11,11 @@ supersedes: null
 
 # PRD-0002: Multi-Repo Git Discovery & Two-Tier Daily Synthesis
 
+> **Frozen / deprecated as the v0.1 Daily Chronicle path (2026-08-25).**
+> Git objects remain source evidence. Synthesizing them through `Activity`
+> into a Daily Chronicle is historical record. Do not extend. See
+> [chronicle-build-charter.md](../process/chronicle-build-charter.md).
+
 > Capture git activity across every repository under a workspace root, and build
 > the Daily Chronicle by synthesizing durable per-repo structured data rather
 > than re-parsing rendered Markdown.
