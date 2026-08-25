@@ -24,6 +24,7 @@ specifics. Portable ideas only; not a fork of that corpus.
 | [`epistemic-status.md`](epistemic-status.md)       | How confident are we, and what would change that?                              |
 | [`adversarial-review.md`](adversarial-review.md)   | Does the claim set survive structured challenge (preferably cross-lineage)?    |
 | [`historical-parallel.md`](historical-parallel.md) | Have structurally similar patterns appeared before — including failures?       |
+| [`chronicle-build-charter.md`](chronicle-build-charter.md) | Chronicle implementation doctrine: invariants, GREEN/YELLOW/RED, method, envelope |
 
 ## Claim types (quick reference)
 
