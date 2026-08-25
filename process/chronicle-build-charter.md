@@ -147,15 +147,15 @@ After each meaningful cycle, update the **private** current-state file:
 
 ## Current authorization envelope
 
-**Last GREEN result (sanitized):** RESOLVE-COPY-V0 passed. Synthetic
-ChatGPT fixture: `SourceContentRepository.resolve` succeeds when
-`exportPath` is a same-bytes directory copy at a different path.
-`exportPath` is a locator, not identity; identity is shard-name +
-shard-bytes SHA-256. No API change, no private live export.
+**Last GREEN result (sanitized):** VAULT-CHATGPT-V0 passed. Synthetic
+ChatGPT shards copied into the existing content-addressed vault
+(copy-if-new). Original names stay on receipts. A reconstructed
+same-named directory resolves; swapped names fail hash identity. No
+new repository type, no object-id resolve, no private live export.
 
-Prior: VAULT-V0 passed (one allowlisted Cursor JSONL; copy-if-new;
-resolve after locator hide). Source vault status unchanged:
-**Validated: locator-loss resolve, one Cursor specimen.**
+Prior: RESOLVE-COPY-V0 (path is a locator); VAULT-V0 (one Cursor JSONL).
+Source vault status: **Validated: locator-loss resolve (one Cursor
+file) + ChatGPT shard reconstruct (synthetic fixture).**
 
 **v0.1 Daily Chronicle / `Activity`:** **Deprecated (frozen).** Do not add
 `ActivitySource` members, new `getActivity` adapters, or hook behavior.
@@ -164,11 +164,11 @@ record. Do not delete them in lieu of a specimen. A replacement day-view
 is **not authorized** until it cites vault hashes / source-graph
 coordinates / git SHAs without `Activity` as the intermediate.
 
-**Authorized next (GREEN, not started):** off-engine, synthetic ChatGPT
-fixture only: copy shard bytes into the existing private vault
-(copy-if-new); keep original shard names on the receipt; reconstruct a
-temp directory with those names; `resolve` against it. No new repository
-type. No private live export.
+**Authorized next (GREEN, not started):** hide a disposable copy of the
+synthetic ChatGPT fixture directory (never the git fixture). After
+observe into the existing vault, hide that copy; reconstruct from
+vault + name receipts only; resolve; restore the copy. No new
+repository type. No private live export.
 
 **Not authorized:** daemon; bulk capture; SQLite/FTS; Gate 4; models;
 new primitive; changing source-identity or clock semantics; extending or
@@ -186,9 +186,9 @@ repository type or a change to hash identity.
 - Encryption-at-rest / backup / key loss for the vault
 - When, if ever, a rebuildable SQLite index is justified
 - Whether `SourceContentRepository` should accept vault object IDs
-  instead of a directory locator for ChatGPT (a reconstructed
-  same-named shard tree already resolves; do not drop shard names
-  from identity)
+  instead of a directory locator for ChatGPT (VAULT-CHATGPT-V0:
+  reconstruct already resolves; swapped names fail; do not add
+  object-id resolve)
 - What a honest day-view looks like once it is a view over evidence,
   not `Activity[]` synthesis
 
