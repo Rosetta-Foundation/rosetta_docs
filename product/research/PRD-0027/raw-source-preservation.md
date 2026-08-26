@@ -156,24 +156,29 @@ to put vault objects on a Git remote.
 
 ## What this review does *not* do
 
-- Implement STOP / WITHHOLD / FORGET.
-- Implement encryption.
+- Implement Chronicle-owned encryption (V1 uses OS disk encryption).
 - Start a day-view, interpretation, E8, Path, or AMP.
-- Authorize live personal export ingest.
-- Close privacy-and-forgetting checklist items that require a
-  working control. Those stay unchecked until Gate 4 exists.
+- Authorize live personal export ingest (RED pilot).
+- Close privacy-and-forgetting checklist items until the V1 controls
+  exist in the engine.
+
+## Approved V1 defaults (Ready Room 2026-08-26)
+
+The three YELLOW forks are no longer stops:
+
+1. **Gate 4:** scope-only forgetting. Implement STOP / WITHHOLD /
+   delete-what-we-control. No git-tracked content-hash tombstone. No
+   byte-level refuse. No crypto-shred. No vendor-deletion claims.
+2. **Security:** private local vault + OS disk encryption. Design
+   object custody so a later backend can change without rewriting
+   content identity.
+3. **Program E:** a narrowly scoped poller/watcher is allowed. Frozen
+   v0.1 Activity hooks must not be reused. No generalized daemon first.
 
 ## Program D result
 
 SUCCESSIVE-V0 passed (synthetic mutable fixture; not live user data).
-Gate 4 stayed unimplemented.
 
-## Program E — blocked on YELLOW
+## Next
 
-Existing Chronicle hooks (`backfill`, `append-session`, Stop-hook
-mode) are **deprecated frozen v0.1** and write `Activity`. They must
-not be the passive trigger.
-
-Manual snapshot already is the observe → hash → copy-if-new → receipt
-operation. A new launchd / fswatch / daemon would be new
-infrastructure. Escalate rather than invent it.
+Engine V1 observe path. See the Build Charter envelope.

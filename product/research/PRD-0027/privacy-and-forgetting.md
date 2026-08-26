@@ -74,11 +74,10 @@ A path system stays humane only if some things are allowed to fade.
 
 Those belong in Experiment 4 after this gate is reviewed.
 
-## Raw-preservation program (2026-08-25)
+## Raw-preservation program (2026-08-26)
 
-Design/review for operator STOP / withhold / forget is authorized
-under the Build Charter. Implementation of Gate 4 is **not**
-authorized until Ready Room resolves the YELLOW in
-[raw-source-preservation.md](raw-source-preservation.md). Recommended
-V0 is scope-only (no git-tracked content-hash tombstone). This file
-remains the ethical floor; that note does not weaken it.
+Gate 4 **V1 default is scope-only forgetting** (Ready Room).
+Implementation of that narrow contract is authorized under the Build
+Charter. Byte-level refuse and crypto-shred remain deferred. Do not
+git-track SHA-256 of forgotten bytes. This file remains the ethical
+floor.
