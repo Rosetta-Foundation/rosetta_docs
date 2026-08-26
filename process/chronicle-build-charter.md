@@ -2,7 +2,7 @@
 id: chronicle-build-charter
 title: Chronicle Build Charter
 status: Living
-date: 2026-08-25
+date: 2026-08-26
 authorship: collaborative
 ---
 
@@ -14,16 +14,31 @@ It transfers **invariants, authority, method, and the current envelope** so
 Rosetta Agents can continue Chronicle work without shuttling every move
 through another conversational agent.
 
-It is **not** a redesign of Chronicle, not a Capture Engine spec, and not
-permission to imitate any person. A proposed noun in a prompt is not
-authorization to create that noun.
+It is **not** a Capture Engine spec and not permission to imitate any
+person. A proposed noun in a prompt is not authorization to create that
+noun.
+
+**Operating posture (2026-08-26):** build the smallest coherent Chronicle
+**V1 the operator can turn on and use**, while aggressively protecting
+canonical raw evidence, privacy, authorization boundaries, and genuinely
+irreversible actions.
+
+Architectural uncertainty alone is not an escalation condition. **Blast
+radius and reversibility determine escalation.**
+
+> Protect precious evidence and irreversible boundaries fiercely.
+> Experiment aggressively with replaceable code.
+
+> A specimen is allowed to be implementation. Building something small
+> is often the fastest way to learn whether the architecture is correct.
 
 **Session start:** read this file and the private current-state checkpoint
-(path below). Continue from the next authorized item. Stop only at an
-escalation boundary or a falsifying result.
+(path below). Continue the V1 program. Do not stop because a specimen
+passed or because two implementations were plausible. Stop at RED, a
+product-intent fork that actually needs the operator, a falsified core
+premise, or a V1 readiness review.
 
-Private operational state (locators, hashes, vault paths) lives **outside
-git**:
+Private operational state lives **outside git**:
 
 ```text
 ~/.local/share/rosetta/chronicle-build/CURRENT-STATE.md
@@ -58,73 +73,116 @@ no private source content.
 
 ---
 
+## Evidence classes (treat differently)
+
+```text
+CODE
+    experimental, replaceable, rollback-friendly
+
+INDEXES / CACHES
+    preferably rebuildable, disposable
+
+STRUCTURAL METADATA / SOURCE GRAPHS
+    preferably reproducible from canonical evidence
+    migrations allowed with verification
+
+RAW SOURCE VAULT
+    precious, canonical captured evidence — protect aggressively
+
+PRIVACY / EXTERNAL DISCLOSURE
+    potentially irreversible
+
+DELETION / KEY DESTRUCTION
+    potentially irreversible
+```
+
+Do not protect experimental code with the conservatism used for
+irreplaceable personal evidence.
+
+---
+
 ## Authority
 
 ### GREEN — proceed autonomously
 
-Inspect code, write tests, run bounded specimens, fix bugs, refactor
-implementation details, and make reversible naming/layout decisions when
-**all** of these hold:
+Ordinary implementation and architectural hypotheses that are cheap to
+revise. Multiple plausible implementations do **not** make a decision
+YELLOW.
 
-- consistent with the invariants and established decisions below
-- no new ontology or schema
-- no expansion of private-data scope
-- no interpretation or model invocation
-- no public disclosure of private source
-- reversible
-- smallest reasonable change
-- backed by evidence or tests
+Includes: interfaces, repository layout, filesystem layout, naming,
+watcher vs polling, JSON/receipt shape that does not invent epistemic
+claims, internal APIs, refactors, fixtures, adapter details, helpers,
+strategies with tested rollback, anything whose failure is “change the
+code and try again.”
 
-Function names do not require Ready Room approval.
+Pick the simplest defensible option, record meaningful assumptions,
+implement, test, continue.
 
-### YELLOW — decision checkpoint; do not implement
+### YELLOW — consequence, not an automatic STOP
 
-Write a short decision memo and stop:
+Use sparingly. Changing it later would mean migration or compatibility
+work, but would not destroy evidence, expose private data, or become
+practically irreversible.
 
-- two plausible architectures with real tradeoffs
-- changing an established source contract
-- new dependency or storage technology
-- changing timestamp semantics
-- expanding acquisition scope
-- deletion / forgetting / tombstone behavior
-- ambiguity: mechanical vs interpretive
+When hit:
 
-### RED — explicit authorization required
+1. Determine whether a conservative V1 default exists.
+2. Document the assumption and future migration boundary.
+3. Prefer the option that preserves future optionality.
+4. If still reversible/migratable, **choose the V1 default and continue**.
+5. Return to Ready Room only if operator/product intent is genuinely
+   required.
 
-- new Chronicle primitive or ontology
-- schema migration
-- model invocation over private source
-- semantic derivation, embeddings, Path, AMP
-- broad passive capture; new external account access
-- publication or promotion of private findings
-- weakening provenance or privacy invariants
-- irreversible deletion
-- crossing an established epistemic boundary
+### RED — STOP and request explicit authorization
+
+Meaningful blast radius that cannot be cheaply corrected:
+
+- publishing or exposing private source
+- sending private corpus to a new external third party
+- capturing sources/scopes the operator did not explicitly authorize
+- irreversible deletion of the only known copy of canonical raw evidence
+- destructive canonical-data migrations without verified rollback
+- cryptographic/key operations that can permanently make evidence
+  unrecoverable
+- weakening a security/privacy boundary around an existing private corpus
+- making a private repository public
+- irreversible disclosure of credentials
+- crossing from raw preservation into semantic/model interpretation when
+  that materially changes epistemic claims or privacy exposure
+- other actions where `git revert` cannot undo the consequence
 
 ---
 
 ## Method
 
+Preferred loop:
+
 ```text
-OBSERVATION → HYPOTHESIS → EXISTING MACHINERY → SMALLEST FALSIFIER
-    → SPECIMEN → RESULT → DECISION → BUILD
+choose the smallest defensible design
+        ↓
+checkpoint (git)
+        ↓
+implement
+        ↓
+test / falsify
+        ↓
+learn
+        ↓
+keep / revise / revert / migrate
+        ↓
+continue toward V1
 ```
 
-Not: cool idea → TypeScript.
+Do not optimize for discovering final architecture before
+implementation. The sunk-cost fallacy is not an architectural invariant.
 
-If Russ or a prompt proposes a new subsystem, primitive, field, or
-mechanism, first determine whether existing machinery already represents
-the requirement. Prefer killing unnecessary abstraction.
+Prefer small commits and bounded waves.
 
-After each meaningful cycle, update the **private** current-state file:
+After meaningful cycles, update the **private** current-state file so a
+fresh agent knows: established / evidence / rejected / uncertain /
+authorized / next work / RED.
 
-- current decisions and status (candidate / validated / rejected)
-- evidence / specimens (no public leak of source bodies)
-- open hypotheses
-- rejected approaches and why
-- current authorization envelope
-- next falsifier
-- escalations requiring Russ / Ready Room
+Public docs stay sanitized.
 
 ---
 
@@ -132,71 +190,94 @@ After each meaningful cycle, update the **private** current-state file:
 
 | Decision | Status | Why |
 | -------- | ------ | --- |
-| Dual track: do not route personal raw source through `Activity` | Validated | Conversations, graphs, and vault objects are not a day's `Activity[]` |
-| v0.1 Daily Chronicle `Activity` / `getActivity` as the source contract | **Deprecated (frozen)** | Capture and day-view were collapsed; conversational sources cannot honest-fit one timestamp + summary. Code remains as historical record. Do not extend. Do not use for new work. A later day-view over vault/graph/git requires its own specimen. |
+| Dual track: do not route personal raw source through `Activity` | Validated | Not a day's `Activity[]` |
+| v0.1 Daily Chronicle `Activity` / `getActivity` | **Deprecated (frozen)** | Do not extend. Do not use for V1 raw observe |
 | ChatGPT inventory then stripped source-graph import | Validated | Topology and clocks; no titles/parts in the graph |
-| Source bytes stay outside the public engine | Validated | ADR-0002; Phase 2 graph is not an archive backup |
-| Content hash is captured-artifact identity | Validated | Same exact bytes → one object; source-native IDs may identify source structure but do not replace content identity |
-| `importedAt` / capture time ≠ source event time | Validated | Do not backdate derivation or evaluation |
-| Source vault (copy of observed bytes under operator control) | Validated: locator-loss resolve, one Cursor specimen | Graph without vault cannot resolve after locator loss; not a new engine type |
-| Capture / Capture Engine / numbered “levels” as schema | **Rejected** | Existing vault + graph + resolve; do not mint a parallel ontology |
-| `getActivity` Claude/Cursor adapters as raw capture | **Rejected** (and frozen with v0.1) | They summarize and can promote filesystem time to event time |
-| Daemon, SQLite, FTS, Gate 4, models, bulk capture | **Not authorized** | Yellow/red until a specimen and explicit envelope say otherwise |
+| Source bytes stay outside the public engine | Validated | ADR-0002 |
+| Content hash is captured-artifact identity | Validated | Source-native IDs do not replace content identity |
+| Capture / observe time ≠ source event time | Validated | Do not invent authored time |
+| Source vault (copy-if-new of observed bytes) | Validated on fixtures | Locator-loss + successive states; not a Capture type |
+| Vault object IDs as ChatGPT `exportPath` | **Rejected** | Reconstruct a same-named directory |
+| Capture Engine / numbered “levels” as schema | **Rejected** | Vault + graph + resolve |
+| Git-tracked SHA-256 of forgotten bytes | **Rejected** | Fingerprint of material the operator asked to forget |
+| Gate 4 V1: **scope-only forgetting** | **Approved V1 default** | STOP/WITHHOLD/delete what Chronicle controls; no byte-level refuse; no crypto-shred; never claim vendor deletion |
+| Security V1: private local vault + OS disk encryption | **Approved V1 default** | No Chronicle-owned app encryption to reach V1; custody abstraction may evolve |
+| Program E: bounded passive trigger | **Approved** | Frozen v0.1 hooks must not be reused; a tiny watcher/poller is allowed; no generalized daemon first |
+| Broad personal-data capture / live export ingest | **RED until explicit pilot** | Fixtures until a pilot request |
+| Day-view, interpretation, E8, Path, AMP, embeddings | **Not V1 raw-preservation** | Do not smuggle intelligence into capture |
 
 ---
 
-## Current authorization envelope
+## V1 product target
 
-**Last GREEN result (sanitized):** HIDE-COPY-V0 passed (wave with
-VAULT-CHATGPT-V0). Disposable copy of the synthetic ChatGPT fixture:
-observe into the existing vault; hide the copy; reconstruct from vault
-+ name receipts; resolve; restore; re-observe is copy-if-new. Hidden
-path is `export-missing`. Git fixture never moved. Object-id resolve
-is not required. No new repository type. No private live export.
+Smallest Chronicle the operator can turn on:
 
-Prior: VAULT-CHATGPT-V0 (names on receipts; swapped names fail);
-RESOLVE-COPY-V0 (path is a locator); VAULT-V0 (one Cursor JSONL).
-Source vault status: **Validated: locator-loss resolve (Cursor file +
-ChatGPT synthetic directory).**
+```text
+configure explicit source scope(s)
+→ start
+→ authorized source changes
+→ observe exact bytes → hash → copy-if-new → receipt
+→ STOP / forget-scope
+→ resolve retained evidence
+→ survive process restart (data on disk; watcher is restarted by the operator)
+```
 
-**v0.1 Daily Chronicle / `Activity`:** **Deprecated (frozen).** Do not add
-`ActivitySource` members, new `getActivity` adapters, or hook behavior.
-Leave the existing code and personal `chronicles/*.md` as historical
-record. Do not delete them in lieu of a specimen. A replacement day-view
-is **not authorized** until it cites vault hashes / source-graph
-coordinates / git SHAs without `Activity` as the intermediate.
+No summaries, classifications, embeddings, personality/emotion/Path/AMP
+detection, candidate observations, model-generated metadata, Daily
+Chronicle or day-view synthesis, or biography.
 
-**Authorized next:** none on this vault path. Do not add object-id
-resolve. Do not start a day-view. Ready Room picks the next product
-step.
+**Sources:** smallest useful set that exists honestly on the host.
+Cursor JSONL under an allowlisted path, ChatGPT export via existing
+path, ordinary allowlisted files. Do not block V1 because Claude Code
+data is absent here. No home-directory sweep, no browser scraping, no
+capture-everything.
 
-**Not authorized:** daemon; bulk capture; SQLite/FTS; Gate 4; models;
-new primitive; changing source-identity or clock semantics; extending or
-rewriting the v0.1 Daily Chronicle `Activity` path; deleting frozen v0.1
-code without a replacement specimen.
+**Passive progression:** manual observe (done) → one bounded automatic
+trigger → one allowlisted path → restart/recovery of stored evidence →
+second source only if it tests generality → reusable service only if
+earned.
 
-**Escalate (YELLOW) if** the next engine step needs a new vault
-repository type or a change to hash identity.
+**Indexing:** optional, rebuildable, evidence-terminating. Earned by
+use, not discussion.
 
----
+**Backup:** identify what cannot be rebuilt (vault objects). Document
+V1 limitation rather than adding a cloud backend. Sending private
+source to a new external provider is RED.
 
-## Open questions (do not “solve” by inventing types)
-
-- How does Gate 4 deletion interact with vault re-observation?
-- Encryption-at-rest / backup / key loss for the vault
-- When, if ever, a rebuildable SQLite index is justified
-- Whether `SourceContentRepository` should accept vault object IDs
-  instead of a directory locator for ChatGPT (**no** — HIDE-COPY-V0:
-  reconstruct while the export is hidden already resolves; do not add
-  object-id resolve)
-- What a honest day-view looks like once it is a view over evidence,
-  not `Activity[]` synthesis
+**Real personal data:** STOP and request RED authorization before a
+pilot. Successful fixtures are not silent broad capture.
 
 ---
 
-## Ready Room vs Agents
+## Current envelope
 
-Bring to Russ / Ready Room: invariant changes, YELLOW/RED checkpoints,
-surprising specimen results, philosophical wrongness.
+**Last GREEN (sanitized):** SUCCESSIVE-V0 (synthetic mutable source).
+Prior vault-path wave: VAULT-V0, RESOLVE-COPY-V0, VAULT-CHATGPT-V0,
+HIDE-COPY-V0.
 
-Do not bring to Ready Room: ordinary GREEN implementation details.
+**Now:** V1 implementation is authorized. Choose reversible defaults
+and continue. Design notes:
+[`../product/research/PRD-0027/raw-source-preservation.md`](../product/research/PRD-0027/raw-source-preservation.md).
+
+**Next work:** engine observe path (allowlisted file → vault copy-if-new
+→ receipt), then one bounded poll/watch trigger, then STOP and
+scope-only forget, then restart integrity. Synthetic fixtures until
+RED pilot.
+
+---
+
+## Completion — V1 readiness review
+
+Return when a candidate can: configure a scope; automatically observe
+changes; preserve changed bytes; deduplicate unchanged; honest
+provenance/clocks; resolve evidence; STOP; forget-scope; survive
+restart; distinguish canonical vs rebuildable; no Activity.
+
+Then report what the operator can do now, limitations, and the exact
+proposed real-data pilot — **wait** for authorization before capturing
+personal source.
+
+Also return on genuine RED, a product-intent decision that needs the
+operator, or a falsified core premise.
+
+Do not return with a chronological dump of every step.

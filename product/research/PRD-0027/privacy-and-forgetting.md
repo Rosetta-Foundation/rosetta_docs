@@ -73,3 +73,11 @@ A path system stays humane only if some things are allowed to fade.
 - When does append-only history conflict with a deletion request?
 
 Those belong in Experiment 4 after this gate is reviewed.
+
+## Raw-preservation program (2026-08-26)
+
+Gate 4 **V1 default is scope-only forgetting** (Ready Room).
+Implementation of that narrow contract is authorized under the Build
+Charter. Byte-level refuse and crypto-shred remain deferred. Do not
+git-track SHA-256 of forgotten bytes. This file remains the ethical
+floor.
