@@ -2,7 +2,7 @@
 id: chronicle-build-charter
 title: Chronicle Build Charter
 status: Living
-date: 2026-08-26
+date: 2026-08-28
 authorship: collaborative
 ---
 
@@ -251,18 +251,22 @@ pilot. Successful fixtures are not silent broad capture.
 
 ## Current envelope
 
-**Last GREEN (sanitized):** SUCCESSIVE-V0 (synthetic mutable source).
-Prior vault-path wave: VAULT-V0, RESOLVE-COPY-V0, VAULT-CHATGPT-V0,
-HIDE-COPY-V0.
+**Last GREEN (sanitized):** directory observe on `main` (#31). Prior:
+file observe (#30), SUCCESSIVE-V0, VAULT-V0, RESOLVE-COPY-V0,
+VAULT-CHATGPT-V0, HIDE-COPY-V0.
 
-**Now:** V1 implementation is authorized. Choose reversible defaults
-and continue. Design notes:
+**Now:** V1 observe + first RED-authorized ChatGPT **data-export**
+pilot (private vault) and stripped source-graph catalog (private
+`import-chatgpt`). Sanitized readiness:
+[`chronicle-v1-readiness-2026-08-28.md`](chronicle-v1-readiness-2026-08-28.md).
+Design notes:
 [`../product/research/PRD-0027/raw-source-preservation.md`](../product/research/PRD-0027/raw-source-preservation.md).
 
-**Next work:** engine observe path (allowlisted file → vault copy-if-new
-→ receipt), then one bounded poll/watch trigger, then STOP and
-scope-only forget, then restart integrity. Synthetic fixtures until
-RED pilot.
+**Next work:** ChatGPT **Desktop** local store — locate and
+content-blind inventory only. Do not ingest until an explicit
+allowlisted path and RED. No second source (Cursor/Claude) unless
+asked. No interpretation of the export corpus without a new RED
+envelope.
 
 ---
 

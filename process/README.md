@@ -25,6 +25,7 @@ specifics. Portable ideas only; not a fork of that corpus.
 | [`adversarial-review.md`](adversarial-review.md)   | Does the claim set survive structured challenge (preferably cross-lineage)?    |
 | [`historical-parallel.md`](historical-parallel.md) | Have structurally similar patterns appeared before — including failures?       |
 | [`chronicle-build-charter.md`](chronicle-build-charter.md) | Chronicle implementation doctrine: invariants, GREEN/YELLOW/RED, method, envelope |
+| [`chronicle-v1-readiness-2026-08-28.md`](chronicle-v1-readiness-2026-08-28.md) | Sanitized V1 readiness: allowlisted export observe + source-graph catalog; Desktop locate is next |
 
 ## Claim types (quick reference)
 

@@ -181,4 +181,6 @@ SUCCESSIVE-V0 passed (synthetic mutable fixture; not live user data).
 
 ## Next
 
-Engine V1 observe path. See the Build Charter envelope.
+Engine V1 observe is on `main`. First data-export pilot and source-graph
+catalog: [`../../../process/chronicle-v1-readiness-2026-08-28.md`](../../../process/chronicle-v1-readiness-2026-08-28.md).
+Next specimen: ChatGPT Desktop on-disk location (locate, do not ingest).
