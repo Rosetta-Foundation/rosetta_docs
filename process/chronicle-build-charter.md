@@ -262,11 +262,11 @@ pilot (private vault) and stripped source-graph catalog (private
 Design notes:
 [`../product/research/PRD-0027/raw-source-preservation.md`](../product/research/PRD-0027/raw-source-preservation.md).
 
-**Next work:** ChatGPT **Desktop** local store — locate and
-content-blind inventory only. Do not ingest until an explicit
-allowlisted path and RED. No second source (Cursor/Claude) unless
-asked. No interpretation of the export corpus without a new RED
-envelope.
+**Next work:** ChatGPT Desktop locate is done (ciphertext
+`conversations-v3` `*.data`; data-export remains the readable
+corpus). Do not ingest Desktop. No second source (Cursor/Claude)
+unless asked. No interpretation of the export corpus without a new
+RED envelope.
 
 ---
 

@@ -183,4 +183,5 @@ SUCCESSIVE-V0 passed (synthetic mutable fixture; not live user data).
 
 Engine V1 observe is on `main`. First data-export pilot and source-graph
 catalog: [`../../../process/chronicle-v1-readiness-2026-08-28.md`](../../../process/chronicle-v1-readiness-2026-08-28.md).
-Next specimen: ChatGPT Desktop on-disk location (locate, do not ingest).
+Next specimen: ChatGPT Desktop locate complete (encrypted local
+`*.data`; do not ingest). Data-export remains the readable corpus.

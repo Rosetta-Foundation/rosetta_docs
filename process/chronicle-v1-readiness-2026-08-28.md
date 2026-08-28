@@ -104,22 +104,41 @@ host.
 Public prior art (not a capture): macOS app data commonly lives under
 `~/Library/Application Support/com.openai.chat/`. Early builds stored
 plaintext conversation JSON; later builds encrypt `conversations-v2`
-/ `conversations-v3` trees with an app-held key. A content-blind
-existence check on this host: that Application Support root is
-present; `conversations-v3*` directories exist. **No conversation
-files were opened. No Desktop path is allowlisted. No bytes were
-copied into the vault.**
+/ `conversations-v3` trees with an app-held key.
 
-Next work on that specimen:
+### Locate result (2026-08-28, content-blind)
 
-1. Content-blind inventory (directory kinds, file types, encryption
-   vs plaintext) — names that are account or conversation ids stay
-   private.
-2. If anything useful is plaintext, propose an **explicit allowlist**
-   and wait for RED.
-3. If the live store is ciphertext only, the data-export remains the
-   honest readable source; Desktop may still be a change-detection
-   signal later, not a second body store.
+That Application Support root is present. Related prefs, HTTP
+storages, caches, and a Widgets container exist. The main app is not
+in a `Containers/com.openai.chat` sandbox.
+
+Content-blind walk of the support root (no conversation bodies, no
+account or conversation ids in this note):
+
+| | |
+| --- | --- |
+| Files / bytes | 145 files, ~5.1 MiB |
+| Conversation trees | `conversations-v3*` only (no v1 plaintext dirs, no v2) |
+| Populated v3 trees | 1 of 6 |
+| Conversation objects | 80 `*.data` files (~4.5 MiB of the tree) |
+| Draft trees | present, empty of files |
+| Other buckets | gizmos, models, projects, Codex/order/system-hint dirs, IDE pairing manifests |
+
+`file` magic on conversation `*.data`: mixed/high-entropy. One file
+starts with ASCII `[` then non-JSON bytes (false positive, not a
+plaintext array). No `conversations-v3` `*.json`.
+
+Plaintext JSON that **is** present is not the chat corpus: IDE pairing
+extension manifests (`appName` / `bundleID` keys). Not allowlisted.
+
+**No Desktop path is allowlisted. No bytes were copied into the
+vault. No decrypt.**
+
+Conclusion: on this host the live Desktop conversation store is not a
+readable second body source. The data-export remains the honest
+catalogued corpus. Desktop may later be a change-detection or
+presence signal, not an ingest target, unless a future plaintext
+layout appears and is explicitly allowlisted under RED.
 
 Do not decrypt. Do not home-sweep. Do not enable Cursor/Claude
 capture as a substitute.
