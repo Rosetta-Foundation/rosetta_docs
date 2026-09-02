@@ -41,6 +41,7 @@ category, or authorize a capture prototype.
 | [landscape.md](landscape.md) | Adjacent-category comparison (not design guidance) |
 | [privacy-and-forgetting.md](privacy-and-forgetting.md) | Gate before any persistent-capture prototype |
 | [raw-source-preservation.md](raw-source-preservation.md) | Raw-preservation program A/B/C design: Gate 4, vault custody, Git boundary |
+| [chronicle-v1-readiness-2026-08-28.md](../../../process/chronicle-v1-readiness-2026-08-28.md) | Sanitized V1 observe/catalog checkpoint (process/; not a Path experiment) |
 | [provenance-checkpoint.md](provenance-checkpoint.md) | E3-era real-corpus smoke (historical: E4 was still next); attachment frontier preserved as recorded |
 | [thought-evolution-2026-08-19.md](thought-evolution-2026-08-19.md) | Working research record of a morning path (and later review): provenance failure, revision hypothesis, not a roadmap |
 | [historical-self-sample-2026-08.md](historical-self-sample-2026-08.md) | Sanitized 2026-08 historical-journal sample: dual 2026 targets (historical-self vs present-self); not E7 Track A |
@@ -81,6 +82,8 @@ category, or authorize a capture prototype.
       ([prior-exposure-path-language-2026-08.md](prior-exposure-path-language-2026-08.md))
 - [x] Record raw-preservation program A/B/C design
       ([raw-source-preservation.md](raw-source-preservation.md))
+- [x] Record sanitized V1 observe + data-export catalog
+      ([chronicle-v1-readiness-2026-08-28.md](../../../process/chronicle-v1-readiness-2026-08-28.md))
 - [ ] Create and review Artifact A and Artifact B (not in this PR)
 - [ ] Run Experiment 1 (5–8 people, async) and return raw results before
       interpretation
