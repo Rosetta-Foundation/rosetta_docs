@@ -251,22 +251,25 @@ pilot. Successful fixtures are not silent broad capture.
 
 ## Current envelope
 
-**Last GREEN (sanitized):** directory observe on `main` (#31). Prior:
-file observe (#30), SUCCESSIVE-V0, VAULT-V0, RESOLVE-COPY-V0,
-VAULT-CHATGPT-V0, HIDE-COPY-V0.
+**Last GREEN (sanitized):** V1 turn-on closeout (2026-09-06).
+`start` on `main` (#34). Second allowlisted source (Cursor JSONL,
+operator-named scopes) observed into the same private vault.
+Prior: directory observe (#31), file observe (#30), SUCCESSIVE-V0,
+VAULT-V0, RESOLVE-COPY-V0, VAULT-CHATGPT-V0, HIDE-COPY-V0, first
+ChatGPT data-export catalog.
 
-**Now:** V1 observe + first RED-authorized ChatGPT **data-export**
-pilot (private vault) and stripped source-graph catalog (private
-`import-chatgpt`). Sanitized readiness:
-[`chronicle-v1-readiness-2026-08-28.md`](chronicle-v1-readiness-2026-08-28.md).
+**Now:** the charter done-when loop is implemented. Sanitized
+readiness:
+[`chronicle-v1-readiness-2026-09-06.md`](chronicle-v1-readiness-2026-09-06.md)
+(first catalog:
+[`chronicle-v1-readiness-2026-08-28.md`](chronicle-v1-readiness-2026-08-28.md)).
 Design notes:
 [`../product/research/PRD-0027/raw-source-preservation.md`](../product/research/PRD-0027/raw-source-preservation.md).
 
-**Next work:** ChatGPT Desktop locate is done (ciphertext
-`conversations-v3` `*.data`; data-export remains the readable
-corpus). Do not ingest Desktop. No second source (Cursor/Claude)
-unless asked. No interpretation of the export corpus without a new
-RED envelope.
+**Next work:** operate `start` (periodic `--once` on this host; the
+stock 2s poller appends a receipt per file per tick). Do not ingest
+Desktop. No further Cursor slugs, Cursor graph, FTS, or
+interpretation of this corpus without a new ask / RED envelope.
 
 ---
 
